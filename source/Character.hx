@@ -146,7 +146,7 @@ class Character extends FlxSprite
 					animation.addByPrefix('singDOWN', 'Quincy Down', 24);
 					animation.addByPrefix('singLEFT', 'Quincy Left', 24);
 	
-					addOffset('idle'0,-242);
+					addOffset('idle', 0, -242);
 					addOffset("singUP", 0, 222);
 					addOffset("singRIGHT", 0, -242);
 					addOffset("singLEFT", -22, -233);
