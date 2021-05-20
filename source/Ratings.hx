@@ -9,29 +9,29 @@ class Ratings
 			ranking = "BotPlay";
 
         if (PlayState.misses == 0 && PlayState.bads == 0 && PlayState.shits == 0 && PlayState.goods == 0) // Marvelous (SICK) Full Combo
-            ranking = "(MFC)";
+            ranking = "(PERFECT)";
         else if (PlayState.misses == 0 && PlayState.bads == 0 && PlayState.shits == 0 && PlayState.goods >= 1) // Good Full Combo (Nothing but Goods & Sicks)
-            ranking = "(GFC)";
+            ranking = "(NEAR-PERFECT)";
         else if (PlayState.misses == 0) // Regular FC
             ranking = "(FC)";
         else if (PlayState.misses < 10) // Single Digit Combo Breaks
-            ranking = "(SDCB)";
+            ranking = "(Clear)";
         else
             ranking = "(Clear)";
 
         // WIFE TIME :)))) (based on Wife3)
 
         var wifeConditions:Array<Bool> = [
-            accuracy >= 99.9935, // AAAAA
-            accuracy >= 99.980, // AAAA:
-            accuracy >= 99.970, // AAAA.
-            accuracy >= 99.955, // AAAA
-            accuracy >= 99.90, // AAA:
-            accuracy >= 99.80, // AAA.
-            accuracy >= 99.70, // AAA
-            accuracy >= 99, // AA:
-            accuracy >= 96.50, // AA.
-            accuracy >= 93, // AA
+            accuracy >= 99.9935, // SSS:
+            accuracy >= 99.980, // SSS.
+            accuracy >= 99.970, // SSS
+            accuracy >= 99.955, // SS
+            accuracy >= 99.90, // SS:
+            accuracy >= 99.80, // SS.
+            accuracy >= 99.70, // SS
+            accuracy >= 99, // S:
+            accuracy >= 96.50, // S.
+            accuracy >= 93, // S
             accuracy >= 90, // A:
             accuracy >= 85, // A.
             accuracy >= 80, // A

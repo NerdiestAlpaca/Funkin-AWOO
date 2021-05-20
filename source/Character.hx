@@ -137,6 +137,20 @@ class Character extends FlxSprite
 				addOffset("singRIGHT", 0, 27);
 				addOffset("singLEFT", -10, 10);
 				addOffset("singDOWN", 0, -30);
+			case 'quincy':
+					tex = Paths.getSparrowAtlas('characters/QuincySprites');
+					frames = tex;
+					animation.addByPrefix('idle', 'Quincy Idle', 24);
+					animation.addByPrefix('singUP', 'Quincy Up', 24);
+					animation.addByPrefix('singRIGHT', 'Quincy Right', 24);
+					animation.addByPrefix('singDOWN', 'Quincy Down', 24);
+					animation.addByPrefix('singLEFT', 'Quincy Left', 24);
+	
+					addOffset('idle'0,-242);
+					addOffset("singUP", 0, 222);
+					addOffset("singRIGHT", 0, -242);
+					addOffset("singLEFT", -22, -233);
+					addOffset("singDOWN", 0, -242);
 
 				playAnim('idle');
 			case 'spooky':
