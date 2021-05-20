@@ -15,23 +15,23 @@ class Ratings
         else if (PlayState.misses == 0) // Regular FC
             ranking = "(FC)";
         else if (PlayState.misses < 10) // Single Digit Combo Breaks
-            ranking = "(Clear)";
+            ranking = "(Near-FC)";
         else
             ranking = "(Clear)";
 
         // WIFE TIME :)))) (based on Wife3)
 
         var wifeConditions:Array<Bool> = [
-            accuracy >= 99.9935, // SSS:
-            accuracy >= 99.980, // SSS.
-            accuracy >= 99.970, // SSS
-            accuracy >= 99.955, // SS
-            accuracy >= 99.90, // SS:
-            accuracy >= 99.80, // SS.
-            accuracy >= 99.70, // SS
-            accuracy >= 99, // S:
-            accuracy >= 96.50, // S.
-            accuracy >= 93, // S
+            accuracy >= 99.9935, // SSS
+            accuracy >= 99.980, // SS
+            accuracy >= 99.970, // S
+            accuracy >= 99.955, // AAAA
+            accuracy >= 99.90, // AAA:
+            accuracy >= 99.80, // AAA.
+            accuracy >= 99.70, // AAA
+            accuracy >= 99, // AA:
+            accuracy >= 96.50, // AA.
+            accuracy >= 93, // AA
             accuracy >= 90, // A:
             accuracy >= 85, // A.
             accuracy >= 80, // A
@@ -48,11 +48,11 @@ class Ratings
                 switch(i)
                 {
                     case 0:
-                        ranking += " AAAAA";
+                        ranking += " SSS";
                     case 1:
-                        ranking += " AAAA:";
+                        ranking += " SSS";
                     case 2:
-                        ranking += " AAAA.";
+                        ranking += " S";
                     case 3:
                         ranking += " AAAA";
                     case 4:
