@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Petula.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Petula Down0000" x="0" y="0" width="407" height="406" pivotX="271.6" pivotY="413.85" frameX="0" frameY="0" frameWidth="412" frameHeight="406"/>
+	<SubTexture name="Petula Down0001" x="0" y="0" width="407" height="406" frameX="0" frameY="0" frameWidth="412" frameHeight="406"/>
+	<SubTexture name="Petula Down0002" x="409" y="0" width="412" height="402" frameX="0" frameY="-4" frameWidth="412" frameHeight="406"/>
+	<SubTexture name="Petula Down0003" x="409" y="0" width="412" height="402" frameX="0" frameY="-4" frameWidth="412" frameHeight="406"/>
+	<SubTexture name="Petula Down0004" x="409" y="0" width="412" height="402" frameX="0" frameY="-4" frameWidth="412" frameHeight="406"/>
+	<SubTexture name="Petula Down0005" x="409" y="0" width="412" height="402" frameX="0" frameY="-4" frameWidth="412" frameHeight="406"/>
+	<SubTexture name="Petula Down0006" x="409" y="0" width="412" height="402" frameX="0" frameY="-4" frameWidth="412" frameHeight="406"/>
+	<SubTexture name="Petula Down0007" x="409" y="0" width="412" height="402" frameX="0" frameY="-4" frameWidth="412" frameHeight="406"/>
+	<SubTexture name="Petula Down0008" x="409" y="0" width="412" height="402" frameX="0" frameY="-4" frameWidth="412" frameHeight="406"/>
+	<SubTexture name="Petula Down0009" x="409" y="0" width="412" height="402" frameX="0" frameY="-4" frameWidth="412" frameHeight="406"/>
+	<SubTexture name="Petula Down0010" x="409" y="0" width="412" height="402" frameX="0" frameY="-4" frameWidth="412" frameHeight="406"/>
+	<SubTexture name="Petula Down0011" x="409" y="0" width="412" height="402" frameX="0" frameY="-4" frameWidth="412" frameHeight="406"/>
+	<SubTexture name="Petula Down0012" x="409" y="0" width="412" height="402" frameX="0" frameY="-4" frameWidth="412" frameHeight="406"/>
+	<SubTexture name="Petula Down0013" x="409" y="0" width="412" height="402" frameX="0" frameY="-4" frameWidth="412" frameHeight="406"/>
+	<SubTexture name="Petula Down Mad0000" x="823" y="0" width="407" height="407" pivotX="271.6" pivotY="413.4" frameX="0" frameY="0" frameWidth="412" frameHeight="407"/>
+	<SubTexture name="Petula Down Mad0001" x="823" y="0" width="407" height="407" frameX="0" frameY="0" frameWidth="412" frameHeight="407"/>
+	<SubTexture name="Petula Down Mad0002" x="1232" y="0" width="400" height="389" frameX="-12" frameY="-17" frameWidth="412" frameHeight="407"/>
+	<SubTexture name="Petula Down Mad0003" x="1634" y="0" width="400" height="389" frameX="-12" frameY="-17" frameWidth="412" frameHeight="407"/>
+	<SubTexture name="Petula Down Mad0004" x="1634" y="0" width="400" height="389" frameX="-12" frameY="-17" frameWidth="412" frameHeight="407"/>
+	<SubTexture name="Petula Down Mad0005" x="2036" y="0" width="405" height="389" frameX="-7" frameY="-17" frameWidth="412" frameHeight="407"/>
+	<SubTexture name="Petula Down Mad0006" x="2036" y="0" width="405" height="389" frameX="-7" frameY="-17" frameWidth="412" frameHeight="407"/>
+	<SubTexture name="Petula Down Mad0007" x="2036" y="0" width="405" height="389" frameX="-7" frameY="-17" frameWidth="412" frameHeight="407"/>
+	<SubTexture name="Petula Down Mad0008" x="2036" y="0" width="405" height="389" frameX="-7" frameY="-17" frameWidth="412" frameHeight="407"/>
+	<SubTexture name="Petula Down Mad0009" x="2036" y="0" width="405" height="389" frameX="-7" frameY="-17" frameWidth="412" frameHeight="407"/>
+	<SubTexture name="Petula Down Mad0010" x="2036" y="0" width="405" height="389" frameX="-7" frameY="-17" frameWidth="412" frameHeight="407"/>
+	<SubTexture name="Petula Down Mad0011" x="2036" y="0" width="405" height="389" frameX="-7" frameY="-17" frameWidth="412" frameHeight="407"/>
+	<SubTexture name="Petula Down Mad0012" x="2036" y="0" width="405" height="389" frameX="-7" frameY="-17" frameWidth="412" frameHeight="407"/>
+	<SubTexture name="Petula Down Mad0013" x="2036" y="0" width="405" height="389" frameX="-7" frameY="-17" frameWidth="412" frameHeight="407"/>
+	<SubTexture name="Petula Idle0000" x="2443" y="0" width="412" height="405" pivotX="299.95" pivotY="414.95" frameX="-38" frameY="-2" frameWidth="450" frameHeight="407"/>
+	<SubTexture name="Petula Idle0001" x="2443" y="0" width="412" height="405" frameX="-38" frameY="-2" frameWidth="450" frameHeight="407"/>
+	<SubTexture name="Petula Idle0002" x="2857" y="0" width="450" height="406" frameX="0" frameY="-1" frameWidth="450" frameHeight="407"/>
+	<SubTexture name="Petula Idle0003" x="2857" y="0" width="450" height="406" frameX="0" frameY="-1" frameWidth="450" frameHeight="407"/>
+	<SubTexture name="Petula Idle0004" x="3309" y="0" width="412" height="407" frameX="-38" frameY="0" frameWidth="450" frameHeight="407"/>
+	<SubTexture name="Petula Idle0005" x="3309" y="0" width="412" height="407" frameX="-38" frameY="0" frameWidth="450" frameHeight="407"/>
+	<SubTexture name="Petula Idle0006" x="0" y="409" width="412" height="404" frameX="-38" frameY="-3" frameWidth="450" frameHeight="407"/>
+	<SubTexture name="Petula Idle0007" x="414" y="409" width="450" height="404" frameX="0" frameY="-3" frameWidth="450" frameHeight="407"/>
+	<SubTexture name="Petula Idle0008" x="2443" y="0" width="412" height="405" frameX="-38" frameY="-2" frameWidth="450" frameHeight="407"/>
+	<SubTexture name="Petula Idle0009" x="2443" y="0" width="412" height="405" frameX="-38" frameY="-2" frameWidth="450" frameHeight="407"/>
+	<SubTexture name="Petula Idle0010" x="2443" y="0" width="412" height="405" frameX="-38" frameY="-2" frameWidth="450" frameHeight="407"/>
+	<SubTexture name="Petula Idle0011" x="2443" y="0" width="412" height="405" frameX="-38" frameY="-2" frameWidth="450" frameHeight="407"/>
+	<SubTexture name="Petula Idle0012" x="2443" y="0" width="412" height="405" frameX="-38" frameY="-2" frameWidth="450" frameHeight="407"/>
+	<SubTexture name="Petula Idle0013" x="2443" y="0" width="412" height="405" frameX="-38" frameY="-2" frameWidth="450" frameHeight="407"/>
+	<SubTexture name="Petula Left0000" x="866" y="409" width="401" height="406" pivotX="265.95" pivotY="413.8"/>
+	<SubTexture name="Petula Left0001" x="866" y="409" width="401" height="406"/>
+	<SubTexture name="Petula Left0002" x="1269" y="409" width="401" height="404" frameX="0" frameY="-2" frameWidth="401" frameHeight="406"/>
+	<SubTexture name="Petula Left0003" x="1269" y="409" width="401" height="404" frameX="0" frameY="-2" frameWidth="401" frameHeight="406"/>
+	<SubTexture name="Petula Left0004" x="1269" y="409" width="401" height="404" frameX="0" frameY="-2" frameWidth="401" frameHeight="406"/>
+	<SubTexture name="Petula Left0005" x="1269" y="409" width="401" height="404" frameX="0" frameY="-2" frameWidth="401" frameHeight="406"/>
+	<SubTexture name="Petula Left0006" x="1269" y="409" width="401" height="404" frameX="0" frameY="-2" frameWidth="401" frameHeight="406"/>
+	<SubTexture name="Petula Left0007" x="1269" y="409" width="401" height="404" frameX="0" frameY="-2" frameWidth="401" frameHeight="406"/>
+	<SubTexture name="Petula Left0008" x="1269" y="409" width="401" height="404" frameX="0" frameY="-2" frameWidth="401" frameHeight="406"/>
+	<SubTexture name="Petula Left0009" x="1269" y="409" width="401" height="404" frameX="0" frameY="-2" frameWidth="401" frameHeight="406"/>
+	<SubTexture name="Petula Left0010" x="1269" y="409" width="401" height="404" frameX="0" frameY="-2" frameWidth="401" frameHeight="406"/>
+	<SubTexture name="Petula Left0011" x="1269" y="409" width="401" height="404" frameX="0" frameY="-2" frameWidth="401" frameHeight="406"/>
+	<SubTexture name="Petula Left0012" x="1269" y="409" width="401" height="404" frameX="0" frameY="-2" frameWidth="401" frameHeight="406"/>
+	<SubTexture name="Petula Left0013" x="1269" y="409" width="401" height="404" frameX="0" frameY="-2" frameWidth="401" frameHeight="406"/>
+	<SubTexture name="Petula Left Mad0000" x="1672" y="409" width="401" height="405" pivotX="265.9" pivotY="413.8"/>
+	<SubTexture name="Petula Left Mad0001" x="1672" y="409" width="401" height="405"/>
+	<SubTexture name="Petula Left Mad0002" x="2075" y="409" width="389" height="405" frameX="-12" frameY="0" frameWidth="401" frameHeight="405"/>
+	<SubTexture name="Petula Left Mad0003" x="2466" y="409" width="389" height="405" frameX="-12" frameY="0" frameWidth="401" frameHeight="405"/>
+	<SubTexture name="Petula Left Mad0004" x="2466" y="409" width="389" height="405" frameX="-12" frameY="0" frameWidth="401" frameHeight="405"/>
+	<SubTexture name="Petula Left Mad0005" x="2857" y="409" width="395" height="405" frameX="-6" frameY="0" frameWidth="401" frameHeight="405"/>
+	<SubTexture name="Petula Left Mad0006" x="2857" y="409" width="395" height="405" frameX="-6" frameY="0" frameWidth="401" frameHeight="405"/>
+	<SubTexture name="Petula Left Mad0007" x="2857" y="409" width="395" height="405" frameX="-6" frameY="0" frameWidth="401" frameHeight="405"/>
+	<SubTexture name="Petula Left Mad0008" x="2857" y="409" width="395" height="405" frameX="-6" frameY="0" frameWidth="401" frameHeight="405"/>
+	<SubTexture name="Petula Left Mad0009" x="2857" y="409" width="395" height="405" frameX="-6" frameY="0" frameWidth="401" frameHeight="405"/>
+	<SubTexture name="Petula Left Mad0010" x="2857" y="409" width="395" height="405" frameX="-6" frameY="0" frameWidth="401" frameHeight="405"/>
+	<SubTexture name="Petula Left Mad0011" x="2857" y="409" width="395" height="405" frameX="-6" frameY="0" frameWidth="401" frameHeight="405"/>
+	<SubTexture name="Petula Left Mad0012" x="2857" y="409" width="395" height="405" frameX="-6" frameY="0" frameWidth="401" frameHeight="405"/>
+	<SubTexture name="Petula Left Mad0013" x="2857" y="409" width="395" height="405" frameX="-6" frameY="0" frameWidth="401" frameHeight="405"/>
+	<SubTexture name="Petula Right0000" x="3254" y="409" width="419" height="407" pivotX="283.1" pivotY="414.95"/>
+	<SubTexture name="Petula Right0001" x="3254" y="409" width="419" height="407"/>
+	<SubTexture name="Petula Right0002" x="3675" y="409" width="419" height="406" frameX="0" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right0003" x="3675" y="409" width="419" height="406" frameX="0" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right0004" x="3675" y="409" width="419" height="406" frameX="0" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right0005" x="3675" y="409" width="419" height="406" frameX="0" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right0006" x="3675" y="409" width="419" height="406" frameX="0" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right0007" x="3675" y="409" width="419" height="406" frameX="0" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right0008" x="3675" y="409" width="419" height="406" frameX="0" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right0009" x="3675" y="409" width="419" height="406" frameX="0" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right0010" x="3675" y="409" width="419" height="406" frameX="0" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right0011" x="3675" y="409" width="419" height="406" frameX="0" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right0012" x="3675" y="409" width="419" height="406" frameX="0" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right0013" x="3675" y="409" width="419" height="406" frameX="0" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right Mad0000" x="0" y="818" width="419" height="407" pivotX="283.15" pivotY="413.8"/>
+	<SubTexture name="Petula Right Mad0001" x="0" y="818" width="419" height="407"/>
+	<SubTexture name="Petula Right Mad0002" x="421" y="818" width="405" height="405" frameX="-14" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right Mad0003" x="828" y="818" width="405" height="405" frameX="-14" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right Mad0004" x="828" y="818" width="405" height="405" frameX="-14" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right Mad0005" x="1235" y="818" width="412" height="405" frameX="-7" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right Mad0006" x="1235" y="818" width="412" height="405" frameX="-7" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right Mad0007" x="1235" y="818" width="412" height="405" frameX="-7" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right Mad0008" x="1235" y="818" width="412" height="405" frameX="-7" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right Mad0009" x="1235" y="818" width="412" height="405" frameX="-7" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right Mad0010" x="1235" y="818" width="412" height="405" frameX="-7" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right Mad0011" x="1235" y="818" width="412" height="405" frameX="-7" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right Mad0012" x="1235" y="818" width="412" height="405" frameX="-7" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Right Mad0013" x="1235" y="818" width="412" height="405" frameX="-7" frameY="-1" frameWidth="419" frameHeight="407"/>
+	<SubTexture name="Petula Up0000" x="1649" y="818" width="396" height="407" pivotX="260.35" pivotY="427.1" frameX="0" frameY="-13" frameWidth="396" frameHeight="420"/>
+	<SubTexture name="Petula Up0001" x="1649" y="818" width="396" height="407" frameX="0" frameY="-13" frameWidth="396" frameHeight="420"/>
+	<SubTexture name="Petula Up0002" x="2047" y="818" width="391" height="420" frameX="-4" frameY="0" frameWidth="396" frameHeight="420"/>
+	<SubTexture name="Petula Up0003" x="2047" y="818" width="391" height="420" frameX="-4" frameY="0" frameWidth="396" frameHeight="420"/>
+	<SubTexture name="Petula Up0004" x="2047" y="818" width="391" height="420" frameX="-4" frameY="0" frameWidth="396" frameHeight="420"/>
+	<SubTexture name="Petula Up0005" x="2047" y="818" width="391" height="420" frameX="-4" frameY="0" frameWidth="396" frameHeight="420"/>
+	<SubTexture name="Petula Up0006" x="2047" y="818" width="391" height="420" frameX="-4" frameY="0" frameWidth="396" frameHeight="420"/>
+	<SubTexture name="Petula Up0007" x="2047" y="818" width="391" height="420" frameX="-4" frameY="0" frameWidth="396" frameHeight="420"/>
+	<SubTexture name="Petula Up0008" x="2047" y="818" width="391" height="420" frameX="-4" frameY="0" frameWidth="396" frameHeight="420"/>
+	<SubTexture name="Petula Up0009" x="2047" y="818" width="391" height="420" frameX="-4" frameY="0" frameWidth="396" frameHeight="420"/>
+	<SubTexture name="Petula Up0010" x="2047" y="818" width="391" height="420" frameX="-4" frameY="0" frameWidth="396" frameHeight="420"/>
+	<SubTexture name="Petula Up0011" x="2047" y="818" width="391" height="420" frameX="-4" frameY="0" frameWidth="396" frameHeight="420"/>
+	<SubTexture name="Petula Up0012" x="2047" y="818" width="391" height="420" frameX="-4" frameY="0" frameWidth="396" frameHeight="420"/>
+	<SubTexture name="Petula Up0013" x="2047" y="818" width="391" height="420" frameX="-4" frameY="0" frameWidth="396" frameHeight="420"/>
+	<SubTexture name="Petula Up Mad0000" x="2440" y="818" width="392" height="416" pivotX="256.85" pivotY="430.75" frameX="0" frameY="-7" frameWidth="392" frameHeight="423"/>
+	<SubTexture name="Petula Up Mad0001" x="2440" y="818" width="392" height="416" frameX="0" frameY="-7" frameWidth="392" frameHeight="423"/>
+	<SubTexture name="Petula Up Mad0002" x="2834" y="818" width="380" height="423" frameX="-11" frameY="0" frameWidth="392" frameHeight="423"/>
+	<SubTexture name="Petula Up Mad0003" x="3216" y="818" width="379" height="423" frameX="-12" frameY="0" frameWidth="392" frameHeight="423"/>
+	<SubTexture name="Petula Up Mad0004" x="3216" y="818" width="379" height="423" frameX="-12" frameY="0" frameWidth="392" frameHeight="423"/>
+	<SubTexture name="Petula Up Mad0005" x="3597" y="818" width="385" height="423" frameX="-6" frameY="0" frameWidth="392" frameHeight="423"/>
+	<SubTexture name="Petula Up Mad0006" x="3597" y="818" width="385" height="423" frameX="-6" frameY="0" frameWidth="392" frameHeight="423"/>
+	<SubTexture name="Petula Up Mad0007" x="3597" y="818" width="385" height="423" frameX="-6" frameY="0" frameWidth="392" frameHeight="423"/>
+	<SubTexture name="Petula Up Mad0008" x="3597" y="818" width="385" height="423" frameX="-6" frameY="0" frameWidth="392" frameHeight="423"/>
+	<SubTexture name="Petula Up Mad0009" x="3597" y="818" width="385" height="423" frameX="-6" frameY="0" frameWidth="392" frameHeight="423"/>
+	<SubTexture name="Petula Up Mad0010" x="3597" y="818" width="385" height="423" frameX="-6" frameY="0" frameWidth="392" frameHeight="423"/>
+	<SubTexture name="Petula Up Mad0011" x="3597" y="818" width="385" height="423" frameX="-6" frameY="0" frameWidth="392" frameHeight="423"/>
+	<SubTexture name="Petula Up Mad0012" x="3597" y="818" width="385" height="423" frameX="-6" frameY="0" frameWidth="392" frameHeight="423"/>
+	<SubTexture name="Petula Up Mad0013" x="3597" y="818" width="385" height="423" frameX="-6" frameY="0" frameWidth="392" frameHeight="423"/>
+</TextureAtlas>

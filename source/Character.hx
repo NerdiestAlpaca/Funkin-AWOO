@@ -137,6 +137,7 @@ class Character extends FlxSprite
 				addOffset("singRIGHT", 0, 27);
 				addOffset("singLEFT", -10, 10);
 				addOffset("singDOWN", 0, -30);
+			playAnim('idle');
 			case 'quincy':
 					tex = Paths.getSparrowAtlas('characters/QuincySprites');
 					frames = tex;
@@ -151,6 +152,31 @@ class Character extends FlxSprite
 					addOffset("singRIGHT", 0, -302);
 					addOffset("singLEFT", -22, -292);
 					addOffset("singDOWN", 0, -302);
+
+				playAnim('idle');
+				case 'petula':
+					tex = Paths.getSparrowAtlas('characters/Petula');
+					frames = tex;
+					animation.addByPrefix('idle', 'Petula Idle', 24);
+					animation.addByPrefix('singUP', 'Petula Up', 24);
+					animation.addByPrefix('singRIGHT', 'Petula Right', 24);
+					animation.addByPrefix('singDOWN', 'Petula Down', 24);
+					animation.addByPrefix('singLEFT', 'Petula Left', 24);
+					animation.addByPrefix('singUP-alt', 'Petula Up Mad', 24, false);
+					animation.addByPrefix('singDOWN-alt', 'Petula Down Mad', 24, false);
+					animation.addByPrefix('singLEFT-alt', 'Petula Left Mad', 24, false);
+					animation.addByPrefix('singRIGHT-alt', 'Petula Right Mad', 24, false);
+
+	
+					addOffset('idle', 0,-302);
+					addOffset("singUP", 0, -282);
+					addOffset("singRIGHT", 0, -302);
+					addOffset("singLEFT", -22, -292);
+					addOffset("singDOWN", 0, -302);
+					addOffset("singUP-alt", 0, -282);
+					addOffset("singRIGHT-alt", 0, -302);
+					addOffset("singLEFT-alt", -22, -292);
+					addOffset("singDOWN-alt", 0, -302);
 
 				playAnim('idle');
 			case 'spooky':
