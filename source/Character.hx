@@ -162,21 +162,21 @@ class Character extends FlxSprite
 					animation.addByPrefix('singRIGHT', 'Petula Right', 24);
 					animation.addByPrefix('singDOWN', 'Petula Down', 24);
 					animation.addByPrefix('singLEFT', 'Petula Left', 24);
-					animation.addByPrefix('singUP-alt', 'Petula Up Mad', 24, false);
-					animation.addByPrefix('singDOWN-alt', 'Petula Down Mad', 24, false);
-					animation.addByPrefix('singLEFT-alt', 'Petula Left Mad', 24, false);
-					animation.addByPrefix('singRIGHT-alt', 'Petula Right Mad', 24, false);
+					animation.addByPrefix('singUP-alt', 'Petula UMad', 24, false);
+					animation.addByPrefix('singDOWN-alt', 'Petula DMad', 24, false);
+					animation.addByPrefix('singLEFT-alt', 'Petula LMad', 24, false);
+					animation.addByPrefix('singRIGHT-alt', 'Petula RMad', 24, false);
 
-	
+					
 					addOffset('idle', 0,-302);
-					addOffset("singUP", 0, -282);
-					addOffset("singRIGHT", 0, -302);
-					addOffset("singLEFT", -22, -292);
-					addOffset("singDOWN", 0, -302);
-					addOffset("singUP-alt", 0, -282);
-					addOffset("singRIGHT-alt", 0, -302);
-					addOffset("singLEFT-alt", -22, -292);
-					addOffset("singDOWN-alt", 0, -302);
+					addOffset('singUP', -49, -289);
+					addOffset('singRIGHT', -43, -301);
+					addOffset('singLEFT',-56, -302);
+					addOffset('singDOWN', -56, -302);
+					addOffset("singUP-alt", -55, -286);
+					addOffset("singRIGHT-alt", -49, -302);
+					addOffset("singLEFT-alt", -57, -302);
+					addOffset("singDOWN-alt", -42, -302);
 
 				playAnim('idle');
 			case 'spooky':
