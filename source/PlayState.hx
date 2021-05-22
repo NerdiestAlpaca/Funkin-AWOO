@@ -745,8 +745,8 @@ class PlayState extends MusicBeatState
 							add(audienceBoppers);
 						}
 				}
-			}
-			default:
+			
+	}		default:
 			{
 					defaultCamZoom = 0.9;
 					curStage = 'stage';
