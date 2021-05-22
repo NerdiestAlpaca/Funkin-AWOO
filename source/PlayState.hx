@@ -746,8 +746,8 @@ class PlayState extends MusicBeatState
 						confetti.animation.play("idle");
 						confetti.antialiasing = true;{
            					add(confetti);
-        }
-}
+						}
+			}
 			default:
 			{
 					defaultCamZoom = 0.9;
