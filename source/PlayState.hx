@@ -1155,7 +1155,7 @@ class PlayState extends MusicBeatState
 			lpscutscene.frames = Paths.getSparrowAtlas('paw/cutscene');
 			lpscutscene.animation.addByPrefix('idle', 'testcutscene', 24, false);
 	
-			if SONG.song.toLowerCase() == 'mischief')
+			if (SONG.song.toLowerCase() == 'mischief')
 			{
 				remove(black);
 			}
