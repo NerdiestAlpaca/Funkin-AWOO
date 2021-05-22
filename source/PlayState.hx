@@ -694,39 +694,48 @@ class PlayState extends MusicBeatState
 					{	
 						curStage = 'pawtucket';
 	
-						defaultCamZoom = 0.80;
+						defaultCamZoom = 0.90;
 	
-						var bg:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('petshop/bgWalls','paw'));
+						var bg:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('petshop/bgWalls');
 						bg.antialiasing = true;
 						bg.scrollFactor.set(0.2, 0.2);
 						bg.active = false;
 						bg.setGraphicSize(Std.int(bg.width * 0.8));
 						bg.updateHitbox();
-						add(bg);
-	
+						add(bg, BEHIND_ALL);
+
 						upperBoppers = new FlxSprite(-240, -90);
-						upperBoppers.frames = Paths.getSparrowAtlas('petshop/upperBop','paw');
+						upperBoppers.frames = Paths.getSparrowAtlas('petshop/upperBop');
 						upperBoppers.animation.addByPrefix('bop', "Upper Crowd Bob", 24, false);
 						upperBoppers.antialiasing = true;
 						upperBoppers.scrollFactor.set(0.33, 0.33);
 						upperBoppers.setGraphicSize(Std.int(upperBoppers.width * 0.85));
 						upperBoppers.updateHitbox();
-						if(FlxG.save.data.distractions){
-							add(upperBoppers);
+							add(upperBoppers, BEHIND_ALL);
 						}
 	
 	
-						var bgEscalator:FlxSprite = new FlxSprite(-1100, -600).loadGraphic(Paths.image('petshop/bgEscalator','paw'));
-						bgEscalator.antialiasing = true;
-						bgEscalator.scrollFactor.set(0.3, 0.3);
-						bgEscalator.active = false;
-						bgEscalator.setGraphicSize(Std.int(bgEscalator.width * 0.9));
-						bgEscalator.updateHitbox();
-						add(bgEscalator);
+                        var railing = new FlxSprite(-400, 0).loadGraphic('petshop/bgEscalator');
+                        railing.setGraphicSize(Std.int(railing.width * 0.65));
+                        railing.scrollFactor.set(0.3, 0.3);
+                        railing.updateHitbox();
+                        railing.antialiasing = true;
+                        addSprite(railing,  BEHIND_ALL);
+
+						var fgStage:FlxSprite = new FlxSprite(-600, 700).loadGraphic(Paths.image('petshop/fgstage');
+						fgStage.active = false;
+						fgStage.antialiasing = true;
+						add(fgStage, BEHIND_ALL);
 	
-	
-						var audienceBoppers:FlxSprite = new FlxSprite(-240, -90);
-						audienceBoppers.frames = Paths.getSparrowAtlas('petshop/audienceBop','paw');
+						var confetti:FlxSprite = new FlxSprite(-240, -90);
+						confetti.frames = Paths.getSparrowAtlas('petshop/confetti');
+						confetti.animation.addByPrefix('idle', 'confetti whoosh', 24, false);
+						confetti.antialiasing = true;
+						if(FlxG.save.data.distractions){
+							add(confetti);
+						}
+                        var audienceBoppers:FlxSprite = new FlxSprite(-840, 0);
+						audienceBoppers.frames = Paths.getSparrowAtlas('petshop/audienceBop');
 						audienceBoppers.animation.addByPrefix('bop', "audience bob", 24, false);
 						audienceBoppers.antialiasing = true;
 						audienceBoppers.scrollFactor.set(0.33, 0.33);
@@ -734,20 +743,6 @@ class PlayState extends MusicBeatState
 						audienceBoppers.updateHitbox();
 						if(FlxG.save.data.distractions){
 							add(audienceBoppers);
-						}
-	
-	
-						var fgStage:FlxSprite = new FlxSprite(-600, 700).loadGraphic(Paths.image('petshop/fgstage','paw'));
-						fgStage.active = false;
-						fgStage.antialiasing = true;
-						add(fgStage);
-	
-						var confetti:FlxSprite = new FlxSprite(-240, -90);
-						confetti.frames = Paths.getSparrowAtlas('petshop/confetti','paw');
-						confetti.animation.addByPrefix('idle', 'confetti whoosh', 24, false);
-						confetti.antialiasing = true;
-						if(FlxG.save.data.distractions){
-							add(confetti);
 						}
 				}
 			default:
