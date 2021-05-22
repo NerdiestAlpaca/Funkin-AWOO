@@ -701,32 +701,32 @@ class PlayState extends MusicBeatState
 						bg.scrollFactor.set(0.2, 0.2);
 						bg.active = false;
 						bg.setGraphicSize(Std.int(bg.width * 0.8));
-						bg.updateHitbox();
+						bg.updateHitbox();{
 						add(bg, BEHIND_ALL);
-
+						}
 						upperBoppers = new FlxSprite(-240, -90);
 						upperBoppers.frames = Paths.getSparrowAtlas('petshop/upperBop');
 						upperBoppers.animation.addByPrefix('bop', "Upper Crowd Bob", 24, false);
 						upperBoppers.antialiasing = true;
 						upperBoppers.scrollFactor.set(0.33, 0.33);
 						upperBoppers.setGraphicSize(Std.int(upperBoppers.width * 0.85));
-						upperBoppers.updateHitbox();
+						upperBoppers.updateHitbox();{
 							add(upperBoppers, BEHIND_ALL);
 						}
 	
 	
-                        var railing = new FlxSprite(-400, 0).loadGraphic('petshop/bgEscalator');
-                        railing.setGraphicSize(Std.int(railing.width * 0.65));
-                        railing.scrollFactor.set(0.3, 0.3);
-                        railing.updateHitbox();
-                        railing.antialiasing = true;
-                        addSprite(railing,  BEHIND_ALL);
-
-						var fgStage:FlxSprite = new FlxSprite(-600, 700).loadGraphic(Paths.image('petshop/fgstage'));
+                        		var railing = new FlxSprite(-400, 0).loadGraphic('petshop/bgEscalator');
+                        			railing.setGraphicSize(Std.int(railing.width * 0.65));
+                        			railing.scrollFactor.set(0.3, 0.3);
+                        			railing.updateHitbox();
+						railing.antialiasing = true;{
+                        			addSprite(railing,  BEHIND_ALL);
+						}
+					var fgStage:FlxSprite = new FlxSprite(-600, 700).loadGraphic(Paths.image('petshop/fgstage'));
 						fgStage.active = false;
-						fgStage.antialiasing = true;
+						fgStage.antialiasing = true;{
 						add(fgStage, BEHIND_ALL);
-	
+						}
 						var confetti:FlxSprite = new FlxSprite(-240, -90);
 						confetti.frames = Paths.getSparrowAtlas('petshop/confetti');
 						confetti.animation.addByPrefix('idle', 'confetti whoosh', 24, false);
@@ -745,6 +745,7 @@ class PlayState extends MusicBeatState
 							add(audienceBoppers);
 						}
 				}
+}
 			default:
 			{
 					defaultCamZoom = 0.9;
