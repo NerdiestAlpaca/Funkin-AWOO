@@ -743,8 +743,8 @@ class PlayState extends MusicBeatState
         					var confetti:FlxSprite = new FlxSprite(-240, -90);
         					confetti.frames = Paths.getSparrowAtlas('petshop/confetti');
         					confetti.animation.addByPrefix('idle', 'confetti whoosh', 24, true);
-							confetti.animation.play("idle");
-        					confetti.antialiasing = true;
+						confetti.animation.play("idle");
+						confetti.antialiasing = true;{
            					add(confetti);
         }
 }
