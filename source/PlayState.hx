@@ -694,13 +694,13 @@ class PlayState extends MusicBeatState
     {	
         					curStage = 'pawtucket';
 
-        					defaultCamZoom = 0.80;
+        					defaultCamZoom = 0.90;
 
         					var walls:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('petshop/bgWalls'));
         					walls.antialiasing = true;
         					walls.scrollFactor.set(0.2, 0.2);
-							walls.setGraphicSize(Std.int(.width * 0.8));
         					walls.active = false;
+							walls.setGraphicSize(Std.int(walls.width * 0.85));
         					walls.updateHitbox();
         					add(walls);
 
