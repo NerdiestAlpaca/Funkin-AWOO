@@ -1028,6 +1028,8 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'thorns':
 					schoolIntro(doof);
+				case 'our world':
+					petshop(doof);
 				default:
 					startCountdown();
 			}
@@ -1139,6 +1141,90 @@ class PlayState extends MusicBeatState
 	#if windows
 	public static var luaModchart:ModchartState = null;
 	#end
+
+	function petshop(?dialogueBox:DialogueBox):Void
+		{
+			var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
+			black.scrollFactor.set();
+			add(black);
+	
+			var red:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, 0xFFff1b31);
+			red.scrollFactor.set();
+	
+			var lpscutscene:FlxSprite = new FlxSprite();
+			lpscutscene.frames = Paths.getSparrowAtlas('paw/cutscene');
+			lpscutscene.animation.addByPrefix('idle', 'testcutscene', 24, false);
+	
+			if SONG.song.toLowerCase() == 'mischief')
+			{
+				remove(black);
+			}
+	
+			new FlxTimer().start(0.3, function(tmr:FlxTimer)
+			{
+				black.alpha -= 0.15;
+	
+				if (black.alpha > 0)
+				{
+					tmr.reset(0.3);
+				}
+				else
+				{
+					if (dialogueBox != null)
+					{
+						inCutscene = true;
+	
+						if (SONG.song.toLowerCase() == 'our world')
+						{
+							add(lpscutscene);
+							lpscutscene.alpha = 1;
+							new FlxTimer().start(0.3, function(swagTimer:FlxTimer)
+							{
+								lpscutscene.alpha += 0.15;
+								if (lpscutscene.alpha < 1)
+								{
+									swagTimer.reset();
+								}
+								else
+								{
+									lpscutscene.animation.play('idle');
+									FlxG.sound.play(Paths.sound('carpass0'), 1, false, null, true, function()
+									{
+										remove(lpscutscene);
+										remove(red);
+										FlxG.camera.fade(FlxColor.WHITE, 0.01, true, function()
+										{
+											add(dialogueBox);
+										}, true);
+									});
+									new FlxTimer().start(3.2, function(deadTime:FlxTimer)
+									{
+										FlxG.camera.fade(FlxColor.WHITE, 1.6, false);
+									});
+								}
+							});
+						}
+						else
+						{
+							add(dialogueBox);
+						}
+					}
+					else
+						startCountdown();
+	
+					remove(black);
+				}
+			});
+		}
+	
+		var startTimer:FlxTimer;
+		var perfectMode:Bool = false;
+	
+		var luaWiggles:Array<WiggleEffect> = [];
+	
+		#if windows
+		public static var luaModchart:ModchartState = null;
+		#end
 
 	function startCountdown():Void
 	{
