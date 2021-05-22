@@ -690,6 +690,66 @@ class PlayState extends MusicBeatState
 	
 						add(stageCurtains);
 				}
+				case 'pawtucket': 
+					{	
+						curStage = 'pawtucket';
+	
+						defaultCamZoom = 0.80;
+	
+						var bg:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('petshop/bgWalls','paw'));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.2, 0.2);
+						bg.active = false;
+						bg.setGraphicSize(Std.int(bg.width * 0.8));
+						bg.updateHitbox();
+						add(bg);
+	
+						upperBoppers = new FlxSprite(-240, -90);
+						upperBoppers.frames = Paths.getSparrowAtlas('petshop/upperBop','paw');
+						upperBoppers.animation.addByPrefix('bop', "Upper Crowd Bob", 24, false);
+						upperBoppers.antialiasing = true;
+						upperBoppers.scrollFactor.set(0.33, 0.33);
+						upperBoppers.setGraphicSize(Std.int(upperBoppers.width * 0.85));
+						upperBoppers.updateHitbox();
+						if(FlxG.save.data.distractions){
+							add(upperBoppers);
+						}
+	
+	
+						var bgEscalator:FlxSprite = new FlxSprite(-1100, -600).loadGraphic(Paths.image('petshop/bgEscalator','paw'));
+						bgEscalator.antialiasing = true;
+						bgEscalator.scrollFactor.set(0.3, 0.3);
+						bgEscalator.active = false;
+						bgEscalator.setGraphicSize(Std.int(bgEscalator.width * 0.9));
+						bgEscalator.updateHitbox();
+						add(bgEscalator);
+	
+	
+						audienceBoppers = new FlxSprite(-240, -90);
+						audienceBoppers.frames = Paths.getSparrowAtlas('petshop/audienceBop','paw');
+						audienceBoppers.animation.addByPrefix('bop', "audience bob", 24, false);
+						audienceBoppers.antialiasing = true;
+						audienceBoppers.scrollFactor.set(0.33, 0.33);
+						audienceBoppers.setGraphicSize(Std.int(audienceBoppers.width * 1));
+						audienceBoppers.updateHitbox();
+						if(FlxG.save.data.distractions){
+							add(audienceBoppers);
+						}
+	
+	
+						var fgStage:FlxSprite = new FlxSprite(-600, 700).loadGraphic(Paths.image('petshop/fgstage','paw'));
+						fgStage.active = false;
+						fgStage.antialiasing = true;
+						add(fgStage);
+	
+						confetti = new FlxSprite(-240, -90);
+						confetti.frames = Paths.getSparrowAtlas('petshop/confetti','paw');
+						confetti.animation.addByPrefix('idle', 'confetti whoosh', 24, false);
+						confetti.antialiasing = true;
+						if(FlxG.save.data.distractions){
+							add(confetti);
+						}
+				}
 			default:
 			{
 					defaultCamZoom = 0.9;
@@ -794,10 +854,13 @@ class PlayState extends MusicBeatState
 
 			case 'mall':
 				boyfriend.x += 200;
-
 			case 'mallEvil':
 				boyfriend.x += 320;
 				dad.y -= 80;
+			case 'pawtucket'
+				boyfriend.x += 200;
+				boyfriend.y += 220;
+				dad.y += 280;
 			case 'school':
 				boyfriend.x += 200;
 				boyfriend.y += 220;
