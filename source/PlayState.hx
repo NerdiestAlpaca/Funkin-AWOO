@@ -690,61 +690,65 @@ class PlayState extends MusicBeatState
 	
 						add(stageCurtains);
 				}
-				case 'pawtucket': 
-					{	
-						curStage = 'pawtucket';
-	
-						defaultCamZoom = 0.90;
-	
-						var bg:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('petshop/bgWalls'));
-						bg.antialiasing = true;
-						bg.scrollFactor.set(0.2, 0.2);
-						bg.active = false;
-						bg.setGraphicSize(Std.int(bg.width * 0.8));
-						bg.updateHitbox();{
-						add(bg);
-						}
-						upperBoppers = new FlxSprite(-240, -90);
-						upperBoppers.frames = Paths.getSparrowAtlas('petshop/upperBop');
-						upperBoppers.animation.addByPrefix('bop', "Upper Crowd Bob", 24, false);
-						upperBoppers.antialiasing = true;
-						upperBoppers.scrollFactor.set(0.33, 0.33);
-						upperBoppers.setGraphicSize(Std.int(upperBoppers.width * 0.85));
-						upperBoppers.updateHitbox();{
-							add(upperBoppers);
-						}
-	
-	
-                        		var railing = new FlxSprite(-400, 0).loadGraphic('petshop/bgEscalator');
-                        			railing.setGraphicSize(Std.int(railing.width * 0.65));
-                        			railing.scrollFactor.set(0.3, 0.3);
-                        			railing.updateHitbox();
-						railing.antialiasing = true;{
-                        			add(railing);
-						}
-					var fgStage:FlxSprite = new FlxSprite(-600, 700).loadGraphic(Paths.image('petshop/fgstage'));
-						fgStage.active = false;
-						fgStage.antialiasing = true;{
-						add(fgStage);
-						}
-						var confetti:FlxSprite = new FlxSprite(-240, -90);
-						confetti.frames = Paths.getSparrowAtlas('petshop/confetti');
-						confetti.animation.addByPrefix('idle', 'confetti whoosh', 24, false);
-						confetti.antialiasing = true;
-						if(FlxG.save.data.distractions){
-							add(confetti);
-						}
-                        var audienceBoppers:FlxSprite = new FlxSprite(-840, 0);
-						audienceBoppers.frames = Paths.getSparrowAtlas('petshop/audienceBop');
-						audienceBoppers.animation.addByPrefix('bop', "audience bob", 24, false);
-						audienceBoppers.antialiasing = true;
-						audienceBoppers.scrollFactor.set(0.33, 0.33);
-						audienceBoppers.setGraphicSize(Std.int(audienceBoppers.width * 1));
-						audienceBoppers.updateHitbox();
-						if(FlxG.save.data.distractions){
-							add(audienceBoppers);
-						}
-				}
+			case 'pawtucket': 
+    {	
+        					curStage = 'pawtucket';
+
+        					defaultCamZoom = 0.80;
+
+        					var walls:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('petshop/bgWalls'));
+        					walls.antialiasing = true;
+        					walls.scrollFactor.set(0.2, 0.2);
+        					walls.active = false;
+        					walls.setGraphicSize(Std.int(.width * 0.8));
+        					walls.updateHitbox();
+        					add(walls);
+
+        					var uppercrowd:FlxSprite = new FlxSprite(-240, -90);
+        					uppercrowd.frames = Paths.getSparrowAtlas('petshop/upperBop','paw');
+        					uppercrowd.animation.addByPrefix('bop', "Upper Crowd Bob", 24, false);
+        					uppercrowd.antialiasing = true;
+        					uppercrowd.scrollFactor.set(0.33, 0.33);
+       					 	uppercrowd.setGraphicSize(Std.int(uppercrowd.width * 0.85));
+        					uppercrowd.updateHitbox();
+        					if(FlxG.save.data.distractions){
+           					add(uppercrowd);
+        }
+
+
+        					var Escalator:FlxSprite = new FlxSprite(-1100, -600).loadGraphic(Paths.image('petshop/bgEscalator'));
+        					Escalator.antialiasing = true;
+        					Escalator.scrollFactor.set(0.3, 0.3);
+        					Escalator.active = false;
+        					Escalator.setGraphicSize(Std.int(Escalator.width * 0.9));
+        					Escalator.updateHitbox();
+        					add(Escalator);
+
+
+        					var fgStage:FlxSprite = new FlxSprite(-600, 700).loadGraphic(Paths.image('petshop/fgstage'));
+        					fgStage.active = false;
+        					fgStage.antialiasing = true;
+        					add(fgStage);
+
+						var audienceBoppers = new FlxSprite(-240, -90);
+        					audienceBoppers.frames = Paths.getSparrowAtlas('petshop/audienceBop');
+        					audienceBoppers.animation.addByPrefix('bop', "audience bob", 24, false);
+        					audienceBoppers.antialiasing = true;
+        					audienceBoppers.scrollFactor.set(0.33, 0.33);
+        					audienceBoppers.setGraphicSize(Std.int(audienceBoppers.width * 1));
+        					audienceBoppers.updateHitbox();
+        					if(FlxG.save.data.distractions){
+            					add(audienceBoppers);
+        }
+		
+        					var confetti:FlxSprite = new FlxSprite(-240, -90);
+        					confetti.frames = Paths.getSparrowAtlas('petshop/confetti');
+        					confetti.animation.addByPrefix('idle', 'confetti whoosh', 24, false);
+        					confetti.antialiasing = true;
+        					if(FlxG.save.data.distractions){
+           					add(confetti);
+        }
+}
 			default:
 			{
 					defaultCamZoom = 0.9;
@@ -852,11 +856,10 @@ class PlayState extends MusicBeatState
 			case 'mallEvil':
 				boyfriend.x += 320;
 				dad.y -= 80;
-			case 'pawtucket':
+			case 'pawtucket'
 				boyfriend.x += 200;
 				boyfriend.y += 220;
 				dad.y += 280;
-				gf.y += 300;
 			case 'school':
 				boyfriend.x += 200;
 				boyfriend.y += 220;
