@@ -704,9 +704,10 @@ class PlayState extends MusicBeatState
         					walls.updateHitbox();
         					add(walls);
 
-        					var uppercrowd:FlxSprite = new FlxSprite(-240, -90);
+        					var uppercrowd:FlxSprite = new FlxSprite(-240, -20);
         					uppercrowd.frames = Paths.getSparrowAtlas('petshop/upperBop');
-        					uppercrowd.animation.addByPrefix('bop', "Upper Crowd Bob", 24, false);
+        					uppercrowd.animation.addByPrefix('idle', "Upper Crowd Bob", 24, false);
+							uppercrowd.animation.play("idle");
         					uppercrowd.antialiasing = true;
         					uppercrowd.scrollFactor.set(0.33, 0.33);
        					 	uppercrowd.setGraphicSize(Std.int(uppercrowd.width * 0.85));
@@ -716,7 +717,7 @@ class PlayState extends MusicBeatState
         }
 
 
-        					var Escalator:FlxSprite = new FlxSprite(-1100, -600).loadGraphic(Paths.image('petshop/bgEscalator'));
+        					var Escalator:FlxSprite = new FlxSprite(-400, 0).loadGraphic(Paths.image('petshop/bgEscalator'));
         					Escalator.antialiasing = true;
         					Escalator.scrollFactor.set(0.3, 0.3);
         					Escalator.active = false;
@@ -730,7 +731,7 @@ class PlayState extends MusicBeatState
         					fgStage.antialiasing = true;
         					add(fgStage);
 
-						var audienceBoppers = new FlxSprite(-240, -90);
+						var audienceBoppers = new FlxSprite(-840, 0);
         					audienceBoppers.frames = Paths.getSparrowAtlas('petshop/audienceBop');
         					audienceBoppers.animation.addByPrefix('bop', "audience bob", 24, false);
         					audienceBoppers.antialiasing = true;
@@ -857,10 +858,7 @@ class PlayState extends MusicBeatState
 				boyfriend.x += 320;
 				dad.y -= 80;
 			case 'pawtucket':
-				boyfriend.x += 200;
-				boyfriend.y += 220;
-				dad.y += 280;
-				gf.y += 280;
+				boyfriend.x += 100;
 			case 'school':
 				boyfriend.x += 200;
 				boyfriend.y += 220;
@@ -988,7 +986,7 @@ class PlayState extends MusicBeatState
 		add(healthBar);
 
 		// Add Kade Engine watermark
-		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " " + (storyDifficulty == 2 ? "Hard" : storyDifficulty == 1 ? "Normal" : "Easy") + (Main.watermarks ? " - AWOO " + MainMenuState.kadeEngineVer : ""), 16);
+		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " " + (storyDifficulty == 2 ? "Hard" : storyDifficulty == 1 ? "Normal" : "Easy") + (Main.watermarks ? " - AWOO BETA - KE " + MainMenuState.kadeEngineVer : ""), 16);
 		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		kadeEngineWatermark.scrollFactor.set();
 		add(kadeEngineWatermark);
