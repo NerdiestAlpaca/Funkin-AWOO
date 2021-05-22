@@ -725,7 +725,7 @@ class PlayState extends MusicBeatState
 						add(bgEscalator);
 	
 	
-						audienceBoppers = new FlxSprite(-240, -90);
+						var audienceBoppers:FlxSprite = new FlxSprite(-240, -90);
 						audienceBoppers.frames = Paths.getSparrowAtlas('petshop/audienceBop','paw');
 						audienceBoppers.animation.addByPrefix('bop', "audience bob", 24, false);
 						audienceBoppers.antialiasing = true;
@@ -742,7 +742,7 @@ class PlayState extends MusicBeatState
 						fgStage.antialiasing = true;
 						add(fgStage);
 	
-						confetti = new FlxSprite(-240, -90);
+						var confetti:FlxSprite = new FlxSprite(-240, -90);
 						confetti.frames = Paths.getSparrowAtlas('petshop/confetti','paw');
 						confetti.animation.addByPrefix('idle', 'confetti whoosh', 24, false);
 						confetti.antialiasing = true;
