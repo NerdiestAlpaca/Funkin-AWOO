@@ -702,7 +702,7 @@ class PlayState extends MusicBeatState
 						bg.active = false;
 						bg.setGraphicSize(Std.int(bg.width * 0.8));
 						bg.updateHitbox();{
-						add(bg, BEHIND_ALL);
+						add(bg);
 						}
 						upperBoppers = new FlxSprite(-240, -90);
 						upperBoppers.frames = Paths.getSparrowAtlas('petshop/upperBop');
@@ -711,7 +711,7 @@ class PlayState extends MusicBeatState
 						upperBoppers.scrollFactor.set(0.33, 0.33);
 						upperBoppers.setGraphicSize(Std.int(upperBoppers.width * 0.85));
 						upperBoppers.updateHitbox();{
-							add(upperBoppers, BEHIND_ALL);
+							add(upperBoppers);
 						}
 	
 	
@@ -720,12 +720,12 @@ class PlayState extends MusicBeatState
                         			railing.scrollFactor.set(0.3, 0.3);
                         			railing.updateHitbox();
 						railing.antialiasing = true;{
-                        			addSprite(railing,  BEHIND_ALL);
+                        			add(railing);
 						}
 					var fgStage:FlxSprite = new FlxSprite(-600, 700).loadGraphic(Paths.image('petshop/fgstage'));
 						fgStage.active = false;
 						fgStage.antialiasing = true;{
-						add(fgStage, BEHIND_ALL);
+						add(fgStage);
 						}
 						var confetti:FlxSprite = new FlxSprite(-240, -90);
 						confetti.frames = Paths.getSparrowAtlas('petshop/confetti');
