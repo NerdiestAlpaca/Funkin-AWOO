@@ -699,13 +699,13 @@ class PlayState extends MusicBeatState
         					var walls:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('petshop/bgWalls'));
         					walls.antialiasing = true;
         					walls.scrollFactor.set(0.2, 0.2);
+							walls.setGraphicSize(Std.int(.width * 0.8));
         					walls.active = false;
-        					walls.setGraphicSize(Std.int(.width * 0.8));
         					walls.updateHitbox();
         					add(walls);
 
         					var uppercrowd:FlxSprite = new FlxSprite(-240, -90);
-        					uppercrowd.frames = Paths.getSparrowAtlas('petshop/upperBop','paw');
+        					uppercrowd.frames = Paths.getSparrowAtlas('petshop/upperBop');
         					uppercrowd.animation.addByPrefix('bop', "Upper Crowd Bob", 24, false);
         					uppercrowd.antialiasing = true;
         					uppercrowd.scrollFactor.set(0.33, 0.33);
