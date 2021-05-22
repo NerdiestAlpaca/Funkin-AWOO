@@ -696,7 +696,7 @@ class PlayState extends MusicBeatState
 	
 						defaultCamZoom = 0.90;
 	
-						var bg:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('petshop/bgWalls');
+						var bg:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('petshop/bgWalls'));
 						bg.antialiasing = true;
 						bg.scrollFactor.set(0.2, 0.2);
 						bg.active = false;
@@ -722,7 +722,7 @@ class PlayState extends MusicBeatState
                         railing.antialiasing = true;
                         addSprite(railing,  BEHIND_ALL);
 
-						var fgStage:FlxSprite = new FlxSprite(-600, 700).loadGraphic(Paths.image('petshop/fgstage');
+						var fgStage:FlxSprite = new FlxSprite(-600, 700).loadGraphic(Paths.image('petshop/fgstage'));
 						fgStage.active = false;
 						fgStage.antialiasing = true;
 						add(fgStage, BEHIND_ALL);
