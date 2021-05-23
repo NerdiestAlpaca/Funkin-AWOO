@@ -713,8 +713,6 @@ class PlayState extends MusicBeatState
        					 	uppercrowd.setGraphicSize(Std.int(uppercrowd.width * 0.7));
         					uppercrowd.updateHitbox();
            					add(uppercrowd);
-        }
-
 
         					var Escalator:FlxSprite = new FlxSprite(-400, 0).loadGraphic(Paths.image('petshop/bgEscalator'));
         					Escalator.antialiasing = true;
@@ -738,16 +736,14 @@ class PlayState extends MusicBeatState
 							audienceBoppers.scrollFactor.set(1.3, 1.3);
 							audienceBoppers.setGraphicSize(Std.int(audienceBoppers.width * 0.7));
 							audienceBoppers.updateHitbox();
-        }
 		
         					var confetti:FlxSprite = new FlxSprite(-240, -90);
         					confetti.frames = Paths.getSparrowAtlas('petshop/confetti');
         					confetti.animation.addByPrefix('idle', 'confetti whoosh', 24, true);
 							confetti.animation.play("idle");
         					confetti.antialiasing = true;
-           					add(confetti);
-        }
-}
+           					add(confetti);        				
+			}
 			default:
 			{
 					defaultCamZoom = 0.9;
