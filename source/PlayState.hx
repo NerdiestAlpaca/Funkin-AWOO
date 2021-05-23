@@ -168,8 +168,7 @@ class PlayState extends MusicBeatState
 	var songName:FlxText;
 	var upperBoppers:FlxSprite;
 	var bottomBoppers:FlxSprite;
-	var uppercrowd:FlxSprite;
-	var confetti:FlxSprite;
+	var uppercrowd:FlxSprite
 	var santa:FlxSprite;
 
 	var fc:Bool = true;
@@ -3501,7 +3500,6 @@ class PlayState extends MusicBeatState
 			case 'pawtucket':
 				if(FlxG.save.data.distractions){
 					uppercrowd.animation.play('idle', true);
-					confetti.animation.play('idle', true);
 				}
 			case 'limo':
 				if(FlxG.save.data.distractions){
