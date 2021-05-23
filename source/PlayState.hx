@@ -694,7 +694,7 @@ class PlayState extends MusicBeatState
     {	
         					curStage = 'pawtucket';
 
-        					defaultCamZoom = 0.90;
+        					defaultCamZoom = 0.85;
 
         					var walls:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('petshop/bgWalls'));
         					walls.antialiasing = true;
@@ -852,7 +852,8 @@ class PlayState extends MusicBeatState
 				boyfriend.x += 320;
 				dad.y -= 80;
 			case 'pawtucket':
-				boyfriend.x += 100;
+				boyfriend.x += 350;
+				gf.x += 150;
 			case 'school':
 				boyfriend.x += 200;
 				boyfriend.y += 220;
@@ -2099,12 +2100,15 @@ class PlayState extends MusicBeatState
 					case 'senpai-angry':
 						camFollow.y = dad.getMidpoint().y - 430;
 						camFollow.x = dad.getMidpoint().x - 100;
+					case 'savannah':
+						camFollow.y = dad.getMidpoint().y + 150;
+						camFollow.x = dad.getMidpoint().x + 250;	
 					case 'quincy':
 						camFollow.y = dad.getMidpoint().y + 150;
 						camFollow.x = dad.getMidpoint().x + 250;
 					case 'petula':
-							camFollow.y = dad.getMidpoint().y + 150;
-							camFollow.x = dad.getMidpoint().x + 250;
+						camFollow.y = dad.getMidpoint().y + 150;
+						camFollow.x = dad.getMidpoint().x + 250;				
 				}
 
 				if (dad.curCharacter == 'mom')

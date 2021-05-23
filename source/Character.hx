@@ -139,6 +139,22 @@ class Character extends FlxSprite
 				addOffset("singDOWN", 0, -30);
 				
 			playAnim('idle');
+			case 'savannah':
+				tex = Paths.getSparrowAtlas('characters/savannah');
+				frames = tex;
+				animation.addByPrefix('idle', 'Savannah Idle', 24);
+				animation.addByPrefix('singUP', 'Savannah Up', 24);
+				animation.addByPrefix('singRIGHT', 'Savannah Right', 24);
+				animation.addByPrefix('singDOWN', 'Savannah Down', 24);
+				animation.addByPrefix('singLEFT', 'Savannah Left', 24);
+			
+				addOffset('idle', 0,-290);
+				addOffset('singUP', -10, -271);
+				addOffset('singRIGHT', 1, -285);
+				addOffset('singLEFT',-1, -281);
+				addOffset('singDOWN', 1, -291);
+			
+			playAnim('idle');
 			case 'quincy':
 					tex = Paths.getSparrowAtlas('characters/QuincySprites');
 					frames = tex;
