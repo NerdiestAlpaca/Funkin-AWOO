@@ -15,5 +15,6 @@ bf-pixel
 senpai
 senpai-angry
 spirit
+savannah
 quincy
 petula
