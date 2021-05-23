@@ -168,6 +168,8 @@ class PlayState extends MusicBeatState
 	var songName:FlxText;
 	var upperBoppers:FlxSprite;
 	var bottomBoppers:FlxSprite;
+	var uppercrowd:FlxSprite
+	var confetti:FlxSprite
 	var santa:FlxSprite;
 
 	var fc:Bool = true;
@@ -883,8 +885,6 @@ class PlayState extends MusicBeatState
 
 		add(dad);
 		add(boyfriend);
-		if (curStage == 'pawtucket')
-			add(audienceBoppers);
 		if (loadRep)
 		{
 			FlxG.watch.addQuick('rep rpesses',repPresses);
