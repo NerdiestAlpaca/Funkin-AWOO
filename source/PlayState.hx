@@ -706,13 +706,12 @@ class PlayState extends MusicBeatState
 
         					var uppercrowd:FlxSprite = new FlxSprite(-240, -20);
         					uppercrowd.frames = Paths.getSparrowAtlas('petshop/upperBop');
-        					uppercrowd.animation.addByPrefix('idle', "Upper Crowd Bob", 24, false);
+        					uppercrowd.animation.addByPrefix('idle', "Upper Crowd Bob", 24, true);
 							uppercrowd.animation.play("idle");
         					uppercrowd.antialiasing = true;
         					uppercrowd.scrollFactor.set(0.33, 0.33);
-       					 	uppercrowd.setGraphicSize(Std.int(uppercrowd.width * 0.85));
+       					 	uppercrowd.setGraphicSize(Std.int(uppercrowd.width * 0.7));
         					uppercrowd.updateHitbox();
-        					if(FlxG.save.data.distractions){
            					add(uppercrowd);
         }
 
@@ -721,7 +720,7 @@ class PlayState extends MusicBeatState
         					Escalator.antialiasing = true;
         					Escalator.scrollFactor.set(0.3, 0.3);
         					Escalator.active = false;
-        					Escalator.setGraphicSize(Std.int(Escalator.width * 0.9));
+        					Escalator.setGraphicSize(Std.int(Escalator.width * 0.8));
         					Escalator.updateHitbox();
         					add(Escalator);
 
@@ -730,13 +729,22 @@ class PlayState extends MusicBeatState
         					fgStage.active = false;
         					fgStage.antialiasing = true;
         					add(fgStage);
+
+						var audienceBoppers = new FlxSprite(-840, 0);
+							audienceBoppers.frames = Paths.getSparrowAtlas('petshop/audienceBop');
+							audienceBoppers.animation.addByPrefix('bop', 'audience bob', 24, true);
+							audienceBoppers.animation.play("bop");
+							audienceBoppers.antialiasing = true;
+							audienceBoppers.scrollFactor.set(1.3, 1.3);
+							audienceBoppers.setGraphicSize(Std.int(audienceBoppers.width * 0.7));
+							audienceBoppers.updateHitbox();
         }
 		
         					var confetti:FlxSprite = new FlxSprite(-240, -90);
         					confetti.frames = Paths.getSparrowAtlas('petshop/confetti');
-        					confetti.animation.addByPrefix('idle', 'confetti whoosh', 24, false);
+        					confetti.animation.addByPrefix('idle', 'confetti whoosh', 24, true);
+							confetti.animation.play("idle");
         					confetti.antialiasing = true;
-        					if(FlxG.save.data.distractions){
            					add(confetti);
         }
 }
@@ -879,6 +887,8 @@ class PlayState extends MusicBeatState
 
 		add(dad);
 		add(boyfriend);
+		if (curStage == 'pawtucket')
+			add(audienceBoppers);
 		if (loadRep)
 		{
 			FlxG.watch.addQuick('rep rpesses',repPresses);
@@ -976,7 +986,7 @@ class PlayState extends MusicBeatState
 		add(healthBar);
 
 		// Add Kade Engine watermark
-		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " " + (storyDifficulty == 2 ? "Hard" : storyDifficulty == 1 ? "Normal" : "Easy") + (Main.watermarks ? " - " + MainMenuState.kadeEngineVer : ""), 16);
+		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " " + (storyDifficulty == 2 ? "Hard" : storyDifficulty == 1 ? "Normal" : "Easy") + (Main.watermarks ? " - AWOO BETA - KE 1.4.2 "), 16);
 		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		kadeEngineWatermark.scrollFactor.set();
 		add(kadeEngineWatermark);
@@ -3492,13 +3502,11 @@ class PlayState extends MusicBeatState
 					bottomBoppers.animation.play('bop', true);
 					santa.animation.play('idle', true);
 				}
-				
 			case 'pawtucket':
 				if(FlxG.save.data.distractions){
 					uppercrowd.animation.play('idle', true);
 					confetti.animation.play('idle', true);
 				}
-
 			case 'limo':
 				if(FlxG.save.data.distractions){
 					grpLimoDancers.forEach(function(dancer:BackgroundDancer)
