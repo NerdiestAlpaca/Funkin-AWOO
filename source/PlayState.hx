@@ -730,16 +730,6 @@ class PlayState extends MusicBeatState
         					fgStage.active = false;
         					fgStage.antialiasing = true;
         					add(fgStage);
-
-						var audienceBoppers = new FlxSprite(-840, 0);
-        					audienceBoppers.frames = Paths.getSparrowAtlas('petshop/audienceBop');
-        					audienceBoppers.animation.addByPrefix('bop', "audience bob", 24, false);
-        					audienceBoppers.antialiasing = true;
-        					audienceBoppers.scrollFactor.set(0.33, 0.33);
-        					audienceBoppers.setGraphicSize(Std.int(audienceBoppers.width * 1));
-        					audienceBoppers.updateHitbox();
-        					if(FlxG.save.data.distractions){
-            					add(audienceBoppers);
         }
 		
         					var confetti:FlxSprite = new FlxSprite(-240, -90);
@@ -3501,6 +3491,12 @@ class PlayState extends MusicBeatState
 					upperBoppers.animation.play('bop', true);
 					bottomBoppers.animation.play('bop', true);
 					santa.animation.play('idle', true);
+				}
+				
+			case 'pawtucket':
+				if(FlxG.save.data.distractions){
+					uppercrowd.animation.play('idle', true);
+					confetti.animation.play('idle', true);
 				}
 
 			case 'limo':
