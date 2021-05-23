@@ -168,6 +168,7 @@ class PlayState extends MusicBeatState
 	var songName:FlxText;
 	var upperBoppers:FlxSprite;
 	var bottomBoppers:FlxSprite;
+	var uppercrowd:FlxSprite
 	var santa:FlxSprite;
 
 	var fc:Bool = true;
@@ -690,65 +691,60 @@ class PlayState extends MusicBeatState
 	
 						add(stageCurtains);
 				}
-				case 'pawtucket': 
+			case 'pawtucket': 
     {	
-        curStage = 'pawtucket';
+        					curStage = 'pawtucket';
 
-        defaultCamZoom = 0.80;
+        					defaultCamZoom = 0.90;
 
-        var walls:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('petshop/bgWalls','paw'));
-        walls.antialiasing = true;
-        walls.scrollFactor.set(0.2, 0.2);
-        walls.active = false;
-        walls.setGraphicSize(Std.int(.width * 0.8));
-        walls.updateHitbox();
-        add(walls);
+        					var walls:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('petshop/bgWalls'));
+        					walls.antialiasing = true;
+        					walls.scrollFactor.set(0.2, 0.2);
+        					walls.active = false;
+							walls.setGraphicSize(Std.int(walls.width * 0.85));
+        					walls.updateHitbox();
+        					add(walls);
 
-        var uppercrowd:FlxSprite = new FlxSprite(-240, -90);
-        uppercrowd.frames = Paths.getSparrowAtlas('petshop/upperBop','paw');
-        uppercrowd.animation.addByPrefix('bop', "Upper Crowd Bob", 24, false);
-        uppercrowd.antialiasing = true;
-        uppercrowd.scrollFactor.set(0.33, 0.33);
-        uppercrowd.setGraphicSize(Std.int(uppercrowd.width * 0.85));
-        uppercrowd.updateHitbox();
-        if(FlxG.save.data.distractions){
-            add(uppercrowd);
-        }
+        					var uppercrowd:FlxSprite = new FlxSprite(-240, -20);
+        					uppercrowd.frames = Paths.getSparrowAtlas('petshop/upperBop');
+        					uppercrowd.animation.addByPrefix('idle', "Upper Crowd Bob", 24, true);
+							uppercrowd.animation.play("idle");
+        					uppercrowd.antialiasing = true;
+        					uppercrowd.scrollFactor.set(0.33, 0.33);
+       					 	uppercrowd.setGraphicSize(Std.int(uppercrowd.width * 0.7));
+        					uppercrowd.updateHitbox();
+           					add(uppercrowd);
 
-
-        var Escalator:FlxSprite = new FlxSprite(-1100, -600).loadGraphic(Paths.image('petshop/bgEscalator','paw'));
-        Escalator.antialiasing = true;
-        Escalator.scrollFactor.set(0.3, 0.3);
-        Escalator.active = false;
-        Escalator.setGraphicSize(Std.int(Escalator.width * 0.9));
-        Escalator.updateHitbox();
-        add(Escalator);
+        					var Escalator:FlxSprite = new FlxSprite(-400, 0).loadGraphic(Paths.image('petshop/bgEscalator'));
+        					Escalator.antialiasing = true;
+        					Escalator.scrollFactor.set(0.3, 0.3);
+        					Escalator.active = false;
+        					Escalator.setGraphicSize(Std.int(Escalator.width * 0.8));
+        					Escalator.updateHitbox();
+        					add(Escalator);
 
 
-        var fgStage:FlxSprite = new FlxSprite(-600, 700).loadGraphic(Paths.image('petshop/fgstage','paw'));
-        fgStage.active = false;
-        fgStage.antialiasing = true;
-        add(fgStage);
+        					var fgStage:FlxSprite = new FlxSprite(-600, 700).loadGraphic(Paths.image('petshop/fgstage'));
+        					fgStage.active = false;
+        					fgStage.antialiasing = true;
+        					add(fgStage);
 
-		var audienceBoppers = new FlxSprite(-240, -90);
-        audienceBoppers.frames = Paths.getSparrowAtlas('petshop/audienceBop','paw');
-        audienceBoppers.animation.addByPrefix('bop', "audience bob", 24, false);
-        audienceBoppers.antialiasing = true;
-        audienceBoppers.scrollFactor.set(0.33, 0.33);
-        audienceBoppers.setGraphicSize(Std.int(audienceBoppers.width * 1));
-        audienceBoppers.updateHitbox();
-        if(FlxG.save.data.distractions){
-            add(audienceBoppers);
-        }
+						var audienceBoppers = new FlxSprite(-840, 0);
+							audienceBoppers.frames = Paths.getSparrowAtlas('petshop/audienceBop');
+							audienceBoppers.animation.addByPrefix('bop', 'audience bob', 24, true);
+							audienceBoppers.animation.play("bop");
+							audienceBoppers.antialiasing = true;
+							audienceBoppers.scrollFactor.set(1.3, 1.3);
+							audienceBoppers.setGraphicSize(Std.int(audienceBoppers.width * 0.7));
+							audienceBoppers.updateHitbox();
 		
-        var confetti:FlxSprite = new FlxSprite(-240, -90);
-        confetti.frames = Paths.getSparrowAtlas('petshop/confetti','paw');
-        confetti.animation.addByPrefix('idle', 'confetti whoosh', 24, false);
-        confetti.antialiasing = true;
-        if(FlxG.save.data.distractions){
-            add(confetti);
-        }
-}
+        					var confetti:FlxSprite = new FlxSprite(-240, -90);
+        					confetti.frames = Paths.getSparrowAtlas('petshop/confetti');
+        					confetti.animation.addByPrefix('idle', 'confetti whoosh', 24, true);
+							confetti.animation.play("idle");
+        					confetti.antialiasing = true;
+           					add(confetti);        				
+			}
 			default:
 			{
 					defaultCamZoom = 0.9;
@@ -856,10 +852,8 @@ class PlayState extends MusicBeatState
 			case 'mallEvil':
 				boyfriend.x += 320;
 				dad.y -= 80;
-			case 'pawtucket'
-				boyfriend.x += 200;
-				boyfriend.y += 220;
-				dad.y += 280;
+			case 'pawtucket':
+				boyfriend.x += 100;
 			case 'school':
 				boyfriend.x += 200;
 				boyfriend.y += 220;
@@ -987,7 +981,7 @@ class PlayState extends MusicBeatState
 		add(healthBar);
 
 		// Add Kade Engine watermark
-		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " " + (storyDifficulty == 2 ? "Hard" : storyDifficulty == 1 ? "Normal" : "Easy") + (Main.watermarks ? " - KE " + MainMenuState.kadeEngineVer : ""), 16);
+		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " " + (storyDifficulty == 2 ? "Hard" : storyDifficulty == 1 ? "Normal" : "Easy") + (Main.watermarks ? " - " + MainMenuState.kadeEngineVer : ""), 16);
 		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		kadeEngineWatermark.scrollFactor.set();
 		add(kadeEngineWatermark);
@@ -3503,7 +3497,10 @@ class PlayState extends MusicBeatState
 					bottomBoppers.animation.play('bop', true);
 					santa.animation.play('idle', true);
 				}
-
+			case 'pawtucket':
+				if(FlxG.save.data.distractions){
+					uppercrowd.animation.play('idle', true);
+				}
 			case 'limo':
 				if(FlxG.save.data.distractions){
 					grpLimoDancers.forEach(function(dancer:BackgroundDancer)
