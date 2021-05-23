@@ -1,0 +1,88 @@
+var bum;
+var upperBop;
+var audience;
+function start(song) {
+	setDefaultZoom(0.9);
+
+
+    var bg = new FlxSprite(-1000, -500).loadGraphic(hscriptPath + 'bgWalls.png');
+    bg.scrollFactor.set(0.2, 0.2);
+    bg.antialiasing = true;
+    bg.setGraphicSize(Std.int(0.8 * bg.width));
+    bg.updateHitbox();
+    addSprite(bg, BEHIND_ALL);
+    upperBop = new MetroSprite(-240, -20,true);
+    upperBop.frames = FlxAtlasFrames.fromSparrow(hscriptPath + 'upperBop.png', hscriptPath + 'upperBop.xml');
+    upperBop.animation.addByPrefix("idle", "Upper Crowd Bob", 24, false);
+    upperBop.animation.play("idle");
+	upperBop.setGraphicSize(Std.int(upperBop.width * 0.7));
+	upperBop.scrollFactor.set(0.33, 0.33);
+	upperBop.antialiasing = true;
+	upperBop.updateHitbox();
+	addSprite(upperBop, BEHIND_ALL);
+    var railing = new FlxSprite(-400, 0).loadGraphic(hscriptPath + 'bgEscalator.png');
+	railing.setGraphicSize(Std.int(railing.width * 0.65));
+	railing.scrollFactor.set(0.3, 0.3);
+	railing.updateHitbox();
+	railing.antialiasing = true;
+	addSprite(railing,  BEHIND_ALL);
+    confetti = new MetroSprite(-240, -90,true);
+    confetti.frames = FlxAtlasFrames.fromSparrow(hscriptPath + 'confetti.png', hscriptPath + 'confetti.xml');
+    confetti.animation.addByPrefix("idle", "confetti whoosh", 24, false);
+    confetti.animation.play("idle");
+	confetti.setGraphicSize(Std.int(confetti.width * 0.85));
+	confetti.scrollFactor.set(0.33, 0.33);
+	confetti.antialiasing = true;
+	confetti.updateHitbox();
+	addSprite(confetti, BEHIND_ALL);
+    var snow = new FlxSprite(-600, 700).loadGraphic(hscriptPath + 'fgStage.png');
+    snow.antialiasing = true;
+    addSprite(snow, BEHIND_ALL);
+    audience = new MetroSprite(-840, 0, true);
+    audience.frames = FlxAtlasFrames.fromSparrow(hscriptPath + 'audienceBop.png', hscriptPath + 'audienceBop.xml');
+    audience.animation.addByPrefix("idle", "audience bob", 24, false);
+    addSprite(audience);
+    boyfriend.x += 100;
+    
+}
+
+
+function beatHit(beat)
+{
+    audience.dance();
+    upperBop.dance();
+    confetti.dance();
+}
+
+function update(elapsed)
+{
+}
+
+function stepHit(step)
+{
+}
+
+function playerTwoTurn()
+{
+}
+
+function playerTwoMiss()
+{
+}
+
+function playerTwoSing()
+{
+}
+
+function playerOneTurn()
+{
+}
+
+function playerOneMiss()
+{
+}
+
+function playerOneSing()
+{
+}
+
