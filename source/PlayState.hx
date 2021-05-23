@@ -168,8 +168,8 @@ class PlayState extends MusicBeatState
 	var songName:FlxText;
 	var upperBoppers:FlxSprite;
 	var bottomBoppers:FlxSprite;
-	var uppercrowd:FlxSprite
-	var confetti:FlxSprite
+	var uppercrowd:FlxSprite;
+	var confetti:FlxSprite;
 	var santa:FlxSprite;
 
 	var fc:Bool = true;
