@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cutscenebg.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bg10000" x="0" y="0" width="1397" height="786" pivotX="650" pivotY="527"/>
+	<SubTexture name="bg10001" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10002" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10003" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10004" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10005" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10006" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10007" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10008" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10009" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10010" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10011" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10012" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10013" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10014" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10015" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10016" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10017" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10018" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10019" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10020" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10021" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10022" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10023" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10024" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10025" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10026" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10027" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10028" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10029" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10030" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10031" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10032" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10033" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10034" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10035" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10036" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10037" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10038" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10039" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10040" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10041" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10042" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10043" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10044" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10045" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10046" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10047" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10048" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10049" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10050" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10051" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10052" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10053" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10054" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10055" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10056" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10057" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10058" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10059" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10060" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10061" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10062" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10063" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10064" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10065" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10066" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10067" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10068" x="0" y="0" width="1397" height="786"/>
+	<SubTexture name="bg10069" x="0" y="0" width="1397" height="786"/>
+</TextureAtlas>
