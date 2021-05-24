@@ -1202,10 +1202,6 @@ class PlayState extends MusicBeatState
 										FlxG.sound.play(Paths.sound('roxietest'), 1, false, null, true, function()
 											{
 												remove(petbg);
-												FlxG.camera.fade(FlxColor.WHITE, 0.01, true, function()
-												{
-													add(dialogueBox);
-												}, true);
 											});
 									});
 								}
