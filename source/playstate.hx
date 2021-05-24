@@ -1085,8 +1085,6 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'thorns':
 					schoolIntro(doof);
-				case 'satellite':
-					schoolIntro(doof);
 				default:
 					startCountdown();
 			}
@@ -1123,19 +1121,11 @@ class PlayState extends MusicBeatState
 		senpaiEvil.updateHitbox();
 		senpaiEvil.screenCenter();
 
-		var petbg:FlxSprite = new FlxSprite();
-		petbg.frames = Paths.getSparrowAtlas('petshop/cutscenebg');
-		petbg.animation.addByPrefix('idle', 'bg1', 24, false);
-		petbg.setGraphicSize(Std.int(petbg.width * 2));
-		petbg.scrollFactor.set();
-		petbg.updateHitbox();
-		petbg.screenCenter();
-
 		if (SONG.song.toLowerCase() == 'roses' || SONG.song.toLowerCase() == 'thorns')
 		{
 			remove(black);
 
-			if (SONG.song.toLowerCase() == 'thorns' || SONG.song.toLowerCase() == 'satellite')
+			if (SONG.song.toLowerCase() == 'thorns')
 			{
 				add(red);
 			}
@@ -1185,36 +1175,6 @@ class PlayState extends MusicBeatState
 							}
 						});
 					}
-					if (SONG.song.toLowerCase() == 'satellite')
-						{
-							add(petbg);
-							petbg.alpha = 1;
-							new FlxTimer().start(0.1, function(swagTimer:FlxTimer)
-							{
-								petbg.alpha += 1;
-								if (petbg.alpha < 1)
-								{
-									swagTimer.reset();
-								}
-								else
-								{
-									petbg.animation.play('idle');
-									FlxG.sound.play(Paths.sound('roxietest'), 1, false, null, true, function()
-									{
-										remove(petbg);
-										remove(red);
-										FlxG.camera.fade(FlxColor.WHITE, 0.01, true, function()
-										{
-											add(dialogueBox);
-										}, true);
-									});
-									new FlxTimer().start(3.2, function(deadTime:FlxTimer)
-									{
-										FlxG.camera.fade(FlxColor.WHITE, 1.6, false);
-									});
-								}
-							});
-						}
 					else
 					{
 						add(dialogueBox);
