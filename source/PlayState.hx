@@ -694,7 +694,7 @@ class PlayState extends MusicBeatState
     {	
         					curStage = 'pawtucket';
 
-        					defaultCamZoom = 0.85;
+        					defaultCamZoom = 0.8;
 
         					var walls:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('petshop/bgWalls'));
         					walls.antialiasing = true;
@@ -854,7 +854,7 @@ class PlayState extends MusicBeatState
 			case 'pawtucket':
 				boyfriend.x += 350;
 				gf.x += 150;
-				dad.x += 250;
+				dad.x += 200;
 			case 'school':
 				boyfriend.x += 200;
 				boyfriend.y += 220;
