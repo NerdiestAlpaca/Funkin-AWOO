@@ -9,9 +9,9 @@ class Ratings
 			ranking = "BotPlay";
 
         if (PlayState.misses == 0 && PlayState.bads == 0 && PlayState.shits == 0 && PlayState.goods == 0) // Marvelous (SICK) Full Combo
-            ranking = "(PERFECT)";
+            ranking = "(SFC)";
         else if (PlayState.misses == 0 && PlayState.bads == 0 && PlayState.shits == 0 && PlayState.goods >= 1) // Good Full Combo (Nothing but Goods & Sicks)
-            ranking = "(NEAR-PERFECT)";
+            ranking = "(GFC)";
         else if (PlayState.misses == 0) // Regular FC
             ranking = "(FC)";
         else if (PlayState.misses < 10) // Single Digit Combo Breaks
@@ -22,22 +22,22 @@ class Ratings
         // WIFE TIME :)))) (based on Wife3)
 
         var wifeConditions:Array<Bool> = [
-            accuracy >= 99.9935, // SSS
-            accuracy >= 99.980, // SS
-            accuracy >= 99.970, // S
-            accuracy >= 99.955, // AAAA
-            accuracy >= 99.90, // AAA:
-            accuracy >= 99.80, // AAA.
-            accuracy >= 99.70, // AAA
-            accuracy >= 99, // AA:
-            accuracy >= 96.50, // AA.
-            accuracy >= 93, // AA
-            accuracy >= 90, // A:
-            accuracy >= 85, // A.
-            accuracy >= 80, // A
-            accuracy >= 70, // B
-            accuracy >= 60, // C
-            accuracy < 60 // D
+            accuracy >= 99.9935, // PERFECT
+            accuracy >= 99.980, // SSSSS.
+            accuracy >= 99.970, // SSSSS
+            accuracy >= 99.955, // SSS.
+            accuracy >= 99.90, // SSS
+            accuracy >= 99.80, // SS.
+            accuracy >= 99.70, // SS
+            accuracy >= 99, // S.
+            accuracy >= 96.50, // S
+            accuracy >= 93, // AAA
+            accuracy >= 90, // AA
+            accuracy >= 85, // A
+            accuracy >= 80, // B
+            accuracy >= 70, // C
+            accuracy >= 60, // D
+            accuracy < 60 // F
         ];
 
         for(i in 0...wifeConditions.length)
@@ -48,37 +48,37 @@ class Ratings
                 switch(i)
                 {
                     case 0:
-                        ranking += " SSS";
+                        ranking += " PERFECT";
                     case 1:
-                        ranking += " SSS";
+                        ranking += " SSSSS.";
                     case 2:
-                        ranking += " S";
+                        ranking += " SSSSS";
                     case 3:
-                        ranking += " AAAA";
+                        ranking += " SSS.";
                     case 4:
-                        ranking += " AAA:";
+                        ranking += " SSS";
                     case 5:
-                        ranking += " AAA.";
+                        ranking += " SS.";
                     case 6:
-                        ranking += " AAA";
+                        ranking += " SS";
                     case 7:
-                        ranking += " AA:";
+                        ranking += " S.";
                     case 8:
-                        ranking += " AA.";
+                        ranking += " S";
                     case 9:
-                        ranking += " AA";
+                        ranking += " AAA";
                     case 10:
-                        ranking += " A:";
+                        ranking += " AA";
                     case 11:
-                        ranking += " A.";
-                    case 12:
                         ranking += " A";
-                    case 13:
+                    case 12:
                         ranking += " B";
-                    case 14:
+                    case 13:
                         ranking += " C";
-                    case 15:
+                    case 14:
                         ranking += " D";
+                    case 15:
+                        ranking += " F";
                 }
                 break;
             }
