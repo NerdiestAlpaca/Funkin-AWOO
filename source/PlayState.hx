@@ -335,8 +335,8 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('roses/rosesDialogue'));
 			case 'thorns':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
-			case 'our world':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('our world/coolswag'));		
+			case 'satellite':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('satellite/coolswag'));		
 		}
 
 		switch(SONG.stage)
@@ -1084,6 +1084,8 @@ class PlayState extends MusicBeatState
 					FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(doof);
 				case 'thorns':
+					schoolIntro(doof);
+				case 'satellite':
 					schoolIntro(doof);
 				default:
 					startCountdown();

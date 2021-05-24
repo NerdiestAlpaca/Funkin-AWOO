@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="roxieportrait.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Senpai Portrait Enter0000" x="0" y="0" width="248" height="147" pivotX="243.65" pivotY="-298.9"/>
+	<SubTexture name="Senpai Portrait Enter0001" x="250" y="0" width="248" height="147"/>
+	<SubTexture name="Senpai Portrait Enter0002" x="250" y="0" width="248" height="147"/>
+	<SubTexture name="Senpai Portrait Enter0003" x="0" y="149" width="248" height="147"/>
+	<SubTexture name="Senpai Portrait Enter0004" x="0" y="149" width="248" height="147"/>
+	<SubTexture name="Senpai Portrait Enter0005" x="250" y="149" width="248" height="147"/>
+	<SubTexture name="Senpai Portrait Enter0006" x="250" y="149" width="248" height="147"/>
+	<SubTexture name="Senpai Portrait Enter0007" x="250" y="149" width="248" height="147"/>
+	<SubTexture name="Senpai Portrait Enter0008" x="250" y="149" width="248" height="147"/>
+</TextureAtlas>
