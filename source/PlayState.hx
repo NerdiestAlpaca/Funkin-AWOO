@@ -1189,9 +1189,9 @@ class PlayState extends MusicBeatState
 							{
 							add(petbg);
 							petbg.alpha = 0;
-							new FlxTimer().start(0.3, function(swagTimer:FlxTimer)
+							new FlxTimer().start(0.01, function(swagTimer:FlxTimer)
 								{
-									petbg.alpha += 0.15;
+									petbg.alpha += 1;
 									if (petbg.alpha < 1)
 									{
 										swagTimer.reset();
@@ -1207,11 +1207,6 @@ class PlayState extends MusicBeatState
 													add(dialogueBox);
 												}, true);
 											});
-											new FlxTimer().start(3.2, function(deadTime:FlxTimer)
-											{
-												FlxG.camera.fade(FlxColor.WHITE, 1.6, false);
-											});
-										}
 									});
 								}
 						else

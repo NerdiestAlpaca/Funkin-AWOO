@@ -122,6 +122,15 @@ class DialogueBox extends FlxSpriteGroup
 		portraitRight.scrollFactor.set();
 		add(portraitRight);
 		portraitRight.visible = false;
+
+		roxieport = new FlxSprite(-20, 40);
+		roxieport.frames = Paths.getSparrowAtlas('petshop/roxieportrait');
+		roxieport.animation.addByPrefix('enter', 'Senpai Portrait Enter', 24, false);
+		roxieport.setGraphicSize(Std.int(roxieport.width * PlayState.daPixelZoom * 0.9));
+		roxieport.updateHitbox();
+		roxieport.scrollFactor.set();
+		add(roxieport);
+		roxieport.visible = false;
 		
 		box.animation.play('normalOpen');
 		box.setGraphicSize(Std.int(box.width * PlayState.daPixelZoom * 0.9));
@@ -169,17 +178,10 @@ class DialogueBox extends FlxSpriteGroup
 			portraitLeft.color = FlxColor.BLACK;
 			swagDialogue.color = FlxColor.WHITE;
 			dropText.color = FlxColor.BLACK;
-		if (PlayState.SONG.song.toLowerCase() == 'satellite')
-			{
-				portraitLeft = new FlxSprite(-20, 40);
-				portraitLeft.frames = Paths.getSparrowAtlas('petshop/roxieportrait');
-				portraitLeft.animation.addByPrefix('enter', 'Senpai Portrait Enter', 24, false);
-				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
-				portraitLeft.updateHitbox();
-				portraitLeft.scrollFactor.set();
-				add(portraitLeft);
-			}
 		}
+		if (PlayState.SONG.song.toLowerCase() == 'roses')
+			portraitLeft.visible = false;
+			roxieport.visible = true
 		if (box.animation.curAnim != null)
 		{
 			if (box.animation.curAnim.name == 'normalOpen' && box.animation.curAnim.finished)
@@ -258,6 +260,13 @@ class DialogueBox extends FlxSpriteGroup
 				{
 					portraitLeft.visible = true;
 					portraitLeft.animation.play('enter');
+				}
+			case 'roxie':
+				portraitRight.visible = false;
+				if (!roxieport.visible)
+				{
+					roxieport.visible = true;
+					roxieport.animation.play('enter');
 				}
 			case 'bf':
 				portraitLeft.visible = false;
