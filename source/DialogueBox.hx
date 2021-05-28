@@ -174,8 +174,6 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
 				portraitLeft.updateHitbox();
 				portraitLeft.scrollFactor.set();
-				add(portraitLeft);
-				portraitLeft.visible = false;
 			}
 		if (box.animation.curAnim != null)
 		{
@@ -263,7 +261,9 @@ class DialogueBox extends FlxSpriteGroup
 					portraitRight.visible = true;
 					portraitRight.animation.play('enter');
 				}
-		}
+			case 'blank':
+				portraitLeft.visible = false;
+				portraitRight.visible = false;
 	}
 
 	function cleanDialog():Void

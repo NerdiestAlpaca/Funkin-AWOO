@@ -1210,7 +1210,7 @@ class PlayState extends MusicBeatState
 			FlxG.camera.focusOn(camFollow.getPosition());
 			FlxTween.tween(FlxG.camera, {zoom: 0.7}, 2.5);
 	
-			new FlxTimer().start(12, function(swagTimer:FlxTimer)
+			new FlxTimer().start(8, function(swagTimer:FlxTimer)
 			{
 				remove(scenebg);
 				camHUD.visible = true;
@@ -2140,9 +2140,6 @@ class PlayState extends MusicBeatState
 						camFollow.y = dad.getMidpoint().y + 150;
 						camFollow.x = dad.getMidpoint().x + 250;
 					case 'petula':
-						camFollow.y = dad.getMidpoint().y + 150;
-						camFollow.x = dad.getMidpoint().x + 250;
-					case 'jade':
 						camFollow.y = dad.getMidpoint().y + 150;
 						camFollow.x = dad.getMidpoint().x + 250;
 					case 'trip':
