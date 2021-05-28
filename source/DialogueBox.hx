@@ -171,7 +171,7 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft = new FlxSprite(-20, 40);
 				portraitLeft.frames = Paths.getSparrowAtlas('petshop/roxieportrait');
 				portraitLeft.animation.addByPrefix('enter', 'Senpai Portrait Enter', 24, false);
-				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
+				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 1));
 				portraitLeft.updateHitbox();
 				portraitLeft.scrollFactor.set();
 				add(portraitLeft);

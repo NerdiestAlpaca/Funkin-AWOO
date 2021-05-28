@@ -1210,7 +1210,7 @@ class PlayState extends MusicBeatState
 			FlxG.camera.focusOn(camFollow.getPosition());
 			FlxTween.tween(FlxG.camera, {zoom: 0.7}, 2.5);
 	
-			new FlxTimer().start(8, function(swagTimer:FlxTimer)
+			new FlxTimer().start(4, function(swagTimer:FlxTimer)
 			{
 				remove(scenebg);
 				camHUD.visible = true;

@@ -20,5 +20,6 @@ Thorns:spirit:6
 Satellite:savannah:7
 Our World:quincy:7
 Mischief:petula:7
-Catnap:jade:7
+Free Spirit:test:8
+Catnap:jade:8
 Daredevil:trip:8
