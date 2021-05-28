@@ -1215,7 +1215,7 @@ class PlayState extends MusicBeatState
 				remove(scenebg);
 				camHUD.visible = true;
 				FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 1);
-				startCountdown();
+				add(dialogueBox);
 			});
 		
 		}
