@@ -1212,7 +1212,7 @@ class PlayState extends MusicBeatState
 		new FlxTimer().start(5, function(swagTimer:FlxTimer)
 		{
 			remove(senpaiEvil);
-			camHUD.visible = false;
+			camHUD.visible = true;
 			FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 1);
 			startCountdown();
 		});
