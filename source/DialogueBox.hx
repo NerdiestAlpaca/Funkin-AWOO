@@ -174,6 +174,8 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
 				portraitLeft.updateHitbox();
 				portraitLeft.scrollFactor.set();
+				add(portraitLeft);
+				portraitLeft.visible = false;
 			}
 		if (box.animation.curAnim != null)
 		{
@@ -263,7 +265,12 @@ class DialogueBox extends FlxSpriteGroup
 				}
 			case 'blank':
 				portraitLeft.visible = false;
-				portraitRight.visible = false;
+				if (!portraitRight.visible)
+				{
+					portraitRight.visible = false;
+					portraitRight.animation.play('enter');
+				}
+		}
 	}
 
 	function cleanDialog():Void
@@ -272,4 +279,4 @@ class DialogueBox extends FlxSpriteGroup
 		curCharacter = splitName[1];
 		dialogueList[0] = dialogueList[0].substr(splitName[1].length + 2).trim();
 	}
-}}
+}
