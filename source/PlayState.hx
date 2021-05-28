@@ -335,8 +335,8 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('roses/rosesDialogue'));
 			case 'thorns':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
-			case 'our world':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('our world/coolswag'));		
+			case 'satellite':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('satellite/coolswag'));		
 		}
 
 		switch(SONG.stage)
@@ -1191,33 +1191,34 @@ class PlayState extends MusicBeatState
 		});
 	}
 	function lpsintro(?dialogueBox:DialogueBox):Void
-	{
-		var senpaiEvil:FlxSprite = new FlxSprite();
-		senpaiEvil.frames = Paths.getSparrowAtlas('pauseAlt/bfLol');
-		senpaiEvil.animation.addByPrefix('idle', 'funnyThing instance 1', 24, false);
-		senpaiEvil.setGraphicSize(Std.int(senpaiEvil.width * 1));
-		senpaiEvil.scrollFactor.set();
-		senpaiEvil.updateHitbox();
-		add(senpaiEvil);
-
-		inCutscene =true;
-
-		camHUD.visible = false;
-		senpaiEvil.animation.play('idle');
-		camFollow.x += 400;
-		camFollow.y += 50;
-		FlxG.camera.focusOn(camFollow.getPosition());
-		FlxTween.tween(FlxG.camera, {zoom: 0.9}, 2.5);
-
-		new FlxTimer().start(5, function(swagTimer:FlxTimer)
 		{
-			remove(senpaiEvil);
-			camHUD.visible = true;
-			FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 1);
-			startCountdown();
-		});
+			var scenebg:FlxSprite = new FlxSprite();
+			scenebg.frames = Paths.getSparrowAtlas('petshop/cutscenebg');
+			scenebg.animation.addByPrefix('idle', 'bg1', 24, false);
+			scenebg.setGraphicSize(Std.int(scenebg.width * 1.5));
+			scenebg.scrollFactor.set();
+			scenebg.updateHitbox();
+			scenebg.screenCenter();
+			add(scenebg);
 	
-	}
+			inCutscene =true;
+	
+			camHUD.visible = false;
+			scenebg.animation.play('idle');
+			camFollow.x += 0;
+			camFollow.y += 0;
+			FlxG.camera.focusOn(camFollow.getPosition());
+			FlxTween.tween(FlxG.camera, {zoom: 0.7}, 2.5);
+	
+			new FlxTimer().start(12, function(swagTimer:FlxTimer)
+			{
+				remove(scenebg);
+				camHUD.visible = true;
+				FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 1);
+				startCountdown();
+			});
+		
+		}
 
 	var startTimer:FlxTimer;
 	var perfectMode:Bool = false;
