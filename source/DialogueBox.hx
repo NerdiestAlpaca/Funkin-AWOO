@@ -272,4 +272,3 @@ class DialogueBox extends FlxSpriteGroup
 		curCharacter = splitName[1];
 		dialogueList[0] = dialogueList[0].substr(splitName[1].length + 2).trim();
 	}
-}
