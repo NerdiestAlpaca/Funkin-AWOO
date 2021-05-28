@@ -1085,6 +1085,9 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'thorns':
 					schoolIntro(doof);
+				case 'satellite':
+					FlxG.sound.play(Paths.sound('PANGRY'));
+					lpsintro(doof);
 				default:
 					startCountdown();
 			}
@@ -1186,6 +1189,34 @@ class PlayState extends MusicBeatState
 				remove(black);
 			}
 		});
+	}
+	function lpsintro(?dialogueBox:DialogueBox):Void
+	{
+		var senpaiEvil:FlxSprite = new FlxSprite();
+		senpaiEvil.frames = Paths.getSparrowAtlas('pauseAlt/bfLol');
+		senpaiEvil.animation.addByPrefix('idle', 'funnyThing instance 1', 24, false);
+		senpaiEvil.setGraphicSize(Std.int(senpaiEvil.width * 1));
+		senpaiEvil.scrollFactor.set();
+		senpaiEvil.updateHitbox();
+		add(senpaiEvil);
+
+		inCutscene =true;
+
+		camHUD.visible = false;
+		senpaiEvil.animation.play('idle');
+		camFollow.x += 400;
+		camFollow.y += 50;
+		FlxG.camera.focusOn(camFollow.getPosition());
+		FlxTween.tween(FlxG.camera, {zoom: 0.9}, 2.5);
+
+		new FlxTimer().start(5, function(swagTimer:FlxTimer)
+		{
+			remove(senpaiEvil);
+			camHUD.visible = false;
+			FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 1);
+			startCountdown();
+		});
+	
 	}
 
 	var startTimer:FlxTimer;
@@ -2108,9 +2139,6 @@ class PlayState extends MusicBeatState
 						camFollow.y = dad.getMidpoint().y + 150;
 						camFollow.x = dad.getMidpoint().x + 250;
 					case 'petula':
-						camFollow.y = dad.getMidpoint().y + 150;
-						camFollow.x = dad.getMidpoint().x + 250;
-					case 'jade':
 						camFollow.y = dad.getMidpoint().y + 150;
 						camFollow.x = dad.getMidpoint().x + 250;
 					case 'trip':

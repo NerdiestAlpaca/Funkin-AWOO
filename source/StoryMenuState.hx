@@ -59,7 +59,7 @@ class StoryMenuState extends MusicBeatState
 		"RED SNOW",
 		"Hating Simulator ft. Moawling",
 		"Paw-Tucket",
-		"Return to Paw-Tucket"
+		"Round 2 at the LPS"
 	];
 
 	var txtWeekTitle:FlxText;
