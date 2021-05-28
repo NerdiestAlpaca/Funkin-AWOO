@@ -177,7 +177,6 @@ class DialogueBox extends FlxSpriteGroup
 				add(portraitLeft);
 				portraitLeft.visible = false;
 			}
-		}
 		if (box.animation.curAnim != null)
 		{
 			if (box.animation.curAnim.name == 'normalOpen' && box.animation.curAnim.finished)
