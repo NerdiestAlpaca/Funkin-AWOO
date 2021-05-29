@@ -195,21 +195,20 @@ class Character extends FlxSprite
 					addOffset("singDOWN-alt", -42, -302);
 
 				playAnim('idle');
-			case 'trip':
-					tex = Paths.getSparrowAtlas('characters/Trip');
+			case 'roxie':
+					tex = Paths.getSparrowAtlas('characters/Roxie');
 					frames = tex;
-					animation.addByPrefix('idle', 'Trip Idle', 24);
-					animation.addByPrefix('singUP', 'Trip Up', 24);
-					animation.addByPrefix('singRIGHT', 'Trip Right', 24);
-					animation.addByPrefix('singDOWN', 'Trip Down', 24);
-					animation.addByPrefix('singLEFT', 'Trip Left', 24);
+					animation.addByPrefix('idle', 'Roxie Idle', 24);
+					animation.addByPrefix('singUP', 'Roxie Up', 24);
+					animation.addByPrefix('singRIGHT', 'Roxie Right', 24);
+					animation.addByPrefix('singDOWN', 'Roxie Down', 24);
+					animation.addByPrefix('singLEFT', 'Roxie Left', 24);
 				
-					
-					addOffset('idle', 0,-360);
-					addOffset('singUP', 23, -361);
-					addOffset('singRIGHT', 29, -366);
-					addOffset('singLEFT', 8, -353);
-					addOffset('singDOWN', 6, -361);
+					addOffset('idle', 0,-290);
+					addOffset('singUP', 0, -290);
+					addOffset('singRIGHT', -11, -299);
+					addOffset('singLEFT',-3, -290);
+					addOffset('singDOWN', -15, -294);
 				
 				playAnim('idle');
 			case 'jade':
@@ -227,23 +226,24 @@ class Character extends FlxSprite
 					addOffset('singLEFT',-9, -274);
 					addOffset('singDOWN', 0, -300);
 				
-				playAnim('idle');	
-			case 'test':
-					tex = Paths.getSparrowAtlas('characters/char');
-					frames = tex;
-					animation.addByPrefix('idle', 'Test Idle', 24);
-					animation.addByPrefix('singUP', 'Test Up', 24);
-					animation.addByPrefix('singRIGHT', 'Test Right', 24);
-					animation.addByPrefix('singDOWN', 'Test Down', 24);
-					animation.addByPrefix('singLEFT', 'Test Left', 24);
-				
-					addOffset('idle', 0,-290);
-					addOffset('singUP', 81, -283);
-					addOffset('singRIGHT', 32, -295);
-					addOffset('singLEFT',-9, -274);
-					addOffset('singDOWN', 0, -300);
-				
 				playAnim('idle');		
+			case 'trip':
+					tex = Paths.getSparrowAtlas('characters/Trip');
+					frames = tex;
+					animation.addByPrefix('idle', 'Trip Idle', 24);
+					animation.addByPrefix('singUP', 'Trip Up', 24);
+					animation.addByPrefix('singRIGHT', 'Trip Right', 24);
+					animation.addByPrefix('singDOWN', 'Trip Down', 24);
+					animation.addByPrefix('singLEFT', 'Trip Left', 24);
+				
+					
+					addOffset('idle', 0,-360);
+					addOffset('singUP', 23, -361);
+					addOffset('singRIGHT', 29, -366);
+					addOffset('singLEFT', 8, -353);
+					addOffset('singDOWN', 6, -361);
+				
+				playAnim('idle');	
 			case 'spooky':
 				tex = Paths.getSparrowAtlas('characters/spooky_kids_assets');
 				frames = tex;

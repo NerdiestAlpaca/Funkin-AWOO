@@ -30,7 +30,8 @@ class MenuCharacter extends FlxSprite
 		'mom' => new CharacterSetting(-30, 140, 0.85),
 		'parents-christmas' => new CharacterSetting(100, 130, 1.8),
 		'senpai' => new CharacterSetting(-40, -45, 1.4),
-		'portal' => new CharacterSetting(20, 30)
+		'firstweek' => new CharacterSetting(100, 130, 1.8)
+		'secondweek' => new CharacterSetting(100, 130, 1.8)
 	];
 
 	private var flipped:Bool = false;
@@ -53,7 +54,8 @@ class MenuCharacter extends FlxSprite
 		animation.addByPrefix('mom', "Mom Idle BLACK LINES", 24);
 		animation.addByPrefix('parents-christmas', "Parent Christmas Idle", 24);
 		animation.addByPrefix('senpai', "SENPAI idle Black Lines", 24);
-		animation.addByPrefix('portal', "LPS Portal", 24);
+		animation.addByPrefix('firstweek', "FIRST WEEK", 24);
+		animation.addByPrefix('secondweek', "SECOND WEEK", 24);
 
 		setGraphicSize(Std.int(width * scale));
 		updateHitbox();

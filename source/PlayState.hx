@@ -2142,7 +2142,7 @@ class PlayState extends MusicBeatState
 					case 'petula':
 						camFollow.y = dad.getMidpoint().y + 150;
 						camFollow.x = dad.getMidpoint().x + 250;
-					case 'test':
+					case 'roxie':
 						camFollow.y = dad.getMidpoint().y + 150;
 						camFollow.x = dad.getMidpoint().x + 250;
 					case 'jade':
