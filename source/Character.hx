@@ -220,11 +220,11 @@ class Character extends FlxSprite
 					animation.addByPrefix('singDOWN', 'Jade Down', 24);
 					animation.addByPrefix('singLEFT', 'Jade Left', 24);
 				
-					addOffset('idle', 0,-290);
-					addOffset('singUP', 81, -283);
-					addOffset('singRIGHT', 32, -295);
-					addOffset('singLEFT',-9, -274);
-					addOffset('singDOWN', 0, -300);
+					addOffset('idle', 0,-320);
+					addOffset('singUP', 81, -313);
+					addOffset('singRIGHT', 32, -325);
+					addOffset('singLEFT',-9, -304);
+					addOffset('singDOWN', 0, -330);
 				
 				playAnim('idle');		
 			case 'trip':
