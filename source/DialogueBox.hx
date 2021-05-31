@@ -139,7 +139,7 @@ class DialogueBox extends FlxSpriteGroup
 		add(portraitRight);
 		portraitRight.visible = false;
 
-		portraitBF = new FlxSprite(0, 55);
+		portraitBF = new FlxSprite(0, 30);
 		portraitBF.frames = Paths.getSparrowAtlas('petshop/boyfriendportrait');
 		portraitBF.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
 		portraitBF.setGraphicSize(Std.int(portraitBF.width * 1));
