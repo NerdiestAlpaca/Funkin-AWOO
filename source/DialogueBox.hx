@@ -30,7 +30,6 @@ class DialogueBox extends FlxSpriteGroup
 
 	var portraitLeft:FlxSprite;
 	var portraitRight:FlxSprite;
-	var portraitBF:FlxSprite;
 	var portraitRoxie:FlxSprite;
 	var portraitSavannah:FlxSprite;
 	var portraitQuincy:FlxSprite;
@@ -139,7 +138,7 @@ class DialogueBox extends FlxSpriteGroup
 		add(portraitRight);
 		portraitRight.visible = false;
 
-		portraitBF = new FlxSprite(0, 40);
+		portraitBF = new FlxSprite(0, 55);
 		portraitBF.frames = Paths.getSparrowAtlas('petshop/boyfriendportrait');
 		portraitBF.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
 		portraitBF.setGraphicSize(Std.int(portraitBF.width * 1));
@@ -305,7 +304,7 @@ class DialogueBox extends FlxSpriteGroup
 		{
 			case 'dad':
 				portraitRight.visible = false;
-				portraitBF.visible = false;
+				portraitBF.visible = false
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
@@ -317,7 +316,7 @@ class DialogueBox extends FlxSpriteGroup
 				}
 			case 'bf':
 				portraitLeft.visible = false;
-				portraitBF.visible = false;
+				portraitBF.visible = false
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
@@ -342,7 +341,7 @@ class DialogueBox extends FlxSpriteGroup
 			case 'roxie':
 				portraitLeft.visible = false;
 				portraitRight.visible = false;
-				portraitBF.visible = false;
+				portraitBF.visible = false
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
 				portraitPetula.visible = false;
@@ -353,7 +352,7 @@ class DialogueBox extends FlxSpriteGroup
 				}
 			case 'savannah':
 				portraitLeft.visible = false;
-				portraitBF.visible = false;
+				portraitBF.visible = false
 				portraitRight.visible = false;
 				portraitRoxie.visible = false;
 				portraitQuincy.visible = false;
@@ -365,7 +364,7 @@ class DialogueBox extends FlxSpriteGroup
 				}
 			case 'quincy':
 				portraitLeft.visible = false;
-				portraitBF.visible = false;
+				portraitBF.visible = false
 				portraitRight.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
@@ -378,7 +377,7 @@ class DialogueBox extends FlxSpriteGroup
 			case 'petula':
 				portraitLeft.visible = false;
 				portraitRight.visible = false;
-				portraitBF.visible = false;
+				portraitBF.visible = false
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;

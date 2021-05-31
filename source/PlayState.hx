@@ -336,11 +336,7 @@ class PlayState extends MusicBeatState
 			case 'thorns':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
 			case 'satellite':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('satellite/coolswag'));
-			case 'our world':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('our world/coolswag'));	
-			case 'mischief':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('mischief/coolswag'));
+				dialogue = CoolUtil.coolTextFile(Paths.txt('satellite/coolswag'));		
 		}
 
 		switch(SONG.stage)
@@ -1092,9 +1088,9 @@ class PlayState extends MusicBeatState
 				case 'satellite':
 					lpsintro(doof);
 				case 'our world':
-					schoolIntro(doof);
+					lpstransition(doof);
 				case 'mischief':
-					schoolIntro(doof);
+					lpstransition(doof);
 				default:
 					startCountdown();
 
@@ -1228,7 +1224,13 @@ class PlayState extends MusicBeatState
 			});
 		
 		}
-
+	function lpstransition(?dialogueBox:DialogueBox):Void
+		{
+			camFollow.x += 0;
+			camFollow.y += 0;
+			FlxG.camera.focusOn(camFollow.getPosition());
+			add(dialogueBox);
+		}
 	var startTimer:FlxTimer;
 	var perfectMode:Bool = false;
 
