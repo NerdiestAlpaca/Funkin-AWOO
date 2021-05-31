@@ -30,6 +30,7 @@ class DialogueBox extends FlxSpriteGroup
 
 	var portraitLeft:FlxSprite;
 	var portraitRight:FlxSprite;
+	var portraitBF:FlxSprite;
 	var portraitRoxie:FlxSprite;
 	var portraitSavannah:FlxSprite;
 	var portraitQuincy:FlxSprite;
@@ -145,7 +146,7 @@ class DialogueBox extends FlxSpriteGroup
 		portraitBF.updateHitbox();
 		portraitBF.scrollFactor.set();
 		add(portraitBF);
-		portraitBF.visible = false;;
+		portraitBF.visible = false;
 
 		portraitRoxie = new FlxSprite(-20, 40);
 		portraitRoxie.frames = Paths.getSparrowAtlas('petshop/roxieportrait');
