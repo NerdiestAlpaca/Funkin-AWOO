@@ -1086,7 +1086,6 @@ class PlayState extends MusicBeatState
 				case 'thorns':
 					schoolIntro(doof);
 				case 'satellite':
-					FlxG.sound.play(Paths.sound('PANGRY'));
 					lpsintro(doof);
 				default:
 					startCountdown();
@@ -1205,12 +1204,13 @@ class PlayState extends MusicBeatState
 	
 			camHUD.visible = false;
 			scenebg.animation.play('idle');
+			FlxG.sound.play(Paths.sound('LPSCutscene1'));
 			camFollow.x += 0;
 			camFollow.y += 0;
 			FlxG.camera.focusOn(camFollow.getPosition());
 			FlxTween.tween(FlxG.camera, {zoom: 0.7}, 2.5);
 	
-			new FlxTimer().start(4, function(swagTimer:FlxTimer)
+			new FlxTimer().start(5, function(swagTimer:FlxTimer)
 			{
 				remove(scenebg);
 				camHUD.visible = true;
