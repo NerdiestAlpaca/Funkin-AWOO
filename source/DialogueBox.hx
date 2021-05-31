@@ -31,6 +31,9 @@ class DialogueBox extends FlxSpriteGroup
 	var portraitLeft:FlxSprite;
 	var portraitRight:FlxSprite;
 	var portraitRoxie:FlxSprite;
+	var portraitSavannah:FlxSprite;
+	var portraitQuincy:FlxSprite;
+	var portraitPetula:FlxSprite;
 
 	var handSelect:FlxSprite;
 	var bgFade:FlxSprite;
@@ -46,6 +49,9 @@ class DialogueBox extends FlxSpriteGroup
 				FlxG.sound.music.fadeIn(1, 0, 0.8);
 			case 'thorns':
 				FlxG.sound.playMusic(Paths.music('LunchboxScary'), 0);
+				FlxG.sound.music.fadeIn(1, 0, 0.8);
+			case 'mischief':
+				FlxG.sound.playMusic(Paths.music('Woolwright'), 0);
 				FlxG.sound.music.fadeIn(1, 0, 0.8);
 		}
 
@@ -95,6 +101,18 @@ class DialogueBox extends FlxSpriteGroup
 				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
 				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
 				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+
+			case 'our world':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
+				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+
+			case 'mischief':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
+				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
 		}
 
 		this.dialogueList = dialogueList;
@@ -111,15 +129,6 @@ class DialogueBox extends FlxSpriteGroup
 		add(portraitLeft);
 		portraitLeft.visible = false;
 
-		portraitRoxie = new FlxSprite(-20, 40);
-		portraitRoxie.frames = Paths.getSparrowAtlas('petshop/roxieportrait');
-		portraitRoxie.animation.addByPrefix('enter', 'Senpai Portrait Enter', 24, false);
-		portraitRoxie.setGraphicSize(Std.int(portraitRoxie.width * 1));
-		portraitRoxie.updateHitbox();
-		portraitRoxie.scrollFactor.set();
-		add(portraitRoxie);
-		portraitRoxie.visible = false;
-
 		portraitRight = new FlxSprite(0, 40);
 		portraitRight.frames = Paths.getSparrowAtlas('weeb/bfPortrait');
 		portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
@@ -128,6 +137,42 @@ class DialogueBox extends FlxSpriteGroup
 		portraitRight.scrollFactor.set();
 		add(portraitRight);
 		portraitRight.visible = false;
+
+		portraitRoxie = new FlxSprite(-20, 40);
+		portraitRoxie.frames = Paths.getSparrowAtlas('petshop/roxieportrait');
+		portraitRoxie.animation.addByPrefix('enter', 'Roxie Portrait Enter', 24, false);
+		portraitRoxie.setGraphicSize(Std.int(portraitRoxie.width * 1));
+		portraitRoxie.updateHitbox();
+		portraitRoxie.scrollFactor.set();
+		add(portraitRoxie);
+		portraitRoxie.visible = false;
+		
+		portraitSavannah = new FlxSprite(-20, 40);
+		portraitSavannah.frames = Paths.getSparrowAtlas('petshop/savannahportrait');
+		portraitSavannah.animation.addByPrefix('enter', 'Savannah Portrait Enter', 24, false);
+		portraitSavannah.setGraphicSize(Std.int(portraitSavannah.width * 1));
+		portraitSavannah.updateHitbox();
+		portraitSavannah.scrollFactor.set();
+		add(portraitSavannah);
+		portraitSavannah.visible = false;
+
+		portraitQuincy = new FlxSprite(-20, 40);
+		portraitQuincy.frames = Paths.getSparrowAtlas('petshop/quincyportrait');
+		portraitQuincy.animation.addByPrefix('enter', 'Quincy Portrait Enter', 24, false);
+		portraitQuincy.setGraphicSize(Std.int(portraitQuincy.width * 1));
+		portraitQuincy.updateHitbox();
+		portraitQuincy.scrollFactor.set();
+		add(portraitQuincy);
+		portraitQuincy.visible = false;
+
+		portraitPetula = new FlxSprite(-20, 40);
+		portraitPetula.frames = Paths.getSparrowAtlas('petshop/petulaportrait');
+		portraitPetula.animation.addByPrefix('enter', 'Petula Portrait Enter', 24, false);
+		portraitPetula.setGraphicSize(Std.int(portraitPetula.width * 1));
+		portraitPetula.updateHitbox();
+		portraitPetula.scrollFactor.set();
+		add(portraitPetula);
+		portraitPetula.visible = false;
 		
 		box.animation.play('normalOpen');
 		box.setGraphicSize(Std.int(box.width * PlayState.daPixelZoom * 0.9));
@@ -251,6 +296,9 @@ class DialogueBox extends FlxSpriteGroup
 			case 'dad':
 				portraitRight.visible = false;
 				portraitRoxie.visible = false;
+				portraitSavannah.visible = false;
+				portraitQuincy.visible = false;
+				portraitPetula.visible = false;
 				if (!portraitLeft.visible)
 				{
 					portraitLeft.visible = true;
@@ -259,6 +307,9 @@ class DialogueBox extends FlxSpriteGroup
 			case 'bf':
 				portraitLeft.visible = false;
 				portraitRoxie.visible = false;
+				portraitSavannah.visible = false;
+				portraitQuincy.visible = false;
+				portraitPetula.visible = false;
 				if (!portraitRight.visible)
 				{
 					portraitRight.visible = true;
@@ -267,10 +318,46 @@ class DialogueBox extends FlxSpriteGroup
 			case 'roxie':
 				portraitLeft.visible = false;
 				portraitRight.visible = false;
+				portraitSavannah.visible = false;
+				portraitQuincy.visible = false;
+				portraitPetula.visible = false;
 				if (!portraitRoxie.visible)
 				{
 					portraitRoxie.visible = true;
 					portraitRoxie.animation.play('enter');
+				}
+			case 'savannah':
+				portraitLeft.visible = false;
+				portraitRight.visible = false;
+				portraitRoxie.visible = false;
+				portraitQuincy.visible = false;
+				portraitPetula.visible = false;
+				if (!portraitSavannah.visible)
+				{
+					portraitSavannah.visible = true;
+					portraitSavannah.animation.play('enter');
+				}
+			case 'quincy':
+				portraitLeft.visible = false;
+				portraitRight.visible = false;
+				portraitRoxie.visible = false;
+				portraitSavannah.visible = false;
+				portraitPetula.visible = false;
+				if (!portraitQuincy.visible)
+				{
+					portraitQuincy.visible = true;
+					portraitQuincy.animation.play('enter');
+				}
+			case 'petula':
+				portraitLeft.visible = false;
+				portraitRight.visible = false;
+				portraitRoxie.visible = false;
+				portraitSavannah.visible = false;
+				portraitPetula.visible = false;
+				if (!portraitPetula.visible)
+				{
+					portraitPetula.visible = true;
+					portraitPetula.animation.play('enter');
 				}
 		}
 	}

@@ -336,7 +336,11 @@ class PlayState extends MusicBeatState
 			case 'thorns':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
 			case 'satellite':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('satellite/coolswag'));		
+				dialogue = CoolUtil.coolTextFile(Paths.txt('satellite/coolswag'));	
+			case 'our world':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('our world/coolswag'));	
+			case 'mischief':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('mischief/coolswag'));		
 		}
 
 		switch(SONG.stage)
@@ -1079,7 +1083,7 @@ class PlayState extends MusicBeatState
 						});
 					});
 				case 'senpai':
-					schoolIntro(doof);
+					schoolintro(doof);
 				case 'roses':
 					FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(doof);
@@ -1087,6 +1091,10 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'satellite':
 					lpsintro(doof);
+				case 'our world':
+					schoolintro(doof);
+				case 'mischief':
+					schoolintro(doof);
 				default:
 					startCountdown();
 			}
@@ -1123,7 +1131,7 @@ class PlayState extends MusicBeatState
 		senpaiEvil.updateHitbox();
 		senpaiEvil.screenCenter();
 
-		if (SONG.song.toLowerCase() == 'roses' || SONG.song.toLowerCase() == 'thorns')
+		if (SONG.song.toLowerCase() == 'roses' || SONG.song.toLowerCase() == 'thorns' || SONG.song.toLowerCase() == 'our world' || SONG.song.toLowerCase() == 'mischief')
 		{
 			remove(black);
 

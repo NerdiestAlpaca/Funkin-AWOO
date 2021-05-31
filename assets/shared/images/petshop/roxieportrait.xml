@@ -2,13 +2,13 @@
 <TextureAtlas imagePath="roxieportrait.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Senpai Portrait Enter0000" x="0" y="0" width="1203" height="1067" pivotX="417.85" pivotY="165.4"/>
-	<SubTexture name="Senpai Portrait Enter0001" x="0" y="0" width="1203" height="1067"/>
-	<SubTexture name="Senpai Portrait Enter0002" x="0" y="0" width="1203" height="1067"/>
-	<SubTexture name="Senpai Portrait Enter0003" x="0" y="0" width="1203" height="1067"/>
-	<SubTexture name="Senpai Portrait Enter0004" x="0" y="0" width="1203" height="1067"/>
-	<SubTexture name="Senpai Portrait Enter0005" x="0" y="0" width="1203" height="1067"/>
-	<SubTexture name="Senpai Portrait Enter0006" x="0" y="0" width="1203" height="1067"/>
-	<SubTexture name="Senpai Portrait Enter0007" x="0" y="0" width="1203" height="1067"/>
-	<SubTexture name="Senpai Portrait Enter0008" x="0" y="0" width="1203" height="1067"/>
+	<SubTexture name="Roxie Portrait Enter0000" x="0" y="0" width="1241" height="1067" pivotX="455" pivotY="165.4"/>
+	<SubTexture name="Roxie Portrait Enter0001" x="0" y="0" width="1241" height="1067"/>
+	<SubTexture name="Roxie Portrait Enter0002" x="1243" y="0" width="1208" height="1067" frameX="-33" frameY="0" frameWidth="1241" frameHeight="1067"/>
+	<SubTexture name="Roxie Portrait Enter0003" x="1243" y="0" width="1208" height="1067" frameX="-33" frameY="0" frameWidth="1241" frameHeight="1067"/>
+	<SubTexture name="Roxie Portrait Enter0004" x="1243" y="0" width="1208" height="1067" frameX="-33" frameY="0" frameWidth="1241" frameHeight="1067"/>
+	<SubTexture name="Roxie Portrait Enter0005" x="2453" y="0" width="1203" height="1067" frameX="-38" frameY="0" frameWidth="1241" frameHeight="1067"/>
+	<SubTexture name="Roxie Portrait Enter0006" x="0" y="1069" width="1201" height="1067" frameX="-40" frameY="0" frameWidth="1241" frameHeight="1067"/>
+	<SubTexture name="Roxie Portrait Enter0007" x="0" y="1069" width="1201" height="1067" frameX="-40" frameY="0" frameWidth="1241" frameHeight="1067"/>
+	<SubTexture name="Roxie Portrait Enter0008" x="0" y="1069" width="1201" height="1067" frameX="-40" frameY="0" frameWidth="1241" frameHeight="1067"/>
 </TextureAtlas>
