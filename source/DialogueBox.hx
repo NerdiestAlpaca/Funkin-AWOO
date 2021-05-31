@@ -91,9 +91,9 @@ class DialogueBox extends FlxSpriteGroup
 				
 			case 'satellite':
 				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
-				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+				box.frames = Paths.getSparrowAtlas('speech_bubble_talking');
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+				box.animation.addByIndices('normal', 'Speech Bubble Normal Open', [5], "", 24);
 		}
 
 		this.dialogueList = dialogueList;
@@ -109,6 +109,15 @@ class DialogueBox extends FlxSpriteGroup
 		portraitLeft.scrollFactor.set();
 		add(portraitLeft);
 		portraitLeft.visible = false;
+
+		portraitRoxie = new FlxSprite(-20, 40);
+		portraitRoxie.frames = Paths.getSparrowAtlas('petshop/roxieportrait');
+		portraitRoxie.animation.addByPrefix('enter', 'Senpai Portrait Enter', 24, false);
+		portraitRoxie.setGraphicSize(Std.int(portraitRoxie.width * 1));
+		portraitRoxie.updateHitbox();
+		portraitRoxie.scrollFactor.set();
+		add(portraitRoxie);
+		portraitRoxie.visible = false;
 
 		portraitRight = new FlxSprite(0, 40);
 		portraitRight.frames = Paths.getSparrowAtlas('weeb/bfPortrait');
@@ -166,17 +175,6 @@ class DialogueBox extends FlxSpriteGroup
 			swagDialogue.color = FlxColor.WHITE;
 			dropText.color = FlxColor.BLACK;
 		}
-		if (PlayState.SONG.song.toLowerCase() == 'satellite')
-			{
-				portraitLeft = new FlxSprite(-20, 40);
-				portraitLeft.frames = Paths.getSparrowAtlas('petshop/roxieportrait');
-				portraitLeft.animation.addByPrefix('enter', 'Senpai Portrait Enter', 24, false);
-				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 1));
-				portraitLeft.updateHitbox();
-				portraitLeft.scrollFactor.set();
-				add(portraitLeft);
-				portraitLeft.visible = false;
-			}
 		if (box.animation.curAnim != null)
 		{
 			if (box.animation.curAnim.name == 'normalOpen' && box.animation.curAnim.finished)
@@ -251,6 +249,7 @@ class DialogueBox extends FlxSpriteGroup
 		{
 			case 'dad':
 				portraitRight.visible = false;
+				portraitRoxie.visible = false;
 				if (!portraitLeft.visible)
 				{
 					portraitLeft.visible = true;
@@ -258,17 +257,19 @@ class DialogueBox extends FlxSpriteGroup
 				}
 			case 'bf':
 				portraitLeft.visible = false;
+				portraitRoxie.visible = false;
 				if (!portraitRight.visible)
 				{
 					portraitRight.visible = true;
 					portraitRight.animation.play('enter');
 				}
-			case 'blank':
+			case 'roxie':
 				portraitLeft.visible = false;
-				if (!portraitRight.visible)
+				portraitRight.visible = false;
+				if (!portraitRoxie.visible)
 				{
-					portraitRight.visible = false;
-					portraitRight.animation.play('enter');
+					portraitRoxie.visible = true;
+					portraitRoxie.animation.play('enter');
 				}
 		}
 	}
