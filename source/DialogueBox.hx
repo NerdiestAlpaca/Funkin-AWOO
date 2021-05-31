@@ -30,6 +30,7 @@ class DialogueBox extends FlxSpriteGroup
 
 	var portraitLeft:FlxSprite;
 	var portraitRight:FlxSprite;
+	var portraitRoxie:FlxSprite;
 
 	var handSelect:FlxSprite;
 	var bgFade:FlxSprite;
