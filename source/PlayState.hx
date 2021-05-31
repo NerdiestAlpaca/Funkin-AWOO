@@ -1088,9 +1088,9 @@ class PlayState extends MusicBeatState
 				case 'satellite':
 					lpsintro(doof);
 				case 'our world':
-					lpstransition(doof);
+					schoolIntro(doof);
 				case 'mischief':
-					lpstransition(doof);
+					schoolIntro(doof);
 				default:
 					startCountdown();
 
