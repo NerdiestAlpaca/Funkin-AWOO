@@ -336,11 +336,7 @@ class PlayState extends MusicBeatState
 			case 'thorns':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
 			case 'satellite':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('satellite/coolswag'));	
-			case 'our world':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('our world/coolswag'));	
-			case 'mischief':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('mischief/coolswag'));		
+				dialogue = CoolUtil.coolTextFile(Paths.txt('satellite/coolswag'));		
 		}
 
 		switch(SONG.stage)
@@ -1083,7 +1079,7 @@ class PlayState extends MusicBeatState
 						});
 					});
 				case 'senpai':
-					schoolintro(doof);
+					schoolIntro(doof);
 				case 'roses':
 					FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(doof);
@@ -1092,11 +1088,12 @@ class PlayState extends MusicBeatState
 				case 'satellite':
 					lpsintro(doof);
 				case 'our world':
-					schoolintro(doof);
+					schoolIntro(doof);
 				case 'mischief':
-					schoolintro(doof);
+					schoolIntro(doof);
 				default:
 					startCountdown();
+
 			}
 		}
 		else
