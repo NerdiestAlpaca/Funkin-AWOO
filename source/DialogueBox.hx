@@ -145,7 +145,7 @@ class DialogueBox extends FlxSpriteGroup
 		portraitBF.updateHitbox();
 		portraitBF.scrollFactor.set();
 		add(portraitBF);
-		portraitBF.visible = false;
+		portraitBF.visible = false;;
 
 		portraitRoxie = new FlxSprite(-20, 40);
 		portraitRoxie.frames = Paths.getSparrowAtlas('petshop/roxieportrait');
@@ -304,7 +304,7 @@ class DialogueBox extends FlxSpriteGroup
 		{
 			case 'dad':
 				portraitRight.visible = false;
-				portraitBF.visible = false
+				portraitBF.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
@@ -316,7 +316,7 @@ class DialogueBox extends FlxSpriteGroup
 				}
 			case 'bf':
 				portraitLeft.visible = false;
-				portraitBF.visible = false
+				portraitBF.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
@@ -341,7 +341,7 @@ class DialogueBox extends FlxSpriteGroup
 			case 'roxie':
 				portraitLeft.visible = false;
 				portraitRight.visible = false;
-				portraitBF.visible = false
+				portraitBF.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
 				portraitPetula.visible = false;
@@ -352,7 +352,7 @@ class DialogueBox extends FlxSpriteGroup
 				}
 			case 'savannah':
 				portraitLeft.visible = false;
-				portraitBF.visible = false
+				portraitBF.visible = false;
 				portraitRight.visible = false;
 				portraitRoxie.visible = false;
 				portraitQuincy.visible = false;
@@ -364,7 +364,7 @@ class DialogueBox extends FlxSpriteGroup
 				}
 			case 'quincy':
 				portraitLeft.visible = false;
-				portraitBF.visible = false
+				portraitBF.visible = false;
 				portraitRight.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
@@ -377,7 +377,7 @@ class DialogueBox extends FlxSpriteGroup
 			case 'petula':
 				portraitLeft.visible = false;
 				portraitRight.visible = false;
-				portraitBF.visible = false
+				portraitBF.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
