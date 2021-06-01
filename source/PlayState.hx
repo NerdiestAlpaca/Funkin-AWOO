@@ -2671,18 +2671,18 @@ class PlayState extends MusicBeatState
 			switch(daRating)
 			{
 				case 'shit':
-					score = -300;
+					score = 0;
 					combo = 0;
 					misses++;
-					health -= 0.2;
+					health -= 0.03;
 					ss = false;
 					shits++;
 					if (FlxG.save.data.accuracyMod == 0)
 						totalNotesHit += 0.25;
 				case 'bad':
 					daRating = 'bad';
-					score = 0;
-					health -= 0.06;
+					score = 100;
+					health -= 0;
 					ss = false;
 					bads++;
 					if (FlxG.save.data.accuracyMod == 0)
@@ -2693,12 +2693,12 @@ class PlayState extends MusicBeatState
 					ss = false;
 					goods++;
 					if (health < 2)
-						health += 0.04;
+						health += 0.03;
 					if (FlxG.save.data.accuracyMod == 0)
 						totalNotesHit += 0.75;
 				case 'sick':
 					if (health < 2)
-						health += 0.1;
+						health += 0.06;
 					if (FlxG.save.data.accuracyMod == 0)
 						totalNotesHit += 1;
 					sicks++;
@@ -2754,12 +2754,14 @@ class PlayState extends MusicBeatState
 			timeShown = 0;
 			switch(daRating)
 			{
-				case 'shit' | 'bad':
-					currentTimingShown.color = FlxColor.RED;
+				case 'shit':
+					currentTimingShown.color = FlxColor.GRAY;
+				case 'bad':
+					currentTimingShown.color = FlxColor.ORANGE;
 				case 'good':
-					currentTimingShown.color = FlxColor.GREEN;
+					currentTimingShown.color = FlxColor.PURPLE;
 				case 'sick':
-					currentTimingShown.color = FlxColor.CYAN;
+					currentTimingShown.color = FlxColor.MAGENTA;
 			}
 			currentTimingShown.borderStyle = OUTLINE;
 			currentTimingShown.borderSize = 1;
@@ -3116,7 +3118,7 @@ class PlayState extends MusicBeatState
 	{
 		if (!boyfriend.stunned)
 		{
-			health -= 0.04;
+			health -= 0.07;
 			if (combo > 5 && gf.animOffsets.exists('sad'))
 			{
 				gf.playAnim('sad');
