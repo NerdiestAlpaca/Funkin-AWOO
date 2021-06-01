@@ -2677,7 +2677,7 @@ class PlayState extends MusicBeatState
 					score = 0;
 					combo = 0;
 					misses++;
-					health -= 0.03;
+					health -= 0.05;
 					ss = false;
 					shits++;
 					if (FlxG.save.data.accuracyMod == 0)
@@ -2696,12 +2696,12 @@ class PlayState extends MusicBeatState
 					ss = false;
 					goods++;
 					if (health < 2)
-						health += 0.03;
+						health += 0.05;
 					if (FlxG.save.data.accuracyMod == 0)
 						totalNotesHit += 0.75;
 				case 'sick':
 					if (health < 2)
-						health += 0.06;
+						health += 0.07;
 					if (FlxG.save.data.accuracyMod == 0)
 						totalNotesHit += 1;
 					sicks++;
