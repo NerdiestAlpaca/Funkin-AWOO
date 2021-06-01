@@ -244,6 +244,22 @@ class Character extends FlxSprite
 					addOffset('singDOWN', 6, -361);
 				
 				playAnim('idle');	
+			case 'edie':
+					tex = Paths.getSparrowAtlas('characters/Edie');
+					frames = tex;
+					animation.addByPrefix('idle', 'Edie Idle', 24, true);
+					animation.addByPrefix('singUP', 'Edie Up', 24, false);
+					animation.addByPrefix('singLEFT','Edie Left', 24, false);
+					animation.addByPrefix('singRIGHT', 'Edie Right', 24, false);
+					animation.addByPrefix('singDOWN', 'Edie Down', 24, false);
+				
+					addOffset('idle', 0,-310);
+					addOffset('singUP', 56, -294);
+					addOffset('singRIGHT', 5, -315);
+					addOffset('singLEFT', 0, -315);
+					addOffset('singDOWN', 21, -327);
+				
+				playAnim('idle');
 			case 'spooky':
 				tex = Paths.getSparrowAtlas('characters/spooky_kids_assets');
 				frames = tex;
