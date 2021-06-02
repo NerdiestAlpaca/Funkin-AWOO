@@ -32,11 +32,12 @@ class StoryMenuState extends MusicBeatState
 		['Cocoa', 'Eggnog', 'Winter Horrorland'],
 		['Senpai', 'Roses', 'Thorns'],
 		['Satellite', 'Our World', 'Mischief'],
-		['Free Spirit', 'Catnap', 'Daredevil']
+		['Free Spirit', 'Catnap', 'Daredevil'],
+		['Dreamboat', 'Primadonna', 'Swerved Up']
 	];
 	var curDifficulty:Int = 1;
 
-	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true, true, true];
+	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true, true, true, true];
 
 	var weekCharacters:Array<Dynamic> = [
 		['', 'bf', 'gf'],
@@ -47,7 +48,8 @@ class StoryMenuState extends MusicBeatState
 		['parents-christmas', 'bf', 'gf'],
 		['senpai', 'bf', 'gf'],
 		['firstweek', 'bf', 'gf'],
-		['secondweek', 'bf', 'gf']
+		['secondweek', 'bf', 'gf'],
+		['thirdweek', 'bf', 'gf']
 	];
 
 	var weekNames:Array<String> = [
@@ -59,7 +61,8 @@ class StoryMenuState extends MusicBeatState
 		"RED SNOW",
 		"Hating Simulator ft. Moawling",
 		"Paw-Tucket",
-		"Round Two at the LPS"
+		"Round Two at the LPS",
+		"Guest Of Honor"
 	];
 
 	var txtWeekTitle:FlxText;
