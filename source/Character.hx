@@ -149,10 +149,10 @@ class Character extends FlxSprite
 				animation.addByPrefix('singLEFT', 'Savannah Left', 24);
 			
 				addOffset('idle', 0,-290);
-				addOffset('singUP', -1, -267);
-				addOffset('singRIGHT', 10, -285);
-				addOffset('singLEFT',-2, -280);
-				addOffset('singDOWN', 10, -293);
+				addOffset('singUP', -10, -271);
+				addOffset('singRIGHT', 1, -285);
+				addOffset('singLEFT',-1, -281);
+				addOffset('singDOWN', 1, -291);
 			
 			playAnim('idle');
 			case 'quincy':
@@ -165,10 +165,10 @@ class Character extends FlxSprite
 					animation.addByPrefix('singLEFT', 'Quincy Left', 24);
 	
 					addOffset('idle', 0,-302);
-					addOffset("singUP", -19, -281);
-					addOffset("singRIGHT", 4, -302);
-					addOffset("singLEFT", -30, -289);
-					addOffset("singDOWN", 7, -302);
+					addOffset("singUP", 0, -282);
+					addOffset("singRIGHT", 0, -302);
+					addOffset("singLEFT", -22, -292);
+					addOffset("singDOWN", 0, -302);
 
 				playAnim('idle');
 			case 'petula':
@@ -185,14 +185,14 @@ class Character extends FlxSprite
 					animation.addByPrefix('singRIGHT-alt', 'Petula RMad', 24, false);
 
 					addOffset('idle', 0,-302);
-					addOffset('singUP', -57, -289);
-					addOffset('singRIGHT', -34, -301);
-					addOffset('singLEFT',-52, -302);
-					addOffset('singDOWN', -46, -302);
-					addOffset("singUP-alt", -61, -286);
-					addOffset("singRIGHT-alt", -34, -302);
-					addOffset("singLEFT-alt", -52, -302);
-					addOffset("singDOWN-alt", -43, -300);
+					addOffset('singUP', -49, -289);
+					addOffset('singRIGHT', -43, -301);
+					addOffset('singLEFT',-56, -302);
+					addOffset('singDOWN', -56, -302);
+					addOffset("singUP-alt", -55, -286);
+					addOffset("singRIGHT-alt", -49, -302);
+					addOffset("singLEFT-alt", -57, -302);
+					addOffset("singDOWN-alt", -42, -302);
 
 				playAnim('idle');
 			case 'roxie':
@@ -244,6 +244,22 @@ class Character extends FlxSprite
 					addOffset('singDOWN', 6, -361);
 				
 				playAnim('idle');	
+			case 'austin':
+					tex = Paths.getSparrowAtlas('characters/Austin');
+					frames = tex;
+					animation.addByPrefix('idle', 'Austin Idle', 24);
+					animation.addByPrefix('singUP', 'Austin Up', 24);
+					animation.addByPrefix('singRIGHT', 'Austin Right', 24);
+					animation.addByPrefix('singDOWN', 'Austin Down', 24);
+					animation.addByPrefix('singLEFT', 'Austin Left', 24);
+				
+					addOffset('idle', 0,-350);
+					addOffset('singUP', 9, -328);
+					addOffset('singRIGHT', -26, -355);
+					addOffset('singLEFT',13, -346);
+					addOffset('singDOWN', 1, -355);
+				
+				playAnim('idle');
 			case 'edie':
 					tex = Paths.getSparrowAtlas('characters/Edie');
 					frames = tex;

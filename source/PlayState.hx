@@ -2166,9 +2166,12 @@ class PlayState extends MusicBeatState
 					case 'trip':
 						camFollow.y = dad.getMidpoint().y + 200;
 						camFollow.x = dad.getMidpoint().x + 250;
+					case 'austin':
+						camFollow.y = dad.getMidpoint().y + 150;
+						camFollow.x = dad.getMidpoint().x + 250;	
 					case 'edie':
 						camFollow.y = dad.getMidpoint().y + 150;
-						camFollow.x = dad.getMidpoint().x + 250;
+						camFollow.x = dad.getMidpoint().x + 250;				
 				}
 
 				if (dad.curCharacter == 'mom')
@@ -2677,7 +2680,7 @@ class PlayState extends MusicBeatState
 					score = 0;
 					combo = 0;
 					misses++;
-					health -= 0.05;
+					health -= 0.03;
 					ss = false;
 					shits++;
 					if (FlxG.save.data.accuracyMod == 0)
@@ -2696,12 +2699,12 @@ class PlayState extends MusicBeatState
 					ss = false;
 					goods++;
 					if (health < 2)
-						health += 0.05;
+						health += 0.03;
 					if (FlxG.save.data.accuracyMod == 0)
 						totalNotesHit += 0.75;
 				case 'sick':
 					if (health < 2)
-						health += 0.07;
+						health += 0.06;
 					if (FlxG.save.data.accuracyMod == 0)
 						totalNotesHit += 1;
 					sicks++;
