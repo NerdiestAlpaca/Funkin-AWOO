@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="char.png">
+<TextureAtlas imagePath="Bev.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Bev Down0000" x="0" y="0" width="366" height="394" pivotX="-414.25" pivotY="202.95" frameX="-1" frameY="-3" frameWidth="367" frameHeight="397"/>
-	<SubTexture name="Bev Down0001" x="0" y="0" width="366" height="394" frameX="-1" frameY="-3" frameWidth="367" frameHeight="397"/>
-	<SubTexture name="Bev Down0002" x="368" y="0" width="367" height="397"/>
-	<SubTexture name="Bev Down0003" x="368" y="0" width="367" height="397"/>
-	<SubTexture name="Bev Down0004" x="368" y="0" width="367" height="397"/>
-	<SubTexture name="Bev Down0005" x="368" y="0" width="367" height="397"/>
-	<SubTexture name="Bev Down0006" x="368" y="0" width="367" height="397"/>
-	<SubTexture name="Bev Down0007" x="368" y="0" width="367" height="397"/>
-	<SubTexture name="Bev Down0008" x="368" y="0" width="367" height="397"/>
-	<SubTexture name="Bev Down0009" x="368" y="0" width="367" height="397"/>
-	<SubTexture name="Bev Down0010" x="368" y="0" width="367" height="397"/>
-	<SubTexture name="Bev Down0011" x="368" y="0" width="367" height="397"/>
-	<SubTexture name="Bev Down0012" x="368" y="0" width="367" height="397"/>
-	<SubTexture name="Bev Down0013" x="368" y="0" width="367" height="397"/>
-	<SubTexture name="Bev Idle0000" x="737" y="0" width="429" height="394" pivotX="-352.25" pivotY="206.8" frameX="0" frameY="-7" frameWidth="429" frameHeight="401"/>
-	<SubTexture name="Bev Idle0001" x="737" y="0" width="429" height="394" frameX="0" frameY="-7" frameWidth="429" frameHeight="401"/>
-	<SubTexture name="Bev Idle0002" x="1168" y="0" width="429" height="397" frameX="0" frameY="-4" frameWidth="429" frameHeight="401"/>
-	<SubTexture name="Bev Idle0003" x="1168" y="0" width="429" height="397" frameX="0" frameY="-4" frameWidth="429" frameHeight="401"/>
-	<SubTexture name="Bev Idle0004" x="1599" y="0" width="429" height="399" frameX="0" frameY="-2" frameWidth="429" frameHeight="401"/>
-	<SubTexture name="Bev Idle0005" x="1599" y="0" width="429" height="399" frameX="0" frameY="-2" frameWidth="429" frameHeight="401"/>
+	<SubTexture name="Bev Down0000" x="0" y="0" width="370" height="394" pivotX="-411.7" pivotY="202.95" frameX="0" frameY="-3" frameWidth="370" frameHeight="397"/>
+	<SubTexture name="Bev Down0001" x="0" y="0" width="370" height="394" frameX="0" frameY="-3" frameWidth="370" frameHeight="397"/>
+	<SubTexture name="Bev Down0002" x="372" y="0" width="370" height="397"/>
+	<SubTexture name="Bev Down0003" x="372" y="0" width="370" height="397"/>
+	<SubTexture name="Bev Down0004" x="372" y="0" width="370" height="397"/>
+	<SubTexture name="Bev Down0005" x="372" y="0" width="370" height="397"/>
+	<SubTexture name="Bev Down0006" x="372" y="0" width="370" height="397"/>
+	<SubTexture name="Bev Down0007" x="372" y="0" width="370" height="397"/>
+	<SubTexture name="Bev Down0008" x="372" y="0" width="370" height="397"/>
+	<SubTexture name="Bev Down0009" x="372" y="0" width="370" height="397"/>
+	<SubTexture name="Bev Down0010" x="372" y="0" width="370" height="397"/>
+	<SubTexture name="Bev Down0011" x="372" y="0" width="370" height="397"/>
+	<SubTexture name="Bev Down0012" x="372" y="0" width="370" height="397"/>
+	<SubTexture name="Bev Down0013" x="372" y="0" width="370" height="397"/>
+	<SubTexture name="Bev Idle0000" x="744" y="0" width="429" height="394" pivotX="-352.25" pivotY="206.8" frameX="0" frameY="-7" frameWidth="429" frameHeight="401"/>
+	<SubTexture name="Bev Idle0001" x="744" y="0" width="429" height="394" frameX="0" frameY="-7" frameWidth="429" frameHeight="401"/>
+	<SubTexture name="Bev Idle0002" x="1175" y="0" width="429" height="397" frameX="0" frameY="-4" frameWidth="429" frameHeight="401"/>
+	<SubTexture name="Bev Idle0003" x="1175" y="0" width="429" height="397" frameX="0" frameY="-4" frameWidth="429" frameHeight="401"/>
+	<SubTexture name="Bev Idle0004" x="1606" y="0" width="429" height="399" frameX="0" frameY="-2" frameWidth="429" frameHeight="401"/>
+	<SubTexture name="Bev Idle0005" x="1606" y="0" width="429" height="399" frameX="0" frameY="-2" frameWidth="429" frameHeight="401"/>
 	<SubTexture name="Bev Idle0006" x="0" y="401" width="429" height="400" frameX="0" frameY="-1" frameWidth="429" frameHeight="401"/>
 	<SubTexture name="Bev Idle0007" x="0" y="401" width="429" height="400" frameX="0" frameY="-1" frameWidth="429" frameHeight="401"/>
 	<SubTexture name="Bev Idle0008" x="431" y="401" width="429" height="401"/>
