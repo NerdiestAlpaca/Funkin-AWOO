@@ -2,74 +2,74 @@
 <TextureAtlas imagePath="Austin.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Austin Down0000" x="0" y="0" width="395" height="347" pivotX="209.05" pivotY="365" frameX="0" frameY="-1" frameWidth="395" frameHeight="348"/>
-	<SubTexture name="Austin Down0001" x="0" y="0" width="395" height="347" frameX="0" frameY="-1" frameWidth="395" frameHeight="348"/>
-	<SubTexture name="Austin Down0002" x="397" y="0" width="392" height="348" frameX="0" frameY="0" frameWidth="395" frameHeight="348"/>
-	<SubTexture name="Austin Down0003" x="397" y="0" width="392" height="348" frameX="0" frameY="0" frameWidth="395" frameHeight="348"/>
-	<SubTexture name="Austin Down0004" x="397" y="0" width="392" height="348" frameX="0" frameY="0" frameWidth="395" frameHeight="348"/>
-	<SubTexture name="Austin Down0005" x="397" y="0" width="392" height="348" frameX="0" frameY="0" frameWidth="395" frameHeight="348"/>
-	<SubTexture name="Austin Down0006" x="397" y="0" width="392" height="348" frameX="0" frameY="0" frameWidth="395" frameHeight="348"/>
-	<SubTexture name="Austin Down0007" x="397" y="0" width="392" height="348" frameX="0" frameY="0" frameWidth="395" frameHeight="348"/>
-	<SubTexture name="Austin Down0008" x="397" y="0" width="392" height="348" frameX="0" frameY="0" frameWidth="395" frameHeight="348"/>
-	<SubTexture name="Austin Down0009" x="397" y="0" width="392" height="348" frameX="0" frameY="0" frameWidth="395" frameHeight="348"/>
-	<SubTexture name="Austin Down0010" x="397" y="0" width="392" height="348" frameX="0" frameY="0" frameWidth="395" frameHeight="348"/>
-	<SubTexture name="Austin Down0011" x="397" y="0" width="392" height="348" frameX="0" frameY="0" frameWidth="395" frameHeight="348"/>
-	<SubTexture name="Austin Down0012" x="397" y="0" width="392" height="348" frameX="0" frameY="0" frameWidth="395" frameHeight="348"/>
-	<SubTexture name="Austin Down0013" x="397" y="0" width="392" height="348" frameX="0" frameY="0" frameWidth="395" frameHeight="348"/>
-	<SubTexture name="Austin Idle0000" x="791" y="0" width="384" height="353" pivotX="208.25" pivotY="370.55" frameX="0" frameY="0" frameWidth="392" frameHeight="353"/>
-	<SubTexture name="Austin Idle0001" x="791" y="0" width="384" height="353" frameX="0" frameY="0" frameWidth="392" frameHeight="353"/>
-	<SubTexture name="Austin Idle0002" x="1177" y="0" width="381" height="349" frameX="-7" frameY="-4" frameWidth="392" frameHeight="353"/>
-	<SubTexture name="Austin Idle0003" x="1177" y="0" width="381" height="349" frameX="-7" frameY="-4" frameWidth="392" frameHeight="353"/>
-	<SubTexture name="Austin Idle0004" x="1560" y="0" width="380" height="347" frameX="-12" frameY="-6" frameWidth="392" frameHeight="353"/>
-	<SubTexture name="Austin Idle0005" x="0" y="355" width="385" height="347" frameX="-7" frameY="-6" frameWidth="392" frameHeight="353"/>
-	<SubTexture name="Austin Idle0006" x="387" y="355" width="377" height="353" frameX="-7" frameY="0" frameWidth="392" frameHeight="353"/>
-	<SubTexture name="Austin Idle0007" x="766" y="355" width="384" height="353" frameX="0" frameY="0" frameWidth="392" frameHeight="353"/>
-	<SubTexture name="Austin Idle0008" x="766" y="355" width="384" height="353" frameX="0" frameY="0" frameWidth="392" frameHeight="353"/>
-	<SubTexture name="Austin Idle0009" x="387" y="355" width="377" height="353" frameX="-7" frameY="0" frameWidth="392" frameHeight="353"/>
-	<SubTexture name="Austin Idle0010" x="387" y="355" width="377" height="353" frameX="-7" frameY="0" frameWidth="392" frameHeight="353"/>
-	<SubTexture name="Austin Idle0011" x="1152" y="355" width="372" height="353" frameX="-12" frameY="0" frameWidth="392" frameHeight="353"/>
-	<SubTexture name="Austin Idle0012" x="387" y="355" width="377" height="353" frameX="-7" frameY="0" frameWidth="392" frameHeight="353"/>
-	<SubTexture name="Austin Idle0013" x="387" y="355" width="377" height="353" frameX="-7" frameY="0" frameWidth="392" frameHeight="353"/>
-	<SubTexture name="Austin Left0000" x="1526" y="355" width="397" height="359" pivotX="221.9" pivotY="374.15"/>
-	<SubTexture name="Austin Left0001" x="1526" y="355" width="397" height="359"/>
-	<SubTexture name="Austin Left0002" x="0" y="716" width="397" height="355" frameX="0" frameY="-4" frameWidth="397" frameHeight="359"/>
-	<SubTexture name="Austin Left0003" x="0" y="716" width="397" height="355" frameX="0" frameY="-4" frameWidth="397" frameHeight="359"/>
-	<SubTexture name="Austin Left0004" x="0" y="716" width="397" height="355" frameX="0" frameY="-4" frameWidth="397" frameHeight="359"/>
-	<SubTexture name="Austin Left0005" x="0" y="716" width="397" height="355" frameX="0" frameY="-4" frameWidth="397" frameHeight="359"/>
-	<SubTexture name="Austin Left0006" x="0" y="716" width="397" height="355" frameX="0" frameY="-4" frameWidth="397" frameHeight="359"/>
-	<SubTexture name="Austin Left0007" x="0" y="716" width="397" height="355" frameX="0" frameY="-4" frameWidth="397" frameHeight="359"/>
-	<SubTexture name="Austin Left0008" x="0" y="716" width="397" height="355" frameX="0" frameY="-4" frameWidth="397" frameHeight="359"/>
-	<SubTexture name="Austin Left0009" x="0" y="716" width="397" height="355" frameX="0" frameY="-4" frameWidth="397" frameHeight="359"/>
-	<SubTexture name="Austin Left0010" x="0" y="716" width="397" height="355" frameX="0" frameY="-4" frameWidth="397" frameHeight="359"/>
-	<SubTexture name="Austin Left0011" x="0" y="716" width="397" height="355" frameX="0" frameY="-4" frameWidth="397" frameHeight="359"/>
-	<SubTexture name="Austin Left0012" x="0" y="716" width="397" height="355" frameX="0" frameY="-4" frameWidth="397" frameHeight="359"/>
-	<SubTexture name="Austin Left0013" x="0" y="716" width="397" height="355" frameX="0" frameY="-4" frameWidth="397" frameHeight="359"/>
-	<SubTexture name="Austin Right0000" x="399" y="716" width="391" height="349" pivotX="182.7" pivotY="365" frameX="-4" frameY="-1" frameWidth="395" frameHeight="350"/>
-	<SubTexture name="Austin Right0001" x="399" y="716" width="391" height="349" frameX="-4" frameY="-1" frameWidth="395" frameHeight="350"/>
-	<SubTexture name="Austin Right0002" x="792" y="716" width="395" height="350"/>
-	<SubTexture name="Austin Right0003" x="792" y="716" width="395" height="350"/>
-	<SubTexture name="Austin Right0004" x="792" y="716" width="395" height="350"/>
-	<SubTexture name="Austin Right0005" x="792" y="716" width="395" height="350"/>
-	<SubTexture name="Austin Right0006" x="792" y="716" width="395" height="350"/>
-	<SubTexture name="Austin Right0007" x="792" y="716" width="395" height="350"/>
-	<SubTexture name="Austin Right0008" x="792" y="716" width="395" height="350"/>
-	<SubTexture name="Austin Right0009" x="792" y="716" width="395" height="350"/>
-	<SubTexture name="Austin Right0010" x="792" y="716" width="395" height="350"/>
-	<SubTexture name="Austin Right0011" x="792" y="716" width="395" height="350"/>
-	<SubTexture name="Austin Right0012" x="792" y="716" width="395" height="350"/>
-	<SubTexture name="Austin Right0013" x="792" y="716" width="395" height="350"/>
-	<SubTexture name="Austin Up0000" x="1189" y="716" width="384" height="378" pivotX="217.2" pivotY="392.55" frameX="0" frameY="0" frameWidth="393" frameHeight="378"/>
-	<SubTexture name="Austin Up0001" x="1189" y="716" width="384" height="378" frameX="0" frameY="0" frameWidth="393" frameHeight="378"/>
-	<SubTexture name="Austin Up0002" x="1575" y="716" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
-	<SubTexture name="Austin Up0003" x="1575" y="716" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
-	<SubTexture name="Austin Up0004" x="1575" y="716" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
-	<SubTexture name="Austin Up0005" x="1575" y="716" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
-	<SubTexture name="Austin Up0006" x="1575" y="716" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
-	<SubTexture name="Austin Up0007" x="1575" y="716" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
-	<SubTexture name="Austin Up0008" x="1575" y="716" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
-	<SubTexture name="Austin Up0009" x="1575" y="716" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
-	<SubTexture name="Austin Up0010" x="1575" y="716" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
-	<SubTexture name="Austin Up0011" x="1575" y="716" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
-	<SubTexture name="Austin Up0012" x="1575" y="716" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
-	<SubTexture name="Austin Up0013" x="1575" y="716" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
+	<SubTexture name="Austin Down0000" x="0" y="0" width="396" height="348" pivotX="209.3" pivotY="365.3" frameX="0" frameY="-1" frameWidth="396" frameHeight="349"/>
+	<SubTexture name="Austin Down0001" x="0" y="0" width="396" height="348" frameX="0" frameY="-1" frameWidth="396" frameHeight="349"/>
+	<SubTexture name="Austin Down0002" x="398" y="0" width="392" height="349" frameX="0" frameY="0" frameWidth="396" frameHeight="349"/>
+	<SubTexture name="Austin Down0003" x="398" y="0" width="392" height="349" frameX="0" frameY="0" frameWidth="396" frameHeight="349"/>
+	<SubTexture name="Austin Down0004" x="398" y="0" width="392" height="349" frameX="0" frameY="0" frameWidth="396" frameHeight="349"/>
+	<SubTexture name="Austin Down0005" x="398" y="0" width="392" height="349" frameX="0" frameY="0" frameWidth="396" frameHeight="349"/>
+	<SubTexture name="Austin Down0006" x="398" y="0" width="392" height="349" frameX="0" frameY="0" frameWidth="396" frameHeight="349"/>
+	<SubTexture name="Austin Down0007" x="398" y="0" width="392" height="349" frameX="0" frameY="0" frameWidth="396" frameHeight="349"/>
+	<SubTexture name="Austin Down0008" x="398" y="0" width="392" height="349" frameX="0" frameY="0" frameWidth="396" frameHeight="349"/>
+	<SubTexture name="Austin Down0009" x="398" y="0" width="392" height="349" frameX="0" frameY="0" frameWidth="396" frameHeight="349"/>
+	<SubTexture name="Austin Down0010" x="398" y="0" width="392" height="349" frameX="0" frameY="0" frameWidth="396" frameHeight="349"/>
+	<SubTexture name="Austin Down0011" x="398" y="0" width="392" height="349" frameX="0" frameY="0" frameWidth="396" frameHeight="349"/>
+	<SubTexture name="Austin Down0012" x="398" y="0" width="392" height="349" frameX="0" frameY="0" frameWidth="396" frameHeight="349"/>
+	<SubTexture name="Austin Down0013" x="398" y="0" width="392" height="349" frameX="0" frameY="0" frameWidth="396" frameHeight="349"/>
+	<SubTexture name="Austin Idle0000" x="792" y="0" width="384" height="354" pivotX="208.5" pivotY="370.85" frameX="0" frameY="0" frameWidth="392" frameHeight="354"/>
+	<SubTexture name="Austin Idle0001" x="792" y="0" width="384" height="354" frameX="0" frameY="0" frameWidth="392" frameHeight="354"/>
+	<SubTexture name="Austin Idle0002" x="1178" y="0" width="382" height="350" frameX="-6" frameY="-4" frameWidth="392" frameHeight="354"/>
+	<SubTexture name="Austin Idle0003" x="1178" y="0" width="382" height="350" frameX="-6" frameY="-4" frameWidth="392" frameHeight="354"/>
+	<SubTexture name="Austin Idle0004" x="1562" y="0" width="380" height="348" frameX="-12" frameY="-6" frameWidth="392" frameHeight="354"/>
+	<SubTexture name="Austin Idle0005" x="0" y="356" width="386" height="348" frameX="-6" frameY="-6" frameWidth="392" frameHeight="354"/>
+	<SubTexture name="Austin Idle0006" x="388" y="356" width="378" height="354" frameX="-6" frameY="0" frameWidth="392" frameHeight="354"/>
+	<SubTexture name="Austin Idle0007" x="768" y="356" width="384" height="354" frameX="0" frameY="0" frameWidth="392" frameHeight="354"/>
+	<SubTexture name="Austin Idle0008" x="768" y="356" width="384" height="354" frameX="0" frameY="0" frameWidth="392" frameHeight="354"/>
+	<SubTexture name="Austin Idle0009" x="1154" y="356" width="378" height="354" frameX="-6" frameY="0" frameWidth="392" frameHeight="354"/>
+	<SubTexture name="Austin Idle0010" x="1154" y="356" width="378" height="354" frameX="-6" frameY="0" frameWidth="392" frameHeight="354"/>
+	<SubTexture name="Austin Idle0011" x="1534" y="356" width="372" height="354" frameX="-12" frameY="0" frameWidth="392" frameHeight="354"/>
+	<SubTexture name="Austin Idle0012" x="388" y="356" width="378" height="354" frameX="-6" frameY="0" frameWidth="392" frameHeight="354"/>
+	<SubTexture name="Austin Idle0013" x="388" y="356" width="378" height="354" frameX="-6" frameY="0" frameWidth="392" frameHeight="354"/>
+	<SubTexture name="Austin Left0000" x="0" y="712" width="398" height="359" pivotX="222.2" pivotY="374.45"/>
+	<SubTexture name="Austin Left0001" x="0" y="712" width="398" height="359"/>
+	<SubTexture name="Austin Left0002" x="400" y="712" width="398" height="355" frameX="0" frameY="-4" frameWidth="398" frameHeight="359"/>
+	<SubTexture name="Austin Left0003" x="400" y="712" width="398" height="355" frameX="0" frameY="-4" frameWidth="398" frameHeight="359"/>
+	<SubTexture name="Austin Left0004" x="400" y="712" width="398" height="355" frameX="0" frameY="-4" frameWidth="398" frameHeight="359"/>
+	<SubTexture name="Austin Left0005" x="400" y="712" width="398" height="355" frameX="0" frameY="-4" frameWidth="398" frameHeight="359"/>
+	<SubTexture name="Austin Left0006" x="400" y="712" width="398" height="355" frameX="0" frameY="-4" frameWidth="398" frameHeight="359"/>
+	<SubTexture name="Austin Left0007" x="400" y="712" width="398" height="355" frameX="0" frameY="-4" frameWidth="398" frameHeight="359"/>
+	<SubTexture name="Austin Left0008" x="400" y="712" width="398" height="355" frameX="0" frameY="-4" frameWidth="398" frameHeight="359"/>
+	<SubTexture name="Austin Left0009" x="400" y="712" width="398" height="355" frameX="0" frameY="-4" frameWidth="398" frameHeight="359"/>
+	<SubTexture name="Austin Left0010" x="400" y="712" width="398" height="355" frameX="0" frameY="-4" frameWidth="398" frameHeight="359"/>
+	<SubTexture name="Austin Left0011" x="400" y="712" width="398" height="355" frameX="0" frameY="-4" frameWidth="398" frameHeight="359"/>
+	<SubTexture name="Austin Left0012" x="400" y="712" width="398" height="355" frameX="0" frameY="-4" frameWidth="398" frameHeight="359"/>
+	<SubTexture name="Austin Left0013" x="400" y="712" width="398" height="355" frameX="0" frameY="-4" frameWidth="398" frameHeight="359"/>
+	<SubTexture name="Austin Right0000" x="800" y="712" width="393" height="350" pivotX="183.05" pivotY="365.3" frameX="-4" frameY="-1" frameWidth="397" frameHeight="351"/>
+	<SubTexture name="Austin Right0001" x="800" y="712" width="393" height="350" frameX="-4" frameY="-1" frameWidth="397" frameHeight="351"/>
+	<SubTexture name="Austin Right0002" x="1195" y="712" width="397" height="351"/>
+	<SubTexture name="Austin Right0003" x="1195" y="712" width="397" height="351"/>
+	<SubTexture name="Austin Right0004" x="1195" y="712" width="397" height="351"/>
+	<SubTexture name="Austin Right0005" x="1195" y="712" width="397" height="351"/>
+	<SubTexture name="Austin Right0006" x="1195" y="712" width="397" height="351"/>
+	<SubTexture name="Austin Right0007" x="1195" y="712" width="397" height="351"/>
+	<SubTexture name="Austin Right0008" x="1195" y="712" width="397" height="351"/>
+	<SubTexture name="Austin Right0009" x="1195" y="712" width="397" height="351"/>
+	<SubTexture name="Austin Right0010" x="1195" y="712" width="397" height="351"/>
+	<SubTexture name="Austin Right0011" x="1195" y="712" width="397" height="351"/>
+	<SubTexture name="Austin Right0012" x="1195" y="712" width="397" height="351"/>
+	<SubTexture name="Austin Right0013" x="1195" y="712" width="397" height="351"/>
+	<SubTexture name="Austin Up0000" x="1594" y="712" width="384" height="378" pivotX="217.5" pivotY="392.9" frameX="0" frameY="0" frameWidth="393" frameHeight="378"/>
+	<SubTexture name="Austin Up0001" x="1594" y="712" width="384" height="378" frameX="0" frameY="0" frameWidth="393" frameHeight="378"/>
+	<SubTexture name="Austin Up0002" x="0" y="1092" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
+	<SubTexture name="Austin Up0003" x="0" y="1092" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
+	<SubTexture name="Austin Up0004" x="0" y="1092" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
+	<SubTexture name="Austin Up0005" x="0" y="1092" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
+	<SubTexture name="Austin Up0006" x="0" y="1092" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
+	<SubTexture name="Austin Up0007" x="0" y="1092" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
+	<SubTexture name="Austin Up0008" x="0" y="1092" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
+	<SubTexture name="Austin Up0009" x="0" y="1092" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
+	<SubTexture name="Austin Up0010" x="0" y="1092" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
+	<SubTexture name="Austin Up0011" x="0" y="1092" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
+	<SubTexture name="Austin Up0012" x="0" y="1092" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
+	<SubTexture name="Austin Up0013" x="0" y="1092" width="393" height="368" frameX="0" frameY="-10" frameWidth="393" frameHeight="378"/>
 </TextureAtlas>
