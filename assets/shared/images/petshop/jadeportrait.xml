@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="jadeportrait.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Jade Portrait Enter0000" x="0" y="0" width="1241" height="1086" pivotX="455" pivotY="184.15"/>
+	<SubTexture name="Jade Portrait Enter0001" x="0" y="0" width="1241" height="1086"/>
+	<SubTexture name="Jade Portrait Enter0002" x="1243" y="0" width="1208" height="1086" frameX="-33" frameY="0" frameWidth="1241" frameHeight="1086"/>
+	<SubTexture name="Jade Portrait Enter0003" x="1243" y="0" width="1208" height="1086" frameX="-33" frameY="0" frameWidth="1241" frameHeight="1086"/>
+	<SubTexture name="Jade Portrait Enter0004" x="1243" y="0" width="1208" height="1086" frameX="-33" frameY="0" frameWidth="1241" frameHeight="1086"/>
+	<SubTexture name="Jade Portrait Enter0005" x="2453" y="0" width="1203" height="1086" frameX="-38" frameY="0" frameWidth="1241" frameHeight="1086"/>
+	<SubTexture name="Jade Portrait Enter0006" x="0" y="1088" width="1201" height="1086" frameX="-40" frameY="0" frameWidth="1241" frameHeight="1086"/>
+	<SubTexture name="Jade Portrait Enter0007" x="0" y="1088" width="1201" height="1086" frameX="-40" frameY="0" frameWidth="1241" frameHeight="1086"/>
+	<SubTexture name="Jade Portrait Enter0008" x="0" y="1088" width="1201" height="1086" frameX="-40" frameY="0" frameWidth="1241" frameHeight="1086"/>
+</TextureAtlas>

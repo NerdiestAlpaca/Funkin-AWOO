@@ -35,6 +35,11 @@ class DialogueBox extends FlxSpriteGroup
 	var portraitSavannah:FlxSprite;
 	var portraitQuincy:FlxSprite;
 	var portraitPetula:FlxSprite;
+	var portraitJade:FlxSprite;
+	var portraitTrip:FlxSprite;
+	var portraitAustin:FlxSprite;
+	var portraitEdie:FlxSprite;
+	var portraitBev:FlxSprite;
 
 	var handSelect:FlxSprite;
 	var bgFade:FlxSprite;
@@ -53,6 +58,12 @@ class DialogueBox extends FlxSpriteGroup
 				FlxG.sound.music.fadeIn(1, 0, 0.8);
 			case 'mischief':
 				FlxG.sound.playMusic(Paths.music('Woolwright'), 0);
+				FlxG.sound.music.fadeIn(1, 0, 0.8);
+			case 'free spirit':
+				FlxG.sound.playMusic(Paths.music('breakfast'), 0);
+				FlxG.sound.music.fadeIn(1, 0, 0.8);
+			case 'dreamboat':
+				FlxG.sound.playMusic(Paths.music('givinALittle'), 0);
 				FlxG.sound.music.fadeIn(1, 0, 0.8);
 		}
 
@@ -114,6 +125,43 @@ class DialogueBox extends FlxSpriteGroup
 				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
 				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
 				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+				
+			case 'free spirit':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
+				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+
+			case 'catnap':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
+				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+
+			case 'daredevil':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
+				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+
+			case 'dreamboat':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
+				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+
+			case 'primadonna':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
+				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+				
+			case 'swerved up':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
+				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+		}
 		}
 
 		this.dialogueList = dialogueList;
@@ -184,6 +232,51 @@ class DialogueBox extends FlxSpriteGroup
 		add(portraitPetula);
 		portraitPetula.visible = false;
 		
+				portraitJade = new FlxSprite(-20, 40);
+		portraitJade.frames = Paths.getSparrowAtlas('petshop/jadeportrait');
+		portraitJade.animation.addByPrefix('enter', 'Jade Portrait Enter', 24, false);
+		portraitJade.setGraphicSize(Std.int(portraitJade.width * 1));
+		portraitJade.updateHitbox();
+		portraitJade.scrollFactor.set();
+		add(portraitJade);
+		portraitJade.visible = false;
+		
+		portraitTrip = new FlxSprite(-20, 40);
+		portraitTrip.frames = Paths.getSparrowAtlas('petshop/tripportrait');
+		portraitTrip.animation.addByPrefix('enter', 'Trip Portrait Enter', 24, false);
+		portraitTrip.setGraphicSize(Std.int(portraitTrip.width * 1));
+		portraitTrip.updateHitbox();
+		portraitTrip.scrollFactor.set();
+		add(portraitTrip);
+		portraitTrip.visible = false;
+
+		portraitAustin = new FlxSprite(-20, 40);
+		portraitAustin.frames = Paths.getSparrowAtlas('petshop/austinportrait');
+		portraitAustin.animation.addByPrefix('enter', 'Austin Portrait Enter', 24, false);
+		portraitAustin.setGraphicSize(Std.int(portraitAustin.width * 1));
+		portraitAustin.updateHitbox();
+		portraitAustin.scrollFactor.set();
+		add(portraitAustin);
+		portraitAustin.visible = false;
+
+		portraitEdie = new FlxSprite(-20, 40);
+		portraitEdie.frames = Paths.getSparrowAtlas('petshop/edieportrait');
+		portraitEdie.animation.addByPrefix('enter', 'Edie Portrait Enter', 24, false);
+		portraitEdie.setGraphicSize(Std.int(portraitEdie.width * 1));
+		portraitEdie.updateHitbox();
+		portraitEdie.scrollFactor.set();
+		add(portraitEdie);
+		portraitEdie.visible = false;
+
+        portraitBev = new FlxSprite(-20, 40);
+		portraitBev.frames = Paths.getSparrowAtlas('petshop/bevportrait');
+		portraitBev.animation.addByPrefix('enter', 'Bev Portrait Enter', 24, false);
+		portraitBev.setGraphicSize(Std.int(portraitBev.width * 1));
+		portraitBev.updateHitbox();
+		portraitBev.scrollFactor.set();
+		add(portraitBev);
+		portraitBev.visible = false;
+
 		box.animation.play('normalOpen');
 		box.setGraphicSize(Std.int(box.width * PlayState.daPixelZoom * 0.9));
 		box.updateHitbox();
@@ -310,6 +403,11 @@ class DialogueBox extends FlxSpriteGroup
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
 				portraitPetula.visible = false;
+				portraitJade.visible = false;
+                portraitTrip.visible = false;
+                portraitAustin.visible = false;
+                portraitEdie.visible = false;
+                portraitBev.visible = false;
 				if (!portraitLeft.visible)
 				{
 					portraitLeft.visible = true;
@@ -322,6 +420,11 @@ class DialogueBox extends FlxSpriteGroup
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
 				portraitPetula.visible = false;
+				portraitJade.visible = false;
+                portraitTrip.visible = false;
+                portraitAustin.visible = false;
+                portraitEdie.visible = false;
+                portraitBev.visible = false;
 				if (!portraitRight.visible)
 				{
 					portraitRight.visible = true;
@@ -334,6 +437,11 @@ class DialogueBox extends FlxSpriteGroup
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
 				portraitPetula.visible = false;
+				portraitJade.visible = false;
+                portraitTrip.visible = false;
+                portraitAustin.visible = false;
+                portraitEdie.visible = false;
+                portraitBev.visible = false;
 				if (!portraitBF.visible)
 				{
 					portraitBF.visible = true;
@@ -346,6 +454,11 @@ class DialogueBox extends FlxSpriteGroup
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
 				portraitPetula.visible = false;
+				portraitJade.visible = false;
+                portraitTrip.visible = false;
+                portraitAustin.visible = false;
+                portraitEdie.visible = false;
+                portraitBev.visible = false;
 				if (!portraitRoxie.visible)
 				{
 					portraitRoxie.visible = true;
@@ -358,6 +471,11 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRoxie.visible = false;
 				portraitQuincy.visible = false;
 				portraitPetula.visible = false;
+				portraitJade.visible = false;
+                portraitTrip.visible = false;
+                portraitAustin.visible = false;
+                portraitEdie.visible = false;
+                portraitBev.visible = false;
 				if (!portraitSavannah.visible)
 				{
 					portraitSavannah.visible = true;
@@ -370,6 +488,12 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitPetula.visible = false;
+				portraitJade.visible = false;
+                portraitTrip.visible = false;
+                portraitAustin.visible = false;
+                portraitEdie.visible = false;
+                portraitBev.visible = false;
+				
 				if (!portraitQuincy.visible)
 				{
 					portraitQuincy.visible = true;
@@ -382,10 +506,100 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
+				portraitJade.visible = false;
+                portraitTrip.visible = false;
+                portraitAustin.visible = false;
+                portraitEdie.visible = false;
+                portraitBev.visible = false;
 				if (!portraitPetula.visible)
 				{
 					portraitPetula.visible = true;
 					portraitPetula.animation.play('enter');
+				}
+			case 'jade':
+            	portraitLeft.visible = false;
+				portraitRight.visible = false;
+				portraitBF.visible = false;
+				portraitRoxie.visible = false;
+				portraitSavannah.visible = false;
+				portraitQuincy.visible = false;
+				portraitPetula.visible = false;
+                portraitTrip.visible = false;
+                portraitAustin.visible = false;
+                portraitEdie.visible = false;
+                portraitBev.visible = false;
+				if (!portraitJade.visible)
+				{
+					portraitJade.visible = true;
+					portraitJade.animation.play('enter');
+				}
+            case 'trip':
+            	portraitLeft.visible = false;
+				portraitRight.visible = false;
+				portraitBF.visible = false;
+				portraitRoxie.visible = false;
+				portraitSavannah.visible = false;
+				portraitQuincy.visible = false;
+				portraitPetula.visible = false;
+				portraitJade.visible = false;
+                portraitAustin.visible = false;
+                portraitEdie.visible = false;
+                portraitBev.visible = false;
+				if (!portraitTrip.visible)
+				{
+					portraitTrip.visible = true;
+					portraitTrip.animation.play('enter');
+				}
+            case 'austin':
+            	portraitLeft.visible = false;
+				portraitRight.visible = false;
+				portraitBF.visible = false;
+				portraitRoxie.visible = false;
+				portraitSavannah.visible = false;
+				portraitQuincy.visible = false;
+				portraitPetula.visible = false;
+				portraitJade.visible = false;
+                portraitTrip.visible = false;
+                portraitEdie.visible = false;
+                portraitBev.visible = false;
+				if (!portraitAustin.visible)
+				{
+					portraitAustin.visible = true;
+					portraitAustin.animation.play('enter');
+				}
+            case 'edie':
+            	portraitLeft.visible = false;
+				portraitRight.visible = false;
+				portraitBF.visible = false;
+				portraitRoxie.visible = false;
+				portraitSavannah.visible = false;
+				portraitQuincy.visible = false;
+				portraitPetula.visible = false;
+				portraitJade.visible = false;
+                portraitTrip.visible = false;
+                portraitAustin.visible = false;
+                portraitBev.visible = false;
+				if (!portraitEdie.visible)
+				{
+					portraitEdie.visible = true;
+					portraitEdie.animation.play('enter');
+				}
+            case 'bev':
+            	portraitLeft.visible = false;
+				portraitRight.visible = false;
+				portraitBF.visible = false;
+				portraitRoxie.visible = false;
+				portraitSavannah.visible = false;
+				portraitQuincy.visible = false;
+				portraitPetula.visible = false;
+				portraitJade.visible = false;
+                portraitTrip.visible = false;
+                portraitAustin.visible = false;
+                portraitEdie.visible = false;
+				if (!portraitBev.visible)
+				{
+					portraitBev.visible = true;
+					portraitBev.animation.play('enter');
 				}
 		}
 	}

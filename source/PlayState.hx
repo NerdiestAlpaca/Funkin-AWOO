@@ -341,6 +341,18 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('our world/coolswag'));
 			case 'mischief':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('mischief/coolswag'));
+			case 'free spirit':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('free spirit/coolswag'));
+			case 'catnap':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('catnap/coolswag'));
+			case 'daredevil':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('daredevil/coolswag'));
+			case 'dreamboat':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('dreamboat/coolswag'));
+			case 'primadonna':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('primadonna/coolswag'));
+			case 'swerved up':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('swerved up/coolswag'));
 		}
 
 		switch(SONG.stage)
@@ -1095,6 +1107,18 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'mischief':
 					schoolIntro(doof);
+				case 'free spirit':
+					lpsnewweeks(doof);
+				case 'catnap':
+					schoolIntro(doof);
+				case 'daredevil':
+					schoolIntro(doof);
+				case 'dreamboat':
+					lpsnewweeks(doof);
+				case 'primadonna':
+					schoolIntro(doof);
+				case 'swerved up':
+					schoolIntro(doof);
 				default:
 					startCountdown();
 
@@ -1132,7 +1156,7 @@ class PlayState extends MusicBeatState
 		senpaiEvil.updateHitbox();
 		senpaiEvil.screenCenter();
 
-		if (SONG.song.toLowerCase() == 'roses' || SONG.song.toLowerCase() == 'thorns' || SONG.song.toLowerCase() == 'our world' || SONG.song.toLowerCase() == 'mischief')
+		if (SONG.song.toLowerCase() == 'roses' || SONG.song.toLowerCase() == 'thorns' || SONG.song.toLowerCase() == 'our world' || SONG.song.toLowerCase() == 'mischief' || SONG.song.toLowerCase() == 'catnap' || SONG.song.toLowerCase() == 'daredevil' || SONG.song.toLowerCase() == 'primadonna' || SONG.song.toLowerCase() == 'swerved up')
 		{
 			remove(black);
 
@@ -1198,7 +1222,7 @@ class PlayState extends MusicBeatState
 			}
 		});
 	}
-	function lpsintro(?dialogueBox:DialogueBox):Void
+	function lpsintro(?dialogueBox:DialogueBox):Void	
 		{
 			var scenebg:FlxSprite = new FlxSprite();
 			scenebg.frames = Paths.getSparrowAtlas('petshop/cutscenebg');
@@ -1228,12 +1252,34 @@ class PlayState extends MusicBeatState
 			});
 		
 		}
-	function lpstransition(?dialogueBox:DialogueBox):Void
+	function lpsnewweeks(?dialogueBox:DialogueBox):Void
 		{
+			var scenebg:FlxSprite = new FlxSprite();
+			scenebg.frames = Paths.getSparrowAtlas('petshop/bf-house');
+			scenebg.animation.addByPrefix('idle', 'bg1', 24, false);
+			scenebg.setGraphicSize(Std.int(scenebg.width * 1.5));
+			scenebg.scrollFactor.set();
+			scenebg.updateHitbox();
+			scenebg.screenCenter();
+			add(scenebg);
+	
+			inCutscene =true;
+	
+			camHUD.visible = false;
+			scenebg.animation.play('idle');
 			camFollow.x += 0;
 			camFollow.y += 0;
 			FlxG.camera.focusOn(camFollow.getPosition());
-			add(dialogueBox);
+			FlxTween.tween(FlxG.camera, {zoom: 0.7}, 2.5);
+	
+			new FlxTimer().start(5, function(swagTimer:FlxTimer)
+			{
+				remove(scenebg);
+				camHUD.visible = true;
+				FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 1);
+				add(dialogueBox);
+			});
+		
 		}
 	var startTimer:FlxTimer;
 	var perfectMode:Bool = false;
