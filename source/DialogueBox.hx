@@ -162,7 +162,6 @@ class DialogueBox extends FlxSpriteGroup
 				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
 				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
 		}
-		}
 
 		this.dialogueList = dialogueList;
 		
