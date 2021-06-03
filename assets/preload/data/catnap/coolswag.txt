@@ -1,1 +1,16 @@
-:jade:this is a test
+:jade:Roxie?
+:roxie:Eep!
+:boyfriend:Boop...
+:jade:Why'd you bring the blue-haired human-thing back here--
+:roxie:H-he just wanted to visit...
+:jade:Let me FINISH.
+:roxie:!
+:jade:Why'd you bring him back here without telling me?
+:jade:I wanted to sing with him before but my scheduled nap got in the way.
+:roxie:Oh! Go ahead Jade!
+:roxie:I thought you were mad at me, or something...
+:jade:Nah. It's no big deal. 
+:jade:I talked to Mr. Yut about it and he's even letting the little dude have his own Paw-tucket key.
+:roxie:Woah!
+:jade:Anyway. Let's get singing, pal.
+:boyfriend:Skeebap!
