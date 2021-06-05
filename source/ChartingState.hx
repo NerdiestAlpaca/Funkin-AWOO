@@ -1000,7 +1000,7 @@ class ChartingState extends MusicBeatState
 					FlxG.sound.music.pause();
 					vocals.pause();
 
-					var daTime:Float = Conductor.stepCrochet * 2;
+					var daTime:Int = Conductor.stepCrochet * 2;
 
 					if (FlxG.keys.justPressed.W)
 					{
@@ -1212,7 +1212,7 @@ class ChartingState extends MusicBeatState
 		else
 		{
 			// get last bpm
-			var daBPM:Float = _song.bpm;
+			var daBPM:Int = _song.bpm;
 			for (i in 0...curSection)
 				if (_song.notes[i].changeBPM)
 					daBPM = _song.notes[i].bpm;
