@@ -224,7 +224,7 @@ class ChartingState extends MusicBeatState
 		check_mute_inst.checked = false;
 		check_mute_inst.callback = function()
 		{
-			var vol:Float = 1;
+			var vol:Int = 1;
 
 			if (check_mute_inst.checked)
 				vol = 0;
@@ -631,7 +631,7 @@ class ChartingState extends MusicBeatState
 	var updatedSection:Bool = false;
 
 	/* this function got owned LOL
-		function lengthBpmBullshit():Float
+		function lengthBpmBullshit():Int
 		{
 			if (_song.notes[curSection].changeBPM)
 				return _song.notes[curSection].lengthInSteps * (_song.notes[curSection].bpm / _song.bpm);
@@ -639,15 +639,15 @@ class ChartingState extends MusicBeatState
 				return _song.notes[curSection].lengthInSteps;
 	}*/
 
-	function stepStartTime(step):Float
+	function stepStartTime(step):Int
 	{
 		return _song.bpm / (step / 4) / 60;
 	}
 
-	function sectionStartTime():Float
+	function sectionStartTime():Int
 	{
-		var daBPM:Float = _song.bpm;
-		var daPos:Float = 0;
+		var daBPM:Int = _song.bpm;
+		var daPos:Int = 0;
 		for (i in 0...curSection)
 		{
 			if (_song.notes[i].changeBPM)
@@ -662,7 +662,7 @@ class ChartingState extends MusicBeatState
 	var writingNotes:Bool = false;
 	var doSnapShit:Bool = true;
 
-	override function update(elapsed:Float)
+	override function update(elapsed:Int)
 	{
 		updateHeads();
 
@@ -1117,7 +1117,7 @@ class ChartingState extends MusicBeatState
 				vocals.pause();
 
 				/*var daNum:Int = 0;
-					var daLength:Float = 0;
+					var daLength:Int = 0;
 					while (daNum <= sec)
 					{
 						daLength += lengthBpmBullshit();
@@ -1409,12 +1409,12 @@ class ChartingState extends MusicBeatState
 		autosaveSong();
 	}
 
-	function getStrumTime(yPos:Float):Float
+	function getStrumTime(yPos:Int):Int
 	{
 		return FlxMath.remapToRange(yPos, gridBG.y, gridBG.y + gridBG.height, 0, 16 * Conductor.stepCrochet);
 	}
 
-	function getYfromStrum(strumTime:Float):Float
+	function getYfromStrum(strumTime:Int):Int
 	{
 		return FlxMath.remapToRange(strumTime, 0, 16 * Conductor.stepCrochet, gridBG.y, gridBG.y + gridBG.height);
 	}
@@ -1442,7 +1442,7 @@ class ChartingState extends MusicBeatState
 
 			return daLength;
 	}*/
-	private var daSpacing:Float = 0.3;
+	private var daSpacing:Int = 0.3;
 
 	function loadLevel():Void
 	{
