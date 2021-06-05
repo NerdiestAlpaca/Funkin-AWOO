@@ -83,7 +83,7 @@ class ChartingState extends MusicBeatState
 	**/
 	var curSelectedNote:Array<Dynamic>;
 
-	var tempBpm:Float = 0;
+	var tempBpm:Int = 0;
 	var gridBlackLine:FlxSprite;
 	var vocals:FlxSound;
 
@@ -981,7 +981,7 @@ class ChartingState extends MusicBeatState
 					vocals.pause();
 					claps.splice(0, claps.length);
 
-					var daTime:Float = 700 * FlxG.elapsed;
+					var daTime:Int = 700 * FlxG.elapsed;
 
 					if (FlxG.keys.pressed.W)
 					{
@@ -1031,7 +1031,7 @@ class ChartingState extends MusicBeatState
 		super.update(elapsed);
 	}
 
-	function changeNoteSustain(value:Float):Void
+	function changeNoteSustain(value:Int):Void
 	{
 		if (curSelectedNote != null)
 		{
