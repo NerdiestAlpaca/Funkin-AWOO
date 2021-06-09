@@ -154,7 +154,7 @@ class Character extends FlxSprite
 				addOffset('singLEFT',-2, -280);
 				addOffset('singDOWN', 10, -293);
 			
-			playAnim('idle');
+				playAnim('idle');
 			case 'quincy':
 					tex = Paths.getSparrowAtlas('characters/QuincySprites');
 					frames = tex;
@@ -164,11 +164,11 @@ class Character extends FlxSprite
 					animation.addByPrefix('singDOWN', 'Quincy Down', 24);
 					animation.addByPrefix('singLEFT', 'Quincy Left', 24);
 	
-					addOffset('idle', 0,-302);
-					addOffset("singUP", -19, -281);
-					addOffset("singRIGHT", 4, -302);
-					addOffset("singLEFT", -30, -289);
-					addOffset("singDOWN", 7, -302);
+				addOffset('idle', 0,-302);
+				addOffset('singUP', 0, -302);
+				addOffset('singRIGHT', -3, -302);
+				addOffset('singLEFT',-20, -302);
+				addOffset('singDOWN', 0, -302);
 
 				playAnim('idle');
 			case 'petula':
