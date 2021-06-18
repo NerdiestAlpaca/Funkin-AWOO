@@ -1499,11 +1499,12 @@ class PlayState extends MusicBeatState
 		curSong = songData.song;
 
 		if (storyDifficulty == 3) and (SONG.needsVoices)
-			vocals = new FlxSound().loadEmbedded(Paths.voicesEX(PlayState.SONG.song))
+			vocals = new FlxSound().loadEmbedded(Paths.voicesEX(PlayState.SONG.song));
 		else if (curDifficulty < 3) and (SONG.needsVoices)
-			vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song))
+			vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song));
 		else
 			vocals = new FlxSound();
+		
 		FlxG.sound.list.add(vocals);
 
 		notes = new FlxTypedGroup<Note>();
