@@ -102,6 +102,7 @@ class PlayState extends MusicBeatState
 	#end
 
 	private var vocals:FlxSound;
+	private var instrumental:FlxSound;
 
 	public static var dad:Character;
 	public static var gf:Character;
@@ -255,6 +256,8 @@ class PlayState extends MusicBeatState
 				storyDifficultyText = "Normal";
 			case 2:
 				storyDifficultyText = "Hard";
+			case 3:
+				storyDifficultyText = "EX";
 		}
 
 		iconRPC = SONG.player2;
@@ -1427,6 +1430,9 @@ class PlayState extends MusicBeatState
 
 		if (!paused)
 		{
+			if (storyDifficulty == 3)
+			FlxG.sound.playMusic(Paths.instEX(PlayState.SONG.song), 1, false);
+			else
 			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 1, false);
 		}
 
@@ -1492,11 +1498,12 @@ class PlayState extends MusicBeatState
 
 		curSong = songData.song;
 
-		if (SONG.needsVoices)
+		if (storyDifficulty == 3) and (SONG.needsVoices)
+			vocals = new FlxSound().loadEmbedded(Paths.voicesEX(PlayState.SONG.song));
+		else if (curDifficulty < 3) and (SONG.needsVoices)
 			vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song));
 		else
 			vocals = new FlxSound();
-
 		FlxG.sound.list.add(vocals);
 
 		notes = new FlxTypedGroup<Note>();
@@ -2657,6 +2664,9 @@ class PlayState extends MusicBeatState
 
 					if (storyDifficulty == 2)
 						difficulty = '-hard';
+
+					if (storyDifficulty == 3)
+						difficulty = '-ex';
 
 					trace('LOADING NEXT SONG');
 					trace(PlayState.storyPlaylist[0].toLowerCase() + difficulty);
