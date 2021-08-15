@@ -15,7 +15,7 @@ class Ratings
         else if (PlayState.misses == 0) // Regular FC
             ranking = "(FC)";
         else if (PlayState.misses < 10) // Single Digit Combo Breaks
-            ranking = "(Near-FC)";
+            ranking = "(SDCB)";
         else
             ranking = "(Clear)";
 
@@ -108,7 +108,7 @@ class Ratings
         // trace('Hit Info\nDifference: ' + noteDiff + '\nZone: ' + Conductor.safeZoneOffset * 1.5 + "\nTS: " + customTimeScale + "\nLate: " + 155 * customTimeScale);
 
 	if (FlxG.save.data.botplay)
-	    return "good"; // FUNNY
+	    return "sick"; // UNFUNNY
 	    
         if (noteDiff > 166 * customTimeScale) // so god damn early its a miss
             return "miss";
@@ -134,7 +134,7 @@ class Ratings
         return 
         (FlxG.save.data.npsDisplay ? "NPS: " + nps + " (Max " + maxNPS + ")" + (!FlxG.save.data.botplay ? " | " : "") : "") + (!FlxG.save.data.botplay ?	// NPS Toggle
         "Score:" + (Conductor.safeFrames != 10 ? score + " (" + scoreDef + ")" : "" + score) + 									// Score
-        " | Combo Breaks:" + PlayState.misses + 																				// Misses/Combo Breaks
+        " | Misses:" + PlayState.misses + 																				// Misses/Combo Breaks
         " | Accuracy:" + (FlxG.save.data.botplay ? "N/A" : HelperFunctions.truncateFloat(accuracy, 2) + " %") +  				// Accuracy
         " | " + GenerateLetterRank(accuracy) : ""); 																			// Letter Rank
     }

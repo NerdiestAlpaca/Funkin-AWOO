@@ -833,6 +833,8 @@ class PlayState extends MusicBeatState
 				dad.y += 300;
 			case 'parents-christmas':
 				dad.x -= 500;
+			case 'quincy':
+				dad.y -= 302;
 			case 'senpai':
 				dad.x += 150;
 				dad.y += 360;
@@ -2196,10 +2198,9 @@ class PlayState extends MusicBeatState
 						camFollow.x = dad.getMidpoint().x - 100;
 					case 'savannah':
 						camFollow.y = dad.getMidpoint().y + 150;
-						camFollow.x = dad.getMidpoint().x + 250;	
-					case 'quincy':
-						camFollow.y = dad.getMidpoint().y + 150;
 						camFollow.x = dad.getMidpoint().x + 250;
+					case 'quincy':
+						camFollow.x = dad.getMidpoint().x + 250;	
 					case 'petula':
 						camFollow.y = dad.getMidpoint().y + 150;
 						camFollow.x = dad.getMidpoint().x + 250;
@@ -2727,9 +2728,7 @@ class PlayState extends MusicBeatState
 			{
 				case 'shit':
 					score = 0;
-					combo = 0;
-					misses++;
-					health -= 0.03;
+					health -= 0.04;
 					ss = false;
 					shits++;
 					if (FlxG.save.data.accuracyMod == 0)
@@ -2737,7 +2736,7 @@ class PlayState extends MusicBeatState
 				case 'bad':
 					daRating = 'bad';
 					score = 100;
-					health -= 0;
+					health -= 0.02;
 					ss = false;
 					bads++;
 					if (FlxG.save.data.accuracyMod == 0)
@@ -2748,12 +2747,12 @@ class PlayState extends MusicBeatState
 					ss = false;
 					goods++;
 					if (health < 2)
-						health += 0.04;
+						health += 0.02;
 					if (FlxG.save.data.accuracyMod == 0)
 						totalNotesHit += 0.75;
 				case 'sick':
 					if (health < 2)
-						health += 0.075;
+						health += 0.04;
 					if (FlxG.save.data.accuracyMod == 0)
 						totalNotesHit += 1;
 					sicks++;

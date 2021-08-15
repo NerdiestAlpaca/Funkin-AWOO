@@ -164,11 +164,11 @@ class Character extends FlxSprite
 					animation.addByPrefix('singDOWN', 'Quincy Down', 24);
 					animation.addByPrefix('singLEFT', 'Quincy Left', 24);
 	
-				addOffset('idle', 0,-302);
-				addOffset('singUP', 0, -302);
-				addOffset('singRIGHT', -3, -302);
-				addOffset('singLEFT',-20, -302);
-				addOffset('singDOWN', 0, -302);
+				addOffset('idle', 0,0);
+				addOffset('singUP', 0, 0);
+				addOffset('singRIGHT', -3, 0);
+				addOffset('singLEFT',0, 0);
+				addOffset('singDOWN', 0, 0);
 
 				playAnim('idle');
 			case 'petula':
