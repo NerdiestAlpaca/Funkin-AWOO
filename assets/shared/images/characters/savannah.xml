@@ -2,74 +2,74 @@
 <TextureAtlas imagePath="savannah.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Savannah Down0000" x="0" y="0" width="470" height="403" pivotX="315.8" pivotY="409.8" frameX="0" frameY="-7" frameWidth="470" frameHeight="410"/>
-	<SubTexture name="Savannah Down0001" x="0" y="0" width="470" height="403" frameX="0" frameY="-7" frameWidth="470" frameHeight="410"/>
-	<SubTexture name="Savannah Down0002" x="471" y="0" width="470" height="410"/>
-	<SubTexture name="Savannah Down0003" x="471" y="0" width="470" height="410"/>
-	<SubTexture name="Savannah Down0004" x="942" y="0" width="470" height="410"/>
-	<SubTexture name="Savannah Down0005" x="942" y="0" width="470" height="410"/>
-	<SubTexture name="Savannah Down0006" x="942" y="0" width="470" height="410"/>
-	<SubTexture name="Savannah Down0007" x="942" y="0" width="470" height="410"/>
-	<SubTexture name="Savannah Down0008" x="942" y="0" width="470" height="410"/>
-	<SubTexture name="Savannah Down0009" x="942" y="0" width="470" height="410"/>
-	<SubTexture name="Savannah Down0010" x="942" y="0" width="470" height="410"/>
-	<SubTexture name="Savannah Down0011" x="942" y="0" width="470" height="410"/>
-	<SubTexture name="Savannah Down0012" x="942" y="0" width="470" height="410"/>
-	<SubTexture name="Savannah Down0013" x="942" y="0" width="470" height="410"/>
-	<SubTexture name="Savannah Idle0000" x="1413" y="0" width="456" height="413" pivotX="305.7" pivotY="411.5"/>
-	<SubTexture name="Savannah Idle0001" x="1413" y="0" width="456" height="413"/>
-	<SubTexture name="Savannah Idle0002" x="1870" y="0" width="456" height="411" frameX="0" frameY="-2" frameWidth="456" frameHeight="413"/>
-	<SubTexture name="Savannah Idle0003" x="1870" y="0" width="456" height="411" frameX="0" frameY="-2" frameWidth="456" frameHeight="413"/>
-	<SubTexture name="Savannah Idle0004" x="2327" y="0" width="456" height="409" frameX="0" frameY="-4" frameWidth="456" frameHeight="413"/>
-	<SubTexture name="Savannah Idle0005" x="2327" y="0" width="456" height="409" frameX="0" frameY="-4" frameWidth="456" frameHeight="413"/>
-	<SubTexture name="Savannah Idle0006" x="2784" y="0" width="456" height="406" frameX="0" frameY="-7" frameWidth="456" frameHeight="413"/>
-	<SubTexture name="Savannah Idle0007" x="2784" y="0" width="456" height="406" frameX="0" frameY="-7" frameWidth="456" frameHeight="413"/>
-	<SubTexture name="Savannah Idle0008" x="3241" y="0" width="456" height="407" frameX="0" frameY="-6" frameWidth="456" frameHeight="413"/>
-	<SubTexture name="Savannah Idle0009" x="3241" y="0" width="456" height="407" frameX="0" frameY="-6" frameWidth="456" frameHeight="413"/>
-	<SubTexture name="Savannah Idle0010" x="2327" y="0" width="456" height="409" frameX="0" frameY="-4" frameWidth="456" frameHeight="413"/>
-	<SubTexture name="Savannah Idle0011" x="2327" y="0" width="456" height="409" frameX="0" frameY="-4" frameWidth="456" frameHeight="413"/>
-	<SubTexture name="Savannah Idle0012" x="0" y="414" width="456" height="411" frameX="0" frameY="-2" frameWidth="456" frameHeight="413"/>
-	<SubTexture name="Savannah Idle0013" x="0" y="414" width="456" height="411" frameX="0" frameY="-2" frameWidth="456" frameHeight="413"/>
-	<SubTexture name="Savannah Left0000" x="457" y="414" width="450" height="424" pivotX="315.9" pivotY="425.6" frameX="-3" frameY="0" frameWidth="453" frameHeight="424"/>
-	<SubTexture name="Savannah Left0001" x="457" y="414" width="450" height="424" frameX="-3" frameY="0" frameWidth="453" frameHeight="424"/>
-	<SubTexture name="Savannah Left0002" x="908" y="414" width="453" height="424"/>
-	<SubTexture name="Savannah Left0003" x="908" y="414" width="453" height="424"/>
-	<SubTexture name="Savannah Left0004" x="1362" y="414" width="453" height="424"/>
-	<SubTexture name="Savannah Left0005" x="1362" y="414" width="453" height="424"/>
-	<SubTexture name="Savannah Left0006" x="1362" y="414" width="453" height="424"/>
-	<SubTexture name="Savannah Left0007" x="1362" y="414" width="453" height="424"/>
-	<SubTexture name="Savannah Left0008" x="1362" y="414" width="453" height="424"/>
-	<SubTexture name="Savannah Left0009" x="1362" y="414" width="453" height="424"/>
-	<SubTexture name="Savannah Left0010" x="1362" y="414" width="453" height="424"/>
-	<SubTexture name="Savannah Left0011" x="1362" y="414" width="453" height="424"/>
-	<SubTexture name="Savannah Left0012" x="1362" y="414" width="453" height="424"/>
-	<SubTexture name="Savannah Left0013" x="1362" y="414" width="453" height="424"/>
-	<SubTexture name="Savannah Right0000" x="1816" y="414" width="464" height="413" pivotX="313.3" pivotY="419.15" frameX="0" frameY="-8" frameWidth="464" frameHeight="421"/>
-	<SubTexture name="Savannah Right0001" x="1816" y="414" width="464" height="413" frameX="0" frameY="-8" frameWidth="464" frameHeight="421"/>
-	<SubTexture name="Savannah Right0002" x="2281" y="414" width="464" height="421"/>
-	<SubTexture name="Savannah Right0003" x="2281" y="414" width="464" height="421"/>
-	<SubTexture name="Savannah Right0004" x="2746" y="414" width="464" height="421"/>
-	<SubTexture name="Savannah Right0005" x="2746" y="414" width="464" height="421"/>
-	<SubTexture name="Savannah Right0006" x="2746" y="414" width="464" height="421"/>
-	<SubTexture name="Savannah Right0007" x="2746" y="414" width="464" height="421"/>
-	<SubTexture name="Savannah Right0008" x="2746" y="414" width="464" height="421"/>
-	<SubTexture name="Savannah Right0009" x="2746" y="414" width="464" height="421"/>
-	<SubTexture name="Savannah Right0010" x="2746" y="414" width="464" height="421"/>
-	<SubTexture name="Savannah Right0011" x="2746" y="414" width="464" height="421"/>
-	<SubTexture name="Savannah Right0012" x="2746" y="414" width="464" height="421"/>
-	<SubTexture name="Savannah Right0013" x="2746" y="414" width="464" height="421"/>
-	<SubTexture name="Savannah Up0000" x="3211" y="414" width="453" height="437" pivotX="303.65" pivotY="435.55"/>
-	<SubTexture name="Savannah Up0001" x="3211" y="414" width="453" height="437"/>
-	<SubTexture name="Savannah Up0002" x="0" y="852" width="453" height="430" frameX="0" frameY="-7" frameWidth="453" frameHeight="437"/>
-	<SubTexture name="Savannah Up0003" x="0" y="852" width="453" height="430" frameX="0" frameY="-7" frameWidth="453" frameHeight="437"/>
-	<SubTexture name="Savannah Up0004" x="454" y="852" width="453" height="430" frameX="0" frameY="-7" frameWidth="453" frameHeight="437"/>
-	<SubTexture name="Savannah Up0005" x="454" y="852" width="453" height="430" frameX="0" frameY="-7" frameWidth="453" frameHeight="437"/>
-	<SubTexture name="Savannah Up0006" x="454" y="852" width="453" height="430" frameX="0" frameY="-7" frameWidth="453" frameHeight="437"/>
-	<SubTexture name="Savannah Up0007" x="454" y="852" width="453" height="430" frameX="0" frameY="-7" frameWidth="453" frameHeight="437"/>
-	<SubTexture name="Savannah Up0008" x="454" y="852" width="453" height="430" frameX="0" frameY="-7" frameWidth="453" frameHeight="437"/>
-	<SubTexture name="Savannah Up0009" x="454" y="852" width="453" height="430" frameX="0" frameY="-7" frameWidth="453" frameHeight="437"/>
-	<SubTexture name="Savannah Up0010" x="454" y="852" width="453" height="430" frameX="0" frameY="-7" frameWidth="453" frameHeight="437"/>
-	<SubTexture name="Savannah Up0011" x="454" y="852" width="453" height="430" frameX="0" frameY="-7" frameWidth="453" frameHeight="437"/>
-	<SubTexture name="Savannah Up0012" x="454" y="852" width="453" height="430" frameX="0" frameY="-7" frameWidth="453" frameHeight="437"/>
-	<SubTexture name="Savannah Up0013" x="454" y="852" width="453" height="430" frameX="0" frameY="-7" frameWidth="453" frameHeight="437"/>
+	<SubTexture name="Savannah Down0000" x="0" y="0" width="581" height="429" pivotX="385.65" pivotY="443.55" frameX="0" frameY="-15" frameWidth="581" frameHeight="444"/>
+	<SubTexture name="Savannah Down0001" x="0" y="0" width="581" height="429" frameX="0" frameY="-15" frameWidth="581" frameHeight="444"/>
+	<SubTexture name="Savannah Down0002" x="582" y="0" width="574" height="440" frameX="-7" frameY="-4" frameWidth="581" frameHeight="444"/>
+	<SubTexture name="Savannah Down0003" x="582" y="0" width="574" height="440" frameX="-7" frameY="-4" frameWidth="581" frameHeight="444"/>
+	<SubTexture name="Savannah Down0004" x="1157" y="0" width="570" height="444" frameX="-11" frameY="0" frameWidth="581" frameHeight="444"/>
+	<SubTexture name="Savannah Down0005" x="1157" y="0" width="570" height="444" frameX="-11" frameY="0" frameWidth="581" frameHeight="444"/>
+	<SubTexture name="Savannah Down0006" x="1157" y="0" width="570" height="444" frameX="-11" frameY="0" frameWidth="581" frameHeight="444"/>
+	<SubTexture name="Savannah Down0007" x="1157" y="0" width="570" height="444" frameX="-11" frameY="0" frameWidth="581" frameHeight="444"/>
+	<SubTexture name="Savannah Down0008" x="1157" y="0" width="570" height="444" frameX="-11" frameY="0" frameWidth="581" frameHeight="444"/>
+	<SubTexture name="Savannah Down0009" x="1157" y="0" width="570" height="444" frameX="-11" frameY="0" frameWidth="581" frameHeight="444"/>
+	<SubTexture name="Savannah Down0010" x="1157" y="0" width="570" height="444" frameX="-11" frameY="0" frameWidth="581" frameHeight="444"/>
+	<SubTexture name="Savannah Down0011" x="1157" y="0" width="570" height="444" frameX="-11" frameY="0" frameWidth="581" frameHeight="444"/>
+	<SubTexture name="Savannah Down0012" x="1157" y="0" width="570" height="444" frameX="-11" frameY="0" frameWidth="581" frameHeight="444"/>
+	<SubTexture name="Savannah Down0013" x="1157" y="0" width="570" height="444" frameX="-11" frameY="0" frameWidth="581" frameHeight="444"/>
+	<SubTexture name="Savannah Idle0000" x="1728" y="0" width="554" height="449" pivotX="363.75" pivotY="448.55"/>
+	<SubTexture name="Savannah Idle0001" x="1728" y="0" width="554" height="449"/>
+	<SubTexture name="Savannah Idle0002" x="2283" y="0" width="554" height="446" frameX="0" frameY="-3" frameWidth="554" frameHeight="449"/>
+	<SubTexture name="Savannah Idle0003" x="2283" y="0" width="554" height="446" frameX="0" frameY="-3" frameWidth="554" frameHeight="449"/>
+	<SubTexture name="Savannah Idle0004" x="2838" y="0" width="554" height="443" frameX="0" frameY="-6" frameWidth="554" frameHeight="449"/>
+	<SubTexture name="Savannah Idle0005" x="2838" y="0" width="554" height="443" frameX="0" frameY="-6" frameWidth="554" frameHeight="449"/>
+	<SubTexture name="Savannah Idle0006" x="3393" y="0" width="554" height="437" frameX="0" frameY="-12" frameWidth="554" frameHeight="449"/>
+	<SubTexture name="Savannah Idle0007" x="3393" y="0" width="554" height="437" frameX="0" frameY="-12" frameWidth="554" frameHeight="449"/>
+	<SubTexture name="Savannah Idle0008" x="2838" y="0" width="554" height="443" frameX="0" frameY="-6" frameWidth="554" frameHeight="449"/>
+	<SubTexture name="Savannah Idle0009" x="2838" y="0" width="554" height="443" frameX="0" frameY="-6" frameWidth="554" frameHeight="449"/>
+	<SubTexture name="Savannah Idle0010" x="2838" y="0" width="554" height="443" frameX="0" frameY="-6" frameWidth="554" frameHeight="449"/>
+	<SubTexture name="Savannah Idle0011" x="0" y="450" width="554" height="443" frameX="0" frameY="-6" frameWidth="554" frameHeight="449"/>
+	<SubTexture name="Savannah Idle0012" x="0" y="450" width="554" height="443" frameX="0" frameY="-6" frameWidth="554" frameHeight="449"/>
+	<SubTexture name="Savannah Idle0013" x="0" y="450" width="554" height="443" frameX="0" frameY="-6" frameWidth="554" frameHeight="449"/>
+	<SubTexture name="Savannah Left0000" x="555" y="450" width="561" height="465" pivotX="374.35" pivotY="464.2" frameX="-4" frameY="0" frameWidth="565" frameHeight="465"/>
+	<SubTexture name="Savannah Left0001" x="555" y="450" width="561" height="465" frameX="-4" frameY="0" frameWidth="565" frameHeight="465"/>
+	<SubTexture name="Savannah Left0002" x="1117" y="450" width="562" height="464" frameX="-3" frameY="-1" frameWidth="565" frameHeight="465"/>
+	<SubTexture name="Savannah Left0003" x="1117" y="450" width="562" height="464" frameX="-3" frameY="-1" frameWidth="565" frameHeight="465"/>
+	<SubTexture name="Savannah Left0004" x="1680" y="450" width="565" height="462" frameX="0" frameY="-3" frameWidth="565" frameHeight="465"/>
+	<SubTexture name="Savannah Left0005" x="1680" y="450" width="565" height="462" frameX="0" frameY="-3" frameWidth="565" frameHeight="465"/>
+	<SubTexture name="Savannah Left0006" x="1680" y="450" width="565" height="462" frameX="0" frameY="-3" frameWidth="565" frameHeight="465"/>
+	<SubTexture name="Savannah Left0007" x="1680" y="450" width="565" height="462" frameX="0" frameY="-3" frameWidth="565" frameHeight="465"/>
+	<SubTexture name="Savannah Left0008" x="1680" y="450" width="565" height="462" frameX="0" frameY="-3" frameWidth="565" frameHeight="465"/>
+	<SubTexture name="Savannah Left0009" x="1680" y="450" width="565" height="462" frameX="0" frameY="-3" frameWidth="565" frameHeight="465"/>
+	<SubTexture name="Savannah Left0010" x="1680" y="450" width="565" height="462" frameX="0" frameY="-3" frameWidth="565" frameHeight="465"/>
+	<SubTexture name="Savannah Left0011" x="1680" y="450" width="565" height="462" frameX="0" frameY="-3" frameWidth="565" frameHeight="465"/>
+	<SubTexture name="Savannah Left0012" x="1680" y="450" width="565" height="462" frameX="0" frameY="-3" frameWidth="565" frameHeight="465"/>
+	<SubTexture name="Savannah Left0013" x="1680" y="450" width="565" height="462" frameX="0" frameY="-3" frameWidth="565" frameHeight="465"/>
+	<SubTexture name="Savannah Right0000" x="2246" y="450" width="559" height="446" pivotX="371" pivotY="456.9" frameX="-3" frameY="-11" frameWidth="562" frameHeight="457"/>
+	<SubTexture name="Savannah Right0001" x="2246" y="450" width="559" height="446" frameX="-3" frameY="-11" frameWidth="562" frameHeight="457"/>
+	<SubTexture name="Savannah Right0002" x="2806" y="450" width="560" height="454" frameX="-2" frameY="-3" frameWidth="562" frameHeight="457"/>
+	<SubTexture name="Savannah Right0003" x="2806" y="450" width="560" height="454" frameX="-2" frameY="-3" frameWidth="562" frameHeight="457"/>
+	<SubTexture name="Savannah Right0004" x="3367" y="450" width="562" height="457"/>
+	<SubTexture name="Savannah Right0005" x="3367" y="450" width="562" height="457"/>
+	<SubTexture name="Savannah Right0006" x="3367" y="450" width="562" height="457"/>
+	<SubTexture name="Savannah Right0007" x="3367" y="450" width="562" height="457"/>
+	<SubTexture name="Savannah Right0008" x="3367" y="450" width="562" height="457"/>
+	<SubTexture name="Savannah Right0009" x="3367" y="450" width="562" height="457"/>
+	<SubTexture name="Savannah Right0010" x="3367" y="450" width="562" height="457"/>
+	<SubTexture name="Savannah Right0011" x="3367" y="450" width="562" height="457"/>
+	<SubTexture name="Savannah Right0012" x="3367" y="450" width="562" height="457"/>
+	<SubTexture name="Savannah Right0013" x="3367" y="450" width="562" height="457"/>
+	<SubTexture name="Savannah Up0000" x="0" y="916" width="554" height="478" pivotX="366.75" pivotY="476.45" frameX="-3" frameY="0" frameWidth="557" frameHeight="478"/>
+	<SubTexture name="Savannah Up0001" x="0" y="916" width="554" height="478" frameX="-3" frameY="0" frameWidth="557" frameHeight="478"/>
+	<SubTexture name="Savannah Up0002" x="555" y="916" width="557" height="470" frameX="0" frameY="-8" frameWidth="557" frameHeight="478"/>
+	<SubTexture name="Savannah Up0003" x="555" y="916" width="557" height="470" frameX="0" frameY="-8" frameWidth="557" frameHeight="478"/>
+	<SubTexture name="Savannah Up0004" x="1113" y="916" width="553" height="469" frameX="-4" frameY="-9" frameWidth="557" frameHeight="478"/>
+	<SubTexture name="Savannah Up0005" x="1113" y="916" width="553" height="469" frameX="-4" frameY="-9" frameWidth="557" frameHeight="478"/>
+	<SubTexture name="Savannah Up0006" x="1113" y="916" width="553" height="469" frameX="-4" frameY="-9" frameWidth="557" frameHeight="478"/>
+	<SubTexture name="Savannah Up0007" x="1113" y="916" width="553" height="469" frameX="-4" frameY="-9" frameWidth="557" frameHeight="478"/>
+	<SubTexture name="Savannah Up0008" x="1113" y="916" width="553" height="469" frameX="-4" frameY="-9" frameWidth="557" frameHeight="478"/>
+	<SubTexture name="Savannah Up0009" x="1113" y="916" width="553" height="469" frameX="-4" frameY="-9" frameWidth="557" frameHeight="478"/>
+	<SubTexture name="Savannah Up0010" x="1113" y="916" width="553" height="469" frameX="-4" frameY="-9" frameWidth="557" frameHeight="478"/>
+	<SubTexture name="Savannah Up0011" x="1113" y="916" width="553" height="469" frameX="-4" frameY="-9" frameWidth="557" frameHeight="478"/>
+	<SubTexture name="Savannah Up0012" x="1113" y="916" width="553" height="469" frameX="-4" frameY="-9" frameWidth="557" frameHeight="478"/>
+	<SubTexture name="Savannah Up0013" x="1113" y="916" width="553" height="469" frameX="-4" frameY="-9" frameWidth="557" frameHeight="478"/>
 </TextureAtlas>
