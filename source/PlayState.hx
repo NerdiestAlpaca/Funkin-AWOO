@@ -167,6 +167,7 @@ class PlayState extends MusicBeatState
 	var fastCar:FlxSprite;
 	var songName:FlxText;
 	var upperBoppers:FlxSprite;
+	var uppercrowd:FlxSprite;
 	var bottomBoppers:FlxSprite;
 	var santa:FlxSprite;
 
@@ -720,14 +721,13 @@ class PlayState extends MusicBeatState
         					walls.updateHitbox();
         					add(walls);
 
-        					var uppercrowd:FlxSprite = new FlxSprite(-240, -20);
-        					uppercrowd.frames = Paths.getSparrowAtlas('petshop/upperBop');
-        					uppercrowd.animation.addByPrefix('idle', "Upper Crowd Bob", 24, true);
-							uppercrowd.animation.play("idle");
-        					uppercrowd.antialiasing = true;
-        					uppercrowd.scrollFactor.set(0.33, 0.33);
-       					 	uppercrowd.setGraphicSize(Std.int(uppercrowd.width * 0.7));
-        					uppercrowd.updateHitbox();
+							uppercrowd = new FlxSprite(-240, -20);
+							uppercrowd.frames = Paths.getSparrowAtlas('petshop/upperBop');
+							uppercrowd.animation.addByPrefix('bop', "Upper Crowd Bob", 24, false);
+							uppercrowd.antialiasing = true;
+							uppercrowd.scrollFactor.set(0.33, 0.33);
+							uppercrowd.setGraphicSize(Std.int(uppercrowd.width * 0.7));
+							uppercrowd.updateHitbox();
            					add(uppercrowd);
 
         					var Escalator:FlxSprite = new FlxSprite(-400, 0).loadGraphic(Paths.image('petshop/bgEscalator'));
@@ -3605,6 +3605,9 @@ class PlayState extends MusicBeatState
 				if(FlxG.save.data.distractions){
 					bgGirls.dance();
 				}
+				
+			case 'pawtucket':
+				uppercrowd.animation.play("bop", true);
 
 			case 'mall':
 				if(FlxG.save.data.distractions){

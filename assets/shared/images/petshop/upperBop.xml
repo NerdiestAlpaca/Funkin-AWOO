@@ -2,16 +2,16 @@
 <TextureAtlas imagePath="upperBop.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Upper Crowd Bob0000" x="0" y="0" width="2525" height="434" pivotX="311.7" pivotY="-156.2" frameX="0" frameY="0" frameWidth="2525" frameHeight="435"/>
-	<SubTexture name="Upper Crowd Bob0001" x="0" y="0" width="2525" height="434" frameX="0" frameY="0" frameWidth="2525" frameHeight="435"/>
-	<SubTexture name="Upper Crowd Bob0002" x="0" y="436" width="2514" height="435" frameX="-5" frameY="0" frameWidth="2525" frameHeight="435"/>
-	<SubTexture name="Upper Crowd Bob0003" x="0" y="436" width="2514" height="435" frameX="-5" frameY="0" frameWidth="2525" frameHeight="435"/>
-	<SubTexture name="Upper Crowd Bob0004" x="0" y="873" width="2512" height="435" frameX="-6" frameY="0" frameWidth="2525" frameHeight="435"/>
-	<SubTexture name="Upper Crowd Bob0005" x="0" y="873" width="2512" height="435" frameX="-6" frameY="0" frameWidth="2525" frameHeight="435"/>
-	<SubTexture name="Upper Crowd Bob0006" x="0" y="1310" width="2508" height="435" frameX="-8" frameY="0" frameWidth="2525" frameHeight="435"/>
-	<SubTexture name="Upper Crowd Bob0007" x="0" y="1310" width="2508" height="435" frameX="-8" frameY="0" frameWidth="2525" frameHeight="435"/>
-	<SubTexture name="Upper Crowd Bob0008" x="0" y="1310" width="2508" height="435" frameX="-8" frameY="0" frameWidth="2525" frameHeight="435"/>
-	<SubTexture name="Upper Crowd Bob0009" x="0" y="1310" width="2508" height="435" frameX="-8" frameY="0" frameWidth="2525" frameHeight="435"/>
-	<SubTexture name="Upper Crowd Bob0010" x="0" y="1310" width="2508" height="435" frameX="-8" frameY="0" frameWidth="2525" frameHeight="435"/>
-	<SubTexture name="Upper Crowd Bob0011" x="0" y="1310" width="2508" height="435" frameX="-8" frameY="0" frameWidth="2525" frameHeight="435"/>
+	<SubTexture name="Upper Crowd Bob0000" x="0" y="0" width="2491" height="416" pivotX="311.7" pivotY="-156.2"/>
+	<SubTexture name="Upper Crowd Bob0001" x="0" y="0" width="2491" height="416"/>
+	<SubTexture name="Upper Crowd Bob0002" x="0" y="417" width="2480" height="416" frameX="-5" frameY="0" frameWidth="2491" frameHeight="416"/>
+	<SubTexture name="Upper Crowd Bob0003" x="0" y="417" width="2480" height="416" frameX="-5" frameY="0" frameWidth="2491" frameHeight="416"/>
+	<SubTexture name="Upper Crowd Bob0004" x="0" y="834" width="2478" height="416" frameX="-6" frameY="0" frameWidth="2491" frameHeight="416"/>
+	<SubTexture name="Upper Crowd Bob0005" x="0" y="834" width="2478" height="416" frameX="-6" frameY="0" frameWidth="2491" frameHeight="416"/>
+	<SubTexture name="Upper Crowd Bob0006" x="0" y="1251" width="2474" height="416" frameX="-8" frameY="0" frameWidth="2491" frameHeight="416"/>
+	<SubTexture name="Upper Crowd Bob0007" x="0" y="1251" width="2474" height="416" frameX="-8" frameY="0" frameWidth="2491" frameHeight="416"/>
+	<SubTexture name="Upper Crowd Bob0008" x="0" y="1251" width="2474" height="416" frameX="-8" frameY="0" frameWidth="2491" frameHeight="416"/>
+	<SubTexture name="Upper Crowd Bob0009" x="0" y="1251" width="2474" height="416" frameX="-8" frameY="0" frameWidth="2491" frameHeight="416"/>
+	<SubTexture name="Upper Crowd Bob0010" x="0" y="1251" width="2474" height="416" frameX="-8" frameY="0" frameWidth="2491" frameHeight="416"/>
+	<SubTexture name="Upper Crowd Bob0011" x="0" y="1251" width="2474" height="416" frameX="-8" frameY="0" frameWidth="2491" frameHeight="416"/>
 </TextureAtlas>
