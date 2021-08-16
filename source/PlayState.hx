@@ -833,8 +833,6 @@ class PlayState extends MusicBeatState
 				dad.y += 300;
 			case 'parents-christmas':
 				dad.x -= 500;
-			case 'quincy':
-				dad.y -= 302;
 			case 'senpai':
 				dad.x += 150;
 				dad.y += 360;
@@ -2200,6 +2198,7 @@ class PlayState extends MusicBeatState
 						camFollow.y = dad.getMidpoint().y + 150;
 						camFollow.x = dad.getMidpoint().x + 250;
 					case 'quincy':
+						camFollow.y = dad.getMidpoint().y + 200;
 						camFollow.x = dad.getMidpoint().x + 250;	
 					case 'petula':
 						camFollow.y = dad.getMidpoint().y + 150;
