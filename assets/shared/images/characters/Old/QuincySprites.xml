@@ -1,75 +1,75 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="char.png">
+<TextureAtlas imagePath="QuincySprites.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Quincy Down0000" x="0" y="0" width="483" height="409" pivotX="-191" pivotY="262.9"/>
-	<SubTexture name="Quincy Down0001" x="0" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Down0002" x="484" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Down0003" x="484" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Down0004" x="484" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Down0005" x="484" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Down0006" x="484" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Down0007" x="484" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Down0008" x="484" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Down0009" x="484" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Down0010" x="484" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Down0011" x="484" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Down0012" x="484" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Down0013" x="484" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Idle0000" x="968" y="0" width="483" height="409" pivotX="-191.3" pivotY="262.9"/>
-	<SubTexture name="Quincy Idle0001" x="968" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Idle0002" x="1452" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Idle0003" x="0" y="410" width="482" height="409" frameX="-1" frameY="0" frameWidth="483" frameHeight="409"/>
-	<SubTexture name="Quincy Idle0004" x="483" y="410" width="483" height="409"/>
-	<SubTexture name="Quincy Idle0005" x="1452" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Idle0006" x="968" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Idle0007" x="967" y="410" width="483" height="409"/>
-	<SubTexture name="Quincy Idle0008" x="1451" y="410" width="482" height="409" frameX="-1" frameY="0" frameWidth="483" frameHeight="409"/>
-	<SubTexture name="Quincy Idle0009" x="968" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Idle0010" x="1452" y="0" width="483" height="409"/>
-	<SubTexture name="Quincy Idle0011" x="0" y="820" width="482" height="409" frameX="-1" frameY="0" frameWidth="483" frameHeight="409"/>
-	<SubTexture name="Quincy Idle0012" x="967" y="410" width="483" height="409"/>
-	<SubTexture name="Quincy Idle0013" x="967" y="410" width="483" height="409"/>
-	<SubTexture name="Quincy Left0000" x="483" y="820" width="456" height="409" pivotX="-211.85" pivotY="262.55" frameX="-7" frameY="0" frameWidth="463" frameHeight="409"/>
-	<SubTexture name="Quincy Left0001" x="483" y="820" width="456" height="409" frameX="-7" frameY="0" frameWidth="463" frameHeight="409"/>
-	<SubTexture name="Quincy Left0002" x="940" y="820" width="463" height="409"/>
-	<SubTexture name="Quincy Left0003" x="940" y="820" width="463" height="409"/>
-	<SubTexture name="Quincy Left0004" x="940" y="820" width="463" height="409"/>
-	<SubTexture name="Quincy Left0005" x="940" y="820" width="463" height="409"/>
-	<SubTexture name="Quincy Left0006" x="940" y="820" width="463" height="409"/>
-	<SubTexture name="Quincy Left0007" x="940" y="820" width="463" height="409"/>
-	<SubTexture name="Quincy Left0008" x="940" y="820" width="463" height="409"/>
-	<SubTexture name="Quincy Left0009" x="940" y="820" width="463" height="409"/>
-	<SubTexture name="Quincy Left0010" x="940" y="820" width="463" height="409"/>
-	<SubTexture name="Quincy Left0011" x="940" y="820" width="463" height="409"/>
-	<SubTexture name="Quincy Left0012" x="940" y="820" width="463" height="409"/>
-	<SubTexture name="Quincy Left0013" x="940" y="820" width="463" height="409"/>
-	<SubTexture name="Quincy Right0000" x="1404" y="820" width="477" height="409" pivotX="-194.8" pivotY="262.85" frameX="-3" frameY="0" frameWidth="480" frameHeight="409"/>
-	<SubTexture name="Quincy Right0001" x="1404" y="820" width="477" height="409" frameX="-3" frameY="0" frameWidth="480" frameHeight="409"/>
-	<SubTexture name="Quincy Right0002" x="0" y="1230" width="480" height="409"/>
-	<SubTexture name="Quincy Right0003" x="0" y="1230" width="480" height="409"/>
-	<SubTexture name="Quincy Right0004" x="0" y="1230" width="480" height="409"/>
-	<SubTexture name="Quincy Right0005" x="0" y="1230" width="480" height="409"/>
-	<SubTexture name="Quincy Right0006" x="0" y="1230" width="480" height="409"/>
-	<SubTexture name="Quincy Right0007" x="0" y="1230" width="480" height="409"/>
-	<SubTexture name="Quincy Right0008" x="0" y="1230" width="480" height="409"/>
-	<SubTexture name="Quincy Right0009" x="0" y="1230" width="480" height="409"/>
-	<SubTexture name="Quincy Right0010" x="0" y="1230" width="480" height="409"/>
-	<SubTexture name="Quincy Right0011" x="0" y="1230" width="480" height="409"/>
-	<SubTexture name="Quincy Right0012" x="0" y="1230" width="480" height="409"/>
-	<SubTexture name="Quincy Right0013" x="0" y="1230" width="480" height="409"/>
-	<SubTexture name="Quincy Up0000" x="481" y="1230" width="483" height="408" pivotX="-191" pivotY="262.75" frameX="0" frameY="-1" frameWidth="483" frameHeight="409"/>
-	<SubTexture name="Quincy Up0001" x="965" y="1230" width="473" height="408" frameX="-10" frameY="-1" frameWidth="483" frameHeight="409"/>
-	<SubTexture name="Quincy Up0002" x="1439" y="1230" width="468" height="409" frameX="-15" frameY="0" frameWidth="483" frameHeight="409"/>
-	<SubTexture name="Quincy Up0003" x="1439" y="1230" width="468" height="409" frameX="-15" frameY="0" frameWidth="483" frameHeight="409"/>
-	<SubTexture name="Quincy Up0004" x="1439" y="1230" width="468" height="409" frameX="-15" frameY="0" frameWidth="483" frameHeight="409"/>
-	<SubTexture name="Quincy Up0005" x="1439" y="1230" width="468" height="409" frameX="-15" frameY="0" frameWidth="483" frameHeight="409"/>
-	<SubTexture name="Quincy Up0006" x="1439" y="1230" width="468" height="409" frameX="-15" frameY="0" frameWidth="483" frameHeight="409"/>
-	<SubTexture name="Quincy Up0007" x="1439" y="1230" width="468" height="409" frameX="-15" frameY="0" frameWidth="483" frameHeight="409"/>
-	<SubTexture name="Quincy Up0008" x="1439" y="1230" width="468" height="409" frameX="-15" frameY="0" frameWidth="483" frameHeight="409"/>
-	<SubTexture name="Quincy Up0009" x="1439" y="1230" width="468" height="409" frameX="-15" frameY="0" frameWidth="483" frameHeight="409"/>
-	<SubTexture name="Quincy Up0010" x="1439" y="1230" width="468" height="409" frameX="-15" frameY="0" frameWidth="483" frameHeight="409"/>
-	<SubTexture name="Quincy Up0011" x="1439" y="1230" width="468" height="409" frameX="-15" frameY="0" frameWidth="483" frameHeight="409"/>
-	<SubTexture name="Quincy Up0012" x="1439" y="1230" width="468" height="409" frameX="-15" frameY="0" frameWidth="483" frameHeight="409"/>
-	<SubTexture name="Quincy Up0013" x="1439" y="1230" width="468" height="409" frameX="-15" frameY="0" frameWidth="483" frameHeight="409"/>
+	<SubTexture name="Quincy Down0000" x="0" y="0" width="445" height="403" pivotX="-210.7" pivotY="261.7" frameX="-1" frameY="-2" frameWidth="446" frameHeight="406"/>
+	<SubTexture name="Quincy Down0001" x="0" y="0" width="445" height="403" frameX="-1" frameY="-2" frameWidth="446" frameHeight="406"/>
+	<SubTexture name="Quincy Down0002" x="446" y="0" width="445" height="406" frameX="-1" frameY="0" frameWidth="446" frameHeight="406"/>
+	<SubTexture name="Quincy Down0003" x="446" y="0" width="445" height="406" frameX="-1" frameY="0" frameWidth="446" frameHeight="406"/>
+	<SubTexture name="Quincy Down0004" x="892" y="0" width="446" height="406"/>
+	<SubTexture name="Quincy Down0005" x="892" y="0" width="446" height="406"/>
+	<SubTexture name="Quincy Down0006" x="892" y="0" width="446" height="406"/>
+	<SubTexture name="Quincy Down0007" x="892" y="0" width="446" height="406"/>
+	<SubTexture name="Quincy Down0008" x="892" y="0" width="446" height="406"/>
+	<SubTexture name="Quincy Down0009" x="892" y="0" width="446" height="406"/>
+	<SubTexture name="Quincy Down0010" x="892" y="0" width="446" height="406"/>
+	<SubTexture name="Quincy Down0011" x="892" y="0" width="446" height="406"/>
+	<SubTexture name="Quincy Down0012" x="892" y="0" width="446" height="406"/>
+	<SubTexture name="Quincy Down0013" x="892" y="0" width="446" height="406"/>
+	<SubTexture name="Quincy Idle0000" x="1339" y="0" width="444" height="407" pivotX="-212.4" pivotY="261.35"/>
+	<SubTexture name="Quincy Idle0001" x="1339" y="0" width="444" height="407"/>
+	<SubTexture name="Quincy Idle0002" x="1784" y="0" width="444" height="407"/>
+	<SubTexture name="Quincy Idle0003" x="2229" y="0" width="444" height="407"/>
+	<SubTexture name="Quincy Idle0004" x="2674" y="0" width="444" height="405" frameX="0" frameY="-2" frameWidth="444" frameHeight="407"/>
+	<SubTexture name="Quincy Idle0005" x="3119" y="0" width="444" height="405" frameX="0" frameY="-2" frameWidth="444" frameHeight="407"/>
+	<SubTexture name="Quincy Idle0006" x="3564" y="0" width="444" height="405" frameX="0" frameY="-2" frameWidth="444" frameHeight="407"/>
+	<SubTexture name="Quincy Idle0007" x="0" y="408" width="444" height="405" frameX="0" frameY="-2" frameWidth="444" frameHeight="407"/>
+	<SubTexture name="Quincy Idle0008" x="445" y="408" width="444" height="407"/>
+	<SubTexture name="Quincy Idle0009" x="890" y="408" width="444" height="407"/>
+	<SubTexture name="Quincy Idle0010" x="1339" y="0" width="444" height="407"/>
+	<SubTexture name="Quincy Idle0011" x="890" y="408" width="444" height="407"/>
+	<SubTexture name="Quincy Idle0012" x="445" y="408" width="444" height="407"/>
+	<SubTexture name="Quincy Idle0013" x="890" y="408" width="444" height="407"/>
+	<SubTexture name="Quincy Left0000" x="1335" y="408" width="423" height="403" pivotX="-226.35" pivotY="261.35" frameX="-7" frameY="-2" frameWidth="430" frameHeight="405"/>
+	<SubTexture name="Quincy Left0001" x="1335" y="408" width="423" height="403" frameX="-7" frameY="-2" frameWidth="430" frameHeight="405"/>
+	<SubTexture name="Quincy Left0002" x="1759" y="408" width="429" height="405" frameX="-1" frameY="0" frameWidth="430" frameHeight="405"/>
+	<SubTexture name="Quincy Left0003" x="1759" y="408" width="429" height="405" frameX="-1" frameY="0" frameWidth="430" frameHeight="405"/>
+	<SubTexture name="Quincy Left0004" x="2189" y="408" width="430" height="405"/>
+	<SubTexture name="Quincy Left0005" x="2189" y="408" width="430" height="405"/>
+	<SubTexture name="Quincy Left0006" x="2189" y="408" width="430" height="405"/>
+	<SubTexture name="Quincy Left0007" x="2189" y="408" width="430" height="405"/>
+	<SubTexture name="Quincy Left0008" x="2189" y="408" width="430" height="405"/>
+	<SubTexture name="Quincy Left0009" x="2189" y="408" width="430" height="405"/>
+	<SubTexture name="Quincy Left0010" x="2189" y="408" width="430" height="405"/>
+	<SubTexture name="Quincy Left0011" x="2189" y="408" width="430" height="405"/>
+	<SubTexture name="Quincy Left0012" x="2189" y="408" width="430" height="405"/>
+	<SubTexture name="Quincy Left0013" x="2189" y="408" width="430" height="405"/>
+	<SubTexture name="Quincy Right0000" x="2620" y="408" width="443" height="406" pivotX="-213.3" pivotY="262.25"/>
+	<SubTexture name="Quincy Right0001" x="2620" y="408" width="443" height="406"/>
+	<SubTexture name="Quincy Right0002" x="3064" y="408" width="443" height="405" frameX="0" frameY="-1" frameWidth="443" frameHeight="406"/>
+	<SubTexture name="Quincy Right0003" x="3064" y="408" width="443" height="405" frameX="0" frameY="-1" frameWidth="443" frameHeight="406"/>
+	<SubTexture name="Quincy Right0004" x="3508" y="408" width="443" height="405" frameX="0" frameY="-1" frameWidth="443" frameHeight="406"/>
+	<SubTexture name="Quincy Right0005" x="3508" y="408" width="443" height="405" frameX="0" frameY="-1" frameWidth="443" frameHeight="406"/>
+	<SubTexture name="Quincy Right0006" x="3508" y="408" width="443" height="405" frameX="0" frameY="-1" frameWidth="443" frameHeight="406"/>
+	<SubTexture name="Quincy Right0007" x="3508" y="408" width="443" height="405" frameX="0" frameY="-1" frameWidth="443" frameHeight="406"/>
+	<SubTexture name="Quincy Right0008" x="3508" y="408" width="443" height="405" frameX="0" frameY="-1" frameWidth="443" frameHeight="406"/>
+	<SubTexture name="Quincy Right0009" x="3508" y="408" width="443" height="405" frameX="0" frameY="-1" frameWidth="443" frameHeight="406"/>
+	<SubTexture name="Quincy Right0010" x="3508" y="408" width="443" height="405" frameX="0" frameY="-1" frameWidth="443" frameHeight="406"/>
+	<SubTexture name="Quincy Right0011" x="3508" y="408" width="443" height="405" frameX="0" frameY="-1" frameWidth="443" frameHeight="406"/>
+	<SubTexture name="Quincy Right0012" x="3508" y="408" width="443" height="405" frameX="0" frameY="-1" frameWidth="443" frameHeight="406"/>
+	<SubTexture name="Quincy Right0013" x="3508" y="408" width="443" height="405" frameX="0" frameY="-1" frameWidth="443" frameHeight="406"/>
+	<SubTexture name="Quincy Up0000" x="0" y="816" width="446" height="408" pivotX="-210.7" pivotY="263"/>
+	<SubTexture name="Quincy Up0001" x="0" y="816" width="446" height="408"/>
+	<SubTexture name="Quincy Up0002" x="447" y="816" width="439" height="408" frameX="-7" frameY="0" frameWidth="446" frameHeight="408"/>
+	<SubTexture name="Quincy Up0003" x="447" y="816" width="439" height="408" frameX="-7" frameY="0" frameWidth="446" frameHeight="408"/>
+	<SubTexture name="Quincy Up0004" x="887" y="816" width="435" height="407" frameX="-11" frameY="-1" frameWidth="446" frameHeight="408"/>
+	<SubTexture name="Quincy Up0005" x="887" y="816" width="435" height="407" frameX="-11" frameY="-1" frameWidth="446" frameHeight="408"/>
+	<SubTexture name="Quincy Up0006" x="887" y="816" width="435" height="407" frameX="-11" frameY="-1" frameWidth="446" frameHeight="408"/>
+	<SubTexture name="Quincy Up0007" x="887" y="816" width="435" height="407" frameX="-11" frameY="-1" frameWidth="446" frameHeight="408"/>
+	<SubTexture name="Quincy Up0008" x="887" y="816" width="435" height="407" frameX="-11" frameY="-1" frameWidth="446" frameHeight="408"/>
+	<SubTexture name="Quincy Up0009" x="887" y="816" width="435" height="407" frameX="-11" frameY="-1" frameWidth="446" frameHeight="408"/>
+	<SubTexture name="Quincy Up0010" x="887" y="816" width="435" height="407" frameX="-11" frameY="-1" frameWidth="446" frameHeight="408"/>
+	<SubTexture name="Quincy Up0011" x="887" y="816" width="435" height="407" frameX="-11" frameY="-1" frameWidth="446" frameHeight="408"/>
+	<SubTexture name="Quincy Up0012" x="887" y="816" width="435" height="407" frameX="-11" frameY="-1" frameWidth="446" frameHeight="408"/>
+	<SubTexture name="Quincy Up0013" x="887" y="816" width="435" height="407" frameX="-11" frameY="-1" frameWidth="446" frameHeight="408"/>
 </TextureAtlas>
