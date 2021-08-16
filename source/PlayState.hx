@@ -256,6 +256,8 @@ class PlayState extends MusicBeatState
 				storyDifficultyText = "Normal";
 			case 2:
 				storyDifficultyText = "Hard";
+			case 3:
+				storyDifficultyText = "Rematch";
 		}
 
 		iconRPC = SONG.player2;
@@ -1426,9 +1428,12 @@ class PlayState extends MusicBeatState
 		lastReportedPlayheadPosition = 0;
 
 		if (!paused)
-		{
-			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 1, false);
-		}
+			{
+				if (storyDifficulty == 3)
+					FlxG.sound.playMusic(Paths.instEX(PlayState.SONG.song), 1, false);
+				else
+					FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 1, false);
+			}
 
 		FlxG.sound.music.onComplete = endSong;
 		vocals.play();
@@ -1493,9 +1498,14 @@ class PlayState extends MusicBeatState
 		curSong = songData.song;
 
 		if (SONG.needsVoices)
-			vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song));
-		else
+			if (storyDifficulty == 3) {
+				vocals = new FlxSound().loadEmbedded(Paths.voicesEX(PlayState.SONG.song));
+			} else {
+				vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song));
+			}
+		else {
 			vocals = new FlxSound();
+		}
 
 		FlxG.sound.list.add(vocals);
 
@@ -2657,6 +2667,9 @@ class PlayState extends MusicBeatState
 
 					if (storyDifficulty == 2)
 						difficulty = '-hard';
+
+					if (storyDifficulty == 3)
+						difficulty = '-rematch';
 
 					trace('LOADING NEXT SONG');
 					trace(PlayState.storyPlaylist[0].toLowerCase() + difficulty);

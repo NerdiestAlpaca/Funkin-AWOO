@@ -43,6 +43,37 @@ function update (elapsed)
         end
     end
     
+    if difficulty == 3 then -- we're on rematch mode
+        if swayingstart then
+            for i=0,7 do
+                setActorY(defaultStrum0Y + 8 * math.cos((currentBeat + i*0.2) * 1.4), i)
+            end
+        end
+        if swayingy then
+            for i=0,7 do
+                setActorY(defaultStrum0Y + 15 * math.cos((currentBeat + i*0.3) * 1.5), i)
+            end
+        end
+        if swayingx then
+            for i=0,7 do
+                setActorX(_G['defaultStrum'..i..'X'] + 20 * math.sin((currentBeat + i*0.01)), i)
+            end
+        end
+        if swayingboth then
+            for i=0,7 do
+                setActorY(defaultStrum0Y + 15 * math.cos((currentBeat + i*0.3) * 1.5), i)
+                setActorX(_G['defaultStrum'..i..'X'] + 20 * math.sin((currentBeat + i*0.01)), i)
+            end
+        end
+        if swayingintense then
+            local currentBeat = (songPos / 1000)*(bpm/70)
+            for i=0,7 do
+                setActorY(defaultStrum0Y + 18 * math.cos((currentBeat + i*0.25) * 1.8), i)
+                setActorX(_G['defaultStrum'..i..'X'] + 24 * math.sin((currentBeat + i*0.02)), i)
+            end
+        end
+    end
+    
     if difficulty == 1 then -- we're on normal
         if swayingstart then
             for i=0,7 do
