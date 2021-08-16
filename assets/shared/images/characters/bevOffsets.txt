@@ -1,6 +1,0 @@
-idle 0 -310
-singUP -20 -304
-singRIGHT 24 -307
-singLEFT 0 -310
-singDOWN -62 -314
-singDOWN-alt 0 -316
