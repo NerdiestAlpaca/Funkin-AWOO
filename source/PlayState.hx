@@ -3119,7 +3119,7 @@ class PlayState extends MusicBeatState
 
 					if(dontCheck && possibleNotes.length > 0 && FlxG.save.data.ghost && !FlxG.save.data.botplay)
 					{
-						if (mashViolations > 4)
+						if (mashViolations > 12)
 						{
 							trace('mash violations ' + mashViolations);
 							scoreTxt.color = FlxColor.RED;
@@ -3184,7 +3184,7 @@ class PlayState extends MusicBeatState
 	{
 		if (!boyfriend.stunned)
 		{
-			health -= 0.06;
+			health -= 0.05;
 			if (combo > 5 && gf.animOffsets.exists('sad'))
 			{
 				gf.playAnim('sad');
