@@ -878,6 +878,13 @@ class PlayState extends MusicBeatState
 					add(fastCar);
 				}
 
+				case 'park':
+					boyfriend.y += 600
+					gf.x += 180;
+					gf.y += 600;
+					boyfriend.x += 200;
+					dad.y += 600;
+					
 			case 'mall':
 				boyfriend.x += 200;
 			case 'mallEvil':
