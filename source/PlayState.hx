@@ -385,7 +385,7 @@ class PlayState extends MusicBeatState
 	
 					var parktex = Paths.getSparrowAtlas('petshop/outsidebg');
 	
-					BG = new FlxSprite(-200, -100);
+					var BG = new FlxSprite(-200, -100);
 					BG.frames = parktex;
 					BG.animation.addByPrefix('idle', 'park bg0');
 					BG.setGraphicSize(Std.int(BG.width * 1.25));
