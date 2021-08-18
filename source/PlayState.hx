@@ -168,6 +168,7 @@ class PlayState extends MusicBeatState
 	var songName:FlxText;
 	var upperBoppers:FlxSprite;
 	var uppercrowd:FlxSprite;
+	var audienceBoppers:FlxSprite
 	var bottomBoppers:FlxSprite;
 	var santa:FlxSprite;
 
@@ -746,13 +747,11 @@ class PlayState extends MusicBeatState
         					fgStage.antialiasing = true;
         					add(fgStage);
 
-						var audienceBoppers = new FlxSprite(-840, 0);
+							audienceBoppers = new FlxSprite(-700, 780);
 							audienceBoppers.frames = Paths.getSparrowAtlas('petshop/audienceBop');
 							audienceBoppers.animation.addByPrefix('bop', 'audience bob', 24, true);
-							audienceBoppers.animation.play("bop");
 							audienceBoppers.antialiasing = true;
-							audienceBoppers.scrollFactor.set(1.3, 1.3);
-							audienceBoppers.setGraphicSize(Std.int(audienceBoppers.width * 0.7));
+							audienceBoppers.setGraphicSize(Std.int(audienceBoppers.width * 1.1));
 							audienceBoppers.updateHitbox();
 		
         					var confetti:FlxSprite = new FlxSprite(-240, -90);
@@ -903,6 +902,8 @@ class PlayState extends MusicBeatState
 
 		add(dad);
 		add(boyfriend);
+		if (curStage == 'pawtucket')
+			add(audienceBoppers);
 		if (loadRep)
 		{
 			FlxG.watch.addQuick('rep rpesses',repPresses);
@@ -3621,6 +3622,7 @@ class PlayState extends MusicBeatState
 				
 			case 'pawtucket':
 				uppercrowd.animation.play("bop", true);
+				audienceBoppers.animation.play("bop", true);
 
 			case 'mall':
 				if(FlxG.save.data.distractions){
