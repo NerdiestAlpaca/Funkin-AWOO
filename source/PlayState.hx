@@ -378,6 +378,21 @@ class PlayState extends MusicBeatState
 
 				isHalloween = true;
 			}
+			case 'park': 
+				{
+					defaultCamZoom = 0.8;
+					curStage = 'park';
+	
+					var parktex = Paths.getSparrowAtlas('petshop/outsidebg');
+	
+					BG = new FlxSprite(-200, -100);
+					BG.frames = parktex;
+					BG.animation.addByPrefix('idle', 'park bg0');
+					BG.setGraphicSize(Std.int(BG.width * 1.25));
+					BG.animation.play('idle');
+					BG.antialiasing = true;
+					add(BG);
+				}
 			case 'philly': 
 					{
 					curStage = 'philly';
