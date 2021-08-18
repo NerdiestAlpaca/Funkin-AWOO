@@ -2206,31 +2206,31 @@ class PlayState extends MusicBeatState
 						camFollow.y = dad.getMidpoint().y - 430;
 						camFollow.x = dad.getMidpoint().x - 100;
 					case 'savannah':
-						camFollow.y = dad.getMidpoint().y + 150;
+						camFollow.y = dad.getMidpoint().y + 200;
 						camFollow.x = dad.getMidpoint().x + 250;
 					case 'quincy':
 						camFollow.y = dad.getMidpoint().y + 200;
 						camFollow.x = dad.getMidpoint().x + 250;	
 					case 'petula':
-						camFollow.y = dad.getMidpoint().y + 150;
+						camFollow.y = dad.getMidpoint().y + 200;
 						camFollow.x = dad.getMidpoint().x + 250;
 					case 'roxie':
-						camFollow.y = dad.getMidpoint().y + 150;
+						camFollow.y = dad.getMidpoint().y + 200;
 						camFollow.x = dad.getMidpoint().x + 250;
 					case 'jade':
-						camFollow.y = dad.getMidpoint().y + 150;
+						camFollow.y = dad.getMidpoint().y + 200;
 						camFollow.x = dad.getMidpoint().x + 250;						
 					case 'trip':
 						camFollow.y = dad.getMidpoint().y + 200;
 						camFollow.x = dad.getMidpoint().x + 250;
 					case 'austin':
-						camFollow.y = dad.getMidpoint().y + 150;
+						camFollow.y = dad.getMidpoint().y + 200;
 						camFollow.x = dad.getMidpoint().x + 250;	
 					case 'edie':
-						camFollow.y = dad.getMidpoint().y + 150;
+						camFollow.y = dad.getMidpoint().y + 200;
 						camFollow.x = dad.getMidpoint().x + 250;
 					case 'bev':
-						camFollow.y = dad.getMidpoint().y + 150;
+						camFollow.y = dad.getMidpoint().y + 200;
 						camFollow.x = dad.getMidpoint().x + 250;				
 				}
 
