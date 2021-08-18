@@ -751,7 +751,7 @@ class PlayState extends MusicBeatState
 							audienceBoppers.frames = Paths.getSparrowAtlas('petshop/audienceBop');
 							audienceBoppers.animation.addByPrefix('bop', 'audience bob', 24, true);
 							audienceBoppers.antialiasing = true;
-							audienceBoppers.setGraphicSize(Std.int(audienceBoppers.width * 1.1));
+							audienceBoppers.setGraphicSize(Std.int(audienceBoppers.width * 1));
 							audienceBoppers.updateHitbox();
 		
         					var confetti:FlxSprite = new FlxSprite(-240, -90);
