@@ -879,7 +879,7 @@ class PlayState extends MusicBeatState
 				}
 
 				case 'park':
-					boyfriend.y += 600
+					boyfriend.y += 600;
 					gf.x += 180;
 					gf.y += 600;
 					boyfriend.x += 200;
