@@ -184,15 +184,15 @@ class Character extends FlxSprite
 					animation.addByPrefix('singLEFT-alt', 'Petula LMad', 24, false);
 					animation.addByPrefix('singRIGHT-alt', 'Petula RMad', 24, false);
 
-					addOffset('idle', 0,-302);
-					addOffset('singUP', -57, -289);
-					addOffset('singRIGHT', -34, -301);
-					addOffset('singLEFT',-52, -302);
-					addOffset('singDOWN', -46, -302);
-					addOffset("singUP-alt", -61, -286);
-					addOffset("singRIGHT-alt", -34, -302);
-					addOffset("singLEFT-alt", -52, -302);
-					addOffset("singDOWN-alt", -43, -300);
+					addOffset('idle', 0, -302);
+					addOffset('singUP', 0, -302);
+					addOffset('singRIGHT', 0, -301);
+					addOffset('singLEFT', 0, -302);
+					addOffset('singDOWN', 0, -302);
+					addOffset("singUP-alt", 0, -286);
+					addOffset("singRIGHT-alt", 0, -302);
+					addOffset("singLEFT-alt", 0, -302);
+					addOffset("singDOWN-alt", 0, -300);
 
 				playAnim('idle');
 			case 'roxie':

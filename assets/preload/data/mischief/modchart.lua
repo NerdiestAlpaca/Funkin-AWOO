@@ -160,9 +160,26 @@ function beatHit (beat)
 		swayingy = false	
         swayingintense = true
     end
+if difficulty == 3 then
+    if beat == 420 then
+        swayingintense = false
+    end
+end
+if difficulty == 2 then
     if beat == 368 then
         swayingintense = false
     end
+end
+if difficulty == 1 then
+    if beat == 368 then
+        swayingintense = false
+    end
+end
+if difficulty == 0 then
+    if beat == 368 then
+        swayingintense = false
+    end
+end
 end
 
 function stepHit (step)
