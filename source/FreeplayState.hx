@@ -71,6 +71,9 @@ class FreeplayState extends MusicBeatState
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuBGBlue'));
 		add(bg);
 
+		var magenta:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuBGMagenta'));
+		add(magenta);
+		
 		grpSongs = new FlxTypedGroup<Alphabet>();
 		add(grpSongs);
 
@@ -227,6 +230,10 @@ class FreeplayState extends MusicBeatState
 		#if !switch
 		intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
 		#end
+		if (curDifficulty == 3)
+			magenta.visible = true;
+		if (curDifficulty != 3)
+			magenta.visible = false;
 
 		switch (curDifficulty)
 		{
