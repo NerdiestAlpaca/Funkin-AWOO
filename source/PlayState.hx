@@ -1127,19 +1127,19 @@ class PlayState extends MusicBeatState
 				case 'thorns':
 					schoolIntro(doof);
 				case 'satellite':
-					lpsintro(doof);
+					schoolIntro(doof);
 				case 'our world':
 					schoolIntro(doof);
 				case 'mischief':
 					schoolIntro(doof);
 				case 'free spirit':
-					lpsnewweeks(doof);
+					schoolIntro(doof);
 				case 'catnap':
 					schoolIntro(doof);
 				case 'daredevil':
 					schoolIntro(doof);
 				case 'dreamboat':
-					lpsnewweeks(doof);
+					schoolIntro(doof);
 				case 'primadonna':
 					schoolIntro(doof);
 				case 'swerved up':

@@ -24,6 +24,7 @@ class StoryMenuState extends MusicBeatState
 	var scoreText:FlxText;
 
 	var weekData:Array<Dynamic> = [
+		['Tutorial'],
 		['Satellite', 'Our World', 'Mischief'],
 		['Free Spirit', 'Catnap', 'Daredevil'],
 		['Dreamboat', 'Primadonna', 'Swerved Up']
@@ -33,12 +34,14 @@ class StoryMenuState extends MusicBeatState
 	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true, true, true, true];
 
 	var weekCharacters:Array<Dynamic> = [
+		['', 'bf', 'gf'],
 		['firstweek', 'bf', 'gf'],
 		['secondweek', 'bf', 'gf'],
 		['thirdweek', 'bf', 'gf']
 	];
 
 	var weekNames:Array<String> = [
+		"Learn to Funk",
 		"Paw-Tucket",
 		"Round Two at the LPS",
 		"Guest Of Honor"
@@ -291,11 +294,24 @@ class StoryMenuState extends MusicBeatState
 			PlayState.storyWeek = curWeek;
 			PlayState.campaignScore = 0;
 			new FlxTimer().start(1, function(tmr:FlxTimer)
-			{
-				LoadingState.loadAndSwitchState(new PlayState(), true);
-			});
+				{
+					FlxG.camera.fade(FlxColor.BLACK, 1, false, function(){
+						if (curWeek == 1)
+							FlxG.switchState(new VideoState('assets/videos/cutscene1.webm', loadplayState));
+						else if (curWeek == 2)
+							FlxG.switchState(new VideoState('assets/videos/cutscene2.webm', loadplayState));
+						else if (curWeek == 3)
+							FlxG.switchState(new VideoState('assets/videos/cutscene3.webm', loadplayState));
+						else
+							LoadingState.loadAndSwitchState(new PlayState(), true);
+					});
+				});
+			}
 		}
-	}
+		
+		function loadplayState(){
+			LoadingState.loadAndSwitchState(new PlayState(), true);
+		}
 
 	function changeDifficulty(change:Int = 0):Void
 	{
