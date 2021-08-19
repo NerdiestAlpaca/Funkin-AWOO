@@ -204,11 +204,11 @@ class Character extends FlxSprite
 					animation.addByPrefix('singDOWN', 'Roxie Down', 24);
 					animation.addByPrefix('singLEFT', 'Roxie Left', 24);
 				
-					addOffset('idle', 0,-290);
-					addOffset('singUP', 0, -290);
-					addOffset('singRIGHT', 0, -290);
-					addOffset('singLEFT', 0, -290);
-					addOffset('singDOWN', 0, -290);
+					addOffset('idle', 0,-310);
+					addOffset('singUP', 0, -313);
+					addOffset('singRIGHT', 10, -303);
+					addOffset('singLEFT', 0, -315);
+					addOffset('singDOWN', -13, -288);
 				
 				playAnim('idle');
 			case 'jade':
