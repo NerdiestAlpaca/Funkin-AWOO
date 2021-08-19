@@ -24,7 +24,7 @@ class FreeplayState extends MusicBeatState
 	var selector:FlxText;
 	var curSelected:Int = 0;
 	var curDifficulty:Int = 1;
-
+	var magenta:FlxSprite;
 	var scoreText:FlxText;
 	var diffText:FlxText;
 	var lerpScore:Int = 0;
@@ -71,7 +71,7 @@ class FreeplayState extends MusicBeatState
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuBGBlue'));
 		add(bg);
 
-		var magenta:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuBGMagenta'));
+		magenta = new FlxSprite().loadGraphic(Paths.image('menuBGMagenta'));
 		add(magenta);
 		
 		grpSongs = new FlxTypedGroup<Alphabet>();
