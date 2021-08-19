@@ -71,13 +71,13 @@
 	<SubTexture name="BF Dead confirm0032" x="4840" y="500" width="439" height="469" frameX="0" frameY="-30" frameWidth="439" frameHeight="499"/>
 	<SubTexture name="BF Dead confirm0033" x="4840" y="500" width="439" height="469" frameX="0" frameY="-30" frameWidth="439" frameHeight="499"/>
 	<SubTexture name="BF HEY!!0000" x="5280" y="500" width="382" height="415" pivotX="-291.75" pivotY="207.65" frameX="-21" frameY="0" frameWidth="422" frameHeight="419"/>
-	<SubTexture name="BF HEY!!0001" x="5663" y="500" width="382" height="415" frameX="-21" frameY="0" frameWidth="422" frameHeight="419"/>
-	<SubTexture name="BF HEY!!0002" x="6046" y="500" width="420" height="409" frameX="0" frameY="-10" frameWidth="422" frameHeight="419"/>
-	<SubTexture name="BF HEY!!0003" x="6467" y="500" width="420" height="409" frameX="0" frameY="-10" frameWidth="422" frameHeight="419"/>
-	<SubTexture name="BF HEY!!0004" x="6888" y="500" width="414" height="412" frameX="-8" frameY="-7" frameWidth="422" frameHeight="419"/>
-	<SubTexture name="BF HEY!!0005" x="6888" y="500" width="414" height="412" frameX="-8" frameY="-7" frameWidth="422" frameHeight="419"/>
-	<SubTexture name="BF HEY!!0006" x="6888" y="500" width="414" height="412" frameX="-8" frameY="-7" frameWidth="422" frameHeight="419"/>
-	<SubTexture name="BF HEY!!0007" x="6888" y="500" width="414" height="412" frameX="-8" frameY="-7" frameWidth="422" frameHeight="419"/>
+	<SubTexture name="BF HEY!!0001" x="5280" y="500" width="382" height="415" frameX="-21" frameY="0" frameWidth="422" frameHeight="419"/>
+	<SubTexture name="BF HEY!!0002" x="5663" y="500" width="382" height="415" frameX="-21" frameY="0" frameWidth="422" frameHeight="419"/>
+	<SubTexture name="BF HEY!!0003" x="5663" y="500" width="382" height="415" frameX="-21" frameY="0" frameWidth="422" frameHeight="419"/>
+	<SubTexture name="BF HEY!!0004" x="6046" y="500" width="420" height="409" frameX="0" frameY="-10" frameWidth="422" frameHeight="419"/>
+	<SubTexture name="BF HEY!!0005" x="6046" y="500" width="420" height="409" frameX="0" frameY="-10" frameWidth="422" frameHeight="419"/>
+	<SubTexture name="BF HEY!!0006" x="6467" y="500" width="420" height="409" frameX="0" frameY="-10" frameWidth="422" frameHeight="419"/>
+	<SubTexture name="BF HEY!!0007" x="6467" y="500" width="420" height="409" frameX="0" frameY="-10" frameWidth="422" frameHeight="419"/>
 	<SubTexture name="BF HEY!!0008" x="6888" y="500" width="414" height="412" frameX="-8" frameY="-7" frameWidth="422" frameHeight="419"/>
 	<SubTexture name="BF HEY!!0009" x="6888" y="500" width="414" height="412" frameX="-8" frameY="-7" frameWidth="422" frameHeight="419"/>
 	<SubTexture name="BF HEY!!0010" x="6888" y="500" width="414" height="412" frameX="-8" frameY="-7" frameWidth="422" frameHeight="419"/>
