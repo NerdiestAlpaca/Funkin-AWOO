@@ -284,7 +284,7 @@ class StoryMenuState extends MusicBeatState
 					diffic = '-easy';
 				case 2:
 					diffic = '-hard';
-				case 2:
+				case 3:
 					diffic = '-rematch';
 			}
 
