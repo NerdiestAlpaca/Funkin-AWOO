@@ -2,74 +2,74 @@
 <TextureAtlas imagePath="Roxie.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Roxie Down0000" x="0" y="0" width="335" height="400" pivotX="226.9" pivotY="522.55"/>
-	<SubTexture name="Roxie Down0001" x="0" y="0" width="335" height="400"/>
-	<SubTexture name="Roxie Down0002" x="337" y="0" width="335" height="399" frameX="0" frameY="-1" frameWidth="335" frameHeight="400"/>
-	<SubTexture name="Roxie Down0003" x="337" y="0" width="335" height="399" frameX="0" frameY="-1" frameWidth="335" frameHeight="400"/>
-	<SubTexture name="Roxie Down0004" x="337" y="0" width="335" height="399" frameX="0" frameY="-1" frameWidth="335" frameHeight="400"/>
-	<SubTexture name="Roxie Down0005" x="337" y="0" width="335" height="399" frameX="0" frameY="-1" frameWidth="335" frameHeight="400"/>
-	<SubTexture name="Roxie Down0006" x="337" y="0" width="335" height="399" frameX="0" frameY="-1" frameWidth="335" frameHeight="400"/>
-	<SubTexture name="Roxie Down0007" x="337" y="0" width="335" height="399" frameX="0" frameY="-1" frameWidth="335" frameHeight="400"/>
-	<SubTexture name="Roxie Down0008" x="337" y="0" width="335" height="399" frameX="0" frameY="-1" frameWidth="335" frameHeight="400"/>
-	<SubTexture name="Roxie Down0009" x="337" y="0" width="335" height="399" frameX="0" frameY="-1" frameWidth="335" frameHeight="400"/>
-	<SubTexture name="Roxie Down0010" x="337" y="0" width="335" height="399" frameX="0" frameY="-1" frameWidth="335" frameHeight="400"/>
-	<SubTexture name="Roxie Down0011" x="337" y="0" width="335" height="399" frameX="0" frameY="-1" frameWidth="335" frameHeight="400"/>
-	<SubTexture name="Roxie Down0012" x="337" y="0" width="335" height="399" frameX="0" frameY="-1" frameWidth="335" frameHeight="400"/>
-	<SubTexture name="Roxie Down0013" x="337" y="0" width="335" height="399" frameX="0" frameY="-1" frameWidth="335" frameHeight="400"/>
-	<SubTexture name="Roxie Idle0000" x="674" y="0" width="335" height="392" pivotX="185.25" pivotY="414.05" frameX="-14" frameY="-12" frameWidth="349" frameHeight="404"/>
-	<SubTexture name="Roxie Idle0001" x="1011" y="0" width="349" height="392" frameX="0" frameY="-12" frameWidth="349" frameHeight="404"/>
-	<SubTexture name="Roxie Idle0002" x="1362" y="0" width="349" height="404"/>
-	<SubTexture name="Roxie Idle0003" x="0" y="406" width="346" height="404" frameX="-3" frameY="0" frameWidth="349" frameHeight="404"/>
-	<SubTexture name="Roxie Idle0004" x="348" y="406" width="335" height="396" frameX="-14" frameY="-8" frameWidth="349" frameHeight="404"/>
-	<SubTexture name="Roxie Idle0005" x="685" y="406" width="349" height="396" frameX="0" frameY="-8" frameWidth="349" frameHeight="404"/>
-	<SubTexture name="Roxie Idle0006" x="685" y="406" width="349" height="396" frameX="0" frameY="-8" frameWidth="349" frameHeight="404"/>
-	<SubTexture name="Roxie Idle0007" x="674" y="0" width="335" height="392" frameX="-14" frameY="-12" frameWidth="349" frameHeight="404"/>
-	<SubTexture name="Roxie Idle0008" x="1011" y="0" width="349" height="392" frameX="0" frameY="-12" frameWidth="349" frameHeight="404"/>
-	<SubTexture name="Roxie Idle0009" x="1362" y="0" width="349" height="404"/>
-	<SubTexture name="Roxie Idle0010" x="1362" y="0" width="349" height="404"/>
-	<SubTexture name="Roxie Idle0011" x="685" y="406" width="349" height="396" frameX="0" frameY="-8" frameWidth="349" frameHeight="404"/>
-	<SubTexture name="Roxie Idle0012" x="348" y="406" width="335" height="396" frameX="-14" frameY="-8" frameWidth="349" frameHeight="404"/>
-	<SubTexture name="Roxie Idle0013" x="348" y="406" width="335" height="396" frameX="-14" frameY="-8" frameWidth="349" frameHeight="404"/>
-	<SubTexture name="Roxie Left0000" x="1036" y="406" width="346" height="404" pivotX="182.25" pivotY="414.05"/>
-	<SubTexture name="Roxie Left0001" x="1036" y="406" width="346" height="404"/>
-	<SubTexture name="Roxie Left0002" x="1384" y="406" width="333" height="392" frameX="-13" frameY="-12" frameWidth="346" frameHeight="404"/>
-	<SubTexture name="Roxie Left0003" x="1384" y="406" width="333" height="392" frameX="-13" frameY="-12" frameWidth="346" frameHeight="404"/>
-	<SubTexture name="Roxie Left0004" x="1384" y="406" width="333" height="392" frameX="-13" frameY="-12" frameWidth="346" frameHeight="404"/>
-	<SubTexture name="Roxie Left0005" x="1384" y="406" width="333" height="392" frameX="-13" frameY="-12" frameWidth="346" frameHeight="404"/>
-	<SubTexture name="Roxie Left0006" x="1384" y="406" width="333" height="392" frameX="-13" frameY="-12" frameWidth="346" frameHeight="404"/>
-	<SubTexture name="Roxie Left0007" x="1384" y="406" width="333" height="392" frameX="-13" frameY="-12" frameWidth="346" frameHeight="404"/>
-	<SubTexture name="Roxie Left0008" x="1384" y="406" width="333" height="392" frameX="-13" frameY="-12" frameWidth="346" frameHeight="404"/>
-	<SubTexture name="Roxie Left0009" x="1384" y="406" width="333" height="392" frameX="-13" frameY="-12" frameWidth="346" frameHeight="404"/>
-	<SubTexture name="Roxie Left0010" x="1384" y="406" width="333" height="392" frameX="-13" frameY="-12" frameWidth="346" frameHeight="404"/>
-	<SubTexture name="Roxie Left0011" x="1384" y="406" width="333" height="392" frameX="-13" frameY="-12" frameWidth="346" frameHeight="404"/>
-	<SubTexture name="Roxie Left0012" x="1384" y="406" width="333" height="392" frameX="-13" frameY="-12" frameWidth="346" frameHeight="404"/>
-	<SubTexture name="Roxie Left0013" x="1384" y="406" width="333" height="392" frameX="-13" frameY="-12" frameWidth="346" frameHeight="404"/>
-	<SubTexture name="Roxie Right0000" x="0" y="812" width="344" height="395" pivotX="241.7" pivotY="518.95"/>
-	<SubTexture name="Roxie Right0001" x="0" y="812" width="344" height="395"/>
-	<SubTexture name="Roxie Right0002" x="346" y="812" width="341" height="391" frameX="0" frameY="-4" frameWidth="344" frameHeight="395"/>
-	<SubTexture name="Roxie Right0003" x="346" y="812" width="341" height="391" frameX="0" frameY="-4" frameWidth="344" frameHeight="395"/>
-	<SubTexture name="Roxie Right0004" x="346" y="812" width="341" height="391" frameX="0" frameY="-4" frameWidth="344" frameHeight="395"/>
-	<SubTexture name="Roxie Right0005" x="346" y="812" width="341" height="391" frameX="0" frameY="-4" frameWidth="344" frameHeight="395"/>
-	<SubTexture name="Roxie Right0006" x="346" y="812" width="341" height="391" frameX="0" frameY="-4" frameWidth="344" frameHeight="395"/>
-	<SubTexture name="Roxie Right0007" x="346" y="812" width="341" height="391" frameX="0" frameY="-4" frameWidth="344" frameHeight="395"/>
-	<SubTexture name="Roxie Right0008" x="346" y="812" width="341" height="391" frameX="0" frameY="-4" frameWidth="344" frameHeight="395"/>
-	<SubTexture name="Roxie Right0009" x="346" y="812" width="341" height="391" frameX="0" frameY="-4" frameWidth="344" frameHeight="395"/>
-	<SubTexture name="Roxie Right0010" x="346" y="812" width="341" height="391" frameX="0" frameY="-4" frameWidth="344" frameHeight="395"/>
-	<SubTexture name="Roxie Right0011" x="346" y="812" width="341" height="391" frameX="0" frameY="-4" frameWidth="344" frameHeight="395"/>
-	<SubTexture name="Roxie Right0012" x="346" y="812" width="341" height="391" frameX="0" frameY="-4" frameWidth="344" frameHeight="395"/>
-	<SubTexture name="Roxie Right0013" x="346" y="812" width="341" height="391" frameX="0" frameY="-4" frameWidth="344" frameHeight="395"/>
-	<SubTexture name="Roxie Up0000" x="689" y="812" width="352" height="406" pivotX="249.95" pivotY="533.2"/>
-	<SubTexture name="Roxie Up0001" x="689" y="812" width="352" height="406"/>
-	<SubTexture name="Roxie Up0002" x="1043" y="812" width="352" height="395" frameX="0" frameY="-11" frameWidth="352" frameHeight="406"/>
-	<SubTexture name="Roxie Up0003" x="1043" y="812" width="352" height="395" frameX="0" frameY="-11" frameWidth="352" frameHeight="406"/>
-	<SubTexture name="Roxie Up0004" x="1043" y="812" width="352" height="395" frameX="0" frameY="-11" frameWidth="352" frameHeight="406"/>
-	<SubTexture name="Roxie Up0005" x="1043" y="812" width="352" height="395" frameX="0" frameY="-11" frameWidth="352" frameHeight="406"/>
-	<SubTexture name="Roxie Up0006" x="1043" y="812" width="352" height="395" frameX="0" frameY="-11" frameWidth="352" frameHeight="406"/>
-	<SubTexture name="Roxie Up0007" x="1043" y="812" width="352" height="395" frameX="0" frameY="-11" frameWidth="352" frameHeight="406"/>
-	<SubTexture name="Roxie Up0008" x="1043" y="812" width="352" height="395" frameX="0" frameY="-11" frameWidth="352" frameHeight="406"/>
-	<SubTexture name="Roxie Up0009" x="1043" y="812" width="352" height="395" frameX="0" frameY="-11" frameWidth="352" frameHeight="406"/>
-	<SubTexture name="Roxie Up0010" x="1043" y="812" width="352" height="395" frameX="0" frameY="-11" frameWidth="352" frameHeight="406"/>
-	<SubTexture name="Roxie Up0011" x="1043" y="812" width="352" height="395" frameX="0" frameY="-11" frameWidth="352" frameHeight="406"/>
-	<SubTexture name="Roxie Up0012" x="1043" y="812" width="352" height="395" frameX="0" frameY="-11" frameWidth="352" frameHeight="406"/>
-	<SubTexture name="Roxie Up0013" x="1043" y="812" width="352" height="395" frameX="0" frameY="-11" frameWidth="352" frameHeight="406"/>
+	<SubTexture name="Roxie Down0000" x="0" y="0" width="377" height="411" pivotX="235.4" pivotY="524" frameX="0" frameY="-5" frameWidth="377" frameHeight="416"/>
+	<SubTexture name="Roxie Down0001" x="0" y="0" width="377" height="411" frameX="0" frameY="-5" frameWidth="377" frameHeight="416"/>
+	<SubTexture name="Roxie Down0002" x="378" y="0" width="377" height="415" frameX="0" frameY="0" frameWidth="377" frameHeight="416"/>
+	<SubTexture name="Roxie Down0003" x="378" y="0" width="377" height="415" frameX="0" frameY="0" frameWidth="377" frameHeight="416"/>
+	<SubTexture name="Roxie Down0004" x="756" y="0" width="377" height="411" frameX="0" frameY="-5" frameWidth="377" frameHeight="416"/>
+	<SubTexture name="Roxie Down0005" x="756" y="0" width="377" height="411" frameX="0" frameY="-5" frameWidth="377" frameHeight="416"/>
+	<SubTexture name="Roxie Down0006" x="756" y="0" width="377" height="411" frameX="0" frameY="-5" frameWidth="377" frameHeight="416"/>
+	<SubTexture name="Roxie Down0007" x="756" y="0" width="377" height="411" frameX="0" frameY="-5" frameWidth="377" frameHeight="416"/>
+	<SubTexture name="Roxie Down0008" x="756" y="0" width="377" height="411" frameX="0" frameY="-5" frameWidth="377" frameHeight="416"/>
+	<SubTexture name="Roxie Down0009" x="756" y="0" width="377" height="411" frameX="0" frameY="-5" frameWidth="377" frameHeight="416"/>
+	<SubTexture name="Roxie Down0010" x="756" y="0" width="377" height="411" frameX="0" frameY="-5" frameWidth="377" frameHeight="416"/>
+	<SubTexture name="Roxie Down0011" x="756" y="0" width="377" height="411" frameX="0" frameY="-5" frameWidth="377" frameHeight="416"/>
+	<SubTexture name="Roxie Down0012" x="756" y="0" width="377" height="411" frameX="0" frameY="-5" frameWidth="377" frameHeight="416"/>
+	<SubTexture name="Roxie Down0013" x="756" y="0" width="377" height="411" frameX="0" frameY="-5" frameWidth="377" frameHeight="416"/>
+	<SubTexture name="Roxie Idle0000" x="1134" y="0" width="387" height="393" pivotX="199.25" pivotY="398.05" frameX="-12" frameY="-1" frameWidth="399" frameHeight="394"/>
+	<SubTexture name="Roxie Idle0001" x="1522" y="0" width="389" height="393" frameX="-10" frameY="-1" frameWidth="399" frameHeight="394"/>
+	<SubTexture name="Roxie Idle0002" x="0" y="416" width="399" height="379" frameX="0" frameY="-15" frameWidth="399" frameHeight="394"/>
+	<SubTexture name="Roxie Idle0003" x="400" y="416" width="399" height="379" frameX="0" frameY="-15" frameWidth="399" frameHeight="394"/>
+	<SubTexture name="Roxie Idle0004" x="800" y="416" width="382" height="393" frameX="-17" frameY="0" frameWidth="399" frameHeight="394"/>
+	<SubTexture name="Roxie Idle0005" x="1183" y="416" width="392" height="393" frameX="-7" frameY="0" frameWidth="399" frameHeight="394"/>
+	<SubTexture name="Roxie Idle0006" x="1576" y="416" width="395" height="393" frameX="-4" frameY="-1" frameWidth="399" frameHeight="394"/>
+	<SubTexture name="Roxie Idle0007" x="1522" y="0" width="389" height="393" frameX="-10" frameY="-1" frameWidth="399" frameHeight="394"/>
+	<SubTexture name="Roxie Idle0008" x="1134" y="0" width="387" height="393" frameX="-12" frameY="-1" frameWidth="399" frameHeight="394"/>
+	<SubTexture name="Roxie Idle0009" x="1522" y="0" width="389" height="393" frameX="-10" frameY="-1" frameWidth="399" frameHeight="394"/>
+	<SubTexture name="Roxie Idle0010" x="1576" y="416" width="395" height="393" frameX="-4" frameY="-1" frameWidth="399" frameHeight="394"/>
+	<SubTexture name="Roxie Idle0011" x="1522" y="0" width="389" height="393" frameX="-10" frameY="-1" frameWidth="399" frameHeight="394"/>
+	<SubTexture name="Roxie Idle0012" x="1134" y="0" width="387" height="393" frameX="-12" frameY="-1" frameWidth="399" frameHeight="394"/>
+	<SubTexture name="Roxie Idle0013" x="1522" y="0" width="389" height="393" frameX="-10" frameY="-1" frameWidth="399" frameHeight="394"/>
+	<SubTexture name="Roxie Left0000" x="0" y="810" width="399" height="375" pivotX="199.25" pivotY="405.05" frameX="0" frameY="-14" frameWidth="399" frameHeight="389"/>
+	<SubTexture name="Roxie Left0001" x="0" y="810" width="399" height="375" frameX="0" frameY="-14" frameWidth="399" frameHeight="389"/>
+	<SubTexture name="Roxie Left0002" x="400" y="810" width="393" height="384" frameX="-6" frameY="-5" frameWidth="399" frameHeight="389"/>
+	<SubTexture name="Roxie Left0003" x="400" y="810" width="393" height="384" frameX="-6" frameY="-5" frameWidth="399" frameHeight="389"/>
+	<SubTexture name="Roxie Left0004" x="794" y="810" width="387" height="389" frameX="-12" frameY="0" frameWidth="399" frameHeight="389"/>
+	<SubTexture name="Roxie Left0005" x="794" y="810" width="387" height="389" frameX="-12" frameY="0" frameWidth="399" frameHeight="389"/>
+	<SubTexture name="Roxie Left0006" x="794" y="810" width="387" height="389" frameX="-12" frameY="0" frameWidth="399" frameHeight="389"/>
+	<SubTexture name="Roxie Left0007" x="794" y="810" width="387" height="389" frameX="-12" frameY="0" frameWidth="399" frameHeight="389"/>
+	<SubTexture name="Roxie Left0008" x="794" y="810" width="387" height="389" frameX="-12" frameY="0" frameWidth="399" frameHeight="389"/>
+	<SubTexture name="Roxie Left0009" x="794" y="810" width="387" height="389" frameX="-12" frameY="0" frameWidth="399" frameHeight="389"/>
+	<SubTexture name="Roxie Left0010" x="794" y="810" width="387" height="389" frameX="-12" frameY="0" frameWidth="399" frameHeight="389"/>
+	<SubTexture name="Roxie Left0011" x="794" y="810" width="387" height="389" frameX="-12" frameY="0" frameWidth="399" frameHeight="389"/>
+	<SubTexture name="Roxie Left0012" x="794" y="810" width="387" height="389" frameX="-12" frameY="0" frameWidth="399" frameHeight="389"/>
+	<SubTexture name="Roxie Left0013" x="794" y="810" width="387" height="389" frameX="-12" frameY="0" frameWidth="399" frameHeight="389"/>
+	<SubTexture name="Roxie Right0000" x="1182" y="810" width="397" height="397" pivotX="259.4" pivotY="517.65" frameX="-11" frameY="0" frameWidth="408" frameHeight="397"/>
+	<SubTexture name="Roxie Right0001" x="1182" y="810" width="397" height="397" frameX="-11" frameY="0" frameWidth="408" frameHeight="397"/>
+	<SubTexture name="Roxie Right0002" x="1580" y="810" width="397" height="389" frameX="-11" frameY="-7" frameWidth="408" frameHeight="397"/>
+	<SubTexture name="Roxie Right0003" x="1580" y="810" width="397" height="389" frameX="-11" frameY="-7" frameWidth="408" frameHeight="397"/>
+	<SubTexture name="Roxie Right0004" x="0" y="1208" width="408" height="388" frameX="0" frameY="-8" frameWidth="408" frameHeight="397"/>
+	<SubTexture name="Roxie Right0005" x="0" y="1208" width="408" height="388" frameX="0" frameY="-8" frameWidth="408" frameHeight="397"/>
+	<SubTexture name="Roxie Right0006" x="0" y="1208" width="408" height="388" frameX="0" frameY="-8" frameWidth="408" frameHeight="397"/>
+	<SubTexture name="Roxie Right0007" x="0" y="1208" width="408" height="388" frameX="0" frameY="-8" frameWidth="408" frameHeight="397"/>
+	<SubTexture name="Roxie Right0008" x="0" y="1208" width="408" height="388" frameX="0" frameY="-8" frameWidth="408" frameHeight="397"/>
+	<SubTexture name="Roxie Right0009" x="0" y="1208" width="408" height="388" frameX="0" frameY="-8" frameWidth="408" frameHeight="397"/>
+	<SubTexture name="Roxie Right0010" x="0" y="1208" width="408" height="388" frameX="0" frameY="-8" frameWidth="408" frameHeight="397"/>
+	<SubTexture name="Roxie Right0011" x="0" y="1208" width="408" height="388" frameX="0" frameY="-8" frameWidth="408" frameHeight="397"/>
+	<SubTexture name="Roxie Right0012" x="0" y="1208" width="408" height="388" frameX="0" frameY="-8" frameWidth="408" frameHeight="397"/>
+	<SubTexture name="Roxie Right0013" x="0" y="1208" width="408" height="388" frameX="0" frameY="-8" frameWidth="408" frameHeight="397"/>
+	<SubTexture name="Roxie Up0000" x="409" y="1208" width="399" height="386" pivotX="261.25" pivotY="514.25" frameX="0" frameY="-6" frameWidth="399" frameHeight="392"/>
+	<SubTexture name="Roxie Up0001" x="409" y="1208" width="399" height="386" frameX="0" frameY="-6" frameWidth="399" frameHeight="392"/>
+	<SubTexture name="Roxie Up0002" x="809" y="1208" width="387" height="391" frameX="-12" frameY="0" frameWidth="399" frameHeight="392"/>
+	<SubTexture name="Roxie Up0003" x="809" y="1208" width="387" height="391" frameX="-12" frameY="0" frameWidth="399" frameHeight="392"/>
+	<SubTexture name="Roxie Up0004" x="1197" y="1208" width="388" height="386" frameX="-11" frameY="-5" frameWidth="399" frameHeight="392"/>
+	<SubTexture name="Roxie Up0005" x="1197" y="1208" width="388" height="386" frameX="-11" frameY="-5" frameWidth="399" frameHeight="392"/>
+	<SubTexture name="Roxie Up0006" x="1197" y="1208" width="388" height="386" frameX="-11" frameY="-5" frameWidth="399" frameHeight="392"/>
+	<SubTexture name="Roxie Up0007" x="1197" y="1208" width="388" height="386" frameX="-11" frameY="-5" frameWidth="399" frameHeight="392"/>
+	<SubTexture name="Roxie Up0008" x="1197" y="1208" width="388" height="386" frameX="-11" frameY="-5" frameWidth="399" frameHeight="392"/>
+	<SubTexture name="Roxie Up0009" x="1197" y="1208" width="388" height="386" frameX="-11" frameY="-5" frameWidth="399" frameHeight="392"/>
+	<SubTexture name="Roxie Up0010" x="1197" y="1208" width="388" height="386" frameX="-11" frameY="-5" frameWidth="399" frameHeight="392"/>
+	<SubTexture name="Roxie Up0011" x="1197" y="1208" width="388" height="386" frameX="-11" frameY="-5" frameWidth="399" frameHeight="392"/>
+	<SubTexture name="Roxie Up0012" x="1197" y="1208" width="388" height="386" frameX="-11" frameY="-5" frameWidth="399" frameHeight="392"/>
+	<SubTexture name="Roxie Up0013" x="1197" y="1208" width="388" height="386" frameX="-11" frameY="-5" frameWidth="399" frameHeight="392"/>
 </TextureAtlas>

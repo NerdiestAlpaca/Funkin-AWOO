@@ -206,9 +206,9 @@ class Character extends FlxSprite
 				
 					addOffset('idle', 0,-290);
 					addOffset('singUP', 0, -290);
-					addOffset('singRIGHT', -11, -299);
-					addOffset('singLEFT',-3, -290);
-					addOffset('singDOWN', -15, -294);
+					addOffset('singRIGHT', 0, -290);
+					addOffset('singLEFT', 0, -290);
+					addOffset('singDOWN', 0, -290);
 				
 				playAnim('idle');
 			case 'jade':
