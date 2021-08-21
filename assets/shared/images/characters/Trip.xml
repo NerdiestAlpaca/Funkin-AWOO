@@ -2,74 +2,74 @@
 <TextureAtlas imagePath="Trip.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Trip Down0000" x="0" y="0" width="319" height="345" pivotX="197.1" pivotY="347.7" frameX="-6" frameY="-3" frameWidth="325" frameHeight="348"/>
-	<SubTexture name="Trip Down0001" x="0" y="0" width="319" height="345" frameX="-6" frameY="-3" frameWidth="325" frameHeight="348"/>
-	<SubTexture name="Trip Down0002" x="321" y="0" width="325" height="348"/>
-	<SubTexture name="Trip Down0003" x="321" y="0" width="325" height="348"/>
-	<SubTexture name="Trip Down0004" x="321" y="0" width="325" height="348"/>
-	<SubTexture name="Trip Down0005" x="321" y="0" width="325" height="348"/>
-	<SubTexture name="Trip Down0006" x="321" y="0" width="325" height="348"/>
-	<SubTexture name="Trip Down0007" x="321" y="0" width="325" height="348"/>
-	<SubTexture name="Trip Down0008" x="321" y="0" width="325" height="348"/>
-	<SubTexture name="Trip Down0009" x="321" y="0" width="325" height="348"/>
-	<SubTexture name="Trip Down0010" x="321" y="0" width="325" height="348"/>
-	<SubTexture name="Trip Down0011" x="321" y="0" width="325" height="348"/>
-	<SubTexture name="Trip Down0012" x="321" y="0" width="325" height="348"/>
-	<SubTexture name="Trip Down0013" x="321" y="0" width="325" height="348"/>
-	<SubTexture name="Trip Idle0000" x="648" y="0" width="321" height="335" pivotX="193.9" pivotY="350.05" frameX="0" frameY="-15" frameWidth="321" frameHeight="350"/>
-	<SubTexture name="Trip Idle0001" x="648" y="0" width="321" height="335" frameX="0" frameY="-15" frameWidth="321" frameHeight="350"/>
-	<SubTexture name="Trip Idle0002" x="971" y="0" width="316" height="343" frameX="-5" frameY="-7" frameWidth="321" frameHeight="350"/>
-	<SubTexture name="Trip Idle0003" x="971" y="0" width="316" height="343" frameX="-5" frameY="-7" frameWidth="321" frameHeight="350"/>
-	<SubTexture name="Trip Idle0004" x="1289" y="0" width="317" height="350" frameX="-4" frameY="0" frameWidth="321" frameHeight="350"/>
-	<SubTexture name="Trip Idle0005" x="1289" y="0" width="317" height="350" frameX="-4" frameY="0" frameWidth="321" frameHeight="350"/>
-	<SubTexture name="Trip Idle0006" x="1608" y="0" width="318" height="345" frameX="-3" frameY="-5" frameWidth="321" frameHeight="350"/>
-	<SubTexture name="Trip Idle0007" x="1608" y="0" width="318" height="345" frameX="-3" frameY="-5" frameWidth="321" frameHeight="350"/>
-	<SubTexture name="Trip Idle0008" x="1608" y="0" width="318" height="345" frameX="-3" frameY="-5" frameWidth="321" frameHeight="350"/>
-	<SubTexture name="Trip Idle0009" x="1608" y="0" width="318" height="345" frameX="-3" frameY="-5" frameWidth="321" frameHeight="350"/>
-	<SubTexture name="Trip Idle0010" x="1608" y="0" width="318" height="345" frameX="-3" frameY="-5" frameWidth="321" frameHeight="350"/>
-	<SubTexture name="Trip Idle0011" x="1608" y="0" width="318" height="345" frameX="-3" frameY="-5" frameWidth="321" frameHeight="350"/>
-	<SubTexture name="Trip Idle0012" x="1608" y="0" width="318" height="345" frameX="-3" frameY="-5" frameWidth="321" frameHeight="350"/>
-	<SubTexture name="Trip Idle0013" x="1608" y="0" width="318" height="345" frameX="-3" frameY="-5" frameWidth="321" frameHeight="350"/>
-	<SubTexture name="Trip Left0000" x="0" y="352" width="329" height="357" pivotX="201.3" pivotY="357.4"/>
-	<SubTexture name="Trip Left0001" x="0" y="352" width="329" height="357"/>
-	<SubTexture name="Trip Left0002" x="331" y="352" width="326" height="351" frameX="-3" frameY="-6" frameWidth="329" frameHeight="357"/>
-	<SubTexture name="Trip Left0003" x="331" y="352" width="326" height="351" frameX="-3" frameY="-6" frameWidth="329" frameHeight="357"/>
-	<SubTexture name="Trip Left0004" x="331" y="352" width="326" height="351" frameX="-3" frameY="-6" frameWidth="329" frameHeight="357"/>
-	<SubTexture name="Trip Left0005" x="331" y="352" width="326" height="351" frameX="-3" frameY="-6" frameWidth="329" frameHeight="357"/>
-	<SubTexture name="Trip Left0006" x="331" y="352" width="326" height="351" frameX="-3" frameY="-6" frameWidth="329" frameHeight="357"/>
-	<SubTexture name="Trip Left0007" x="331" y="352" width="326" height="351" frameX="-3" frameY="-6" frameWidth="329" frameHeight="357"/>
-	<SubTexture name="Trip Left0008" x="331" y="352" width="326" height="351" frameX="-3" frameY="-6" frameWidth="329" frameHeight="357"/>
-	<SubTexture name="Trip Left0009" x="331" y="352" width="326" height="351" frameX="-3" frameY="-6" frameWidth="329" frameHeight="357"/>
-	<SubTexture name="Trip Left0010" x="331" y="352" width="326" height="351" frameX="-3" frameY="-6" frameWidth="329" frameHeight="357"/>
-	<SubTexture name="Trip Left0011" x="331" y="352" width="326" height="351" frameX="-3" frameY="-6" frameWidth="329" frameHeight="357"/>
-	<SubTexture name="Trip Left0012" x="331" y="352" width="326" height="351" frameX="-3" frameY="-6" frameWidth="329" frameHeight="357"/>
-	<SubTexture name="Trip Left0013" x="331" y="352" width="326" height="351" frameX="-3" frameY="-6" frameWidth="329" frameHeight="357"/>
-	<SubTexture name="Trip Right0000" x="659" y="352" width="348" height="345" pivotX="223.6" pivotY="346" frameX="-3" frameY="0" frameWidth="351" frameHeight="345"/>
-	<SubTexture name="Trip Right0001" x="659" y="352" width="348" height="345" frameX="-3" frameY="0" frameWidth="351" frameHeight="345"/>
-	<SubTexture name="Trip Right0002" x="1009" y="352" width="351" height="334" frameX="0" frameY="-11" frameWidth="351" frameHeight="345"/>
-	<SubTexture name="Trip Right0003" x="1009" y="352" width="351" height="334" frameX="0" frameY="-11" frameWidth="351" frameHeight="345"/>
-	<SubTexture name="Trip Right0004" x="1009" y="352" width="351" height="334" frameX="0" frameY="-11" frameWidth="351" frameHeight="345"/>
-	<SubTexture name="Trip Right0005" x="1009" y="352" width="351" height="334" frameX="0" frameY="-11" frameWidth="351" frameHeight="345"/>
-	<SubTexture name="Trip Right0006" x="1009" y="352" width="351" height="334" frameX="0" frameY="-11" frameWidth="351" frameHeight="345"/>
-	<SubTexture name="Trip Right0007" x="1009" y="352" width="351" height="334" frameX="0" frameY="-11" frameWidth="351" frameHeight="345"/>
-	<SubTexture name="Trip Right0008" x="1009" y="352" width="351" height="334" frameX="0" frameY="-11" frameWidth="351" frameHeight="345"/>
-	<SubTexture name="Trip Right0009" x="1009" y="352" width="351" height="334" frameX="0" frameY="-11" frameWidth="351" frameHeight="345"/>
-	<SubTexture name="Trip Right0010" x="1009" y="352" width="351" height="334" frameX="0" frameY="-11" frameWidth="351" frameHeight="345"/>
-	<SubTexture name="Trip Right0011" x="1009" y="352" width="351" height="334" frameX="0" frameY="-11" frameWidth="351" frameHeight="345"/>
-	<SubTexture name="Trip Right0012" x="1009" y="352" width="351" height="334" frameX="0" frameY="-11" frameWidth="351" frameHeight="345"/>
-	<SubTexture name="Trip Right0013" x="1009" y="352" width="351" height="334" frameX="0" frameY="-11" frameWidth="351" frameHeight="345"/>
-	<SubTexture name="Trip Up0000" x="1362" y="352" width="344" height="349" pivotX="216.7" pivotY="350.85" frameX="0" frameY="-1" frameWidth="344" frameHeight="350"/>
-	<SubTexture name="Trip Up0001" x="1362" y="352" width="344" height="349" frameX="0" frameY="-1" frameWidth="344" frameHeight="350"/>
-	<SubTexture name="Trip Up0002" x="1708" y="352" width="327" height="350" frameX="-17" frameY="0" frameWidth="344" frameHeight="350"/>
-	<SubTexture name="Trip Up0003" x="1708" y="352" width="327" height="350" frameX="-17" frameY="0" frameWidth="344" frameHeight="350"/>
-	<SubTexture name="Trip Up0004" x="1708" y="352" width="327" height="350" frameX="-17" frameY="0" frameWidth="344" frameHeight="350"/>
-	<SubTexture name="Trip Up0005" x="1708" y="352" width="327" height="350" frameX="-17" frameY="0" frameWidth="344" frameHeight="350"/>
-	<SubTexture name="Trip Up0006" x="1708" y="352" width="327" height="350" frameX="-17" frameY="0" frameWidth="344" frameHeight="350"/>
-	<SubTexture name="Trip Up0007" x="1708" y="352" width="327" height="350" frameX="-17" frameY="0" frameWidth="344" frameHeight="350"/>
-	<SubTexture name="Trip Up0008" x="1708" y="352" width="327" height="350" frameX="-17" frameY="0" frameWidth="344" frameHeight="350"/>
-	<SubTexture name="Trip Up0009" x="1708" y="352" width="327" height="350" frameX="-17" frameY="0" frameWidth="344" frameHeight="350"/>
-	<SubTexture name="Trip Up0010" x="1708" y="352" width="327" height="350" frameX="-17" frameY="0" frameWidth="344" frameHeight="350"/>
-	<SubTexture name="Trip Up0011" x="1708" y="352" width="327" height="350" frameX="-17" frameY="0" frameWidth="344" frameHeight="350"/>
-	<SubTexture name="Trip Up0012" x="1708" y="352" width="327" height="350" frameX="-17" frameY="0" frameWidth="344" frameHeight="350"/>
-	<SubTexture name="Trip Up0013" x="1708" y="352" width="327" height="350" frameX="-17" frameY="0" frameWidth="344" frameHeight="350"/>
+	<SubTexture name="Trip Down0000" x="0" y="0" width="318" height="342" pivotX="195.7" pivotY="344.8" frameX="-5" frameY="-3" frameWidth="323" frameHeight="345"/>
+	<SubTexture name="Trip Down0001" x="0" y="0" width="318" height="342" frameX="-5" frameY="-3" frameWidth="323" frameHeight="345"/>
+	<SubTexture name="Trip Down0002" x="319" y="0" width="315" height="337" frameX="-8" frameY="-8" frameWidth="323" frameHeight="345"/>
+	<SubTexture name="Trip Down0003" x="319" y="0" width="315" height="337" frameX="-8" frameY="-8" frameWidth="323" frameHeight="345"/>
+	<SubTexture name="Trip Down0004" x="635" y="0" width="323" height="345"/>
+	<SubTexture name="Trip Down0005" x="635" y="0" width="323" height="345"/>
+	<SubTexture name="Trip Down0006" x="635" y="0" width="323" height="345"/>
+	<SubTexture name="Trip Down0007" x="635" y="0" width="323" height="345"/>
+	<SubTexture name="Trip Down0008" x="635" y="0" width="323" height="345"/>
+	<SubTexture name="Trip Down0009" x="635" y="0" width="323" height="345"/>
+	<SubTexture name="Trip Down0010" x="635" y="0" width="323" height="345"/>
+	<SubTexture name="Trip Down0011" x="635" y="0" width="323" height="345"/>
+	<SubTexture name="Trip Down0012" x="635" y="0" width="323" height="345"/>
+	<SubTexture name="Trip Down0013" x="635" y="0" width="323" height="345"/>
+	<SubTexture name="Trip Idle0000" x="959" y="0" width="317" height="344" pivotX="189.7" pivotY="344.9" frameX="0" frameY="-2" frameWidth="317" frameHeight="346"/>
+	<SubTexture name="Trip Idle0001" x="959" y="0" width="317" height="344" frameX="0" frameY="-2" frameWidth="317" frameHeight="346"/>
+	<SubTexture name="Trip Idle0002" x="1277" y="0" width="316" height="341" frameX="-1" frameY="-3" frameWidth="317" frameHeight="346"/>
+	<SubTexture name="Trip Idle0003" x="1277" y="0" width="316" height="341" frameX="-1" frameY="-3" frameWidth="317" frameHeight="346"/>
+	<SubTexture name="Trip Idle0004" x="1594" y="0" width="315" height="344" frameX="-2" frameY="0" frameWidth="317" frameHeight="346"/>
+	<SubTexture name="Trip Idle0005" x="1594" y="0" width="315" height="344" frameX="-2" frameY="0" frameWidth="317" frameHeight="346"/>
+	<SubTexture name="Trip Idle0006" x="0" y="346" width="317" height="343" frameX="0" frameY="-1" frameWidth="317" frameHeight="346"/>
+	<SubTexture name="Trip Idle0007" x="0" y="346" width="317" height="343" frameX="0" frameY="-1" frameWidth="317" frameHeight="346"/>
+	<SubTexture name="Trip Idle0008" x="0" y="346" width="317" height="343" frameX="0" frameY="-1" frameWidth="317" frameHeight="346"/>
+	<SubTexture name="Trip Idle0009" x="0" y="346" width="317" height="343" frameX="0" frameY="-1" frameWidth="317" frameHeight="346"/>
+	<SubTexture name="Trip Idle0010" x="0" y="346" width="317" height="343" frameX="0" frameY="-1" frameWidth="317" frameHeight="346"/>
+	<SubTexture name="Trip Idle0011" x="0" y="346" width="317" height="343" frameX="0" frameY="-1" frameWidth="317" frameHeight="346"/>
+	<SubTexture name="Trip Idle0012" x="0" y="346" width="317" height="343" frameX="0" frameY="-1" frameWidth="317" frameHeight="346"/>
+	<SubTexture name="Trip Idle0013" x="0" y="346" width="317" height="343" frameX="0" frameY="-1" frameWidth="317" frameHeight="346"/>
+	<SubTexture name="Trip Left0000" x="318" y="346" width="328" height="354" pivotX="200" pivotY="354.5"/>
+	<SubTexture name="Trip Left0001" x="318" y="346" width="328" height="354"/>
+	<SubTexture name="Trip Left0002" x="647" y="346" width="327" height="352" frameX="-1" frameY="-2" frameWidth="328" frameHeight="354"/>
+	<SubTexture name="Trip Left0003" x="647" y="346" width="327" height="352" frameX="-1" frameY="-2" frameWidth="328" frameHeight="354"/>
+	<SubTexture name="Trip Left0004" x="975" y="346" width="325" height="348" frameX="-3" frameY="-6" frameWidth="328" frameHeight="354"/>
+	<SubTexture name="Trip Left0005" x="975" y="346" width="325" height="348" frameX="-3" frameY="-6" frameWidth="328" frameHeight="354"/>
+	<SubTexture name="Trip Left0006" x="975" y="346" width="325" height="348" frameX="-3" frameY="-6" frameWidth="328" frameHeight="354"/>
+	<SubTexture name="Trip Left0007" x="975" y="346" width="325" height="348" frameX="-3" frameY="-6" frameWidth="328" frameHeight="354"/>
+	<SubTexture name="Trip Left0008" x="975" y="346" width="325" height="348" frameX="-3" frameY="-6" frameWidth="328" frameHeight="354"/>
+	<SubTexture name="Trip Left0009" x="975" y="346" width="325" height="348" frameX="-3" frameY="-6" frameWidth="328" frameHeight="354"/>
+	<SubTexture name="Trip Left0010" x="975" y="346" width="325" height="348" frameX="-3" frameY="-6" frameWidth="328" frameHeight="354"/>
+	<SubTexture name="Trip Left0011" x="975" y="346" width="325" height="348" frameX="-3" frameY="-6" frameWidth="328" frameHeight="354"/>
+	<SubTexture name="Trip Left0012" x="975" y="346" width="325" height="348" frameX="-3" frameY="-6" frameWidth="328" frameHeight="354"/>
+	<SubTexture name="Trip Left0013" x="975" y="346" width="325" height="348" frameX="-3" frameY="-6" frameWidth="328" frameHeight="354"/>
+	<SubTexture name="Trip Right0000" x="1301" y="346" width="348" height="342" pivotX="220.1" pivotY="344.25" frameX="0" frameY="-1" frameWidth="348" frameHeight="343"/>
+	<SubTexture name="Trip Right0001" x="1301" y="346" width="348" height="342" frameX="0" frameY="-1" frameWidth="348" frameHeight="343"/>
+	<SubTexture name="Trip Right0002" x="1650" y="346" width="344" height="340" frameX="-4" frameY="-3" frameWidth="348" frameHeight="343"/>
+	<SubTexture name="Trip Right0003" x="1650" y="346" width="344" height="340" frameX="-4" frameY="-3" frameWidth="348" frameHeight="343"/>
+	<SubTexture name="Trip Right0004" x="0" y="701" width="345" height="343" frameX="-3" frameY="0" frameWidth="348" frameHeight="343"/>
+	<SubTexture name="Trip Right0005" x="0" y="701" width="345" height="343" frameX="-3" frameY="0" frameWidth="348" frameHeight="343"/>
+	<SubTexture name="Trip Right0006" x="0" y="701" width="345" height="343" frameX="-3" frameY="0" frameWidth="348" frameHeight="343"/>
+	<SubTexture name="Trip Right0007" x="0" y="701" width="345" height="343" frameX="-3" frameY="0" frameWidth="348" frameHeight="343"/>
+	<SubTexture name="Trip Right0008" x="0" y="701" width="345" height="343" frameX="-3" frameY="0" frameWidth="348" frameHeight="343"/>
+	<SubTexture name="Trip Right0009" x="0" y="701" width="345" height="343" frameX="-3" frameY="0" frameWidth="348" frameHeight="343"/>
+	<SubTexture name="Trip Right0010" x="0" y="701" width="345" height="343" frameX="-3" frameY="0" frameWidth="348" frameHeight="343"/>
+	<SubTexture name="Trip Right0011" x="0" y="701" width="345" height="343" frameX="-3" frameY="0" frameWidth="348" frameHeight="343"/>
+	<SubTexture name="Trip Right0012" x="0" y="701" width="345" height="343" frameX="-3" frameY="0" frameWidth="348" frameHeight="343"/>
+	<SubTexture name="Trip Right0013" x="0" y="701" width="345" height="343" frameX="-3" frameY="0" frameWidth="348" frameHeight="343"/>
+	<SubTexture name="Trip Up0000" x="346" y="701" width="339" height="364" pivotX="211.15" pivotY="364.8"/>
+	<SubTexture name="Trip Up0001" x="346" y="701" width="339" height="364"/>
+	<SubTexture name="Trip Up0002" x="686" y="701" width="333" height="357" frameX="-6" frameY="-7" frameWidth="339" frameHeight="364"/>
+	<SubTexture name="Trip Up0003" x="686" y="701" width="333" height="357" frameX="-6" frameY="-7" frameWidth="339" frameHeight="364"/>
+	<SubTexture name="Trip Up0004" x="1020" y="701" width="322" height="352" frameX="-17" frameY="-12" frameWidth="339" frameHeight="364"/>
+	<SubTexture name="Trip Up0005" x="1020" y="701" width="322" height="352" frameX="-17" frameY="-12" frameWidth="339" frameHeight="364"/>
+	<SubTexture name="Trip Up0006" x="1020" y="701" width="322" height="352" frameX="-17" frameY="-12" frameWidth="339" frameHeight="364"/>
+	<SubTexture name="Trip Up0007" x="1020" y="701" width="322" height="352" frameX="-17" frameY="-12" frameWidth="339" frameHeight="364"/>
+	<SubTexture name="Trip Up0008" x="1020" y="701" width="322" height="352" frameX="-17" frameY="-12" frameWidth="339" frameHeight="364"/>
+	<SubTexture name="Trip Up0009" x="1020" y="701" width="322" height="352" frameX="-17" frameY="-12" frameWidth="339" frameHeight="364"/>
+	<SubTexture name="Trip Up0010" x="1020" y="701" width="322" height="352" frameX="-17" frameY="-12" frameWidth="339" frameHeight="364"/>
+	<SubTexture name="Trip Up0011" x="1020" y="701" width="322" height="352" frameX="-17" frameY="-12" frameWidth="339" frameHeight="364"/>
+	<SubTexture name="Trip Up0012" x="1020" y="701" width="322" height="352" frameX="-17" frameY="-12" frameWidth="339" frameHeight="364"/>
+	<SubTexture name="Trip Up0013" x="1020" y="701" width="322" height="352" frameX="-17" frameY="-12" frameWidth="339" frameHeight="364"/>
 </TextureAtlas>
