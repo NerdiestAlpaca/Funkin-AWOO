@@ -119,7 +119,7 @@ class MP4Handler
 		trace("video loaded!");
 	}
 
-	function onVLCComplete()
+	public function onVLCComplete()
 	{
 		vlcBitmap.stop();
 
