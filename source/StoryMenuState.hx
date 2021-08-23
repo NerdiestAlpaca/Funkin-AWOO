@@ -13,6 +13,7 @@ import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import lime.net.curl.CURLCode;
 var isCutscene:Bool = false;
+var video:MP4Handler = new MP4Handler();
 #if windows
 import Discord.DiscordClient;
 #end
@@ -293,7 +294,6 @@ class StoryMenuState extends MusicBeatState
 			PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + diffic, PlayState.storyPlaylist[0].toLowerCase());
 			PlayState.storyWeek = curWeek;
 			PlayState.campaignScore = 0;
-			var video:MP4Handler = new MP4Handler();
 
 			if (curWeek == 1 && !isCutscene)
 			{
