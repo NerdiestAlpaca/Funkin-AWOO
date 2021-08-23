@@ -12,7 +12,7 @@ import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import lime.net.curl.CURLCode;
-
+var isCutscene:Bool = false;
 #if windows
 import Discord.DiscordClient;
 #end
