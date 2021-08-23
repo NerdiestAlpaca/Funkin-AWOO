@@ -12,8 +12,6 @@ import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import lime.net.curl.CURLCode;
-var isCutscene:Bool = false;
-var video:MP4Handler = new MP4Handler();
 #if windows
 import Discord.DiscordClient;
 #end
@@ -22,6 +20,8 @@ using StringTools;
 
 class StoryMenuState extends MusicBeatState
 {
+	var isCutscene:Bool = false;
+	var video:MP4Handler = new MP4Handler();
 	var scoreText:FlxText;
 
 	var weekData:Array<Dynamic> = [
