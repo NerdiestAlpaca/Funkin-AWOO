@@ -11,7 +11,7 @@ import vlc.VlcBitmap;
 
 // THIS IS FOR TESTING
 // DONT STEAL MY CODE >:(
-class VideoHandlerMP4
+class MP4Handler
 {
 	public static var video:Video;
 	public static var netStream:NetStream;
