@@ -293,25 +293,33 @@ class StoryMenuState extends MusicBeatState
 			PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + diffic, PlayState.storyPlaylist[0].toLowerCase());
 			PlayState.storyWeek = curWeek;
 			PlayState.campaignScore = 0;
-			new FlxTimer().start(1, function(tmr:FlxTimer)
+			var video:MP4Handler = new MP4Handler();
+
+			if (curWeek == 1 && !isCutscene)
+			{
+				video.playMP4(Paths.video('cutscene1'), new PlayState()); 
+				isCutscene = true;
+			}
+			else if (curWeek == 2 && !isCutscene)
 				{
-					FlxG.camera.fade(FlxColor.BLACK, 1, false, function(){
-						if (curWeek == 1)
-							FlxG.switchState(new VideoState('assets/videos/cutscene1.webm', loadplayState));
-						else if (curWeek == 2)
-							FlxG.switchState(new VideoState('assets/videos/cutscene2.webm', loadplayState));
-						else if (curWeek == 3)
-							FlxG.switchState(new VideoState('assets/videos/cutscene3.webm', loadplayState));
-						else
-							LoadingState.loadAndSwitchState(new PlayState(), true);
-					});
+					video.playMP4(Paths.video('cutscene2'), new PlayState()); 
+					isCutscene = true;
+				}
+			else if (curWeek == 3 && !isCutscene)
+				{
+					video.playMP4(Paths.video('cutscene3'), new PlayState()); 
+					isCutscene = true;
+				}
+			else
+			{
+				new FlxTimer().start(1, function(tmr:FlxTimer)
+				{
+					video.onVLCComplete();
+					LoadingState.loadAndSwitchState(new PlayState(), true);
 				});
 			}
 		}
-		
-		function loadplayState(){
-			LoadingState.loadAndSwitchState(new PlayState(), true);
-		}
+	}
 
 	function changeDifficulty(change:Int = 0):Void
 	{
