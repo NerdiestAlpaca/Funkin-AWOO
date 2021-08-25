@@ -254,10 +254,10 @@ class Character extends FlxSprite
 					animation.addByPrefix('singLEFT', 'Austin Left', 24);
 				
 					addOffset('idle', 0,-350);
-					addOffset('singUP', 9, -328);
-					addOffset('singRIGHT', -26, -355);
-					addOffset('singLEFT',13, -346);
-					addOffset('singDOWN', 1, -355);
+					addOffset('singUP', 31, -335);
+					addOffset('singRIGHT', -40, -350);
+					addOffset('singLEFT',-8, -351);
+					addOffset('singDOWN', -5, -350);
 				
 				playAnim('idle');
 			case 'edie':
@@ -270,10 +270,10 @@ class Character extends FlxSprite
 					animation.addByPrefix('singDOWN', 'Edie Down', 24, false);
 				
 					addOffset('idle', 0,-310);
-					addOffset('singUP', 56, -294);
-					addOffset('singRIGHT', 5, -315);
-					addOffset('singLEFT', 0, -315);
-					addOffset('singDOWN', 21, -327);
+					addOffset('singUP', 38, -294);
+					addOffset('singRIGHT', -11, -309);
+					addOffset('singLEFT', 0, -310);
+					addOffset('singDOWN', 9, -321);
 				
 				playAnim('idle');
 			case 'bev':
