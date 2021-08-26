@@ -196,7 +196,7 @@ class FreeplayState extends MusicBeatState
 		if (controls.LEFT_P) {
 			if (curDifficulty == 0 || curDifficulty == 3) {
 				canDoShit = false;
-				FlxG.sound.music.volume -= 0.7
+				FlxG.sound.music.volume -= 0.7;
 				FlxG.camera.shake(0.001, 0.01, function() {
 					FlxG.camera.shake(0.001, 0.01, function() {
 						FlxG.camera.shake(0.001, 0.01, function() {
@@ -218,7 +218,7 @@ class FreeplayState extends MusicBeatState
 		if (controls.RIGHT_P) {
 			if (curDifficulty == 2 || curDifficulty == 3) {
 				canDoShit = false;
-				FlxG.sound.music.volume -= 0.7
+				FlxG.sound.music.volume -= 0.7;
 				FlxG.camera.shake(0.001, 0.01, function() {
 					FlxG.camera.shake(0.001, 0.01, function() {
 						FlxG.camera.shake(0.001, 0.01, function() {
