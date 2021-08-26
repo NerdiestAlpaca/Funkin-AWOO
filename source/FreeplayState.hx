@@ -198,12 +198,13 @@ class FreeplayState extends MusicBeatState
 			if (curDifficulty == 0 || curDifficulty == 3) {
 				canDoShit = false;
 				FlxG.camera.shake(0.001, 0.1, function() {
-					FlxG.camera.shake(0.002, 0.1, function() {
-						FlxG.camera.shake(0.005, 0.05, function() {
-							FlxG.camera.flash(FlxColor.WHITE, 0.5);
+					FlxG.camera.shake(0.001, 0.1, function() {
+						FlxG.camera.shake(0.001, 0.01, function() {
+							FlxG.camera.flash(FlxColor.PINK, 0.2);
 							changeDiff(-1);
+							FlxG.sound.music.volume -= 0.7;
 							canDoShit = true;
-							FlxG.camera.shake(0.002, 0.1, function() {
+							FlxG.camera.shake(0.001, 0.1, function() {
 								FlxG.camera.shake(0.001, 0.1, function() {
 									
 								});
@@ -219,12 +220,13 @@ class FreeplayState extends MusicBeatState
 			if (curDifficulty == 2 || curDifficulty == 3) {
 				canDoShit = false;
 				FlxG.camera.shake(0.001, 0.1, function() {
-					FlxG.camera.shake(0.002, 0.1, function() {
-						FlxG.camera.shake(0.005, 0.05, function() {
-							FlxG.camera.flash(FlxColor.WHITE, 0.5);
+					FlxG.camera.shake(0.001, 0.1, function() {
+						FlxG.camera.shake(0.001, 0.01, function() {
+							FlxG.camera.flash(FlxColor.PINK, 0.2);
 							changeDiff(1);
+							FlxG.sound.music.volume -= 0.7;
 							canDoShit = true;
-							FlxG.camera.shake(0.002, 0.1, function() {
+							FlxG.camera.shake(0.001, 0.1, function() {
 								FlxG.camera.shake(0.001, 0.1, function() {
 									
 								});
