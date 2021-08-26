@@ -200,6 +200,8 @@ class FreeplayState extends MusicBeatState
 
 		if (controls.BACK)
 		{
+			FlxG.sound.music.stop();
+			FlxG.sound.play(Paths.sound('cancelMenu'));
 			FlxG.switchState(new MainMenuState());
 		}
 
@@ -272,7 +274,12 @@ class FreeplayState extends MusicBeatState
 		#end
 
 		#if PRELOAD_ALL
+		if (curDifficulty == 3){
+		FlxG.sound.playMusic(Paths.instEX(songs[curSelected].songName), 0);
+		}
+		else if (curDifficulty != 3){
 		FlxG.sound.playMusic(Paths.inst(songs[curSelected].songName), 0);
+		}
 		#end
 
 		var bullShit:Int = 0;

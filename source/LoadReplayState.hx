@@ -31,7 +31,7 @@ class LoadReplayState extends MusicBeatState
 	var poggerDetails:FlxText;
 	override function create()
 	{
-		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuBG'));
         #if sys
 		controlsStrings = sys.FileSystem.readDirectory(Sys.getCwd() + "/assets/replays/");
         #end
@@ -60,7 +60,6 @@ class LoadReplayState extends MusicBeatState
         if (controlsStrings.length == 0)
             controlsStrings.push("No Replays...");
 
-		menuBG.color = 0xFFea71fd;
 		menuBG.setGraphicSize(Std.int(menuBG.width * 1.1));
 		menuBG.updateHitbox();
 		menuBG.screenCenter();

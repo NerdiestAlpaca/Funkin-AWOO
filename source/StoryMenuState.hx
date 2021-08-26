@@ -27,7 +27,7 @@ class StoryMenuState extends MusicBeatState
 		['Tutorial'],
 		['Satellite', 'Our World', 'Mischief'],
 		['Free Spirit', 'Catnap', 'Daredevil'],
-		['Dreamboat', 'Primadonna', 'Swerved Up']
+		['Dreamboat', 'Primadonna', 'Swerve On']
 	];
 	var curDifficulty:Int = 1;
 

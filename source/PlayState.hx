@@ -3574,6 +3574,19 @@ class PlayState extends MusicBeatState
 		}
 		#end
 
+		if (curSong == 'Tutorial' && dad.curCharacter == 'gf' && SONG.notes[Math.floor(curStep / 16)] != null)
+			{
+				if (curStep < 64 || SONG.notes[Math.floor(curStep / 16)].mustHitSection )
+					dad.dance();
+				else
+				{
+					if (curStep % 2 == 0 && dad.animOffsets.exists('danceLeft'))
+						dad.playAnim('danceLeft', true);
+					else if (curStep % 2 == 1 && dad.animOffsets.exists('danceRight'))
+						dad.playAnim('danceRight', true);
+				}
+			}
+
 		if (SONG.notes[Math.floor(curStep / 16)] != null)
 		{
 			if (SONG.notes[Math.floor(curStep / 16)].changeBPM)
@@ -3630,7 +3643,7 @@ class PlayState extends MusicBeatState
 			boyfriend.playAnim('hey', true);
 		}
 
-		if (curBeat % 16 == 15 && SONG.song == 'Tutorial' && dad.curCharacter == 'gf' && curBeat > 16 && curBeat < 48)
+		if (curBeat % 16 == 15 && SONG.song == 'Tutorial' && dad.curCharacter == 'gf' && curBeat > 16 && curBeat < 48 && storyDifficulty != 3 )
 			{
 				boyfriend.playAnim('hey', true);
 				dad.playAnim('cheer', true);
