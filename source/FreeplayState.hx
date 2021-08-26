@@ -234,8 +234,10 @@ class FreeplayState extends MusicBeatState
 		#end
 		if (curDifficulty == 3)
 			magenta.visible = true;
+			FlxG.sound.music.volume -= 0.7
 		if (curDifficulty != 3)
 			magenta.visible = false;
+			FlxG.sound.music.volume -= 0.7
 
 		switch (curDifficulty)
 		{
