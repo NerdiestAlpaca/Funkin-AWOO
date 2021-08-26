@@ -200,7 +200,7 @@ class FreeplayState extends MusicBeatState
 				FlxG.camera.shake(0.001, 0.01, function() {
 					FlxG.camera.shake(0.001, 0.01, function() {
 						FlxG.camera.shake(0.001, 0.01, function() {
-							FlxG.camera.flash(FlxColor.WHITE, 0.2);
+							FlxG.camera.flash(FlxColor.PINK, 0.1);
 							changeDiff(-1);
 							canDoShit = true;
 							FlxG.camera.shake(0.001, 0.1, function() {
@@ -222,7 +222,7 @@ class FreeplayState extends MusicBeatState
 				FlxG.camera.shake(0.001, 0.01, function() {
 					FlxG.camera.shake(0.001, 0.01, function() {
 						FlxG.camera.shake(0.001, 0.01, function() {
-							FlxG.camera.flash(FlxColor.WHITE, 0.2);
+							FlxG.camera.flash(FlxColor.PINK, 0.1);
 							changeDiff(1);
 							canDoShit = true;
 							FlxG.camera.shake(0.001, 0.1, function() {
