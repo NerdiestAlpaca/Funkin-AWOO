@@ -29,6 +29,7 @@ class FreeplayState extends MusicBeatState
 	var diffText:FlxText;
 	var lerpScore:Int = 0;
 	var intendedScore:Int = 0;
+	var canDoShit:Bool = true;
 
 	private var grpSongs:FlxTypedGroup<Alphabet>;
 	private var curPlaying:Bool = false;
@@ -179,7 +180,7 @@ class FreeplayState extends MusicBeatState
 			lerpScore = intendedScore;
 
 		scoreText.text = "PERSONAL BEST:" + lerpScore;
-
+		if (canDoShit){
 		var upP = controls.UP_P;
 		var downP = controls.DOWN_P;
 		var accepted = controls.ACCEPT;
@@ -256,6 +257,7 @@ class FreeplayState extends MusicBeatState
 			LoadingState.loadAndSwitchState(new PlayState());
 		}
 	}
+}
 
 	function changeDiff(change:Int = 0)
 	{
