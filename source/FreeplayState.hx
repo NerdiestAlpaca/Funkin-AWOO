@@ -193,10 +193,49 @@ class FreeplayState extends MusicBeatState
 			changeSelection(1);
 		}
 
-		if (controls.LEFT_P)
+		if (controls.LEFT_P) {
+			if (curDifficulty == 0 || curDifficulty == 3) {
+				canDoShit = false;
+				FlxG.sound.music.volume -= 0.7
+				FlxG.camera.shake(0.001, 0.01, function() {
+					FlxG.camera.shake(0.001, 0.01, function() {
+						FlxG.camera.shake(0.001, 0.01, function() {
+							FlxG.camera.flash(FlxColor.WHITE, 0.2);
+							changeDiff(-1);
+							canDoShit = true;
+							FlxG.camera.shake(0.001, 0.1, function() {
+								FlxG.camera.shake(0.001, 0.1, function() {{
+									
+								});
+							});
+						});
+					});
+				});
+			} else
 			changeDiff(-1);
-		if (controls.RIGHT_P)
+		}
+			
+		if (controls.RIGHT_P) {
+			if (curDifficulty == 2 || curDifficulty == 3) {
+				canDoShit = false;
+				FlxG.sound.music.volume -= 0.7
+				FlxG.camera.shake(0.001, 0.01, function() {
+					FlxG.camera.shake(0.001, 0.01, function() {
+						FlxG.camera.shake(0.001, 0.01, function() {
+							FlxG.camera.flash(FlxColor.WHITE, 0.2);
+							changeDiff(1);
+							canDoShit = true;
+							FlxG.camera.shake(0.001, 0.1, function() {
+								FlxG.camera.shake(0.001, 0.1, function() {
+									
+								});
+							});
+						});
+					});
+				});
+			} else
 			changeDiff(1);
+		}
 
 		if (controls.BACK)
 		{
@@ -234,10 +273,8 @@ class FreeplayState extends MusicBeatState
 		#end
 		if (curDifficulty == 3)
 			magenta.visible = true;
-			FlxG.sound.music.volume -= 0.7
 		if (curDifficulty != 3)
 			magenta.visible = false;
-			FlxG.sound.music.volume -= 0.7
 
 		switch (curDifficulty)
 		{
