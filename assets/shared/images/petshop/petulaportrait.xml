@@ -2,13 +2,18 @@
 <TextureAtlas imagePath="petulaportrait.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Petula Portrait Enter0000" x="0" y="0" width="1241" height="1067" pivotX="455" pivotY="165.4"/>
-	<SubTexture name="Petula Portrait Enter0001" x="0" y="0" width="1241" height="1067"/>
-	<SubTexture name="Petula Portrait Enter0002" x="1243" y="0" width="1208" height="1067" frameX="-33" frameY="0" frameWidth="1241" frameHeight="1067"/>
-	<SubTexture name="Petula Portrait Enter0003" x="1243" y="0" width="1208" height="1067" frameX="-33" frameY="0" frameWidth="1241" frameHeight="1067"/>
-	<SubTexture name="Petula Portrait Enter0004" x="1243" y="0" width="1208" height="1067" frameX="-33" frameY="0" frameWidth="1241" frameHeight="1067"/>
-	<SubTexture name="Petula Portrait Enter0005" x="2453" y="0" width="1203" height="1067" frameX="-38" frameY="0" frameWidth="1241" frameHeight="1067"/>
-	<SubTexture name="Petula Portrait Enter0006" x="0" y="1069" width="1201" height="1067" frameX="-40" frameY="0" frameWidth="1241" frameHeight="1067"/>
-	<SubTexture name="Petula Portrait Enter0007" x="0" y="1069" width="1201" height="1067" frameX="-40" frameY="0" frameWidth="1241" frameHeight="1067"/>
-	<SubTexture name="Petula Portrait Enter0008" x="0" y="1069" width="1201" height="1067" frameX="-40" frameY="0" frameWidth="1241" frameHeight="1067"/>
+	<SubTexture name="Petula Idle0000" x="0" y="0" width="353" height="418" pivotX="259.9" pivotY="425.25" frameX="-1" frameY="-1" frameWidth="354" frameHeight="419"/>
+	<SubTexture name="Petula Idle0001" x="0" y="0" width="353" height="418" frameX="-1" frameY="-1" frameWidth="354" frameHeight="419"/>
+	<SubTexture name="Petula Idle0002" x="355" y="0" width="352" height="418" frameX="-2" frameY="-1" frameWidth="354" frameHeight="419"/>
+	<SubTexture name="Petula Idle0003" x="355" y="0" width="352" height="418" frameX="-2" frameY="-1" frameWidth="354" frameHeight="419"/>
+	<SubTexture name="Petula Idle0004" x="0" y="420" width="353" height="419" frameX="0" frameY="0" frameWidth="354" frameHeight="419"/>
+	<SubTexture name="Petula Idle0005" x="0" y="420" width="353" height="419" frameX="0" frameY="0" frameWidth="354" frameHeight="419"/>
+	<SubTexture name="Petula Idle0006" x="355" y="420" width="353" height="418" frameX="-1" frameY="-1" frameWidth="354" frameHeight="419"/>
+	<SubTexture name="Petula Idle0007" x="355" y="420" width="353" height="418" frameX="-1" frameY="-1" frameWidth="354" frameHeight="419"/>
+	<SubTexture name="Petula Idle0008" x="0" y="0" width="353" height="418" frameX="-1" frameY="-1" frameWidth="354" frameHeight="419"/>
+	<SubTexture name="Petula Idle0009" x="0" y="0" width="353" height="418" frameX="-1" frameY="-1" frameWidth="354" frameHeight="419"/>
+	<SubTexture name="Petula Idle0010" x="0" y="0" width="353" height="418" frameX="-1" frameY="-1" frameWidth="354" frameHeight="419"/>
+	<SubTexture name="Petula Idle0011" x="0" y="0" width="353" height="418" frameX="-1" frameY="-1" frameWidth="354" frameHeight="419"/>
+	<SubTexture name="Petula Idle0012" x="0" y="0" width="353" height="418" frameX="-1" frameY="-1" frameWidth="354" frameHeight="419"/>
+	<SubTexture name="Petula Idle0013" x="0" y="0" width="353" height="418" frameX="-1" frameY="-1" frameWidth="354" frameHeight="419"/>
 </TextureAtlas>

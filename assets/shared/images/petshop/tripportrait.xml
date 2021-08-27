@@ -2,13 +2,19 @@
 <TextureAtlas imagePath="tripportrait.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Trip Portrait Enter0000" x="0" y="0" width="1241" height="1067" pivotX="455" pivotY="165.4"/>
-	<SubTexture name="Trip Portrait Enter0001" x="0" y="0" width="1241" height="1067"/>
-	<SubTexture name="Trip Portrait Enter0002" x="1243" y="0" width="1208" height="1067" frameX="-33" frameY="0" frameWidth="1241" frameHeight="1067"/>
-	<SubTexture name="Trip Portrait Enter0003" x="1243" y="0" width="1208" height="1067" frameX="-33" frameY="0" frameWidth="1241" frameHeight="1067"/>
-	<SubTexture name="Trip Portrait Enter0004" x="1243" y="0" width="1208" height="1067" frameX="-33" frameY="0" frameWidth="1241" frameHeight="1067"/>
-	<SubTexture name="Trip Portrait Enter0005" x="2453" y="0" width="1203" height="1067" frameX="-38" frameY="0" frameWidth="1241" frameHeight="1067"/>
-	<SubTexture name="Trip Portrait Enter0006" x="0" y="0" width="1241" height="1067" frameX="-40" frameY="0" frameWidth="1241" frameHeight="1067"/>
-	<SubTexture name="Trip Portrait Enter0007" x="0" y="0" width="1241" height="1067" frameX="-40" frameY="0" frameWidth="1241" frameHeight="1067"/>
-	<SubTexture name="Trip Portrait Enter0008" x="0" y="0" width="1241" height="1067" frameX="-40" frameY="0" frameWidth="1241" frameHeight="1067"/>
+	<SubTexture name="Trip Idle0000" x="0" y="0" width="266" height="344" pivotX="189.7" pivotY="344.9" frameX="0" frameY="-2" frameWidth="266" frameHeight="346"/>
+	<SubTexture name="Trip Idle0001" x="0" y="0" width="266" height="344" frameX="0" frameY="-2" frameWidth="266" frameHeight="346"/>
+	<SubTexture name="Trip Idle0002" x="268" y="0" width="262" height="341" frameX="-1" frameY="-3" frameWidth="266" frameHeight="346"/>
+	<SubTexture name="Trip Idle0003" x="268" y="0" width="262" height="341" frameX="-1" frameY="-3" frameWidth="266" frameHeight="346"/>
+	<SubTexture name="Trip Idle0004" x="532" y="0" width="261" height="344" frameX="-2" frameY="0" frameWidth="266" frameHeight="346"/>
+	<SubTexture name="Trip Idle0005" x="532" y="0" width="261" height="344" frameX="-2" frameY="0" frameWidth="266" frameHeight="346"/>
+	<SubTexture name="Trip Idle0006" x="0" y="346" width="258" height="343" frameX="0" frameY="-1" frameWidth="266" frameHeight="346"/>
+	<SubTexture name="Trip Idle0007" x="0" y="346" width="258" height="343" frameX="0" frameY="-1" frameWidth="266" frameHeight="346"/>
+	<SubTexture name="Trip Idle0008" x="0" y="346" width="258" height="343" frameX="0" frameY="-1" frameWidth="266" frameHeight="346"/>
+	<SubTexture name="Trip Idle0009" x="0" y="346" width="258" height="343" frameX="0" frameY="-1" frameWidth="266" frameHeight="346"/>
+	<SubTexture name="Trip Idle0010" x="0" y="346" width="258" height="343" frameX="0" frameY="-1" frameWidth="266" frameHeight="346"/>
+	<SubTexture name="Trip Idle0011" x="0" y="346" width="258" height="343" frameX="0" frameY="-1" frameWidth="266" frameHeight="346"/>
+	<SubTexture name="Trip Idle0012" x="0" y="346" width="258" height="343" frameX="0" frameY="-1" frameWidth="266" frameHeight="346"/>
+	<SubTexture name="Trip Idle0013" x="0" y="346" width="258" height="343" frameX="0" frameY="-1" frameWidth="266" frameHeight="346"/>
+	<SubTexture name="Trip Idle0014" x="0" y="346" width="258" height="343" frameX="0" frameY="-1" frameWidth="266" frameHeight="346"/>
 </TextureAtlas>

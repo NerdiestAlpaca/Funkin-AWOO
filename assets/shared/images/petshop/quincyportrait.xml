@@ -2,13 +2,18 @@
 <TextureAtlas imagePath="quincyportrait.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Quincy Portrait Enter0000" x="0" y="0" width="1261" height="1067" pivotX="475" pivotY="165.4"/>
-	<SubTexture name="Quincy Portrait Enter0001" x="0" y="0" width="1261" height="1067"/>
-	<SubTexture name="Quincy Portrait Enter0002" x="1263" y="0" width="1225" height="1067" frameX="-36" frameY="0" frameWidth="1261" frameHeight="1067"/>
-	<SubTexture name="Quincy Portrait Enter0003" x="1263" y="0" width="1225" height="1067" frameX="-36" frameY="0" frameWidth="1261" frameHeight="1067"/>
-	<SubTexture name="Quincy Portrait Enter0004" x="1263" y="0" width="1225" height="1067" frameX="-36" frameY="0" frameWidth="1261" frameHeight="1067"/>
-	<SubTexture name="Quincy Portrait Enter0005" x="2490" y="0" width="1219" height="1067" frameX="-42" frameY="0" frameWidth="1261" frameHeight="1067"/>
-	<SubTexture name="Quincy Portrait Enter0006" x="0" y="1069" width="1214" height="1067" frameX="-47" frameY="0" frameWidth="1261" frameHeight="1067"/>
-	<SubTexture name="Quincy Portrait Enter0007" x="0" y="1069" width="1214" height="1067" frameX="-47" frameY="0" frameWidth="1261" frameHeight="1067"/>
-	<SubTexture name="Quincy Portrait Enter0008" x="0" y="1069" width="1214" height="1067" frameX="-47" frameY="0" frameWidth="1261" frameHeight="1067"/>
+	<SubTexture name="Quincy Idle0000" x="0" y="0" width="393" height="427" pivotX="-209.55" pivotY="281.9" frameX="-3" frameY="0" frameWidth="408" frameHeight="427"/>
+	<SubTexture name="Quincy Idle0001" x="0" y="0" width="393" height="427" frameX="-3" frameY="0" frameWidth="408" frameHeight="427"/>
+	<SubTexture name="Quincy Idle0002" x="395" y="0" width="385" height="427" frameX="0" frameY="0" frameWidth="408" frameHeight="427"/>
+	<SubTexture name="Quincy Idle0003" x="782" y="0" width="385" height="427" frameX="0" frameY="0" frameWidth="408" frameHeight="427"/>
+	<SubTexture name="Quincy Idle0004" x="1169" y="0" width="406" height="424" frameX="-2" frameY="-3" frameWidth="408" frameHeight="427"/>
+	<SubTexture name="Quincy Idle0005" x="1577" y="0" width="406" height="424" frameX="-2" frameY="-3" frameWidth="408" frameHeight="427"/>
+	<SubTexture name="Quincy Idle0006" x="0" y="429" width="398" height="425" frameX="-3" frameY="-2" frameWidth="408" frameHeight="427"/>
+	<SubTexture name="Quincy Idle0007" x="400" y="429" width="399" height="425" frameX="-2" frameY="-2" frameWidth="408" frameHeight="427"/>
+	<SubTexture name="Quincy Idle0008" x="801" y="429" width="394" height="427" frameX="-2" frameY="0" frameWidth="408" frameHeight="427"/>
+	<SubTexture name="Quincy Idle0009" x="1197" y="429" width="394" height="427" frameX="-2" frameY="0" frameWidth="408" frameHeight="427"/>
+	<SubTexture name="Quincy Idle0010" x="0" y="0" width="393" height="427" frameX="-3" frameY="0" frameWidth="408" frameHeight="427"/>
+	<SubTexture name="Quincy Idle0011" x="1197" y="429" width="394" height="427" frameX="-2" frameY="0" frameWidth="408" frameHeight="427"/>
+	<SubTexture name="Quincy Idle0012" x="801" y="429" width="394" height="427" frameX="-2" frameY="0" frameWidth="408" frameHeight="427"/>
+	<SubTexture name="Quincy Idle0013" x="1197" y="429" width="394" height="427" frameX="-2" frameY="0" frameWidth="408" frameHeight="427"/>
 </TextureAtlas>

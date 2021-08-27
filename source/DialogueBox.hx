@@ -141,88 +141,88 @@ class DialogueBox extends FlxSpriteGroup
 
 		portraitBF = new FlxSprite(0, 30);
 		portraitBF.frames = Paths.getSparrowAtlas('petshop/boyfriendportrait');
-		portraitBF.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+		portraitBF.animation.addByPrefix('enter', 'BF idle dance', 24, false);
 		portraitBF.setGraphicSize(Std.int(portraitBF.width * 1));
 		portraitBF.updateHitbox();
 		portraitBF.scrollFactor.set();
 		add(portraitBF);
 		portraitBF.visible = false;
 
-		portraitRoxie = new FlxSprite(-20, 40);
+		portraitRoxie = new FlxSprite(200, FlxG.height - 525);
 		portraitRoxie.frames = Paths.getSparrowAtlas('petshop/roxieportrait');
-		portraitRoxie.animation.addByPrefix('enter', 'Roxie Portrait Enter', 24, false);
+		portraitRoxie.animation.addByPrefix('enter', 'Roxie Idle', 24, false);
 		portraitRoxie.setGraphicSize(Std.int(portraitRoxie.width * 1));
 		portraitRoxie.updateHitbox();
 		portraitRoxie.scrollFactor.set();
 		add(portraitRoxie);
 		portraitRoxie.visible = false;
 		
-		portraitSavannah = new FlxSprite(-20, 40);
+		portraitSavannah = new FlxSprite(200, FlxG.height - 525);
 		portraitSavannah.frames = Paths.getSparrowAtlas('petshop/savannahportrait');
-		portraitSavannah.animation.addByPrefix('enter', 'Savannah Portrait Enter', 24, false);
+		portraitSavannah.animation.addByPrefix('enter', 'Savannah Idle', 24, false);
 		portraitSavannah.setGraphicSize(Std.int(portraitSavannah.width * 1));
 		portraitSavannah.updateHitbox();
 		portraitSavannah.scrollFactor.set();
 		add(portraitSavannah);
 		portraitSavannah.visible = false;
 
-		portraitQuincy = new FlxSprite(-20, 40);
+		portraitQuincy = new FlxSprite(200, FlxG.height - 525);
 		portraitQuincy.frames = Paths.getSparrowAtlas('petshop/quincyportrait');
-		portraitQuincy.animation.addByPrefix('enter', 'Quincy Portrait Enter', 24, false);
+		portraitQuincy.animation.addByPrefix('enter', 'Quincy Idle', 24, false);
 		portraitQuincy.setGraphicSize(Std.int(portraitQuincy.width * 1));
 		portraitQuincy.updateHitbox();
 		portraitQuincy.scrollFactor.set();
 		add(portraitQuincy);
 		portraitQuincy.visible = false;
 
-		portraitPetula = new FlxSprite(-20, 40);
+		portraitPetula = new FlxSprite(200, FlxG.height - 525);
 		portraitPetula.frames = Paths.getSparrowAtlas('petshop/petulaportrait');
-		portraitPetula.animation.addByPrefix('enter', 'Petula Portrait Enter', 24, false);
+		portraitPetula.animation.addByPrefix('enter', 'Petula Idle', 24, false);
 		portraitPetula.setGraphicSize(Std.int(portraitPetula.width * 1));
 		portraitPetula.updateHitbox();
 		portraitPetula.scrollFactor.set();
 		add(portraitPetula);
 		portraitPetula.visible = false;
 		
-				portraitJade = new FlxSprite(-20, 40);
+				portraitJade = new FlxSprite(200, FlxG.height - 525);
 		portraitJade.frames = Paths.getSparrowAtlas('petshop/jadeportrait');
-		portraitJade.animation.addByPrefix('enter', 'Jade Portrait Enter', 24, false);
+		portraitJade.animation.addByPrefix('enter', 'Jade Idle', 24, false);
 		portraitJade.setGraphicSize(Std.int(portraitJade.width * 1));
 		portraitJade.updateHitbox();
 		portraitJade.scrollFactor.set();
 		add(portraitJade);
 		portraitJade.visible = false;
 		
-		portraitTrip = new FlxSprite(-20, 40);
+		portraitTrip = new FlxSprite(200, FlxG.height - 525);
 		portraitTrip.frames = Paths.getSparrowAtlas('petshop/tripportrait');
-		portraitTrip.animation.addByPrefix('enter', 'Trip Portrait Enter', 24, false);
+		portraitTrip.animation.addByPrefix('enter', 'Trip Idle', 24, false);
 		portraitTrip.setGraphicSize(Std.int(portraitTrip.width * 1));
 		portraitTrip.updateHitbox();
 		portraitTrip.scrollFactor.set();
 		add(portraitTrip);
 		portraitTrip.visible = false;
 
-		portraitAustin = new FlxSprite(-20, 40);
+		portraitAustin = new FlxSprite(200, FlxG.height - 525);
 		portraitAustin.frames = Paths.getSparrowAtlas('petshop/austinportrait');
-		portraitAustin.animation.addByPrefix('enter', 'Austin Portrait Enter', 24, false);
+		portraitAustin.animation.addByPrefix('enter', 'Austin Idle', 24, false);
 		portraitAustin.setGraphicSize(Std.int(portraitAustin.width * 1));
 		portraitAustin.updateHitbox();
 		portraitAustin.scrollFactor.set();
 		add(portraitAustin);
 		portraitAustin.visible = false;
 
-		portraitEdie = new FlxSprite(-20, 40);
+		portraitEdie = new FlxSprite(200, FlxG.height - 525);
 		portraitEdie.frames = Paths.getSparrowAtlas('petshop/edieportrait');
-		portraitEdie.animation.addByPrefix('enter', 'Edie Portrait Enter', 24, false);
+		portraitEdie.animation.addByPrefix('enter', 'Edie Idle', 24, false);
 		portraitEdie.setGraphicSize(Std.int(portraitEdie.width * 1));
 		portraitEdie.updateHitbox();
 		portraitEdie.scrollFactor.set();
 		add(portraitEdie);
 		portraitEdie.visible = false;
 
-        portraitBev = new FlxSprite(-20, 40);
+        portraitBev = new FlxSprite(200, FlxG.height - 525);
 		portraitBev.frames = Paths.getSparrowAtlas('petshop/bevportrait');
-		portraitBev.animation.addByPrefix('enter', 'Bev Portrait Enter', 24, false);
+		portraitBev.animation.addByPrefix('enter', 'Bev Idle', 24, false);
 		portraitBev.setGraphicSize(Std.int(portraitBev.width * 1));
 		portraitBev.updateHitbox();
 		portraitBev.scrollFactor.set();

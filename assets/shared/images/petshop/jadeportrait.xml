@@ -2,13 +2,32 @@
 <TextureAtlas imagePath="jadeportrait.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Jade Portrait Enter0000" x="0" y="0" width="1241" height="1086" pivotX="455" pivotY="184.15"/>
-	<SubTexture name="Jade Portrait Enter0001" x="0" y="0" width="1241" height="1086"/>
-	<SubTexture name="Jade Portrait Enter0002" x="1243" y="0" width="1208" height="1086" frameX="-33" frameY="0" frameWidth="1241" frameHeight="1086"/>
-	<SubTexture name="Jade Portrait Enter0003" x="1243" y="0" width="1208" height="1086" frameX="-33" frameY="0" frameWidth="1241" frameHeight="1086"/>
-	<SubTexture name="Jade Portrait Enter0004" x="1243" y="0" width="1208" height="1086" frameX="-33" frameY="0" frameWidth="1241" frameHeight="1086"/>
-	<SubTexture name="Jade Portrait Enter0005" x="2453" y="0" width="1203" height="1086" frameX="-38" frameY="0" frameWidth="1241" frameHeight="1086"/>
-	<SubTexture name="Jade Portrait Enter0006" x="0" y="1088" width="1201" height="1086" frameX="-40" frameY="0" frameWidth="1241" frameHeight="1086"/>
-	<SubTexture name="Jade Portrait Enter0007" x="0" y="1088" width="1201" height="1086" frameX="-40" frameY="0" frameWidth="1241" frameHeight="1086"/>
-	<SubTexture name="Jade Portrait Enter0008" x="0" y="1088" width="1201" height="1086" frameX="-40" frameY="0" frameWidth="1241" frameHeight="1086"/>
+	<SubTexture name="Jade Idle0000" x="0" y="0" width="337" height="360" pivotX="236.95" pivotY="401.65" frameX="-3" frameY="-18" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0001" x="0" y="0" width="337" height="360" frameX="-3" frameY="-18" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0002" x="0" y="0" width="337" height="360" frameX="-3" frameY="-18" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0003" x="339" y="0" width="340" height="359" frameX="0" frameY="-18" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0004" x="339" y="0" width="340" height="359" frameX="0" frameY="-18" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0005" x="339" y="0" width="340" height="359" frameX="0" frameY="-18" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0006" x="681" y="0" width="334" height="360" frameX="-3" frameY="-18" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0007" x="681" y="0" width="334" height="360" frameX="-3" frameY="-18" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0008" x="681" y="0" width="334" height="360" frameX="-3" frameY="-18" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0009" x="0" y="362" width="327" height="375" frameX="-3" frameY="-3" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0010" x="0" y="362" width="327" height="375" frameX="-3" frameY="-3" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0011" x="0" y="362" width="327" height="375" frameX="-3" frameY="-3" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0012" x="329" y="362" width="327" height="378" frameX="-3" frameY="0" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0013" x="329" y="362" width="327" height="378" frameX="-3" frameY="0" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0014" x="329" y="362" width="327" height="378" frameX="-3" frameY="0" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0015" x="329" y="362" width="327" height="378" frameX="-3" frameY="0" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0016" x="329" y="362" width="327" height="378" frameX="-3" frameY="0" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0017" x="329" y="362" width="327" height="378" frameX="-3" frameY="0" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0018" x="329" y="362" width="327" height="378" frameX="-3" frameY="0" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0019" x="329" y="362" width="327" height="378" frameX="-3" frameY="0" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0020" x="329" y="362" width="327" height="378" frameX="-3" frameY="0" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0021" x="329" y="362" width="327" height="378" frameX="-3" frameY="0" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0022" x="329" y="362" width="327" height="378" frameX="-3" frameY="0" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0023" x="329" y="362" width="327" height="378" frameX="-3" frameY="0" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0024" x="329" y="362" width="327" height="378" frameX="-3" frameY="0" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0025" x="329" y="362" width="327" height="378" frameX="-3" frameY="0" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0026" x="329" y="362" width="327" height="378" frameX="-3" frameY="0" frameWidth="340" frameHeight="378"/>
+	<SubTexture name="Jade Idle0027" x="329" y="362" width="327" height="378" frameX="-3" frameY="0" frameWidth="340" frameHeight="378"/>
 </TextureAtlas>

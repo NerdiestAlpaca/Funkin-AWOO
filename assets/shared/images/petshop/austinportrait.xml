@@ -2,13 +2,19 @@
 <TextureAtlas imagePath="austinportrait.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Austin Portrait Enter0000" x="0" y="0" width="1281" height="1067" pivotX="495.8" pivotY="165.4"/>
-	<SubTexture name="Austin Portrait Enter0001" x="0" y="0" width="1281" height="1067"/>
-	<SubTexture name="Austin Portrait Enter0002" x="1283" y="0" width="1248" height="1067" frameX="-33" frameY="0" frameWidth="1281" frameHeight="1067"/>
-	<SubTexture name="Austin Portrait Enter0003" x="1283" y="0" width="1248" height="1067" frameX="-33" frameY="0" frameWidth="1281" frameHeight="1067"/>
-	<SubTexture name="Austin Portrait Enter0004" x="1283" y="0" width="1248" height="1067" frameX="-33" frameY="0" frameWidth="1281" frameHeight="1067"/>
-	<SubTexture name="Austin Portrait Enter0005" x="2533" y="0" width="1242" height="1067" frameX="-39" frameY="0" frameWidth="1281" frameHeight="1067"/>
-	<SubTexture name="Austin Portrait Enter0006" x="0" y="1069" width="1237" height="1067" frameX="-44" frameY="0" frameWidth="1281" frameHeight="1067"/>
-	<SubTexture name="Austin Portrait Enter0007" x="0" y="1069" width="1237" height="1067" frameX="-44" frameY="0" frameWidth="1281" frameHeight="1067"/>
-	<SubTexture name="Austin Portrait Enter0008" x="0" y="1069" width="1237" height="1067" frameX="-44" frameY="0" frameWidth="1281" frameHeight="1067"/>
+	<SubTexture name="Austin Idle0000" x="0" y="0" width="398" height="352" pivotX="216.55" pivotY="370.95" frameX="-3" frameY="-1" frameWidth="403" frameHeight="354"/>
+	<SubTexture name="Austin Idle0001" x="0" y="0" width="398" height="352" frameX="-3" frameY="-1" frameWidth="403" frameHeight="354"/>
+	<SubTexture name="Austin Idle0002" x="400" y="0" width="403" height="352" frameX="0" frameY="-2" frameWidth="403" frameHeight="354"/>
+	<SubTexture name="Austin Idle0003" x="400" y="0" width="403" height="352" frameX="0" frameY="-2" frameWidth="403" frameHeight="354"/>
+	<SubTexture name="Austin Idle0004" x="805" y="0" width="401" height="354" frameX="-2" frameY="0" frameWidth="403" frameHeight="354"/>
+	<SubTexture name="Austin Idle0005" x="805" y="0" width="401" height="354" frameX="-2" frameY="0" frameWidth="403" frameHeight="354"/>
+	<SubTexture name="Austin Idle0006" x="1208" y="0" width="391" height="352" frameX="-10" frameY="-2" frameWidth="403" frameHeight="354"/>
+	<SubTexture name="Austin Idle0007" x="1208" y="0" width="391" height="352" frameX="-10" frameY="-2" frameWidth="403" frameHeight="354"/>
+	<SubTexture name="Austin Idle0008" x="1601" y="0" width="393" height="352" frameX="-8" frameY="-2" frameWidth="403" frameHeight="354"/>
+	<SubTexture name="Austin Idle0009" x="1601" y="0" width="393" height="352" frameX="-8" frameY="-2" frameWidth="403" frameHeight="354"/>
+	<SubTexture name="Austin Idle0010" x="1208" y="0" width="391" height="352" frameX="-10" frameY="-2" frameWidth="403" frameHeight="354"/>
+	<SubTexture name="Austin Idle0011" x="0" y="356" width="391" height="352" frameX="-10" frameY="-2" frameWidth="403" frameHeight="354"/>
+	<SubTexture name="Austin Idle0012" x="1208" y="0" width="391" height="352" frameX="-10" frameY="-2" frameWidth="403" frameHeight="354"/>
+	<SubTexture name="Austin Idle0013" x="1208" y="0" width="391" height="352" frameX="-10" frameY="-2" frameWidth="403" frameHeight="354"/>
+	<SubTexture name="Austin Idle0014" x="1601" y="0" width="393" height="352" frameX="-8" frameY="-2" frameWidth="403" frameHeight="354"/>
 </TextureAtlas>
