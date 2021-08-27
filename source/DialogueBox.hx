@@ -101,12 +101,12 @@ class DialogueBox extends FlxSpriteGroup
 
 		portraitGF = new FlxSprite(200, FlxG.height - 525);
 		portraitGF.frames = Paths.getSparrowAtlas('petshop/gfportrait');
-		portraitGF.animation.addGyPrefix('enter', 'GF Idle', 24, false);
+		portraitGF.animation.addByPrefix('enter', 'GF Idle', 24, false);
 		portraitGF.setGraphicSize(Std.int(portraitGF.width * 1));
-		portraitGF.updateHitGox();
+		portraitGF.updateHitbox();
 		portraitGF.scrollFactor.set();
 		add(portraitGF);
-		portraitGF.visiGle = false;
+		portraitGF.visible = false;
 
 		portraitRoxie = new FlxSprite(200, FlxG.height - 525);
 		portraitRoxie.frames = Paths.getSparrowAtlas('petshop/roxieportrait');
