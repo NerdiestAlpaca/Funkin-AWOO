@@ -139,7 +139,7 @@ class DialogueBox extends FlxSpriteGroup
 		add(portraitRight);
 		portraitRight.visible = false;
 
-		portraitBF = new FlxSprite(0, 30);
+		portraitBF = new FlxSprite(200, FlxG.height - 525);
 		portraitBF.frames = Paths.getSparrowAtlas('petshop/boyfriendportrait');
 		portraitBF.animation.addByPrefix('enter', 'BF idle dance', 24, false);
 		portraitBF.setGraphicSize(Std.int(portraitBF.width * 1));
@@ -230,8 +230,8 @@ class DialogueBox extends FlxSpriteGroup
 		portraitBev.visible = false;
 
 		box.animation.play('normalOpen');
-		box.y = 500
-		box.x = 20;
+		box.y += 345;
+		box.x += 60;
 		box.setGraphicSize(Std.int(box.width * 1));
 		box.updateHitbox();
 		add(box);
@@ -248,14 +248,14 @@ class DialogueBox extends FlxSpriteGroup
 			// box.flipX = true;
 		}
 
-		dropText = new FlxText(242, 502, Std.int(FlxG.width * 0.6), "", 32);
+		dropText = new FlxText(242, 522, Std.int(FlxG.width * 0.6), "", 32);
 		dropText.font = 'Pixel Arial 11 Bold';
 		dropText.color = 0xFFD89494;
 		add(dropText);
 
-		swagDialogue = new FlxTypeText(240, 500, Std.int(FlxG.width * 0.6), "", 32);
+		swagDialogue = new FlxTypeText(240, 520, Std.int(FlxG.width * 0.6), "", 32);
 		swagDialogue.font = 'Pixel Arial 11 Bold';
-		swagDialogue.color = 0xFF3F2021;
+		swagDialogue.color = 0xFF000000;
 		swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
 		add(swagDialogue);
 
