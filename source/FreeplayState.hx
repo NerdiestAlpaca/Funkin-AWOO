@@ -29,7 +29,6 @@ class FreeplayState extends MusicBeatState
 	var diffText:FlxText;
 	var lerpScore:Int = 0;
 	var intendedScore:Int = 0;
-	var canDoShit:Bool = true;
 
 	private var grpSongs:FlxTypedGroup<Alphabet>;
 	private var curPlaying:Bool = false;
@@ -180,7 +179,7 @@ class FreeplayState extends MusicBeatState
 			lerpScore = intendedScore;
 
 		scoreText.text = "PERSONAL BEST:" + lerpScore;
-		if (canDoShit){
+
 		var upP = controls.UP_P;
 		var downP = controls.DOWN_P;
 		var accepted = controls.ACCEPT;
@@ -194,49 +193,10 @@ class FreeplayState extends MusicBeatState
 			changeSelection(1);
 		}
 
-		if (controls.LEFT_P) {
-			if (curDifficulty == 0 || curDifficulty == 3) {
-				canDoShit = false;
-				FlxG.camera.shake(0.001, 0.1, function() {
-					FlxG.camera.shake(0.001, 0.1, function() {
-						FlxG.camera.shake(0.001, 0.01, function() {
-							FlxG.camera.flash(FlxColor.PINK, 0.2);
-							FlxG.sound.music.stop();
-							changeDiff(-1);
-							canDoShit = true;
-							FlxG.camera.shake(0.001, 0.1, function() {
-								FlxG.camera.shake(0.001, 0.1, function() {
-									
-								});
-							});
-						});
-					});
-				});
-			} else
+		if (controls.LEFT_P)
 			changeDiff(-1);
-		}
-			
-		if (controls.RIGHT_P) {
-			if (curDifficulty == 2 || curDifficulty == 3) {
-				canDoShit = false;
-				FlxG.camera.shake(0.001, 0.1, function() {
-					FlxG.camera.shake(0.001, 0.1, function() {
-						FlxG.camera.shake(0.001, 0.01, function() {
-							FlxG.camera.flash(FlxColor.PINK, 0.2);
-							FlxG.sound.music.stop();
-							changeDiff(1);
-							canDoShit = true;
-							FlxG.camera.shake(0.001, 0.1, function() {
-								FlxG.camera.shake(0.001, 0.1, function() {
-									
-								});
-							});
-						});
-					});
-				});
-			} else
+		if (controls.RIGHT_P)
 			changeDiff(1);
-		}
 
 		if (controls.BACK)
 		{
@@ -259,7 +219,6 @@ class FreeplayState extends MusicBeatState
 			LoadingState.loadAndSwitchState(new PlayState());
 		}
 	}
-}
 
 	function changeDiff(change:Int = 0)
 	{
@@ -315,12 +274,7 @@ class FreeplayState extends MusicBeatState
 		#end
 
 		#if PRELOAD_ALL
-		if (curDifficulty == 3){
-		FlxG.sound.playMusic(Paths.instEX(songs[curSelected].songName), 0);
-		}
-		else if (curDifficulty != 3){
 		FlxG.sound.playMusic(Paths.inst(songs[curSelected].songName), 0);
-		}
 		#end
 
 		var bullShit:Int = 0;
