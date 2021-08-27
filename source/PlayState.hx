@@ -393,15 +393,15 @@ class PlayState extends MusicBeatState
 					BG.antialiasing = true;
 					add(BG);
 				}
-				case 'night': 
+				case 'littlestpetshop': 
 					{
 						defaultCamZoom = 0.8;
-						curStage = 'night';
+						curStage = 'littlestpetshop';
 				
-						var nighttex = Paths.getSparrowAtlas('petshop/NighttimeBG');
+						var littlestpetshoptex = Paths.getSparrowAtlas('petshop/NighttimeBG');
 				
 						var BG = new FlxSprite(-200, -100);
-						BG.frames = nighttex;
+						BG.frames = littlestpetshoptex;
 						BG.animation.addByPrefix('idle', 'night bg0');
 						BG.setGraphicSize(Std.int(BG.width * 1.25));
 						BG.animation.play('idle');
@@ -899,7 +899,7 @@ class PlayState extends MusicBeatState
 				boyfriend.x += 300;
 				dad.y += 500;
 				dad.x += 100;
-			case 'night':
+			case 'littlestpetshop':
 				boyfriend.y += 500;
 				gf.x += 180;
 				gf.y += 470;

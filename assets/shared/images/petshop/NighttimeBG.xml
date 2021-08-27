@@ -2,5 +2,5 @@
 <TextureAtlas imagePath="NighttimeBG.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="night bg0000" x="0" y="0" width="2380" height="1458" pivotX="-247.4" pivotY="202.7"/>
+	<SubTexture name="night bg0000" x="0" y="0" width="2380" height="1466" pivotX="-247.4" pivotY="210.95"/>
 </TextureAtlas>
