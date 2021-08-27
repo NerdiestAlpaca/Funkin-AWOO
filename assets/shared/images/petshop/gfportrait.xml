@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gfportrait.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="GF Idle0000" x="0" y="0" width="304" height="420" pivotX="-37.35" pivotY="309.7" frameX="-16" frameY="0" frameWidth="324" frameHeight="420"/>
+	<SubTexture name="GF Idle0001" x="0" y="0" width="304" height="420" frameX="-16" frameY="0" frameWidth="324" frameHeight="420"/>
+	<SubTexture name="GF Idle0002" x="0" y="0" width="304" height="420" frameX="-16" frameY="0" frameWidth="324" frameHeight="420"/>
+	<SubTexture name="GF Idle0003" x="306" y="0" width="322" height="420" frameX="-1" frameY="0" frameWidth="324" frameHeight="420"/>
+	<SubTexture name="GF Idle0004" x="306" y="0" width="322" height="420" frameX="-1" frameY="0" frameWidth="324" frameHeight="420"/>
+	<SubTexture name="GF Idle0005" x="306" y="0" width="322" height="420" frameX="-1" frameY="0" frameWidth="324" frameHeight="420"/>
+	<SubTexture name="GF Idle0006" x="630" y="0" width="324" height="420"/>
+	<SubTexture name="GF Idle0007" x="630" y="0" width="324" height="420"/>
+	<SubTexture name="GF Idle0008" x="630" y="0" width="324" height="420"/>
+	<SubTexture name="GF Idle0009" x="630" y="0" width="324" height="420"/>
+	<SubTexture name="GF Idle0010" x="630" y="0" width="324" height="420"/>
+	<SubTexture name="GF Idle0011" x="630" y="0" width="324" height="420"/>
+	<SubTexture name="GF Idle0012" x="630" y="0" width="324" height="420"/>
+	<SubTexture name="GF Idle0013" x="630" y="0" width="324" height="420"/>
+</TextureAtlas>

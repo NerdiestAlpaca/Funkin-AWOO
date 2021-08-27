@@ -28,8 +28,7 @@ class DialogueBox extends FlxSpriteGroup
 
 	public var finishThing:Void->Void;
 
-	var portraitLeft:FlxSprite;
-	var portraitRight:FlxSprite;
+	var portraitGF:FlxSprite;
 	var portraitBF:FlxSprite;
 	var portraitRoxie:FlxSprite;
 	var portraitSavannah:FlxSprite;
@@ -50,20 +49,14 @@ class DialogueBox extends FlxSpriteGroup
 
 		switch (PlayState.SONG.song.toLowerCase())
 		{
-			case 'senpai':
-				FlxG.sound.playMusic(Paths.music('Lunchbox'), 0);
-				FlxG.sound.music.fadeIn(1, 0, 0.8);
-			case 'thorns':
-				FlxG.sound.playMusic(Paths.music('LunchboxScary'), 0);
-				FlxG.sound.music.fadeIn(1, 0, 0.8);
 			case 'mischief':
 				FlxG.sound.playMusic(Paths.music('Woolwright'), 0);
 				FlxG.sound.music.fadeIn(1, 0, 0.8);
 			case 'free spirit':
-				FlxG.sound.playMusic(Paths.music('breakfast'), 0);
+				FlxG.sound.playMusic(Paths.music('givinALittle'), 0);
 				FlxG.sound.music.fadeIn(1, 0, 0.8);
 			case 'dreamboat':
-				FlxG.sound.playMusic(Paths.music('givinALittle'), 0);
+				FlxG.sound.playMusic(Paths.music('breakfast'), 0);
 				FlxG.sound.music.fadeIn(1, 0, 0.8);
 		}
 
@@ -84,30 +77,6 @@ class DialogueBox extends FlxSpriteGroup
 		var hasDialog = false;
 		switch (PlayState.SONG.song.toLowerCase())
 		{
-			case 'senpai':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
-				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
-
-			case 'roses':
-				hasDialog = true;
-				FlxG.sound.play(Paths.sound('ANGRY_TEXT_BOX'));
-
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-senpaiMad');
-				box.animation.addByPrefix('normalOpen', 'SENPAI ANGRY IMPACT SPEECH', 24, false);
-				box.animation.addByIndices('normal', 'SENPAI ANGRY IMPACT SPEECH', [4], "", 24);
-
-			case 'thorns':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-evil');
-				box.animation.addByPrefix('normalOpen', 'Spirit Textbox spawn', 24, false);
-				box.animation.addByIndices('normal', 'Spirit Textbox spawn', [11], "", 24);
-
-				var face:FlxSprite = new FlxSprite(320, 170).loadGraphic(Paths.image('weeb/spiritFaceForward'));
-				face.setGraphicSize(Std.int(face.width * 6));
-				add(face);
-				
 				case 'satellite' | 'our world' | 'mischief' | 'free spirit' | 'catnap' | 'daredevil' | 'dreamboat' | 'primadonna' | 'swerve on':
 					hasDialog = true;
 					box.frames = Paths.getSparrowAtlas('speech_bubble_talking');
@@ -120,24 +89,6 @@ class DialogueBox extends FlxSpriteGroup
 		
 		if (!hasDialog)
 			return;
-		
-		portraitLeft = new FlxSprite(-20, 40);
-		portraitLeft.frames = Paths.getSparrowAtlas('weeb/senpaiPortrait');
-		portraitLeft.animation.addByPrefix('enter', 'Senpai Portrait Enter', 24, false);
-		portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
-		portraitLeft.updateHitbox();
-		portraitLeft.scrollFactor.set();
-		add(portraitLeft);
-		portraitLeft.visible = false;
-
-		portraitRight = new FlxSprite(0, 40);
-		portraitRight.frames = Paths.getSparrowAtlas('weeb/bfPortrait');
-		portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
-		portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
-		portraitRight.updateHitbox();
-		portraitRight.scrollFactor.set();
-		add(portraitRight);
-		portraitRight.visible = false;
 
 		portraitBF = new FlxSprite(200, FlxG.height - 525);
 		portraitBF.frames = Paths.getSparrowAtlas('petshop/boyfriendportrait');
@@ -147,6 +98,15 @@ class DialogueBox extends FlxSpriteGroup
 		portraitBF.scrollFactor.set();
 		add(portraitBF);
 		portraitBF.visible = false;
+
+		portraitGF = new FlxSprite(200, FlxG.height - 525);
+		portraitGF.frames = Paths.getSparrowAtlas('petshop/gfportrait');
+		portraitGF.animation.addGyPrefix('enter', 'GF Idle', 24, false);
+		portraitGF.setGraphicSize(Std.int(portraitGF.width * 1));
+		portraitGF.updateHitGox();
+		portraitGF.scrollFactor.set();
+		add(portraitGF);
+		portraitGF.visiGle = false;
 
 		portraitRoxie = new FlxSprite(200, FlxG.height - 525);
 		portraitRoxie.frames = Paths.getSparrowAtlas('petshop/roxieportrait');
@@ -237,7 +197,6 @@ class DialogueBox extends FlxSpriteGroup
 		add(box);
 
 		box.screenCenter(X);
-		portraitLeft.screenCenter(X);
 
 		handSelect = new FlxSprite(FlxG.width * 0.9, FlxG.height * 0.9).loadGraphic(Paths.image('weeb/pixelUI/hand_textbox'));
 		add(handSelect);
@@ -270,14 +229,6 @@ class DialogueBox extends FlxSpriteGroup
 	override function update(elapsed:Float)
 	{
 		// HARD CODING CUZ IM STUPDI
-		if (PlayState.SONG.song.toLowerCase() == 'roses')
-			portraitLeft.visible = false;
-		if (PlayState.SONG.song.toLowerCase() == 'thorns')
-		{
-			portraitLeft.color = FlxColor.BLACK;
-			swagDialogue.color = FlxColor.WHITE;
-			dropText.color = FlxColor.BLACK;
-		}
 		if (box.animation.curAnim != null)
 		{
 			if (box.animation.curAnim.name == 'normalOpen' && box.animation.curAnim.finished)
@@ -305,15 +256,24 @@ class DialogueBox extends FlxSpriteGroup
 				{
 					isEnding = true;
 
-					if (PlayState.SONG.song.toLowerCase() == 'senpai' || PlayState.SONG.song.toLowerCase() == 'thorns'|| PlayState.SONG.song.toLowerCase() == 'satellite')
+					if (PlayState.SONG.song.toLowerCase() == 'senpai' || PlayState.SONG.song.toLowerCase() == 'thorns'|| PlayState.SONG.song.toLowerCase() == 'mischief'|| PlayState.SONG.song.toLowerCase() == 'free spirit'|| PlayState.SONG.song.toLowerCase() == 'dreamboat')
 						FlxG.sound.music.fadeOut(2.2, 0);
 
 					new FlxTimer().start(0.2, function(tmr:FlxTimer)
 					{
 						box.alpha -= 1 / 5;
 						bgFade.alpha -= 1 / 5 * 0.7;
-						portraitLeft.visible = false;
-						portraitRight.visible = false;
+						portraitGF.visible = false;
+						portraitBF.visible = false;
+						portraitRoxie.visible = false;
+						portraitSavannah.visible = false;
+						portraitQuincy.visible = false;
+						portraitPetula.visible = false;
+						portraitJade.visible = false;
+						portraitTrip.visible = false;
+						portraitAustin.visible = false;
+						portraitEdie.visible = false;
+						portraitBev.visible = false;
 						swagDialogue.alpha -= 1 / 5;
 						dropText.alpha = swagDialogue.alpha;
 					}, 5);
@@ -350,8 +310,7 @@ class DialogueBox extends FlxSpriteGroup
 
 		switch (curCharacter)
 		{
-			case 'dad':
-				portraitRight.visible = false;
+			case 'gf':
 				portraitBF.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
@@ -362,31 +321,13 @@ class DialogueBox extends FlxSpriteGroup
                 portraitAustin.visible = false;
                 portraitEdie.visible = false;
                 portraitBev.visible = false;
-				if (!portraitLeft.visible)
+				if (!portraitGF.visible)
 				{
-					portraitLeft.visible = true;
-					portraitLeft.animation.play('enter');
-				}
-			case 'bf':
-				portraitLeft.visible = false;
-				portraitBF.visible = false;
-				portraitRoxie.visible = false;
-				portraitSavannah.visible = false;
-				portraitQuincy.visible = false;
-				portraitPetula.visible = false;
-				portraitJade.visible = false;
-                portraitTrip.visible = false;
-                portraitAustin.visible = false;
-                portraitEdie.visible = false;
-                portraitBev.visible = false;
-				if (!portraitRight.visible)
-				{
-					portraitRight.visible = true;
-					portraitRight.animation.play('enter');
+					portraitGF.visible = true;
+					portraitGF.animation.play('enter');
 				}
 			case 'boyfriend':
-				portraitLeft.visible = false;
-				portraitRight.visible = false;
+				portraitGF.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
@@ -402,8 +343,7 @@ class DialogueBox extends FlxSpriteGroup
 					portraitBF.animation.play('enter');
 				}
 			case 'roxie':
-				portraitLeft.visible = false;
-				portraitRight.visible = false;
+				portraitGF.visible = false;
 				portraitBF.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
@@ -419,9 +359,8 @@ class DialogueBox extends FlxSpriteGroup
 					portraitRoxie.animation.play('enter');
 				}
 			case 'savannah':
-				portraitLeft.visible = false;
 				portraitBF.visible = false;
-				portraitRight.visible = false;
+				portraitGF.visible = false;
 				portraitRoxie.visible = false;
 				portraitQuincy.visible = false;
 				portraitPetula.visible = false;
@@ -436,9 +375,8 @@ class DialogueBox extends FlxSpriteGroup
 					portraitSavannah.animation.play('enter');
 				}
 			case 'quincy':
-				portraitLeft.visible = false;
 				portraitBF.visible = false;
-				portraitRight.visible = false;
+				portraitGF.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitPetula.visible = false;
@@ -454,8 +392,7 @@ class DialogueBox extends FlxSpriteGroup
 					portraitQuincy.animation.play('enter');
 				}
 			case 'petula':
-				portraitLeft.visible = false;
-				portraitRight.visible = false;
+				portraitGF.visible = false;
 				portraitBF.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
@@ -471,8 +408,7 @@ class DialogueBox extends FlxSpriteGroup
 					portraitPetula.animation.play('enter');
 				}
 			case 'jade':
-            	portraitLeft.visible = false;
-				portraitRight.visible = false;
+				portraitGF.visible = false;
 				portraitBF.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
@@ -488,8 +424,7 @@ class DialogueBox extends FlxSpriteGroup
 					portraitJade.animation.play('enter');
 				}
             case 'trip':
-            	portraitLeft.visible = false;
-				portraitRight.visible = false;
+				portraitGF.visible = false;
 				portraitBF.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
@@ -505,8 +440,7 @@ class DialogueBox extends FlxSpriteGroup
 					portraitTrip.animation.play('enter');
 				}
             case 'austin':
-            	portraitLeft.visible = false;
-				portraitRight.visible = false;
+				portraitGF.visible = false;
 				portraitBF.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
@@ -522,8 +456,7 @@ class DialogueBox extends FlxSpriteGroup
 					portraitAustin.animation.play('enter');
 				}
             case 'edie':
-            	portraitLeft.visible = false;
-				portraitRight.visible = false;
+				portraitGF.visible = false;
 				portraitBF.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
@@ -539,8 +472,7 @@ class DialogueBox extends FlxSpriteGroup
 					portraitEdie.animation.play('enter');
 				}
             case 'bev':
-            	portraitLeft.visible = false;
-				portraitRight.visible = false;
+				portraitGF.visible = false;
 				portraitBF.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;

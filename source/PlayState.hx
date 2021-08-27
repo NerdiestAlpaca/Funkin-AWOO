@@ -393,6 +393,21 @@ class PlayState extends MusicBeatState
 					BG.antialiasing = true;
 					add(BG);
 				}
+				case 'night': 
+					{
+						defaultCamZoom = 0.8;
+						curStage = 'night';
+				
+						var nighttex = Paths.getSparrowAtlas('petshop/NighttimeBG');
+				
+						var BG = new FlxSprite(-200, -100);
+						BG.frames = nighttex;
+						BG.animation.addByPrefix('idle', 'night bg0');
+						BG.setGraphicSize(Std.int(BG.width * 1.25));
+						BG.animation.play('idle');
+						BG.antialiasing = true;
+						add(BG);
+					}
 			case 'philly': 
 					{
 					curStage = 'philly';
@@ -877,15 +892,20 @@ class PlayState extends MusicBeatState
 					resetFastCar();
 					add(fastCar);
 				}
-
-				case 'park':
-					boyfriend.y += 500;
-					gf.x += 180;
-					gf.y += 470;
-					boyfriend.x += 300;
-					dad.y += 500;
-					dad.x += 100;
-					
+			case 'park':
+				boyfriend.y += 500;
+				gf.x += 180;
+				gf.y += 470;
+				boyfriend.x += 300;
+				dad.y += 500;
+				dad.x += 100;
+			case 'night':
+				boyfriend.y += 500;
+				gf.x += 180;
+				gf.y += 470;
+				boyfriend.x += 300;
+				dad.y += 500;
+				dad.x += 100;
 			case 'mall':
 				boyfriend.x += 200;
 			case 'mallEvil':
