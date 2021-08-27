@@ -230,7 +230,7 @@ class DialogueBox extends FlxSpriteGroup
 		portraitBev.visible = false;
 
 		box.animation.play('normalOpen');
-		box.y = FlxG.height - 285;
+		box.y = FlxG.height - 200;
 		box.x = 20;
 		box.setGraphicSize(Std.int(box.width * 1));
 		box.updateHitbox();
