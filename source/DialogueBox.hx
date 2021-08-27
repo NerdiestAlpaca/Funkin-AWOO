@@ -108,60 +108,13 @@ class DialogueBox extends FlxSpriteGroup
 				face.setGraphicSize(Std.int(face.width * 6));
 				add(face);
 				
-			case 'satellite':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
-				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
-
-			case 'our world':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
-				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
-
-			case 'mischief':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
-				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
-				
-			case 'free spirit':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
-				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
-
-			case 'catnap':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
-				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
-
-			case 'daredevil':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
-				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
-
-			case 'dreamboat':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
-				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
-
-			case 'primadonna':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
-				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
-				
-			case 'swerved up':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
-				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
-		}
+				case 'satellite' | 'our world' | 'mischief' | 'free spirit' | 'catnap' | 'daredevil' | 'dreamboat' | 'primadonna' | 'swerve on':
+					hasDialog = true;
+					box.frames = Paths.getSparrowAtlas('speech_bubble_talking');
+					box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+					box.animation.addByIndices('normal', 'speech bubble normal', [11], "", 24);
+					box.antialiasing = true;
+			}
 
 		this.dialogueList = dialogueList;
 		
@@ -277,7 +230,9 @@ class DialogueBox extends FlxSpriteGroup
 		portraitBev.visible = false;
 
 		box.animation.play('normalOpen');
-		box.setGraphicSize(Std.int(box.width * PlayState.daPixelZoom * 0.9));
+		box.y = FlxG.height - 285;
+		box.x = 20;
+		box.setGraphicSize(Std.int(box.width * 1));
 		box.updateHitbox();
 		add(box);
 

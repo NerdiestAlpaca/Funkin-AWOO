@@ -355,8 +355,8 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('dreamboat/coolswag'));
 			case 'primadonna':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('primadonna/coolswag'));
-			case 'swerved up':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('swerved up/coolswag'));
+			case 'swerve on':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('swerve on/coolswag'));
 		}
 
 		switch(SONG.stage)
@@ -1143,7 +1143,7 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'primadonna':
 					schoolIntro(doof);
-				case 'swerved up':
+				case 'swerve on':
 					schoolIntro(doof);
 				default:
 					startCountdown();
@@ -1182,7 +1182,7 @@ class PlayState extends MusicBeatState
 		senpaiEvil.updateHitbox();
 		senpaiEvil.screenCenter();
 
-		if (SONG.song.toLowerCase() == 'roses' || SONG.song.toLowerCase() == 'thorns' || SONG.song.toLowerCase() == 'our world' || SONG.song.toLowerCase() == 'mischief' || SONG.song.toLowerCase() == 'catnap' || SONG.song.toLowerCase() == 'daredevil' || SONG.song.toLowerCase() == 'primadonna' || SONG.song.toLowerCase() == 'swerved up')
+		if (SONG.song.toLowerCase() == 'roses' || SONG.song.toLowerCase() == 'thorns' || SONG.song.toLowerCase() == 'our world' || SONG.song.toLowerCase() == 'mischief' || SONG.song.toLowerCase() == 'catnap' || SONG.song.toLowerCase() == 'daredevil' || SONG.song.toLowerCase() == 'primadonna' || SONG.song.toLowerCase() == 'swerve on')
 		{
 			remove(black);
 
