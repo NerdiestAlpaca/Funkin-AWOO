@@ -2,5 +2,5 @@
 <TextureAtlas imagePath="outsidebg.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="park bg0000" x="0" y="0" width="2380" height="1457" pivotX="-247.4" pivotY="201.05"/>
+	<SubTexture name="park bg0000" x="0" y="0" width="2380" height="1464" pivotX="-247.4" pivotY="201.05"/>
 </TextureAtlas>

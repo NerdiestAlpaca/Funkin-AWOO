@@ -30,6 +30,7 @@ class DialogueBox extends FlxSpriteGroup
 
 	var portraitGF:FlxSprite;
 	var portraitBF:FlxSprite;
+	var portraitBFCoat:FlxSprite;
 	var portraitRoxie:FlxSprite;
 	var portraitSavannah:FlxSprite;
 	var portraitQuincy:FlxSprite;
@@ -98,6 +99,15 @@ class DialogueBox extends FlxSpriteGroup
 		portraitBF.scrollFactor.set();
 		add(portraitBF);
 		portraitBF.visible = false;
+
+		portraitBFCoat = new FlxSprite(200, FlxG.height - 525);
+		portraitBFCoat.frames = Paths.getSparrowAtlas('petshop/boyfriendcoatportrait');
+		portraitBFCoat.animation.addByPrefix('enter', 'BF idle dance', 24, false);
+		portraitBFCoat.setGraphicSize(Std.int(portraitBFCoat.width * 1));
+		portraitBFCoat.updateHitbox();
+		portraitBFCoat.scrollFactor.set();
+		add(portraitBFCoat);
+		portraitBFCoat.visible = false;
 
 		portraitGF = new FlxSprite(200, FlxG.height - 525);
 		portraitGF.frames = Paths.getSparrowAtlas('petshop/gfportrait');
@@ -312,6 +322,7 @@ class DialogueBox extends FlxSpriteGroup
 		{
 			case 'gf':
 				portraitBF.visible = false;
+				portraitBFCoat.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
@@ -328,6 +339,7 @@ class DialogueBox extends FlxSpriteGroup
 				}
 			case 'boyfriend':
 				portraitGF.visible = false;
+				portraitBFCoat.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
@@ -342,9 +354,27 @@ class DialogueBox extends FlxSpriteGroup
 					portraitBF.visible = true;
 					portraitBF.animation.play('enter');
 				}
+			case 'boyfriendcoat':
+				portraitGF.visible = false;
+				portraitBF.visible = false;
+				portraitRoxie.visible = false;
+				portraitSavannah.visible = false;
+				portraitQuincy.visible = false;
+				portraitPetula.visible = false;
+				portraitJade.visible = false;
+                portraitTrip.visible = false;
+                portraitAustin.visible = false;
+                portraitEdie.visible = false;
+                portraitBev.visible = false;
+				if (!portraitBFCoat.visible)
+				{
+					portraitBFCoat.visible = true;
+					portraitBFCoat.animation.play('enter');
+				}
 			case 'roxie':
 				portraitGF.visible = false;
 				portraitBF.visible = false;
+				portraitBFCoat.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
 				portraitPetula.visible = false;
@@ -361,6 +391,7 @@ class DialogueBox extends FlxSpriteGroup
 			case 'savannah':
 				portraitBF.visible = false;
 				portraitGF.visible = false;
+				portraitBFCoat.visible = false;
 				portraitRoxie.visible = false;
 				portraitQuincy.visible = false;
 				portraitPetula.visible = false;
@@ -377,6 +408,7 @@ class DialogueBox extends FlxSpriteGroup
 			case 'quincy':
 				portraitBF.visible = false;
 				portraitGF.visible = false;
+				portraitBFCoat.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitPetula.visible = false;
@@ -394,6 +426,7 @@ class DialogueBox extends FlxSpriteGroup
 			case 'petula':
 				portraitGF.visible = false;
 				portraitBF.visible = false;
+				portraitBFCoat.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
@@ -410,6 +443,7 @@ class DialogueBox extends FlxSpriteGroup
 			case 'jade':
 				portraitGF.visible = false;
 				portraitBF.visible = false;
+				portraitBFCoat.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
@@ -426,6 +460,7 @@ class DialogueBox extends FlxSpriteGroup
             case 'trip':
 				portraitGF.visible = false;
 				portraitBF.visible = false;
+				portraitBFCoat.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
@@ -442,6 +477,7 @@ class DialogueBox extends FlxSpriteGroup
             case 'austin':
 				portraitGF.visible = false;
 				portraitBF.visible = false;
+				portraitBFCoat.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
@@ -458,6 +494,7 @@ class DialogueBox extends FlxSpriteGroup
             case 'edie':
 				portraitGF.visible = false;
 				portraitBF.visible = false;
+				portraitBFCoat.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
@@ -474,6 +511,7 @@ class DialogueBox extends FlxSpriteGroup
             case 'bev':
 				portraitGF.visible = false;
 				portraitBF.visible = false;
+				portraitBFCoat.visible = false;
 				portraitRoxie.visible = false;
 				portraitSavannah.visible = false;
 				portraitQuincy.visible = false;
