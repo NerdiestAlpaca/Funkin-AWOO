@@ -2680,7 +2680,16 @@ class PlayState extends MusicBeatState
 					transIn = FlxTransitionableState.defaultTransIn;
 					transOut = FlxTransitionableState.defaultTransOut;
 
+					switch (PlayState.SONG.song.toLowerCase()) {
+						case 'swerve on':
+							if (FlxG.save.data.unlockedEX == null || FlxG.save.data.unlockedEX == false) {
+								FlxG.save.data.unlockedEX = true;
+								FlxG.save.data.firstTime = true;
+								FlxG.switchState(new MainMenuState());
+							}
+						default:
 					FlxG.switchState(new StoryMenuState());
+}
 
 					#if windows
 					if (luaModchart != null)

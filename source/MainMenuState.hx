@@ -41,6 +41,7 @@ class MainMenuState extends MusicBeatState
 
 	public static var kadeEngineVer:String = "1.4.5" + nightly;
 	public static var gameVer:String = "0.2.7.1";
+	public static var firstTime:Bool = false;
 
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;
@@ -68,6 +69,15 @@ class MainMenuState extends MusicBeatState
 		bg.antialiasing = true;
 		add(bg);
 
+		new FlxTimer().start(0.5, function(tmr:FlxTimer)
+		{
+			if (firstTime) {
+				achievementArray.push('Unlocked Rematch difficulty in Freeplay!');
+				FlxG.sound.play(Paths.sound('rematchUnlock'));
+				firstTime = false;
+			}
+		});
+		
 		camFollow = new FlxObject(0, 0, 1, 1);
 		add(camFollow);
 

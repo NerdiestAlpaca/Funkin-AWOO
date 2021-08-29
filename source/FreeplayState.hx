@@ -225,6 +225,14 @@ class FreeplayState extends MusicBeatState
 		curDifficulty += change;
 
 		if (curDifficulty < 0)
+		if (FlxG.save.data.unlockedEX == true)
+			curDifficulty = 3;
+		else
+			curDifficulty = 2;
+		if (curDifficulty > 2 && curDifficulty < 4)
+		if (FlxG.save.data.unlockedEX == false)
+			curDifficulty = 0;
+		else
 			curDifficulty = 3;
 		if (curDifficulty > 3)
 			curDifficulty = 0;
@@ -232,6 +240,7 @@ class FreeplayState extends MusicBeatState
 		#if !switch
 		intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
 		#end
+
 		if (curDifficulty == 3)
 			magenta.visible = true;
 		if (curDifficulty != 3)
