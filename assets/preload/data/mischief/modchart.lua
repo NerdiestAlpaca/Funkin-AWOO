@@ -61,7 +61,7 @@ function update (elapsed)
         end
         if swayingy then
             for i=0,7 do
-                setActorY(defaultStrum0Y + 12 * math.cos((currentBeat + i*0.25) * 1.5), i)
+                setActorY(defaultStrum0Y + 2 * math.cos((currentBeat + i*0.25) * 1.5), i)
                 setActorX(_G['defaultStrum'..i..'X'] + 32 * math.sin(currentBeat + i*1), i)
             end
         end
