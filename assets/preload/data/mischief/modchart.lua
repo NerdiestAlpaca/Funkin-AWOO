@@ -178,9 +178,6 @@ if difficulty == 3 then
     if beat == 420 then
         resetnotes = true
         swayingintense = false
-        for i=0,7 do
-            tweenFadeIn(i,0,2)
-        end
     end
 end
 if difficulty == 2 then
