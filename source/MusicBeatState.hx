@@ -4,16 +4,19 @@ package;
 import Discord.DiscordClient;
 #end
 import flixel.tweens.FlxTween;
+import flixel.tweens.FlxEase;
 import flixel.util.FlxColor;
 import openfl.Lib;
 import Conductor.BPMChangeEvent;
 import flixel.FlxG;
 import flixel.addons.transition.FlxTransitionableState;
+import flixel.FlxSprite;
 import flixel.addons.ui.FlxUIState;
 import flixel.math.FlxRect;
 import flixel.util.FlxTimer;
 import flixel.FlxCamera;
 import flixel.text.FlxText;
+
 
 class MusicBeatState extends FlxUIState
 {
