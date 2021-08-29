@@ -170,7 +170,8 @@ function beatHit (beat)
         swayingy = true
     end
     if beat == 320 then
-		swayingy = false	
+		swayingy = false
+        resetnotes = false
         swayingintense = true
     end
 if difficulty == 3 then
@@ -259,11 +260,6 @@ function stepHit (step)
         end
         if step == 1151 then
             resetnotes = true
-        end
-        if step == 1153 then
-            resetnotes = false
-            swayingy = false
-            swayingstart = true
         end
     end
 end
