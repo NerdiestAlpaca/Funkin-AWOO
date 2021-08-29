@@ -82,7 +82,7 @@ function update (elapsed)
             camHudAngle = 1 * math.cos((currentBeat))
             for i=0,7 do
                 setActorY(_G['defaultStrum'..i..'Y'] + 32 * math.sin(currentBeat + i*1), i)
-                setActorX(_G['defaultStrum'..i..'X'] + 50 * math.sin((songPos / 1000) * math.pi), i)
+                setActorX(_G['defaultStrum'..i..'X'] + 24 * math.sin((songPos / 1000) * math.pi), i)
             end
         end
     end
