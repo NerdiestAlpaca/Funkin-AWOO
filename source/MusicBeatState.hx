@@ -53,6 +53,8 @@ class MusicBeatState extends FlxUIState
 
 	var skippedFrames = 0;
 
+	var showingAchievement:Bool = false;
+
 	override function update(elapsed:Float)
 	{
 		//everyStep();
