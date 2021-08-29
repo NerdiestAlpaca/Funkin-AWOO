@@ -67,8 +67,8 @@ function update (elapsed)
         end
         if swayingx then
             for i=0,7 do
-                setActorX(_G['defaultStrum'..i..'X'] + 50 * math.sin((songPos / 1000) * math.pi), i)
-                setActorY(_G['defaultStrum'..i..'Y'] + 30 * math.sin((songPos / 1000) * 2 * math.pi), i)
+                setActorX(_G['defaultStrum'..i..'X'] + 20 * math.sin((songPos / 1000) * math.pi), i)
+                setActorY(_G['defaultStrum'..i..'Y'] + 12 * math.sin((songPos / 1000) * 2 * math.pi), i)
             end
         end
         if swayingboth then
