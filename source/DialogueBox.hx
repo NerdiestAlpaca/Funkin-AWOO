@@ -275,6 +275,7 @@ class DialogueBox extends FlxSpriteGroup
 						bgFade.alpha -= 1 / 5 * 0.7;
 						portraitGF.visible = false;
 						portraitBF.visible = false;
+						portraitBFCoat.visible = false;
 						portraitRoxie.visible = false;
 						portraitSavannah.visible = false;
 						portraitQuincy.visible = false;
