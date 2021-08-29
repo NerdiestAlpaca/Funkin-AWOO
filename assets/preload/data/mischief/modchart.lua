@@ -257,5 +257,13 @@ function stepHit (step)
         if step == 384 then
             resetnotes = false
         end
+        if step == 1151 then
+            resetnotes = true
+        end
+        if step == 1153 then
+            resetnotes = false
+            swayingy = false
+            swayingstart = true
+        end
     end
 end
