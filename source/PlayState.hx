@@ -2687,6 +2687,9 @@ class PlayState extends MusicBeatState
 								FlxG.save.data.firstTime = true;
 								FlxG.switchState(new MainMenuState());
 							}
+							else if (FlxG.save.data.unlockedEX == true) {
+								FlxG.switchState(new StoryMenuState());
+							}
 						default:
 					FlxG.switchState(new StoryMenuState());
 }
