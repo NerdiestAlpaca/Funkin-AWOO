@@ -71,10 +71,10 @@ class MainMenuState extends MusicBeatState
 
 		new FlxTimer().start(0.5, function(tmr:FlxTimer)
 		{
-			if (FlxG.save.data.firstTime = true; {
+			if (firstTime) {
 				achievementArray.push('Unlocked Rematch difficulty in Freeplay!');
 				FlxG.sound.play(Paths.sound('rematchUnlock'));
-				FlxG.save.data.firstTime = false;
+				firstTime = false;
 			}
 		});
 		
