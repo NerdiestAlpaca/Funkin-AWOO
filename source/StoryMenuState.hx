@@ -317,9 +317,8 @@ class StoryMenuState extends MusicBeatState
 			selectedWeek = true;
 			PlayState.songMultiplier = 1;
 
-			PlayState.storyDifficulty = curDifficulty;
+			var diffic = ""
 
-			// adjusting the song name to be compatible
 			switch (curDifficulty)
 			{
 				case 0:
