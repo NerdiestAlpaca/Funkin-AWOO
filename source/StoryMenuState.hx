@@ -63,8 +63,27 @@ class StoryMenuState extends MusicBeatState
 	var leftArrow:FlxSprite;
 	var rightArrow:FlxSprite;
 
+	function unlockWeeks():Array<Bool>
+		{
+			var weeks:Array<Bool> = [];
+			#if debug
+			for(i in 0...weekNames.length)
+				weeks.push(true);
+			return weeks;
+			#end
+			
+			weeks.push(true);
+	
+			for(i in 0...FlxG.save.data.weekUnlocked)
+				{
+					weeks.push(true);
+				}
+			return weeks;
+		}
+		
 	override function create()
 	{
+		weekUnlocked = unlockWeeks();
 		#if windows
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Story Mode Menu", null);
@@ -402,4 +421,16 @@ class StoryMenuState extends MusicBeatState
 		intendedScore = Highscore.getWeekScore(curWeek, curDifficulty);
 		#end
 	}
+		public static function unlockNextWeek(week:Int):Void
+	{
+		if(week <= weekData().length - 1 && FlxG.save.data.weekUnlocked == week)
+		{
+			weekUnlocked.push(true);
+			trace('Week ' + week + ' beat (Week ' + (week + 1) + ' unlocked)');
+		}
+
+		FlxG.save.data.weekUnlocked = weekUnlocked.length - 1;
+		FlxG.save.flush();
+	}
+
 }
