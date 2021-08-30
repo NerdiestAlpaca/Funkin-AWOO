@@ -120,7 +120,12 @@ class MainMenuState extends MusicBeatState
 
 		// NG.core.calls.event.logEvent('swag').send();
 
-
+		if (FlxG.save.data.progress == null)
+			{
+				FlxG.save.data.progress = 0;
+				FlxG.save.flush();
+			}
+		
 		if (FlxG.save.data.dfjk)
 			controls.setKeyboardScheme(KeyboardScheme.Solo, true);
 		else
