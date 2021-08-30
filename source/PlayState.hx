@@ -2681,6 +2681,15 @@ class PlayState extends MusicBeatState
 					transOut = FlxTransitionableState.defaultTransOut;
 
 					switch (PlayState.SONG.song.toLowerCase()) {
+						case 'tutorial':
+							if (FlxG.save.data.testing == null || FlxG.save.data.testing == false) {
+								FlxG.save.data.testing = true;
+								FlxG.save.data.bullshit = true;
+								FlxG.switchState(new MainMenuState());
+							}
+							else if (FlxG.save.data.testing == true) {
+								FlxG.switchState(new StoryMenuState());
+							}
 						case 'mischief':
 							if (FlxG.save.data.progress < 1)
 								{

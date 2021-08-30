@@ -68,12 +68,17 @@ class MainMenuState extends MusicBeatState
 		bg.antialiasing = true;
 		add(bg);
 
-		new FlxTimer().start(0.5, function(tmr:FlxTimer)
+		new FlxTimer().start(0.01, function(tmr:FlxTimer)
 		{
 			if (FlxG.save.data.firstTime == true) {
 				achievementArray.push('Unlocked Rematch difficulty in Freeplay!');
 				FlxG.sound.play(Paths.sound('rematchUnlock'));
 				FlxG.save.data.firstTime = false;
+			}
+			if (FlxG.save.data.bullshit = true) {
+				achievementArray.push('This achievement is a test, REMOVE THIS LATER');
+				FlxG.sound.play(Paths.sound('rematchUnlock'));
+				FlxG.save.data.bullshit = false;
 			}
 		});
 		
