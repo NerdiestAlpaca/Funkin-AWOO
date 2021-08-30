@@ -23,12 +23,15 @@ class StoryMenuState extends MusicBeatState
 {
 	var scoreText:FlxText;
 
-	var weekData:Array<Dynamic> = [
-		['Tutorial'],
-		['Satellite', 'Our World', 'Mischief'],
-		['Free Spirit', 'Catnap', 'Daredevil'],
-		['Dreamboat', 'Primadonna', 'Swerve On']
-	];
+	static function weekData():Array<Dynamic>
+		{
+			return [
+				['Tutorial'],
+				['Satellite', 'Our World', 'Mischief'],
+				['Free Spirit', 'Catnap', 'Daredevil'],
+				['Dreamboat', 'Primadonna', 'Swerve On']
+			];
+		}
 	var curDifficulty:Int = 1;
 
 	public static var weekUnlocked:Array<Bool> = [true, true];
