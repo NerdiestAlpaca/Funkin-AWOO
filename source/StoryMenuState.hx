@@ -31,7 +31,7 @@ class StoryMenuState extends MusicBeatState
 	];
 	var curDifficulty:Int = 1;
 
-	public static var weekUnlocked:Array<Bool> = [true, true];
+	public static var weekUnlocked:Array<Bool> = [true, true, false, false];
 
 	var weekCharacters:Array<Dynamic> = [
 		['lps', 'bf', 'gf'],
@@ -78,6 +78,15 @@ class StoryMenuState extends MusicBeatState
 			if (!FlxG.sound.music.playing)
 				FlxG.sound.playMusic(Paths.music('freakyMenu'));
 		}
+
+		if (FlxG.save.data.progress > 0)
+			{
+				weekUnlocked[2] = true;
+				if (FlxG.save.data.progress > 1)
+				{
+					weekUnlocked[3] = true;
+				}
+			}
 
 		persistentUpdate = persistentDraw = true;
 

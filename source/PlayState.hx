@@ -2677,14 +2677,6 @@ class PlayState extends MusicBeatState
 				{
 					FlxG.sound.playMusic(Paths.music('freakyMenu'));
 
-					if (FlxG.save.data.progress > 0)
-						{
-							weekUnlocked[2] = true;
-							if (FlxG.save.data.progress > 1)
-							{
-								weekUnlocked[3] = true;
-							}
-						}
 					transIn = FlxTransitionableState.defaultTransIn;
 					transOut = FlxTransitionableState.defaultTransOut;
 
