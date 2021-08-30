@@ -317,7 +317,7 @@ class StoryMenuState extends MusicBeatState
 			selectedWeek = true;
 			PlayState.songMultiplier = 1;
 
-			var diffic = ""
+			var diffic = "";
 
 			switch (curDifficulty)
 			{
