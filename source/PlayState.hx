@@ -2677,10 +2677,38 @@ class PlayState extends MusicBeatState
 				{
 					FlxG.sound.playMusic(Paths.music('freakyMenu'));
 
+					if (FlxG.save.data.progress > 0)
+						{
+							weekUnlocked[2] = true;
+							if (FlxG.save.data.progress > 1)
+							{
+								weekUnlocked[3] = true;
+							}
+						}
 					transIn = FlxTransitionableState.defaultTransIn;
 					transOut = FlxTransitionableState.defaultTransOut;
 
 					switch (PlayState.SONG.song.toLowerCase()) {
+						case 'mischief':
+							if (FlxG.save.data.progress < 1)
+								{
+									FlxG.save.data.progress = 1;
+									FlxG.save.flush();
+									FlxG.switchState(new StoryMenuState());
+								}
+							else {
+									FlxG.switchState(new StoryMenuState());
+								}
+						case 'daredevil':
+							if (FlxG.save.data.progress < 2)
+								{
+									FlxG.save.data.progress = 2;
+									FlxG.save.flush();
+									FlxG.switchState(new StoryMenuState());
+								}		
+							else {
+									FlxG.switchState(new StoryMenuState());
+								}
 						case 'swerve on':
 							if (FlxG.save.data.unlockedEX == null || FlxG.save.data.unlockedEX == false) {
 								FlxG.save.data.unlockedEX = true;
