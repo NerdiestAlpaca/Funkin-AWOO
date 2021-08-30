@@ -91,14 +91,15 @@ class MusicBeatState extends FlxUIState
 			showingAchievement = true;
 			var achievementBox:FlxSprite = new FlxSprite(20, FlxG.height * 0.8 ).loadGraphic(Paths.image('achieve'));
 			//achievementBox.cameras = [camAchievement];
+			achievementBox.scrollFactor.set();
 			achievementBox.alpha = 0;
 			add(achievementBox);
 			achievementBox.y -= achievementBox.height;
-			var achievementName = new FlxText(133, (FlxG.height - achievementBox.height) + 14, 283, leText, 16);
+			var achievementName = new FlxText(133, (FlxG.height * 0.8 - achievementBox.height) + 14, 283, leText, 16);
 			achievementName.setFormat(Paths.font("pixel.otf"), 20, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 			achievementName.alpha = 0;
 			//achievementName.cameras = [camAchievement];
-			//achievementName.scrollFactor.set();
+			achievementName.scrollFactor.set();
 			add(achievementName);
 			FlxTween.tween(achievementName, {alpha:1}, 0.2, {
 				onComplete: function(twn:FlxTween)
