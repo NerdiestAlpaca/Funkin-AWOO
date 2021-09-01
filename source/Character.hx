@@ -148,11 +148,11 @@ class Character extends FlxSprite
 				animation.addByPrefix('singDOWN', 'Savannah Down', 24);
 				animation.addByPrefix('singLEFT', 'Savannah Left', 24);
 			
-				addOffset('idle', 0,-290);
-				addOffset('singUP', -1, -267);
-				addOffset('singRIGHT', 10, -285);
-				addOffset('singLEFT',-2, -280);
-				addOffset('singDOWN', 10, -293);
+				addOffset('idle', 100,-290);
+				addOffset('singUP', 103, -261);
+				addOffset('singRIGHT', 110, -281);
+				addOffset('singLEFT', 111, -274);
+				addOffset('singDOWN', 110, -293);
 			
 				playAnim('idle');
 			case 'quincy':
@@ -221,10 +221,10 @@ class Character extends FlxSprite
 					animation.addByPrefix('singLEFT', 'Jade Left', 24);
 				
 					addOffset('idle', 0,-320);
-					addOffset('singUP', 0, -313);
-					addOffset('singRIGHT', 0, -325);
-					addOffset('singLEFT',-9, -304);
-					addOffset('singDOWN', 0, -330);
+					addOffset('singUP', 25, -314);
+					addOffset('singRIGHT', -5, -331);
+					addOffset('singLEFT',-2, -316);
+					addOffset('singDOWN', -7, -342);
 				
 				playAnim('idle');		
 			case 'trip':

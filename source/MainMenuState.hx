@@ -75,11 +75,6 @@ class MainMenuState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('rematchUnlock'));
 				FlxG.save.data.firstTime = false;
 			}
-			if (FlxG.save.data.bullshit = true) {
-				achievementArray.push('This achievement is a test, REMOVE THIS LATER');
-				FlxG.sound.play(Paths.sound('rematchUnlock'));
-				FlxG.save.data.bullshit = false;
-			}
 		});
 		
 		camFollow = new FlxObject(0, 0, 1, 1);

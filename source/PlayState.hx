@@ -791,6 +791,48 @@ class PlayState extends MusicBeatState
         					confetti.antialiasing = true;
            					add(confetti);        				
 			}
+
+			case 'bfconcert': 
+    {	
+        					curStage = 'bfconcert';
+
+        					defaultCamZoom = 0.8;
+
+        					var walls:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('petshop/stageback'));
+        					walls.antialiasing = true;
+        					walls.scrollFactor.set(0.2, 0.2);
+        					walls.active = false;
+							walls.setGraphicSize(Std.int(walls.width * 0.85));
+        					walls.updateHitbox();
+        					add(walls);
+
+        					var fgStage:FlxSprite = new FlxSprite(-600, 700).loadGraphic(Paths.image('petshop/stagefront'));
+        					fgStage.active = false;
+        					fgStage.antialiasing = true;
+        					add(fgStage);
+
+							audienceBoppers = new FlxSprite(-700, 780);
+							audienceBoppers.frames = Paths.getSparrowAtlas('petshop/BFAudience');
+							audienceBoppers.animation.addByPrefix('bop', 'audience bob', 24, true);
+							audienceBoppers.antialiasing = true;
+							audienceBoppers.setGraphicSize(Std.int(audienceBoppers.width * 1));
+							audienceBoppers.updateHitbox();
+		
+        					var confetti:FlxSprite = new FlxSprite(-240, -90);
+        					confetti.frames = Paths.getSparrowAtlas('petshop/confetti');
+        					confetti.animation.addByPrefix('idle', 'confetti whoosh', 24, true);
+							confetti.animation.play("idle");
+        					confetti.antialiasing = true;
+           					add(confetti);       
+							
+							var curtains:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('petshop/stagecurtains'));
+							curtains.antialiasing = true;
+							curtains.scrollFactor.set(0.2, 0.2);
+							curtains.active = false;
+							curtains.setGraphicSize(Std.int(curtains.width * 0.85));
+							curtains.updateHitbox();
+							add(curtains); 				
+			}
 			default:
 			{
 					defaultCamZoom = 0.9;
@@ -915,6 +957,10 @@ class PlayState extends MusicBeatState
 				boyfriend.x += 350;
 				gf.x += 150;
 				dad.x += 200;
+			case 'bfconcert':
+				boyfriend.x += 350;
+				gf.x += 150;
+				dad.x += 200;
 			case 'school':
 				boyfriend.x += 200;
 				boyfriend.y += 220;
@@ -946,6 +992,8 @@ class PlayState extends MusicBeatState
 		add(dad);
 		add(boyfriend);
 		if (curStage == 'pawtucket')
+			add(audienceBoppers);
+		if (curStage == 'bfconcert')
 			add(audienceBoppers);
 		if (loadRep)
 		{
@@ -2681,15 +2729,6 @@ class PlayState extends MusicBeatState
 					transOut = FlxTransitionableState.defaultTransOut;
 
 					switch (PlayState.SONG.song.toLowerCase()) {
-						case 'tutorial':
-							if (FlxG.save.data.testing == null || FlxG.save.data.testing == false) {
-								FlxG.save.data.testing = true;
-								FlxG.save.data.bullshit = true;
-								FlxG.switchState(new MainMenuState());
-							}
-							else if (FlxG.save.data.testing == true) {
-								FlxG.switchState(new StoryMenuState());
-							}
 						case 'mischief':
 							if (FlxG.save.data.progress < 1)
 								{
@@ -3719,6 +3758,9 @@ class PlayState extends MusicBeatState
 				
 			case 'pawtucket':
 				uppercrowd.animation.play("bop", true);
+				audienceBoppers.animation.play("bop", true);
+
+			case 'bfconcert':
 				audienceBoppers.animation.play("bop", true);
 
 			case 'mall':

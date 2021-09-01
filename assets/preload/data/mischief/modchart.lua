@@ -61,28 +61,25 @@ function update (elapsed)
         end
         if swayingy then
             for i=0,7 do
-                setActorY(defaultStrum0Y + 2 * math.cos((currentBeat + i*0.25) * 1.5), i)
-                setActorX(_G['defaultStrum'..i..'X'] + 32 * math.sin(currentBeat + i*1), i)
+                setActorY(defaultStrum0Y + 15 * math.cos((currentBeat + i*0.3) * 1.5), i)
             end
         end
         if swayingx then
             for i=0,7 do
-                setActorX(_G['defaultStrum'..i..'X'] + 24 * math.sin((songPos / 1000) * math.pi), i)
-                setActorY(_G['defaultStrum'..i..'Y'] + 20 * math.sin((songPos / 1000) * 2 * math.pi), i)
+                setActorX(_G['defaultStrum'..i..'X'] + 20 * math.sin((currentBeat + i*0.01)), i)
             end
         end
         if swayingboth then
             for i=0,7 do
-                setActorY(_G['defaultStrum'..i..'Y'] + 30 * math.sin((songPos / 1000) * 2 * math.pi), i)
-                setActorX(_G['defaultStrum'..i..'X'] + 32 * math.sin(currentBeat + i*1), i)
+                setActorY(defaultStrum0Y + 15 * math.cos((currentBeat + i*0.3) * 1.5), i)
+                setActorX(_G['defaultStrum'..i..'X'] + 20 * math.sin((currentBeat + i*0.01)), i)
             end
         end
         if swayingintense then
-            local currentBeat = (songPos / 500)*(bpm/60)
-            camHudAngle = 1 * math.cos((currentBeat))
+            local currentBeat = (songPos / 500)*(bpm/70)
             for i=0,7 do
-                setActorY(_G['defaultStrum'..i..'Y'] + 32 * math.sin(currentBeat + i*1), i)
-                setActorX(_G['defaultStrum'..i..'X'] + 24 * math.sin((songPos / 1000) * math.pi), i)
+                setActorY(defaultStrum0Y + 20 * math.cos((currentBeat + i*0.25) * 1.8), i)
+                setActorX(_G['defaultStrum'..i..'X'] + 24 * math.sin((currentBeat + i*0.02)), i)
             end
         end
     end

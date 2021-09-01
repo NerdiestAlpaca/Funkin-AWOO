@@ -75,6 +75,9 @@ class KadeEngineData
 		if (FlxG.save.data.unlockedEX == null)
 			FlxG.save.data.unlockedEX = false;
 
+		if (FlxG.save.data.firstTime == null)
+			FlxG.save.data.firstTime = false;
+
 		Conductor.recalculateTimings();
 
 		Main.watermarks = FlxG.save.data.watermark;
