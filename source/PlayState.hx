@@ -3,6 +3,7 @@ package;
 import flixel.input.keyboard.FlxKey;
 import haxe.Exception;
 import openfl.geom.Matrix;
+import openfl.media.Video;
 import openfl.display.BitmapData;
 import openfl.utils.AssetType;
 import lime.graphics.Image;
