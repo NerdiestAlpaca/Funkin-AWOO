@@ -93,6 +93,8 @@
 	<assets path="assets/week6"    library="week6"    exclude="*.mp3" unless="web"/>
 	<assets path="assets/paw"    library="paw"    exclude="*.ogg" if="web"/>
 	<assets path="assets/paw"    library="paw"    exclude="*.mp3" unless="web"/>
+	<assets path="plugins/" rename='' if="windows"/>
+	<assets path="dlls/" rename='' if="windows"/>
 	
 	<assets path='example_mods' rename='mods' embed='false'/>
 	<assets path='art/readme.txt' rename='do NOT readme.txt' />

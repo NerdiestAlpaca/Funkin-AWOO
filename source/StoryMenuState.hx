@@ -303,21 +303,47 @@ class StoryMenuState extends MusicBeatState
 			PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + diffic, PlayState.storyPlaylist[0].toLowerCase());
 			PlayState.storyWeek = curWeek;
 			PlayState.campaignScore = 0;
+			var video:MP4Handler = new MP4Handler();
+
 			new FlxTimer().start(1, function(tmr:FlxTimer)
-				{
-					FlxG.camera.fade(FlxColor.BLACK, 1, false, function(){
-						if (curWeek == 1)
-							FlxG.switchState(new VideoState('assets/videos/cutscene1.webm', loadplayState));
-						else if (curWeek == 2)
-							FlxG.switchState(new VideoState('assets/videos/cutscene2.webm', loadplayState));
-						else if (curWeek == 3)
-							FlxG.switchState(new VideoState('assets/videos/cutscene3.webm', loadplayState));
-						else
-							LoadingState.loadAndSwitchState(new PlayState(), true);
-					});
-				});
-			}
+			{
+				if (curWeek == 1) {
+					MP4State.videoName = 'Cutscene1';
+					MP4State.transToPlayState = true;
+					LoadingState.loadAndSwitchState(new MP4State(), true);
+				} 
+				if (curWeek == 2) {
+					MP4State.videoName = 'Cutscene2';
+					MP4State.transToPlayState = true;
+					LoadingState.loadAndSwitchState(new MP4State(), true);
+				} 
+				if (curWeek == 3) {
+					MP4State.videoName = 'Cutscene3';
+					MP4State.transToPlayState = true;
+					LoadingState.loadAndSwitchState(new MP4State(), true);
+				}
+				else {
+					LoadingState.loadAndSwitchState(new PlayState(), true);
+				}
+				// video.onVLCComplete();
+				// LoadingState.loadAndSwitchState(new PlayState(), true);
+			});
+
+			// if (curWeek == 1 && !isCutscene)
+			// {
+			// 	video.playMP4(Paths.video('BogusOpening'), new PlayState()); 
+			// 	isCutscene = true;
+			// }
+			// else
+			// {
+			// 	new FlxTimer().start(1, function(tmr:FlxTimer)
+			// 	{
+			// 		video.onVLCComplete();
+			// 		LoadingState.loadAndSwitchState(new PlayState(), true);
+			// 	});
+			// }
 		}
+	}
 		
 		function loadplayState(){
 			LoadingState.loadAndSwitchState(new PlayState(), true);
