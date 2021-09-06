@@ -568,15 +568,26 @@ class PlayState extends MusicBeatState
 				{
 					add(i);
 				}
-			add(gf);
-			gf.scrollFactor.set(0.95, 0.95);
-			add(dad);
-			add(boyfriend);
-				for (i in Stage.layInFront)
+				for (index => array in Stage.layInFront)
+				{
+					switch (index)
 					{
-						add(i);
+						case 0:
+							add(gf);
+							gf.scrollFactor.set(0.95, 0.95);
+							for (bg in array)
+								add(bg);
+						case 1:
+							add(dad);
+							for (bg in array)
+								add(bg);
+						case 2:
+							add(boyfriend);
+							for (bg in array)
+								add(bg);
 					}
 				}
+			}
 		else
 		{
 			Stage = new Stage("stage");
@@ -4772,11 +4783,9 @@ class PlayState extends MusicBeatState
 				case 'pawtucket':
 					for (bg in Stage.animatedBacks)
 						bg.animation.play('idle');
-					for (bg in Stage.layInFront)
-						bg.animation.play('idle');
 				
 				case 'bfconcert':
-					for (bg in Stage.layInFront)
+					for (bg in Stage.animatedBacks)
 						bg.animation.play('idle');
 
 				case 'limo':
