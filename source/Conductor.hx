@@ -12,19 +12,17 @@ typedef BPMChangeEvent =
 {
 	var stepTime:Int;
 	var songTime:Float;
-	var bpm:Float;
+	var bpm:Int;
 }
 
 class Conductor
 {
-	public static var bpm:Float = 100;
+	public static var bpm:Int = 100;
 	public static var crochet:Float = ((60 / bpm) * 1000); // beats in milliseconds
 	public static var stepCrochet:Float = crochet / 4; // steps in milliseconds
 	public static var songPosition:Float;
 	public static var lastSongPos:Float;
 	public static var offset:Float = 0;
-
-	public static var rawPosition:Float;
 
 	public static var safeFrames:Int = 10;
 	public static var safeZoneOffset:Float = Math.floor((safeFrames / 60) * 1000); // is calculated in create(), is safeFrames in milliseconds
@@ -47,7 +45,7 @@ class Conductor
 	{
 		bpmChangeMap = [];
 
-		var curBPM:Float = song.bpm;
+		var curBPM:Int = song.bpm;
 		var totalSteps:Int = 0;
 		var totalPos:Float = 0;
 		for (i in 0...song.notes.length)
@@ -70,23 +68,7 @@ class Conductor
 		trace("new BPM map BUDDY " + bpmChangeMap);
 	}
 
-	public static function recalculateTimingStruct(SONG:Song)
-	{
-		for(i in SONG.eventObjects)
-		{
-			/*TimingStruct.addTiming(beat,bpm,endBeat, Std.parseFloat(OFFSET));
-
-            if (changeEvents.length != 0)
-            {
-                var data = TimingStruct.AllTimings[currentIndex - 1];
-                data.endBeat = beat;
-                data.length = (data.endBeat - data.startBeat) / (data.bpm / 60);
-                TimingStruct.AllTimings[currentIndex].startTime = data.startTime + data.length;
-            }*/
-		}
-	}
-
-	public static function changeBPM(newBpm:Float, ?recalcLength = true)
+	public static function changeBPM(newBpm:Int)
 	{
 		bpm = newBpm;
 

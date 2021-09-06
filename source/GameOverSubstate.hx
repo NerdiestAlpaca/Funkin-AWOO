@@ -16,9 +16,9 @@ class GameOverSubstate extends MusicBeatSubstate
 
 	public function new(x:Float, y:Float)
 	{
-		var daStage = PlayState.Stage.curStage;
+		var daStage = PlayState.curStage;
 		var daBf:String = '';
-		switch (PlayState.boyfriend.curCharacter)
+		switch (PlayState.SONG.player1)
 		{
 			case 'bf-pixel':
 				stageSuffix = '-pixel';
@@ -48,8 +48,6 @@ class GameOverSubstate extends MusicBeatSubstate
 		bf.playAnim('firstDeath');
 	}
 
-	var startVibin:Bool = false;
-
 	override function update(elapsed:Float)
 	{
 		super.update(elapsed);
@@ -57,11 +55,6 @@ class GameOverSubstate extends MusicBeatSubstate
 		if (controls.ACCEPT)
 		{
 			endBullshit();
-		}
-
-		if(FlxG.save.data.InstantRespawn)
-		{
-			LoadingState.loadAndSwitchState(new PlayState());
 		}
 
 		if (controls.BACK)
@@ -83,7 +76,6 @@ class GameOverSubstate extends MusicBeatSubstate
 		if (bf.animation.curAnim.name == 'firstDeath' && bf.animation.curAnim.finished)
 		{
 			FlxG.sound.playMusic(Paths.music('gameOver' + stageSuffix));
-			startVibin = true;
 		}
 
 		if (FlxG.sound.music.playing)
@@ -96,10 +88,6 @@ class GameOverSubstate extends MusicBeatSubstate
 	{
 		super.beatHit();
 
-		if (startVibin && !isEnding)
-		{
-			bf.playAnim('deathLoop', true);
-		}
 		FlxG.log.add('beat');
 	}
 
@@ -109,7 +97,6 @@ class GameOverSubstate extends MusicBeatSubstate
 	{
 		if (!isEnding)
 		{
-			PlayState.startTime = 0;
 			isEnding = true;
 			bf.playAnim('deathConfirm', true);
 			FlxG.sound.music.stop();
