@@ -554,9 +554,8 @@ class FreeplayState extends MusicBeatState
 		// would read original scores if we didn't change packages
 		var songHighscore = StringTools.replace(songs[curSelected].songName, " ", "-");
 		switch (songHighscore) {
-			case 'Our-World': songHighscore = 'Our World';
-			case 'Free-Spirit': songHighscore = 'Free Spirit';
-			case 'Swerve-On': songHighscore = 'Swerve On';
+			case 'Dad-Battle': songHighscore = 'Dadbattle';
+			case 'Philly-Nice': songHighscore = 'Philly';
 		}
 
 		#if !switch

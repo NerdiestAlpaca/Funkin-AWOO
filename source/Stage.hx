@@ -71,7 +71,7 @@ class Stage
                             swagBacks['fgStage'] = fgStage;
                             toAdd.push(fgStage);
 
-							var audienceBoppers = new FlxSprite(-700, 780);
+							var audienceBoppers = new FlxSprite(-700, 1000);
 							audienceBoppers.frames = Paths.getSparrowAtlas('petshop/audienceBop');
 							audienceBoppers.animation.addByPrefix('idle', 'audience bob', 24, true);
 							audienceBoppers.antialiasing = true;
@@ -142,7 +142,7 @@ class Stage
                             swagBacks['fgStage'] = fgStage;
                             toAdd.push(fgStage);
 
-							var audienceBoppers = new FlxSprite(-700, 780);
+							var audienceBoppers = new FlxSprite(-700, 1000);
 							audienceBoppers.frames = Paths.getSparrowAtlas('petshop/BFAudience');
 							audienceBoppers.animation.addByPrefix('idle', 'audience bob', 24, true);
 							audienceBoppers.antialiasing = true;
