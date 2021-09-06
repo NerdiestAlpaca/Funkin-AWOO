@@ -322,10 +322,12 @@ class PlayState extends MusicBeatState
 		var songLowercase = StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase();
 		switch (songLowercase)
 		{
-			case 'dad-battle':
-				songLowercase = 'dadbattle';
-			case 'philly-nice':
-				songLowercase = 'philly';
+			case 'our-world':
+				songLowercase = 'our world';
+			case 'free-spirit':
+				songLowercase = 'free spirit';
+			case 'swerve-on':
+				songLowercase = 'swerve on';
 		}
 
 		removedVideo = false;
@@ -760,10 +762,12 @@ class PlayState extends MusicBeatState
 		var songLowercase = StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase();
 		switch (songLowercase)
 		{
-			case 'dad-battle':
-				songLowercase = 'dadbattle';
-			case 'philly-nice':
-				songLowercase = 'philly';
+			case 'our-world':
+				songLowercase = 'our world';
+			case 'free-spirit':
+				songLowercase = 'free spirit';
+			case 'swerve-on':
+				songLowercase = 'swerve on';
 		}
 		if (executeModchart)
 		{
@@ -1676,10 +1680,12 @@ class PlayState extends MusicBeatState
 		var songLowercase = StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase();
 		switch (songLowercase)
 		{
-			case 'dad-battle':
-				songLowercase = 'dadbattle';
-			case 'philly-nice':
-				songLowercase = 'philly';
+			case 'our-world':
+				songLowercase = 'our world';
+			case 'free-spirit':
+				songLowercase = 'free spirit';
+			case 'swerve-on':
+				songLowercase = 'swerve on';
 		}
 
 		var songPath = 'assets/data/' + songLowercase + '/';
@@ -3393,10 +3399,12 @@ class PlayState extends MusicBeatState
 			var songHighscore = StringTools.replace(PlayState.SONG.song, " ", "-");
 			switch (songHighscore)
 			{
-				case 'Dad-Battle':
-					songHighscore = 'Dadbattle';
-				case 'Philly-Nice':
-					songHighscore = 'Philly';
+				case 'Our-World': 
+					songHighscore = 'Our World';
+				case 'Free-Spirit': 
+					songHighscore = 'Free Spirit';
+				case 'Swerve-On': 
+					songHighscore = 'Swerve On';
 			}
 
 			#if !switch
@@ -3490,10 +3498,12 @@ class PlayState extends MusicBeatState
 					var songFormat = StringTools.replace(PlayState.storyPlaylist[0], " ", "-");
 					switch (songFormat)
 					{
-						case 'Dad-Battle':
-							songFormat = 'Dadbattle';
-						case 'Philly-Nice':
-							songFormat = 'Philly';
+						case 'Our-World': 
+							songFormat = 'Our World';
+						case 'Free-Spirit': 
+							songFormat = 'Free Spirit';
+						case 'Swerve-On': 
+							songFormat = 'Swerve On';
 					}
 
 					var poop:String = Highscore.formatSong(songFormat, storyDifficulty);

@@ -347,8 +347,9 @@ class StoryMenuState extends MusicBeatState
 			// adjusting the song name to be compatible
 			var songFormat = StringTools.replace(PlayState.storyPlaylist[0], " ", "-");
 			switch (songFormat) {
-				case 'Dad-Battle': songFormat = 'Dadbattle';
-				case 'Philly-Nice': songFormat = 'Philly';
+				case 'Our-World': songFormat = 'Our World';
+				case 'Free-Spirit': songFormat = 'Free Spirit';
+				case 'Swerve-On': songFormat = 'Swerve On';
 			}
 
 			var poop:String = Highscore.formatSong(songFormat, curDifficulty);
