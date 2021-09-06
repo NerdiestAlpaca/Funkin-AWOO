@@ -8,9 +8,9 @@ class CoolUtil
 {
 	public static var difficultyArray:Array<String> = ['Easy', "Normal", "Hard", "Rematch"];
 
-	public static function difficultyString():String
+	public static function difficultyFromInt(difficulty:Int):String
 	{
-		return difficultyArray[PlayState.storyDifficulty];
+		return difficultyArray[difficulty];
 	}
 
 	public static function coolTextFile(path:String):Array<String>

@@ -97,6 +97,7 @@ class DialogueBox extends FlxSpriteGroup
 		portraitBF.setGraphicSize(Std.int(portraitBF.width * 1));
 		portraitBF.updateHitbox();
 		portraitBF.scrollFactor.set();
+		portraitBF.antialiasing = FlxG.save.data.antialiasing;
 		add(portraitBF);
 		portraitBF.visible = false;
 
@@ -106,6 +107,7 @@ class DialogueBox extends FlxSpriteGroup
 		portraitBFCoat.setGraphicSize(Std.int(portraitBFCoat.width * 1));
 		portraitBFCoat.updateHitbox();
 		portraitBFCoat.scrollFactor.set();
+		portraitBFCoat.antialiasing = FlxG.save.data.antialiasing;
 		add(portraitBFCoat);
 		portraitBFCoat.visible = false;
 
@@ -115,6 +117,7 @@ class DialogueBox extends FlxSpriteGroup
 		portraitGF.setGraphicSize(Std.int(portraitGF.width * 1));
 		portraitGF.updateHitbox();
 		portraitGF.scrollFactor.set();
+		portraitGF.antialiasing = FlxG.save.data.antialiasing;
 		add(portraitGF);
 		portraitGF.visible = false;
 
@@ -124,6 +127,7 @@ class DialogueBox extends FlxSpriteGroup
 		portraitRoxie.setGraphicSize(Std.int(portraitRoxie.width * 1));
 		portraitRoxie.updateHitbox();
 		portraitRoxie.scrollFactor.set();
+		portraitRoxie.antialiasing = FlxG.save.data.antialiasing;
 		add(portraitRoxie);
 		portraitRoxie.visible = false;
 		
@@ -133,6 +137,7 @@ class DialogueBox extends FlxSpriteGroup
 		portraitSavannah.setGraphicSize(Std.int(portraitSavannah.width * 1));
 		portraitSavannah.updateHitbox();
 		portraitSavannah.scrollFactor.set();
+		portraitSavannah.antialiasing = FlxG.save.data.antialiasing;
 		add(portraitSavannah);
 		portraitSavannah.visible = false;
 
@@ -142,6 +147,7 @@ class DialogueBox extends FlxSpriteGroup
 		portraitQuincy.setGraphicSize(Std.int(portraitQuincy.width * 1));
 		portraitQuincy.updateHitbox();
 		portraitQuincy.scrollFactor.set();
+		portraitQuincy.antialiasing = FlxG.save.data.antialiasing;
 		add(portraitQuincy);
 		portraitQuincy.visible = false;
 
@@ -151,15 +157,17 @@ class DialogueBox extends FlxSpriteGroup
 		portraitPetula.setGraphicSize(Std.int(portraitPetula.width * 1));
 		portraitPetula.updateHitbox();
 		portraitPetula.scrollFactor.set();
+		portraitPetula.antialiasing = FlxG.save.data.antialiasing;
 		add(portraitPetula);
 		portraitPetula.visible = false;
 		
-				portraitJade = new FlxSprite(200, FlxG.height - 525);
+		portraitJade = new FlxSprite(200, FlxG.height - 525);
 		portraitJade.frames = Paths.getSparrowAtlas('petshop/jadeportrait');
 		portraitJade.animation.addByPrefix('enter', 'Jade Idle', 24, false);
 		portraitJade.setGraphicSize(Std.int(portraitJade.width * 1));
 		portraitJade.updateHitbox();
 		portraitJade.scrollFactor.set();
+		portraitJade.antialiasing = FlxG.save.data.antialiasing;
 		add(portraitJade);
 		portraitJade.visible = false;
 		
@@ -169,6 +177,7 @@ class DialogueBox extends FlxSpriteGroup
 		portraitTrip.setGraphicSize(Std.int(portraitTrip.width * 1));
 		portraitTrip.updateHitbox();
 		portraitTrip.scrollFactor.set();
+		portraitTrip.antialiasing = FlxG.save.data.antialiasing;
 		add(portraitTrip);
 		portraitTrip.visible = false;
 
@@ -178,6 +187,7 @@ class DialogueBox extends FlxSpriteGroup
 		portraitAustin.setGraphicSize(Std.int(portraitAustin.width * 1));
 		portraitAustin.updateHitbox();
 		portraitAustin.scrollFactor.set();
+		portraitAustin.antialiasing = FlxG.save.data.antialiasing;
 		add(portraitAustin);
 		portraitAustin.visible = false;
 
@@ -187,6 +197,7 @@ class DialogueBox extends FlxSpriteGroup
 		portraitEdie.setGraphicSize(Std.int(portraitEdie.width * 1));
 		portraitEdie.updateHitbox();
 		portraitEdie.scrollFactor.set();
+		portraitEdie.antialiasing = FlxG.save.data.antialiasing;
 		add(portraitEdie);
 		portraitEdie.visible = false;
 
@@ -196,6 +207,7 @@ class DialogueBox extends FlxSpriteGroup
 		portraitBev.setGraphicSize(Std.int(portraitBev.width * 1));
 		portraitBev.updateHitbox();
 		portraitBev.scrollFactor.set();
+		portraitBev.antialiasing = FlxG.save.data.antialiasing;
 		add(portraitBev);
 		portraitBev.visible = false;
 

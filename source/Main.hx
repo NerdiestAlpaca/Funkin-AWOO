@@ -1,8 +1,11 @@
 package;
 
+import lime.app.Application;
+#if desktop
+import Discord.DiscordClient;
+#end
 import openfl.display.BlendMode;
 import openfl.text.TextFormat;
-import openfl.display.Application;
 import flixel.util.FlxColor;
 import flixel.FlxG;
 import flixel.FlxGame;
@@ -12,7 +15,6 @@ import openfl.Lib;
 import openfl.display.FPS;
 import openfl.display.Sprite;
 import openfl.events.Event;
-import webm.*;
 
 class Main extends Sprite
 {
@@ -23,9 +25,8 @@ class Main extends Sprite
 	var framerate:Int = 120; // How many frames per second the game should run at.
 	var skipSplash:Bool = true; // Whether to skip the flixel splash screen that appears in release mode.
 	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
-	public static var webmHandle:WebmHandler = new WebmHandler();
 
-	public static var watermarks = true; // Whether to put Kade Engine liteartly anywhere
+	public static var watermarks = true; // Whether to put Kade Engine literally anywhere
 
 	// You can pretty much ignore everything from here on - your code should go in your states.
 
@@ -51,6 +52,8 @@ class Main extends Sprite
 		}
 	}
 
+	public static var webmHandler:WebmHandler;
+
 	private function init(?E:Event):Void
 	{
 		if (hasEventListener(Event.ADDED_TO_STAGE))
@@ -75,42 +78,30 @@ class Main extends Sprite
 			gameHeight = Math.ceil(stageHeight / zoom);
 		}
 
-		#if !debug
-		initialState = TitleState;
+		#if !cpp
+		framerate = 60;
 		#end
 
+		#if cpp
+		initialState = Caching;
 		game = new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen);
-
+		#else
+		game = new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen);
+		#end
 		addChild(game);
+		#if desktop
+		DiscordClient.initialize();
 
-		var ourSource:String = "assets/videos/DO NOT DELETE OR GAME WILL CRASH/dontDelete.webm";
-		WebmPlayer.SKIP_STEP_LIMIT = 90;
-		#if web
-		var str1:String = "HTML CRAP";
-		var vHandler = new VideoHandler();
-		vHandler.init1();
-		vHandler.video.name = str1;
-		addChild(vHandler.video);
-		vHandler.init2();
-		GlobalVideo.setVid(vHandler);
-		vHandler.source(ourSource);
-		#elseif desktop
-		var str1:String = "WEBM SHIT"; 
-		webmHandle = new WebmHandler();
-		
-		webmHandle.source(ourSource);
-		webmHandle.makePlayer();
-		webmHandle.webm.name = str1;
-		
-		//addChild(webmHandle.webm);
-		GlobalVideo.setWebm(webmHandle);
+		Application.current.onExit.add (function (exitCode) {
+			DiscordClient.shutdown();
+		 });
+		 
 		#end
 
 		#if !mobile
 		fpsCounter = new FPS(10, 3, 0xFFFFFF);
 		addChild(fpsCounter);
 		toggleFPS(FlxG.save.data.fps);
-
 		#end
 	}
 
