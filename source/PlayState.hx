@@ -3470,8 +3470,8 @@ class PlayState extends MusicBeatState
 						NGio.unlockMedal(60961);
 						Highscore.saveWeekScore(storyWeek, campaignScore, storyDifficulty);
 					}
-					FlxG.save.data.weekUnlocked = StoryMenuState.weekUnlocked;
-					FlxG.save.flush();
+
+					StoryMenuState.unlockNextWeek(storyWeek);
 				}
 				else
 				{
