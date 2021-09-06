@@ -507,11 +507,6 @@ class FreeplayState extends MusicBeatState
 		#end
 		diffCalcText.text = 'RATING: ${DiffCalc.CalculateDiff(songData.get(songs[curSelected].songName)[curDifficulty])}';
 		diffText.text = CoolUtil.difficultyFromInt(curDifficulty).toUpperCase();
-
-		if (curDifficulty == 3)
-			magenta.visible = true;
-		if (curDifficulty != 3)
-			magenta.visible = false;
 	}
 
 	function changeSelection(change:Int = 0)
@@ -562,6 +557,11 @@ class FreeplayState extends MusicBeatState
 		combo = Highscore.getCombo(songHighscore, curDifficulty);
 		// lerpScore = 0;
 		#end
+
+		if (curDifficulty == 3)
+			magenta.visible = true;
+		if (curDifficulty != 3)
+			magenta.visible = false;
 
 		diffCalcText.text = 'RATING: ${DiffCalc.CalculateDiff(songData.get(songs[curSelected].songName)[curDifficulty])}';
 		diffText.text = CoolUtil.difficultyFromInt(curDifficulty).toUpperCase();
