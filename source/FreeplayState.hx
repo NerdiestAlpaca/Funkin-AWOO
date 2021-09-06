@@ -207,6 +207,7 @@ class FreeplayState extends MusicBeatState
 		add(bg);
 
 		magenta = new FlxSprite().loadGraphic(Paths.image('menuBGMagenta'));
+		magenta.antialiasing = FlxG.save.data.antialiasing;
 		add(magenta);
 
 		grpSongs = new FlxTypedGroup<Alphabet>();
