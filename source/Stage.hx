@@ -19,7 +19,7 @@ class Stage
     public var swagBacks:Map<String, Dynamic> = []; // Store BGs here to use them later in PlayState or when slowBacks activate
     public var swagGroup:Map<String, FlxTypedGroup<Dynamic>> = []; //Store Groups
     public var animatedBacks:Array<FlxSprite> = []; // Store animated backgrounds and make them play animation(Animation must be named Idle!! Else use swagGroup)
-	public var layInFront:Array<Array<FlxSprite>> = [[], [], []]; // BG layering, format: first [0] - in front of GF, second [1] - in front of opponent, third [2] - in front of boyfriend(and techincally also opponent since Haxe layering moment)
+    public var layInFront:Array<FlxSprite> = []; // BG layering, format: first [0] - in front of GF, second [1] - in front of opponent, third [2] - in front of boyfriend(and techincally also opponent since Haxe layering moment)
     public var slowBacks:Map<Int, Array<FlxSprite>> = []; // Change/add/remove backgrounds mid song! Format: "slowBacks[StepToBeActivated] = [Sprites,To,Be,Changed,Or,Added];"
 
     public function new(daStage:String)
@@ -46,7 +46,7 @@ class Stage
 
 							var uppercrowd = new FlxSprite(-240, -20);
 							uppercrowd.frames = Paths.getSparrowAtlas('petshop/upperBop');
-							uppercrowd.animation.addByPrefix('idle', "Upper Crowd Bob", 24, false);
+							uppercrowd.animation.addByPrefix('bop', "Upper Crowd Bob", 24, false);
 							uppercrowd.antialiasing = true;
 							uppercrowd.scrollFactor.set(0.33, 0.33);
 							uppercrowd.setGraphicSize(Std.int(uppercrowd.width * 0.7));
@@ -55,7 +55,7 @@ class Stage
                             toAdd.push(uppercrowd);
                             animatedBacks.push(uppercrowd);
 
-                            var bgEscalator:FlxSprite = new FlxSprite(-400, 0).loadGraphic(Paths.image('petshop/bgEscalator'));
+                            var bgEscalator:FlxSprite = new FlxSprite(-1100, -600).loadGraphic(Paths.image('petshop/bgEscalator'));
                             bgEscalator.antialiasing = FlxG.save.data.antialiasing;
                             bgEscalator.scrollFactor.set(0.3, 0.3);
                             bgEscalator.active = false;
@@ -79,8 +79,7 @@ class Stage
 							audienceBoppers.updateHitbox();
                             swagBacks['audienceBoppers'] = audienceBoppers;
 							toAdd.push(audienceBoppers);
-							animatedBacks.push(audienceBoppers);
-                            layInFront[2].push(audienceBoppers);
+                            layInFront.push(audienceBoppers);
 		
         					var confetti:FlxSprite = new FlxSprite(-240, -90);
         					confetti.frames = Paths.getSparrowAtlas('petshop/confetti');
@@ -150,8 +149,7 @@ class Stage
 							audienceBoppers.updateHitbox();
                             swagBacks['audienceBoppers'] = audienceBoppers;
 							toAdd.push(audienceBoppers);
-							animatedBacks.push(audienceBoppers);
-                            layInFront[2].push(audienceBoppers);
+                            layInFront.push(audienceBoppers);
 		
         					var confetti:FlxSprite = new FlxSprite(-240, -90);
         					confetti.frames = Paths.getSparrowAtlas('petshop/confetti');
@@ -273,8 +271,9 @@ class Stage
 								dancer.scrollFactor.set(0.4, 0.4);
 								grpLimoDancers.add(dancer);
 							}
-                            layInFront[2].push(fastCar);
+
                             swagBacks['fastCar'] = fastCar;
+                            layInFront.push(fastCar);
 						}
 
 						var overlayShit:FlxSprite = new FlxSprite(-500, -600).loadGraphic(Paths.image('limo/limoOverlay', 'week4'));
@@ -294,7 +293,7 @@ class Stage
 						limo.animation.addByPrefix('drive', "Limo stage", 24);
 						limo.animation.play('drive');
 						limo.antialiasing = FlxG.save.data.antialiasing;
-						layInFront[0].push(limo);
+						layInFront.push(limo);
                         swagBacks['limo'] = limo;
 
                         // Testing 
