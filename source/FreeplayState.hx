@@ -88,8 +88,9 @@ class FreeplayState extends MusicBeatState
 			var meta = new SongMetadata(data[0], Std.parseInt(data[2]), data[1]);
 			var format = StringTools.replace(meta.songName, " ", "-");
 			switch (format) {
-				case 'Dad-Battle': format = 'Dadbattle';
-				case 'Philly-Nice': format = 'Philly';
+				case 'Our-World': format = 'Our World';
+				case 'Free-Spirit': format = 'Free Spirit';
+				case 'Swerve-On': format = 'Swerve On';
 			}
 
 			var diffs = [];
@@ -431,8 +432,9 @@ class FreeplayState extends MusicBeatState
 			// adjusting the song name to be compatible
 			var songFormat = StringTools.replace(songs[curSelected].songName, " ", "-");
 			switch (songFormat) {
-				case 'Dad-Battle': songFormat = 'Dadbattle';
-				case 'Philly-Nice': songFormat = 'Philly';
+				case 'Our-World': songFormat = 'Our World';
+				case 'Free-Spirit': songFormat = 'Free Spirit';
+				case 'Swerve-On': songFormat = 'Swerve On';
 			}
 			var hmm;
 			try
@@ -498,8 +500,9 @@ class FreeplayState extends MusicBeatState
 		// adjusting the highscore song name to be compatible (changeDiff)
 		var songHighscore = StringTools.replace(songs[curSelected].songName, " ", "-");
 		switch (songHighscore) {
-			case 'Dad-Battle': songHighscore = 'Dadbattle';
-			case 'Philly-Nice': songHighscore = 'Philly';
+			case 'Our-World': songHighscore = 'Our World';
+			case 'Free-Spirit': songHighscore = 'Free Spirit';
+			case 'Swerve-On': songHighscore = 'Swerve On';
 		}
 		
 		#if !switch
